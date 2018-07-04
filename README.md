@@ -1,5 +1,9 @@
-# Xamarin-DocumentReader
-Xamarin Framework for reading and validation of identification documents
+# Xamarin - Regula Document Reader
+Regula Document Reader SDK allows you to read various kinds of identification documents, passports, driving licenses, ID cards, etc. All processing is performed completely ***offline*** on your device. No any data leaving your device.
+
+You can use native camera to scan the documents or image from gallery for extract all data from it.
+
+We have provided a simple application that demonstrates the ***API*** calls you can use to interact with the DocumentReader Library.
 
 Getting Started - Android
 ---------
