@@ -5,8 +5,37 @@ You can use native camera to scan the documents or image from gallery for extrac
 
 We have provided a simple application that demonstrates the ***API*** calls you can use to interact with the DocumentReader Library.
 
-Getting Started - Android
----------
+
+# Getting Started - Android
+
+* [How to build demo application](#how_to_build_demo_application)
+* [How to add DocumentReader library to your project](#how_to_add_documentreader_library_to_your_project)
+* [Troubleshooting license issues](#troubleshooting_license_issues)
+
+## <a name="how_to_build_demo_application"></a> How to build demo application
+1. Get trial license for demo application at [licensing.regulaforensics.com](https://licensing.regulaforensics.com) (`regula.license` file).
+1. Clone current repository using command `git clone https://github.com/regulaforensics/Xamarin-DocumentReader.git`.
+1. Download and install latest [Visual Studio](https://visualstudio.microsoft.com/xamarin/) depend on your OS.
+1. Copy file `regula.license` to `DocumentReaderSample/Droid/Assets` folder. 
+1. Launch _Visual Studio_ and select _File -> Open_ then select _DocumentReaderSample/DocumentReaderSample.sln_ file in file browser.
+1. Download additional files proposed by _Visual Studio_ to build project (build tools, for example).
+1. Change application ID (at _Properties/AndroidManifest.xml_ file) to specified during registration of your license key at [licensing.regulaforensics.com](https://licensing.regulaforensics.com) (`com.regula.dr.fullrfid` by default).
+1. Select appropriate build variant and run application.
+
+## <a name="how_to_add_documentreader_library_to_your_project"></a> How to add DocumentReader library to your project
 To install the libraries for Android, simply open your project and install our NuGet packages named `Xamarin.DocumentReader.Api.Android` and `Xamarin.DocumentReader.Core.Full.Android`. For more details on how to install a NuGet package, [see here](https://blog.xamarin.com/xamarin-studio-and-nuget/).
 
+
 Once the libraries is installed, see our [Document Reader Sample App](https://github.com/regulaforensics/Xamarin-DocumentReader/tree/master/DocumentReaderSample/Droid) for an example of how to use it.
+
+## <a name="troubleshooting_license_issues"></a> Troubleshooting license issues
+If you have issues with license verification when running the application, please verify that next is true:
+1. OS you are using is the same as in the license you received (Android).
+1. Application ID is the same that you specified for license.
+1. Date and time on the device you are trying to run the application is correct and inside the license validity period.
+1. You are using the latest release of the SDK.
+1. You placed the license into the correct folder as described here [How to build demo application](#how_to_build_demo_application) (`DocumentReaderSample/Droid/Assets`).
+
+
+# Getting Started - iOS
+
