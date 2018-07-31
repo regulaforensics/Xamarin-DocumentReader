@@ -1,24 +1,98 @@
-﻿//		
-// This file has been generated automatically by MonoDevelop to store outlets and		
-// actions made in the Xcode designer. If it is removed, they will be lost.		
-// Manual changes to this file may not be handled correctly.		
-//		
+// WARNING
+//
+// This file has been generated automatically by Visual Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
+//
 using Foundation;
+using System;
+using System.CodeDom.Compiler;
 
 namespace DocumentReaderSample.iOS
 {
-    [Register("ViewController")]
+    [Register ("ViewController")]
     partial class ViewController
     {
         [Outlet]
-        UIKit.UIButton Button { get; set; }
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton bntCamera { get; set; }
 
-        void ReleaseDesignerOutlets()
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView documentImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIActivityIndicatorView initIndocator { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel initLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel nameLbl { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView portraitImageView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIPickerView scenariosView { get; set; }
+
+        [Action ("UseCameraButtonTouch:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void UseCameraButtonTouch (UIKit.UIButton sender);
+
+        [Action ("UseGaleryButtonTouch:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void UseGaleryButtonTouch (UIKit.UIButton sender);
+
+        void ReleaseDesignerOutlets ()
         {
-            if (Button != null)
-            {
-                Button.Dispose();
-                Button = null;
+            if (bntCamera != null) {
+                bntCamera.Dispose ();
+                bntCamera = null;
+            }
+
+            if (btnImage != null) {
+                btnImage.Dispose ();
+                btnImage = null;
+            }
+
+            if (documentImage != null) {
+                documentImage.Dispose ();
+                documentImage = null;
+            }
+
+            if (initIndocator != null) {
+                initIndocator.Dispose ();
+                initIndocator = null;
+            }
+
+            if (initLabel != null) {
+                initLabel.Dispose ();
+                initLabel = null;
+            }
+
+            if (nameLbl != null) {
+                nameLbl.Dispose ();
+                nameLbl = null;
+            }
+
+            if (portraitImageView != null) {
+                portraitImageView.Dispose ();
+                portraitImageView = null;
+            }
+
+            if (scenariosView != null) {
+                scenariosView.Dispose ();
+                scenariosView = null;
             }
         }
     }
