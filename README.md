@@ -36,7 +36,7 @@ If you have issues with license verification when running the application, pleas
 To install the libraries for Android, simply open your project and install our NuGet packages named `Xamarin.DocumentReader.Api.Android` and `Xamarin.DocumentReader.Core.Full.Android`. For more details on how to install a NuGet package, [see here](https://blog.xamarin.com/xamarin-studio-and-nuget/).
 
 
-Once the libraries is installed, see our [Document Reader Sample App](https://github.com/regulaforensics/Xamarin-DocumentReader/tree/master/DocumentReaderSample/Droid) for an example of how to use it.
+Once the libraries are installed, see our [Document Reader Sample App](https://github.com/regulaforensics/Xamarin-DocumentReader/tree/master/DocumentReaderSample/Droid) for an example of how to use it.
 
 
 # Getting Started - iOS
@@ -47,7 +47,7 @@ Once the libraries is installed, see our [Document Reader Sample App](https://gi
 To install the libraries for iOS, simply open your project and install our NuGet packages named `Xamarin.DocumentReader.Api.iOS` and `Xamarin.DocumentReader.Core.Full.iOS `. For more details on how to install a NuGet package, [see here](https://blog.xamarin.com/xamarin-studio-and-nuget/).
 
 ## <a name="initialization_core"></a> Initialization Core
-After you added libraries from NuGet to the project, make sure that you initialized `Core` at the code. For example, take a look at the code below.
+After you added libraries from NuGet to the project, make sure that you initialized `Core` int the code. For example, take a look int the code below.
 
 ```c#
 public partial class ViewController : UIViewController
@@ -67,4 +67,4 @@ FYI: Xamarin is not included into ipa frameworks which are not called in the cod
 
 `dyld: Library not loaded: @rpath/DocumentReaderCore.framework/DocumentReaderCore`
 
-Once the libraries is installed, see our [Document Reader Sample App](https://github.com/regulaforensics/Xamarin-DocumentReader/tree/master/DocumentReaderSample/iOS) for an example of how to use it.
+Once the libraries are installed, see our [Document Reader Sample App](https://github.com/regulaforensics/Xamarin-DocumentReader/tree/master/DocumentReaderSample/iOS) for an example of how to use it.
