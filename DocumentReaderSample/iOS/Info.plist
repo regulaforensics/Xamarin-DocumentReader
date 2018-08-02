@@ -44,5 +44,11 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>Custom Property</key>
+	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>Make a shot</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Take a photo</string>
 </dict>
 </plist>
