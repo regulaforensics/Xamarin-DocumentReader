@@ -42,6 +42,7 @@ Once the libraries are installed, see our [Document Reader Sample App](https://g
 # Getting Started - iOS
 * [How to add DocumentReader library to your project](#how_to_add_documentreader_library_to_your_ios_project)
 * [Initialization Core](#initialization_core)
+* [Update Info.plist into your project](#update_info_plist)
 
 ## <a name="how_to_add_documentreader_library_to_your_ios_project"></a> How to add DocumentReader library to your project
 To install the libraries for iOS, simply open your project and install our NuGet packages named `Xamarin.DocumentReader.Api.iOS` and `Xamarin.DocumentReader.Core.Full.iOS `. For more details on how to install a NuGet package, [see here](https://blog.xamarin.com/xamarin-studio-and-nuget/).
@@ -66,5 +67,12 @@ public partial class ViewController : UIViewController
 FYI: Xamarin is not included into ipa frameworks which are not called in the code. You can successfylly build project and run, but in runtime you will get error that DocumentReaderCore library not loaded. See error below.
 
 `dyld: Library not loaded: @rpath/DocumentReaderCore.framework/DocumentReaderCore`
+
+## <a name="update_info_plist"></a>Update Info.plist into your project
+Don't forgot update your plist with next properties:
+* Privacy - Camera Usage Description
+* Privacy - Photo Library Usage Description
+
+It's required for make a snapshot from camera or get a photo from gallery.
 
 Once the libraries are installed, see our [Document Reader Sample App](https://github.com/regulaforensics/Xamarin-DocumentReader/tree/master/DocumentReaderSample/iOS) for an example of how to use it.
