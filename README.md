@@ -27,13 +27,16 @@ If you have issues with license verification when running the application, pleas
 1. You are using the latest release of the SDK.
 1. You placed the license into the correct folder as described here [How to build demo application](#how_to_build_demo_application) (`DocumentReaderSample/Droid/Assets`).
 
+# All available NuGet packages
+
+You can find all available packages for Xamarin [here](https://www.nuget.org/profiles/regulaforensics).
 
 # Getting Started - Android
 
 * [How to add DocumentReader library to your project](#how_to_add_documentreader_library_to_your_project)
 
 ## <a name="how_to_add_documentreader_library_to_your_project"></a> How to add DocumentReader library to your project
-To install the libraries for Android, simply open your project and install our NuGet packages named `Xamarin.DocumentReader.Api.Android` and `Xamarin.DocumentReader.Core.Full.Android`. For more details on how to install a NuGet package, [see here](https://blog.xamarin.com/xamarin-studio-and-nuget/).
+To install the libraries for Android, simply open your project and install our NuGet packages named `Xamarin.DocumentReader.Api.Android` and (`Xamarin.DocumentReader.Core.Full.Android` or `Xamarin.DocumentReader.Core.FullRfid.Android`). For more details on how to install a NuGet package, [see here](https://blog.xamarin.com/xamarin-studio-and-nuget/).
 
 
 Once the libraries are installed, see our [Document Reader Sample App](https://github.com/regulaforensics/Xamarin-DocumentReader/tree/master/DocumentReaderSample/Droid) for an example of how to use it.
