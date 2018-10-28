@@ -68,12 +68,12 @@ namespace DocumentReaderSample.Droid
             doRfidCb = FindViewById<CheckBox>(Resource.Id.doRfidCb);
 
             sharedPreferences = GetSharedPreferences(MY_SHARED_PREFS, FileCreationMode.Private);
+
+            initReader();
         }
 
-        protected override void OnResume()
+        protected void initReader() 
         {
-            base.OnResume();
-
             var bytes = default(byte[]);
             using (var streamReader = new StreamReader(Assets.Open("regula.license")))
             {
