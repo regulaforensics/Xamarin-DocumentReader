@@ -23,7 +23,7 @@ using Android.Support.V4.Content;
 namespace DocumentReaderSample.Droid
 {
     [Activity(Label = "DocumentReaderSample", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity : FragmentActivity, DocumentReader.IDocumentReaderInitCompletion, DocumentReader.IDocumentReaderCompletion
+    public class MainActivity : FragmentActivity, DocumentReader.IDocumentReaderInitCompletion, DocumentReader.IDocumentReaderCompletion, DocumentReader.IDocumentReaderPrepareCompletion
     {
         const int REQUEST_BROWSE_PICTURE = 11;
         const int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 22;
@@ -85,7 +85,7 @@ namespace DocumentReaderSample.Droid
             }
 
             initDialog = showDialog("Initializing");
-            DocumentReader.Instance().InitializeReader(this, bytes, this);
+            DocumentReader.Instance().PrepareDatabase(ApplicationContext, "Full", this);
         }
 
 
@@ -188,6 +188,27 @@ namespace DocumentReaderSample.Droid
             }
         }
 
+        public void OnPrepareCompleted(bool p0, string p1)
+        {
+            var bytes = default(byte[]);
+            using (var streamReader = new StreamReader(Assets.Open("regula.license")))
+            {
+                using (var memstream = new MemoryStream())
+                {
+                    streamReader.BaseStream.CopyTo(memstream);
+                    bytes = memstream.ToArray();
+                }
+            }
+
+            DocumentReader.Instance().InitializeReader(this, bytes, this);
+        }
+
+        public void OnPrepareProgressChanged(int p)
+        {
+            int j = 0;
+            Log.Debug("MainActivity", "OnPrepareProgressChanged: " + p);
+        }
+
         public void OnInitCompleted(bool success, string error)
         {
             if (initDialog != null && initDialog.IsShowing)
@@ -220,7 +241,7 @@ namespace DocumentReaderSample.Droid
                     }
                 };
 
-                if (DocumentReader.Instance().DocumentReaderCapabilities.CanRfid)
+                if (DocumentReader.Instance().CanRFID)
                 {
                     doRfid = sharedPreferences.GetBoolean(DO_RFID, false);
                     doRfidCb.Checked = doRfid;
