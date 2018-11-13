@@ -1,7 +1,7 @@
 ﻿using System;
 
 using UIKit;
-using DocReaderApi.iOS;
+using DocReaderApi.Beta.iOS;
 using Foundation;
 using Photos;
 using CoreFoundation;
@@ -15,7 +15,7 @@ namespace DocumentReaderSample.iOS
         protected ViewController(IntPtr handle) : base(handle) =>
         //WARNING!!!!
         //Initialization DocumentReader from DocReaderCore is required
-            new DocReaderCore.iOS.DocumentReader();
+        new DocReaderCore.Full.Beta.iOS.DocumentReader();
 
         public override void ViewDidLoad()
         {
@@ -74,7 +74,7 @@ namespace DocumentReaderSample.iOS
                 }
 
                 docReader.ProcessParams.Scenario = docReader.AvailableScenarios[0].Identifier;
-                docReader.Customization.ShowCloseButton = false;
+                docReader.Functionality.ShowCloseButton = false;
 
             }
             else

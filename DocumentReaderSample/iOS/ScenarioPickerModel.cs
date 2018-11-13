@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using DocReaderApi.iOS;
+using DocReaderApi.Beta.iOS;
 using UIKit;
 
 namespace DocumentReaderSample.iOS
