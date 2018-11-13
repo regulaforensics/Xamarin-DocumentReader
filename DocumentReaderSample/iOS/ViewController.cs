@@ -45,7 +45,11 @@ namespace DocumentReaderSample.iOS
             };
             //create DocReader object with default ProcessParams
             docReader = new DocReader(processParams);
-            docReader.InitilizeReaderWithLicense(licenseData, DocReaderInitCompleted);
+            docReader.PrepareDatabaseWithDatabaseID("Full", (NSProgress obj) => {
+                Console.WriteLine(obj.FractionCompleted);
+            },(arg1, arg2) => {
+                docReader.InitilizeReaderWithLicense(licenseData, DocReaderInitCompleted);
+            });
         }
 
         void DocReaderInitCompleted(bool successfull, NSString error)
