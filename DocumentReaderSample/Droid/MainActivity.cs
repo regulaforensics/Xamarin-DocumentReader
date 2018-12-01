@@ -220,7 +220,7 @@ namespace DocumentReaderSample.Droid
                     }
                 };
 
-                if (DocumentReader.Instance().DocumentReaderCapabilities.CanRfid)
+                if (DocumentReader.Instance().CanRFID)
                 {
                     doRfid = sharedPreferences.GetBoolean(DO_RFID, false);
                     doRfidCb.Checked = doRfid;
