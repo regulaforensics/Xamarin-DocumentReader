@@ -133,10 +133,10 @@
       <HintPath>..\packages\Xamarin.Swift4.UIKit.4.1.2\lib\xamarinios10\Xamarin.Swift4.UIKit.dll</HintPath>
     </Reference>
     <Reference Include="DocReaderApi.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.3.4.83819\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.4.0.8691083\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="DocReaderCore.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.iOS.3.4.83817\lib\xamarinios10\DocReaderCore.iOS.dll</HintPath>
+    <Reference Include="DocReaderCore.Full.iOS">
+      <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.iOS.4.0.89647\lib\xamarinios10\DocReaderCore.Full.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

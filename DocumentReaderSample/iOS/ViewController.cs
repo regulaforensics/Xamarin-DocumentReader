@@ -74,7 +74,7 @@ namespace DocumentReaderSample.iOS
                 }
 
                 docReader.ProcessParams.Scenario = docReader.AvailableScenarios[0].Identifier;
-                docReader.Customization.ShowCloseButton = false;
+                //docReader.Functionality.ShowCloseButton = false;
 
             }
             else
