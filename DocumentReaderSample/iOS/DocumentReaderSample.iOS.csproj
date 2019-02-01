@@ -171,6 +171,7 @@
     <Compile Include="ScenarioPickerModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\db.dat" />
     <BundleResource Include="Resources\regula.license" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
