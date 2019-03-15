@@ -23,7 +23,7 @@ using Android.Support.V4.Content;
 namespace DocumentReaderSample.Droid
 {
     [Activity(Label = "DocumentReaderSample", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity : FragmentActivity, DocumentReader.IDocumentReaderInitCompletion, DocumentReader.IDocumentReaderCompletion
+    public class MainActivity : FragmentActivity, DocumentReader.IDocumentReaderInitCompletion, DocumentReader.IDocumentReaderCompletion, DocumentReader.IDocumentReaderPrepareCompletion
     {
         const int REQUEST_BROWSE_PICTURE = 11;
         const int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 22;
@@ -45,6 +45,7 @@ namespace DocumentReaderSample.Droid
         private Boolean doRfid;
 
         AlertDialog initDialog;
+        AlertDialog updateDBDialog;
         AlertDialog loadingDialog;
 
         protected override void OnCreate(Bundle bundle)
@@ -69,7 +70,8 @@ namespace DocumentReaderSample.Droid
 
             sharedPreferences = GetSharedPreferences(MY_SHARED_PREFS, FileCreationMode.Private);
 
-            initReader();
+            updateDBDialog = showDialog("Updating DB");
+            DocumentReader.Instance().RunAutoUpdate(this, "Full", this);
         }
 
         protected void initReader() 
@@ -320,6 +322,21 @@ namespace DocumentReaderSample.Droid
                     Toast.MakeText(this, "Error:" + error, ToastLength.Long).Show();
                 }
             }
+        }
+
+        public void OnPrepareCompleted(bool status, String error1)
+        {
+            if (updateDBDialog != null && updateDBDialog.IsShowing)
+            {
+                updateDBDialog.Dismiss();
+            }
+
+            initReader();
+        }
+
+        public void OnPrepareProgressChanged(int progress)
+        {
+            Console.WriteLine("Progress: " + progress + "%");
         }
 
         private Bitmap GetBitmap(Android.Net.Uri selectedImage, int targetWidth, int targetHeight)
