@@ -26,7 +26,9 @@ If you have issues with license verification when running the application, pleas
 1. Application ID is the same that you specified for license.
 1. Date and time on the device you are trying to run the application is correct and inside the license validity period.
 1. You are using the latest release of the SDK.
-1. You placed the license into the correct folder as described here [How to build demo application](#how_to_build_demo_application) (`DocumentReaderSample/Droid/Assets`).
+1. You placed the `license` into the correct folder as described here [How to build demo application](#how_to_build_demo_application) (`DocumentReaderSample/Droid/Assets` or `DocumentReaderSample/iOS/Resources` folder).
+1. You placed the `db.dat` into the correct folder as described here [How to build demo application](#how_to_build_demo_application) (`DocumentReaderSample/Droid/Assets/Regula` or `DocumentReaderSample/iOS/Resources` folder).
+
 
 # All available NuGet packages
 
