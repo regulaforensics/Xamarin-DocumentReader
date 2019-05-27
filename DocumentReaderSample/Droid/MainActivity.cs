@@ -128,17 +128,19 @@ namespace DocumentReaderSample.Droid
                     }
                 }
 
-                var portrait = results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait);
-                if (portrait != null)
+                using (var portraitImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait))
                 {
-                    portraitIv.SetImageBitmap(portrait);
+                    if (portraitImage != null)
+                        portraitIv.SetImageBitmap(portraitImage);
                 }
 
-                var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GtDocumentFront);
-                if (documentImage != null)
+
+                using (var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GtDocumentFront))
                 {
-                    docImageIv.SetImageBitmap(documentImage);
+                    if (documentImage != null)
+                        docImageIv.SetImageBitmap(documentImage);
                 }
+
             }
         }
 
