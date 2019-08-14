@@ -45,6 +45,7 @@ namespace DocumentReaderSample.Droid
         private Boolean doRfid;
 
         AlertDialog initDialog;
+        AlertDialog updateDBDialog;
         AlertDialog loadingDialog;
 
         protected override void OnCreate(Bundle bundle)
@@ -69,10 +70,11 @@ namespace DocumentReaderSample.Droid
 
             sharedPreferences = GetSharedPreferences(MY_SHARED_PREFS, FileCreationMode.Private);
 
-            initReader();
+            updateDBDialog = showDialog("Updating DB");
+            DocumentReader.Instance().RunAutoUpdate(this, "Full", this);
         }
 
-        protected void initReader() 
+        protected void initReader()
         {
             var bytes = default(byte[]);
             using (var streamReader = new StreamReader(Assets.Open("regula.license")))
@@ -85,7 +87,7 @@ namespace DocumentReaderSample.Droid
             }
 
             initDialog = showDialog("Initializing");
-            DocumentReader.Instance().PrepareDatabase(ApplicationContext, "Full", this);
+            DocumentReader.Instance().InitializeReader(this, bytes, this);
         }
 
 
@@ -126,17 +128,19 @@ namespace DocumentReaderSample.Droid
                     }
                 }
 
-                var portrait = results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait);
-                if (portrait != null)
+                using (var portraitImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait))
                 {
-                    portraitIv.SetImageBitmap(portrait);
+                    if (portraitImage != null)
+                        portraitIv.SetImageBitmap(portraitImage);
                 }
 
-                var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GtDocumentFront);
-                if (documentImage != null)
+
+                using (var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GtDocumentImage))
                 {
-                    docImageIv.SetImageBitmap(documentImage);
+                    if (documentImage != null)
+                        docImageIv.SetImageBitmap(documentImage);
                 }
+
             }
         }
 
@@ -188,27 +192,6 @@ namespace DocumentReaderSample.Droid
             }
         }
 
-        public void OnPrepareCompleted(bool p0, string p1)
-        {
-            var bytes = default(byte[]);
-            using (var streamReader = new StreamReader(Assets.Open("regula.license")))
-            {
-                using (var memstream = new MemoryStream())
-                {
-                    streamReader.BaseStream.CopyTo(memstream);
-                    bytes = memstream.ToArray();
-                }
-            }
-
-            DocumentReader.Instance().InitializeReader(this, bytes, this);
-        }
-
-        public void OnPrepareProgressChanged(int p)
-        {
-            int j = 0;
-            Log.Debug("MainActivity", "OnPrepareProgressChanged: " + p);
-        }
-
         public void OnInitCompleted(bool success, string error)
         {
             if (initDialog != null && initDialog.IsShowing)
@@ -256,7 +239,7 @@ namespace DocumentReaderSample.Droid
                 }
 
                 //getting current processing scenario and loading available scenarios to ListView
-                var currentScenario = DocumentReader.Instance().ProcessParams.Scenario;
+                var currentScenario = DocumentReader.Instance().ProcessParams().Scenario;
                 var scenarios = new List<String>();
                 foreach (DocumentReaderScenario scenario in DocumentReader.Instance().AvailableScenarios)
                 {
@@ -269,7 +252,7 @@ namespace DocumentReaderSample.Droid
                     currentScenario = scenarios[0];
                 }
 
-                DocumentReader.Instance().ProcessParams.Scenario = currentScenario;
+                DocumentReader.Instance().ProcessParams().Scenario = currentScenario;
 
                 ScenarioAdapter adapter = new ScenarioAdapter(this, Android.Resource.Layout.SimpleListItem1, scenarios);
                 adapter.SelectedPosition = adapter.GetPosition(currentScenario);
@@ -277,7 +260,7 @@ namespace DocumentReaderSample.Droid
                 scenarioLv.SetSelection(adapter.SelectedPosition);
                 scenarioLv.ItemClick += (object sender, ItemClickEventArgs e) =>
                 {
-                    DocumentReader.Instance().ProcessParams.Scenario = scenarios[e.Position];
+                    DocumentReader.Instance().ProcessParams().Scenario = scenarios[e.Position];
                     adapter.SelectedPosition = e.Position;
                     adapter.NotifyDataSetChanged();
                 };
@@ -302,23 +285,18 @@ namespace DocumentReaderSample.Droid
                 //Checking, if nfc chip reading should be performed
                 if (doRfid && results != null && results.ChipPage != 0)
                 {
-                    if (DocumentReader.Instance().ProcessParams.RfidScenario == null)
-                    {
-                        DocumentReader.Instance().ProcessParams.RfidScenario = new RfidScenario();
-                    }
-
                     //setting the chip's access key - mrz on car access number
                     string accessKey = null;
                     if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !String.IsNullOrEmpty(accessKey))
                     {
                         accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings).Replace("^", "");
-                        DocumentReader.Instance().ProcessParams.RfidScenario.Mrz = accessKey;
-                        DocumentReader.Instance().ProcessParams.RfidScenario.PacePasswordType = ERFID_Password_Type.PptMrz;
+                        DocumentReader.Instance().RfidScenario().Mrz = accessKey;
+                        DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
                     }
                     else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtCardAccessNumber)) != null && !String.IsNullOrEmpty(accessKey))
                     {
-                        DocumentReader.Instance().ProcessParams.RfidScenario.Password = accessKey;
-                        DocumentReader.Instance().ProcessParams.RfidScenario.PacePasswordType = ERFID_Password_Type.PptCan;
+                        DocumentReader.Instance().RfidScenario().Password = accessKey;
+                        DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptCan;
                     }
 
                     //starting chip reading
@@ -341,6 +319,21 @@ namespace DocumentReaderSample.Droid
                     Toast.MakeText(this, "Error:" + error, ToastLength.Long).Show();
                 }
             }
+        }
+
+        public void OnPrepareCompleted(bool status, String error1)
+        {
+            if (updateDBDialog != null && updateDBDialog.IsShowing)
+            {
+                updateDBDialog.Dismiss();
+            }
+
+            initReader();
+        }
+
+        public void OnPrepareProgressChanged(int progress)
+        {
+            Console.WriteLine("Progress: " + progress + "%");
         }
 
         private Bitmap GetBitmap(Android.Net.Uri selectedImage, int targetWidth, int targetHeight)
