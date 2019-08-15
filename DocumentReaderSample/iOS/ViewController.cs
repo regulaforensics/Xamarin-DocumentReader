@@ -1,7 +1,7 @@
 ﻿using System;
 
 using UIKit;
-using DocReaderApi.Beta.iOS;
+using DocReaderApi.iOS;
 using Foundation;
 using Photos;
 using CoreFoundation;
@@ -10,12 +10,11 @@ namespace DocumentReaderSample.iOS
 {
     public partial class ViewController : UIViewController
     {
-        DocReader docReader;
 
         protected ViewController(IntPtr handle) : base(handle) =>
         //WARNING!!!!
         //Initialization DocumentReader from DocReaderCore is required
-        new DocReaderCore.Full.Beta.iOS.DocumentReader();
+        new DocReaderCore.iOS.DocumentReader();
 
         public override void ViewDidLoad()
         {
@@ -39,20 +38,20 @@ namespace DocumentReaderSample.iOS
             }
 
             //set scenario by default
-            var processParams = new ProcessParams
+            var processParams = new RGLProcessParams
             {
                 Scenario = "Ocr"
             };
             //create DocReader object with default ProcessParams
-            docReader = new DocReader(processParams);
-            docReader.PrepareDatabaseWithDatabaseID("Full", (NSProgress obj) => {
+
+            RGLDocReader.Shared.PrepareDatabase("Full", (NSProgress obj) => {
                 Console.WriteLine(obj.FractionCompleted);
             },(arg1, arg2) => {
-                docReader.InitilizeReaderWithLicense(licenseData, DocReaderInitCompleted);
+                RGLDocReader.Shared.InitializeReader(licenseData, DocReaderInitCompleted);
             });
         }
 
-        void DocReaderInitCompleted(bool successfull, NSString error)
+        void DocReaderInitCompleted(bool successfull, string error)
         {
             initLabel.Hidden = true;
             initIndocator.Hidden = true;
@@ -63,22 +62,22 @@ namespace DocumentReaderSample.iOS
                 btnImage.Enabled = true;
                 bntCamera.Enabled = true;
 
-                var picker = new ScenarioPickerModel(docReader.AvailableScenarios);
+                var picker = new ScenarioPickerModel(RGLDocReader.Shared.AvailableScenarios);
                 scenariosView.Model = picker;
                 picker.ValueChanged += (object sender, EventArgs e) =>
                 {
-                    docReader.ProcessParams.Scenario = picker.SelectedValue;
+                    RGLDocReader.Shared.ProcessParams.Scenario = picker.SelectedValue;
                 };
 
 
                 //Get available scenarios
-                foreach (var scenarion in docReader.AvailableScenarios)
+                foreach (var scenarion in RGLDocReader.Shared.AvailableScenarios)
                 {
                     Console.WriteLine(scenarion);
                 }
 
-                docReader.ProcessParams.Scenario = docReader.AvailableScenarios[0].Identifier;
-                docReader.Functionality.ShowCloseButton = false;
+                RGLDocReader.Shared.ProcessParams.Scenario = RGLDocReader.Shared.AvailableScenarios[0].Identifier;
+                RGLDocReader.Shared.Functionality.ShowCloseButton = false;
 
             }
             else
@@ -143,38 +142,38 @@ namespace DocumentReaderSample.iOS
         partial void UseCameraButtonTouch(UIButton sender)
         {
             //start recognize
-            docReader.ShowScanner(this, ShowScannerCompleted);
+            RGLDocReader.Shared.ShowScanner(this, ShowScannerCompleted);
             Console.WriteLine("camera button touched using the action method");
         }
 
-        void ShowScannerCompleted(DocReaderAction action, DocumentReaderResults result, NSString error)
+        void ShowScannerCompleted(RGLDocReaderAction action, RGLDocumentReaderResults result, string error)
         {
             switch (action)
             {
-                case DocReaderAction.Cancel:
+                case RGLDocReaderAction.Cancel:
                     Console.WriteLine("Cancelled by user");
                     break;
-                case DocReaderAction.Complete:
+                case RGLDocReaderAction.Complete:
                     Console.WriteLine("Completed");
-                    var name = result.GetTextFieldValueByTypeWithFieldType(FieldType.Surname_And_Given_Names);
+                    var name = result.GetTextFieldValueByType(RGLFieldType.Surname_And_Given_Names);
                     Console.WriteLine("Name: " + name);
                     nameLbl.Text = name;
-                    documentImage.Image = result.GetGraphicFieldImageByTypeWithFieldType(GraphicFieldType.DocumentFront, ResultType.RawImage);
-                    portraitImageView.Image = result.GetGraphicFieldImageByTypeWithFieldType(GraphicFieldType.Portrait);
+                    documentImage.Image = result.GetGraphicFieldImageByType(RGLGraphicFieldType.DocumentImage, RGLResultType.RawImage);
+                    portraitImageView.Image = result.GetGraphicFieldImageByType(RGLGraphicFieldType.Portrait);
 
                     // through all available text fields
                     foreach (var textField in result.TextResult.Fields)
                     {
-                        var value = result.GetTextFieldValueByTypeWithFieldType(textField.FieldType, textField.Lcid);
+                        var value = result.GetTextFieldValueByType(textField.FieldType, textField.Lcid);
                         if (value != null)
                             Console.WriteLine("Field type name: {0}, value: {1}", textField.FieldName, value);
                     }
                     break;
-                case DocReaderAction.Error:
+                case RGLDocReaderAction.Error:
                     Console.WriteLine("Error");
                     Console.WriteLine("Error string: " + error);
                     break;
-                case DocReaderAction.Process:
+                case RGLDocReaderAction.Process:
                     Console.WriteLine("Scaning not finished. Result: " + result);
                     break;
             }
@@ -187,7 +186,7 @@ namespace DocumentReaderSample.iOS
             {
                 Console.WriteLine("got the original image");
 
-                docReader.RecognizeImage(image, false, ShowScannerCompleted);
+                RGLDocReader.Shared.RecognizeImage(image, false, ShowScannerCompleted);
             }
             else
             {
