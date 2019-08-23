@@ -135,7 +135,7 @@ namespace DocumentReaderSample.Droid
                 }
 
 
-                using (var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GtDocumentImage))
+                using (var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GfDocumentImage))
                 {
                     if (documentImage != null)
                         docImageIv.SetImageBitmap(documentImage);
