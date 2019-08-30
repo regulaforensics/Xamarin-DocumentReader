@@ -43,6 +43,7 @@ namespace DocumentReaderSample.Droid
 
         private ISharedPreferences sharedPreferences;
         private Boolean doRfid;
+        private Boolean isStartRfid;
 
         AlertDialog initDialog;
         AlertDialog updateDBDialog;
@@ -283,13 +284,19 @@ namespace DocumentReaderSample.Droid
                 }
 
                 //Checking, if nfc chip reading should be performed
-                if (doRfid && results != null && results.ChipPage != 0)
+                if (!isStartRfid && doRfid && results != null && results.ChipPage != 0)
                 {
                     //setting the chip's access key - mrz on car access number
                     string accessKey = null;
-                    if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !String.IsNullOrEmpty(accessKey))
+                    if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid)) != null && !String.IsNullOrEmpty(accessKey))
                     {
-                        accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings).Replace("^", "");
+                        accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid).Replace("^", "").Replace("\n", "");
+                        DocumentReader.Instance().RfidScenario().Mrz = accessKey;
+                        DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
+                    }
+                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !String.IsNullOrEmpty(accessKey))
+                    {
+                        accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings).Replace("^", "").Replace("\n", "");
                         DocumentReader.Instance().RfidScenario().Mrz = accessKey;
                         DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
                     }
@@ -301,10 +308,12 @@ namespace DocumentReaderSample.Droid
 
                     //starting chip reading
                     DocumentReader.Instance().StartRFIDReader(this);
+                    isStartRfid = true;
                 }
                 else
                 {
                     DisplayResults(results);
+                    isStartRfid = false;
                 }
             }
             else
