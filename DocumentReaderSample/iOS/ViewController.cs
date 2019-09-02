@@ -77,8 +77,6 @@ namespace DocumentReaderSample.iOS
                 }
 
                 RGLDocReader.Shared.ProcessParams.Scenario = RGLDocReader.Shared.AvailableScenarios[0].Identifier;
-                RGLDocReader.Shared.Functionality.ShowCloseButton = false;
-
             }
             else
             {

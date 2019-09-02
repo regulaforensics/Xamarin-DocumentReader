@@ -72,7 +72,7 @@ namespace DocumentReaderSample.Droid
             sharedPreferences = GetSharedPreferences(MY_SHARED_PREFS, FileCreationMode.Private);
 
             updateDBDialog = showDialog("Updating DB");
-            DocumentReader.Instance().RunAutoUpdate(this, "Full", this);
+            DocumentReader.Instance().PrepareDatabase(this, "Full", this);
         }
 
         protected void initReader()
