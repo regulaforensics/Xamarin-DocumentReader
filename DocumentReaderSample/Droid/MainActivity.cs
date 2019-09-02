@@ -322,10 +322,12 @@ namespace DocumentReaderSample.Droid
                 if (action == DocReaderAction.Cancel)
                 {
                     Toast.MakeText(this, "Scanning was cancelled", ToastLength.Long).Show();
+                    isStartRfid = false;
                 }
                 else if (action == DocReaderAction.Error)
                 {
                     Toast.MakeText(this, "Error:" + error, ToastLength.Long).Show();
+                    isStartRfid = false;
                 }
             }
         }
