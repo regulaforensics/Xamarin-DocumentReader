@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 using Android.App;
 using Android.Content.PM;
@@ -43,6 +43,7 @@ namespace DocumentReaderSample.Droid
 
         private ISharedPreferences sharedPreferences;
         private Boolean doRfid;
+        private Boolean isStartRfid;
 
         AlertDialog initDialog;
         AlertDialog updateDBDialog;
@@ -71,10 +72,10 @@ namespace DocumentReaderSample.Droid
             sharedPreferences = GetSharedPreferences(MY_SHARED_PREFS, FileCreationMode.Private);
 
             updateDBDialog = showDialog("Updating DB");
-            DocumentReader.Instance().RunAutoUpdate(this, "Full", this);
+            DocumentReader.Instance().PrepareDatabase(this, "Full", this);
         }
 
-        protected void initReader() 
+        protected void initReader()
         {
             var bytes = default(byte[]);
             using (var streamReader = new StreamReader(Assets.Open("regula.license")))
@@ -134,8 +135,7 @@ namespace DocumentReaderSample.Droid
                         portraitIv.SetImageBitmap(portraitImage);
                 }
 
-
-                using (var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GtDocumentFront))
+                using (var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GfDocumentImage))
                 {
                     if (documentImage != null)
                         docImageIv.SetImageBitmap(documentImage);
@@ -239,7 +239,7 @@ namespace DocumentReaderSample.Droid
                 }
 
                 //getting current processing scenario and loading available scenarios to ListView
-                var currentScenario = DocumentReader.Instance().ProcessParams.Scenario;
+                var currentScenario = DocumentReader.Instance().ProcessParams().Scenario;
                 var scenarios = new List<String>();
                 foreach (DocumentReaderScenario scenario in DocumentReader.Instance().AvailableScenarios)
                 {
@@ -252,7 +252,7 @@ namespace DocumentReaderSample.Droid
                     currentScenario = scenarios[0];
                 }
 
-                DocumentReader.Instance().ProcessParams.Scenario = currentScenario;
+                DocumentReader.Instance().ProcessParams().Scenario = currentScenario;
 
                 ScenarioAdapter adapter = new ScenarioAdapter(this, Android.Resource.Layout.SimpleListItem1, scenarios);
                 adapter.SelectedPosition = adapter.GetPosition(currentScenario);
@@ -260,7 +260,7 @@ namespace DocumentReaderSample.Droid
                 scenarioLv.SetSelection(adapter.SelectedPosition);
                 scenarioLv.ItemClick += (object sender, ItemClickEventArgs e) =>
                 {
-                    DocumentReader.Instance().ProcessParams.Scenario = scenarios[e.Position];
+                    DocumentReader.Instance().ProcessParams().Scenario = scenarios[e.Position];
                     adapter.SelectedPosition = e.Position;
                     adapter.NotifyDataSetChanged();
                 };
@@ -283,33 +283,36 @@ namespace DocumentReaderSample.Droid
                 }
 
                 //Checking, if nfc chip reading should be performed
-                if (doRfid && results != null && results.ChipPage != 0)
+                if (!isStartRfid && doRfid && results != null && results.ChipPage != 0)
                 {
-                    if (DocumentReader.Instance().ProcessParams.RfidScenario == null)
-                    {
-                        DocumentReader.Instance().ProcessParams.RfidScenario = new RfidScenario();
-                    }
-
                     //setting the chip's access key - mrz on car access number
                     string accessKey = null;
-                    if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !String.IsNullOrEmpty(accessKey))
+                    if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid)) != null && !String.IsNullOrEmpty(accessKey))
                     {
-                        accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings).Replace("^", "");
-                        DocumentReader.Instance().ProcessParams.RfidScenario.Mrz = accessKey;
-                        DocumentReader.Instance().ProcessParams.RfidScenario.PacePasswordType = ERFID_Password_Type.PptMrz;
+                        accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid).Replace("^", "").Replace("\n", "");
+                        DocumentReader.Instance().RfidScenario().Mrz = accessKey;
+                        DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
+                    }
+                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !String.IsNullOrEmpty(accessKey))
+                    {
+                        accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings).Replace("^", "").Replace("\n", "");
+                        DocumentReader.Instance().RfidScenario().Mrz = accessKey;
+                        DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
                     }
                     else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtCardAccessNumber)) != null && !String.IsNullOrEmpty(accessKey))
                     {
-                        DocumentReader.Instance().ProcessParams.RfidScenario.Password = accessKey;
-                        DocumentReader.Instance().ProcessParams.RfidScenario.PacePasswordType = ERFID_Password_Type.PptCan;
+                        DocumentReader.Instance().RfidScenario().Password = accessKey;
+                        DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptCan;
                     }
 
                     //starting chip reading
                     DocumentReader.Instance().StartRFIDReader(this);
+                    isStartRfid = true;
                 }
                 else
                 {
                     DisplayResults(results);
+                    isStartRfid = false;
                 }
             }
             else
@@ -318,10 +321,12 @@ namespace DocumentReaderSample.Droid
                 if (action == DocReaderAction.Cancel)
                 {
                     Toast.MakeText(this, "Scanning was cancelled", ToastLength.Long).Show();
+                    isStartRfid = false;
                 }
                 else if (action == DocReaderAction.Error)
                 {
                     Toast.MakeText(this, "Error:" + error, ToastLength.Long).Show();
+                    isStartRfid = false;
                 }
             }
         }

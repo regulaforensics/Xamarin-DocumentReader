@@ -81,9 +81,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="DocReaderCore.Full.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.iOS.4.1.91012\lib\xamarinios10\DocReaderCore.Full.iOS.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Swift4">
       <HintPath>..\packages\Xamarin.Swift4.4.0.0.1\lib\xamarinios10\Xamarin.Swift4.dll</HintPath>
     </Reference>
@@ -135,8 +132,17 @@
     <Reference Include="Xamarin.Swift4.UIKit">
       <HintPath>..\packages\Xamarin.Swift4.UIKit.4.2.1.1\lib\xamarinios10\Xamarin.Swift4.UIKit.dll</HintPath>
     </Reference>
+    <Reference Include="DocReaderApi.Beta.iOS">
+      <HintPath>..\packages\Xamarin.DocumentReader.Api.Beta.iOS.3.5.8601019\lib\xamarinios10\DocReaderApi.Beta.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="DocReaderCore.Full.Beta.iOS">
+      <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.Beta.iOS.3.6.89197.2265\lib\xamarinios10\DocReaderCore.Full.Beta.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="DocReaderCore.Full.iOS">
+      <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.iOS.5.0.1108\lib\xamarinios10\DocReaderCore.Full.iOS.dll</HintPath>
+    </Reference>
     <Reference Include="DocReaderApi.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.4.1.9361229\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.5.0.531\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -175,5 +181,4 @@
     <BundleResource Include="Resources\regula.license" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <Import Project="..\packages\Xamarin.Swift4.4.0.0.1\build\Xamarin.Swift4.targets" Condition="Exists('..\packages\Xamarin.Swift4.4.0.0.1\build\Xamarin.Swift4.targets')" />
 </Project>
