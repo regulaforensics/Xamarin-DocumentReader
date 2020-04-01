@@ -8,7 +8,7 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 
-namespace DocumentReaderSample.iOS
+namespace DocumentReaderSingleSample.iOS
 {
     [Register ("ViewController")]
     partial class ViewController
@@ -40,6 +40,14 @@ namespace DocumentReaderSample.iOS
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView portraitImageView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel rfidLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UISwitch rfidSwitch { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -88,6 +96,16 @@ namespace DocumentReaderSample.iOS
             if (portraitImageView != null) {
                 portraitImageView.Dispose ();
                 portraitImageView = null;
+            }
+
+            if (rfidLabel != null) {
+                rfidLabel.Dispose ();
+                rfidLabel = null;
+            }
+
+            if (rfidSwitch != null) {
+                rfidSwitch.Dispose ();
+                rfidSwitch = null;
             }
 
             if (scenariosView != null) {
