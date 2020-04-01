@@ -19,11 +19,12 @@ using Android.Graphics;
 using Android;
 using Android.Support.V4.App;
 using Android.Support.V4.Content;
+using Com.Regula.Documentreader.Api.Completions;
 
 namespace DocumentReaderSample.Droid
 {
     [Activity(Label = "DocumentReaderSample", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity : FragmentActivity, DocumentReader.IDocumentReaderInitCompletion, DocumentReader.IDocumentReaderCompletion, DocumentReader.IDocumentReaderPrepareCompletion
+    public class MainActivity : FragmentActivity, IDocumentReaderInitCompletion, IDocumentReaderCompletion, IDocumentReaderPrepareCompletion
     {
         const int REQUEST_BROWSE_PICTURE = 11;
         const int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 22;
