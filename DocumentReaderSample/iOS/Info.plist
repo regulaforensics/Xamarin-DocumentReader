@@ -66,5 +66,7 @@
 	<string>Use camera</string>
 	<key>NFCReaderUsageDescription</key>
 	<string>NFC tag to read NDEF messages into the application</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>
