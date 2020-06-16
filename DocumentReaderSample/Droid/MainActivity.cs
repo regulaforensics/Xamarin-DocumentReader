@@ -188,7 +188,7 @@ namespace DocumentReaderSample.Droid
 
                     loadingDialog = showDialog("Processing image");
 
-                    DocumentReader.Instance().StopScanner();
+                    DocumentReader.Instance().StopScanner(ApplicationContext);
                     DocumentReader.Instance().RecognizeImage(bmp, this);
                 }
             }
@@ -207,8 +207,8 @@ namespace DocumentReaderSample.Droid
                     СlearResults();
 
                     //starting video processing
-                    DocumentReader.Instance().StopScanner();
-                    DocumentReader.Instance().ShowScanner(this);
+                    DocumentReader.Instance().StopScanner(ApplicationContext);
+                    DocumentReader.Instance().ShowScanner(ApplicationContext, this);
                 };
 
                 recognizeImage.Click += delegate {
@@ -226,7 +226,7 @@ namespace DocumentReaderSample.Droid
                     }
                 };
 
-                if (DocumentReader.Instance().CanRFID)
+                if (DocumentReader.Instance().IsRFIDAvailableForUse)
                 {
                     doRfid = sharedPreferences.GetBoolean(DO_RFID, false);
                     doRfidCb.Checked = doRfid;
@@ -308,7 +308,7 @@ namespace DocumentReaderSample.Droid
                     }
 
                     //starting chip reading
-                    DocumentReader.Instance().StartRFIDReader(this);
+                    DocumentReader.Instance().StartRFIDReader(ApplicationContext, this);
                     isStartRfid = true;
                 }
                 else
