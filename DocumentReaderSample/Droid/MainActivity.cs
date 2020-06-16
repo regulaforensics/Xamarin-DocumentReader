@@ -188,7 +188,7 @@ namespace DocumentReaderSample.Droid
 
                     loadingDialog = showDialog("Processing image");
 
-                    DocumentReader.Instance().StopScanner(ApplicationContext);
+                    DocumentReader.Instance().StopScanner(this);
                     DocumentReader.Instance().RecognizeImage(bmp, this);
                 }
             }
@@ -207,8 +207,8 @@ namespace DocumentReaderSample.Droid
                     СlearResults();
 
                     //starting video processing
-                    DocumentReader.Instance().StopScanner(ApplicationContext);
-                    DocumentReader.Instance().ShowScanner(ApplicationContext, this);
+                    DocumentReader.Instance().StopScanner(this);
+                    DocumentReader.Instance().ShowScanner(this, this);
                 };
 
                 recognizeImage.Click += delegate {
@@ -308,7 +308,7 @@ namespace DocumentReaderSample.Droid
                     }
 
                     //starting chip reading
-                    DocumentReader.Instance().StartRFIDReader(ApplicationContext, this);
+                    DocumentReader.Instance().StartRFIDReader(this, this);
                     isStartRfid = true;
                 }
                 else
