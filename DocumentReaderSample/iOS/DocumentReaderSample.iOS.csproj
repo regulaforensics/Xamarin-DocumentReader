@@ -138,11 +138,11 @@
     <Reference Include="DocReaderCore.Full.Beta.iOS">
       <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.Beta.iOS.3.6.89197.2265\lib\xamarinios10\DocReaderCore.Full.Beta.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="DocReaderApi.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Api.Beta.iOS.5.1.1027\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
-    </Reference>
     <Reference Include="NativeLibrary">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.Beta.iOS.5.1.2068\lib\xamarinios10\NativeLibrary.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.iOS.5.1.2760\lib\xamarinios10\NativeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DocReaderApi.iOS">
+      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.5.1.1194\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
