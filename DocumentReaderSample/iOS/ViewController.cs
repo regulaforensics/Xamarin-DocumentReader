@@ -5,12 +5,12 @@ using DocReaderApi.iOS;
 using Foundation;
 using Photos;
 using CoreFoundation;
+using DocumentReaderSample.iOS;
 
-namespace DocumentReaderSample.iOS
+namespace DocumentReaderSingleSample.iOS
 {
     public partial class ViewController : UIViewController
     {
-
         protected ViewController(IntPtr handle) : base(handle) =>
         //WARNING!!!!
         //Initialization DocumentReader from DocReaderCore is required
@@ -46,51 +46,53 @@ namespace DocumentReaderSample.iOS
             RGLDocReader.Shared.PrepareDatabase("Full", (NSProgress obj) => {
                 Console.WriteLine(obj.FractionCompleted);
             },(arg1, arg2) => {
-                RGLDocReader.Shared.InitializeReader(licenseData, DocReaderInitCompleted);
+                RGLDocReader.Shared.InitializeReader(licenseData, (bool successfull, string error) => {
+                    initLabel.Hidden = true;
+                    initIndocator.Hidden = true;
+                    scenariosView.Hidden = false;
+                    if (successfull)
+                    {
+
+                        btnImage.Enabled = true;
+                        bntCamera.Enabled = true;
+                        rfidSwitch.Enabled = true;
+                        rfidLabel.Enabled = true;
+
+                        var picker = new ScenarioPickerModel(RGLDocReader.Shared.AvailableScenarios);
+                        scenariosView.Model = picker;
+                        picker.ValueChanged += (object sender, EventArgs e) =>
+                        {
+                            RGLDocReader.Shared.ProcessParams.Scenario = picker.SelectedValue;
+                        };
+
+
+                        //Get available scenarios
+                        foreach (var scenarion in RGLDocReader.Shared.AvailableScenarios)
+                        {
+                            Console.WriteLine(scenarion);
+                        }
+
+                        RGLDocReader.Shared.ProcessParams.Scenario = RGLDocReader.Shared.AvailableScenarios[0].Identifier;
+                        RGLDocReader.Shared.Functionality.ShowCloseButton = true;
+
+                    }
+                    else
+                    {
+                        btnImage.Enabled = false;
+                        bntCamera.Enabled = false;
+
+                        var initError = "Initialization error: " + (error == null ? "Unknown error" : error);
+                        Console.WriteLine(initError);
+                    }
+                });
             });
-        }
-
-        void DocReaderInitCompleted(bool successfull, string error)
-        {
-            initLabel.Hidden = true;
-            initIndocator.Hidden = true;
-            scenariosView.Hidden = false;
-            if (successfull)
-            {
-
-                btnImage.Enabled = true;
-                bntCamera.Enabled = true;
-
-                var picker = new ScenarioPickerModel(RGLDocReader.Shared.AvailableScenarios);
-                scenariosView.Model = picker;
-                picker.ValueChanged += (object sender, EventArgs e) =>
-                {
-                    RGLDocReader.Shared.ProcessParams.Scenario = picker.SelectedValue;
-                };
-
-
-                //Get available scenarios
-                foreach (var scenarion in RGLDocReader.Shared.AvailableScenarios)
-                {
-                    Console.WriteLine(scenarion);
-                }
-                RGLDocReader.Shared.ProcessParams.Scenario = RGLDocReader.Shared.AvailableScenarios[0].Identifier;
-            }
-            else
-            {
-                btnImage.Enabled = false;
-                bntCamera.Enabled = false;
-
-                var initError = "Initialization error: " + (error == null ? "Unknown error" : error);
-                Console.WriteLine(initError);
-            }
         }
 
         partial void UseGaleryButtonTouch(UIButton sender)
         {
             //docReader.ShowScanner(this, ShowScannerCompleted);
             PHPhotoLibrary.RequestAuthorization((status) => {
-                switch (status)
+                switch(status)
                 {
                     case PHAuthorizationStatus.Authorized:
                         DispatchQueue.MainQueue.DispatchAsync(() => {
@@ -138,11 +140,26 @@ namespace DocumentReaderSample.iOS
         partial void UseCameraButtonTouch(UIButton sender)
         {
             //start recognize
-            RGLDocReader.Shared.ShowScanner(this, ShowScannerCompleted);
+            RGLDocReader.Shared.ShowScanner(this, HandleRGLDocumentReaderCompletion);
             Console.WriteLine("camera button touched using the action method");
         }
 
-        void ShowScannerCompleted(RGLDocReaderAction action, RGLDocumentReaderResults result, string error)
+        void OnFinishedPickingMedia(object sender, UIImagePickerMediaPickedEventArgs e)
+        {
+            var image = e.Info[UIImagePickerController.OriginalImage] as UIImage;
+            if (image != null)
+            {
+                Console.WriteLine("got the original image");
+
+                RGLDocReader.Shared.RecognizeImage(image, false, HandleRGLDocumentReaderCompletion);
+            } else {
+                Console.WriteLine("Something went wrong");
+            }
+
+            (sender as UIImagePickerController).DismissModalViewController(true);
+        }
+
+        void HandleRGLDocumentReaderCompletion(RGLDocReaderAction action, RGLDocumentReaderResults result, string error)
         {
             switch (action)
             {
@@ -150,19 +167,12 @@ namespace DocumentReaderSample.iOS
                     Console.WriteLine("Cancelled by user");
                     break;
                 case RGLDocReaderAction.Complete:
-                    Console.WriteLine("Completed");
-                    var name = result.GetTextFieldValueByType(RGLFieldType.Surname_And_Given_Names);
-                    Console.WriteLine("Name: " + name);
-                    nameLbl.Text = name;
-                    documentImage.Image = result.GetGraphicFieldImageByType(RGLGraphicFieldType.DocumentImage, RGLResultType.RawImage);
-                    portraitImageView.Image = result.GetGraphicFieldImageByType(RGLGraphicFieldType.Portrait);
-
-                    // through all available text fields
-                    foreach (var textField in result.TextResult.Fields)
+                    if (rfidSwitch.On)
                     {
-                        var value = result.GetTextFieldValueByType(textField.FieldType, textField.Lcid);
-                        if (value != null)
-                            Console.WriteLine("Field type name: {0}, value: {1}", textField.FieldName, value);
+                        RGLDocReader.Shared.StartRFIDReaderFromPresenter(this, HandleGLDocumentReaderRfidCompletion);
+                    } else
+                    {
+                        showResults(result);
                     }
                     break;
                 case RGLDocReaderAction.Error:
@@ -175,21 +185,47 @@ namespace DocumentReaderSample.iOS
             }
         }
 
-        void OnFinishedPickingMedia(object sender, UIImagePickerMediaPickedEventArgs e)
+        void HandleGLDocumentReaderRfidCompletion(RGLDocReaderAction action, RGLDocumentReaderResults result, string error)
         {
-            var image = e.Info[UIImagePickerController.OriginalImage] as UIImage;
-            if (image != null)
+            switch (action)
             {
-                Console.WriteLine("got the original image");
+                case RGLDocReaderAction.Cancel:
+                case RGLDocReaderAction.Error:
+                case RGLDocReaderAction.Complete:
+                    showResults(result);
+                    break;
+            }
+        }
 
-                RGLDocReader.Shared.RecognizeImage(image, false, ShowScannerCompleted);
+        void showResults(RGLDocumentReaderResults result)
+        {
+            Console.WriteLine("Completed");
+
+            if (result == null)
+                return;
+            
+            var name = result.GetTextFieldValueByType(RGLFieldType.Surname_And_Given_Names);
+            Console.WriteLine("Name: " + name);
+            nameLbl.Text = name;
+            documentImage.Image = result.GetGraphicFieldImageByType(RGLGraphicFieldType.DocumentImage, RGLResultType.RawImage);
+            var rfidImage = result.GetGraphicFieldImageByType(RGLGraphicFieldType.Portrait, RGLResultType.RfidImageData);
+            if (rfidImage == null)
+            {
+                portraitImageView.Image = result.GetGraphicFieldImageByType(RGLGraphicFieldType.Portrait, RGLResultType.Graphics);
             }
             else
             {
-                Console.WriteLine("Something went wrong");
+                portraitImageView.Image = rfidImage;
             }
 
-            (sender as UIImagePickerController).DismissModalViewController(true);
+            // through all available text fields
+            foreach (var textField in result.TextResult.Fields)
+            {
+                var value = result.GetTextFieldValueByType(textField.FieldType, textField.Lcid);
+                if (value != null)
+                    Console.WriteLine("Field type name: {0}, value: {1}", textField.FieldName, value);
+            }
         }
+
     }
 }

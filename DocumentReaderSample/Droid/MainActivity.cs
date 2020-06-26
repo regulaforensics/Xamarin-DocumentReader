@@ -19,11 +19,12 @@ using Android.Graphics;
 using Android;
 using Android.Support.V4.App;
 using Android.Support.V4.Content;
+using Com.Regula.Documentreader.Api.Completions;
 
 namespace DocumentReaderSample.Droid
 {
     [Activity(Label = "DocumentReaderSample", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity : FragmentActivity, DocumentReader.IDocumentReaderInitCompletion, DocumentReader.IDocumentReaderCompletion, DocumentReader.IDocumentReaderPrepareCompletion
+    public class MainActivity : FragmentActivity, IDocumentReaderInitCompletion, IDocumentReaderCompletion, IDocumentReaderPrepareCompletion
     {
         const int REQUEST_BROWSE_PICTURE = 11;
         const int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 22;
@@ -186,7 +187,7 @@ namespace DocumentReaderSample.Droid
 
                     loadingDialog = showDialog("Processing image");
 
-                    DocumentReader.Instance().StopScanner();
+                    DocumentReader.Instance().StopScanner(this);
                     DocumentReader.Instance().RecognizeImage(bmp, this);
                 }
             }
@@ -205,8 +206,8 @@ namespace DocumentReaderSample.Droid
                     СlearResults();
 
                     //starting video processing
-                    DocumentReader.Instance().StopScanner();
-                    DocumentReader.Instance().ShowScanner(this);
+                    DocumentReader.Instance().StopScanner(this);
+                    DocumentReader.Instance().ShowScanner(this, this);
                 };
 
                 recognizeImage.Click += delegate {
@@ -224,7 +225,7 @@ namespace DocumentReaderSample.Droid
                     }
                 };
 
-                if (DocumentReader.Instance().CanRFID)
+                if (DocumentReader.Instance().IsRFIDAvailableForUse)
                 {
                     doRfid = sharedPreferences.GetBoolean(DO_RFID, false);
                     doRfidCb.Checked = doRfid;
@@ -306,7 +307,7 @@ namespace DocumentReaderSample.Droid
                     }
 
                     //starting chip reading
-                    DocumentReader.Instance().StartRFIDReader(this);
+                    DocumentReader.Instance().StartRFIDReader(this, this);
                     isStartRfid = true;
                 }
                 else
