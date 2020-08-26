@@ -193,7 +193,7 @@ namespace DocumentReaderSample.Droid
             }
         }
 
-        public void OnInitCompleted(bool success, string error)
+        public void OnInitCompleted(bool success, Java.Lang.Throwable error)
         {
             if (initDialog != null && initDialog.IsShowing)
             {
@@ -274,7 +274,7 @@ namespace DocumentReaderSample.Droid
 
         }
 
-        public void OnCompleted(int action, DocumentReaderResults results, string error)
+        public void OnCompleted(int action, DocumentReaderResults results, Java.Lang.Throwable error)
         {
             if (action == DocReaderAction.Complete)
             {
@@ -332,7 +332,7 @@ namespace DocumentReaderSample.Droid
             }
         }
 
-        public void OnPrepareCompleted(bool status, String error1)
+        public void OnPrepareCompleted(bool status, Java.Lang.Throwable error1)
         {
             if (updateDBDialog != null && updateDBDialog.IsShowing)
             {
