@@ -46,7 +46,7 @@ namespace DocumentReaderSingleSample.iOS
             RGLDocReader.Shared.PrepareDatabase("Full", (NSProgress obj) => {
                 Console.WriteLine(obj.FractionCompleted);
             },(arg1, arg2) => {
-                RGLDocReader.Shared.InitializeReader(licenseData, (bool successfull, string error) => {
+                RGLDocReader.Shared.InitializeReader(licenseData, (bool successfull, NSError error) => {
                     initLabel.Hidden = true;
                     initIndocator.Hidden = true;
                     scenariosView.Hidden = false;
@@ -81,7 +81,7 @@ namespace DocumentReaderSingleSample.iOS
                         btnImage.Enabled = false;
                         bntCamera.Enabled = false;
 
-                        var initError = "Initialization error: " + (error == null ? "Unknown error" : error);
+                        var initError = "Initialization error: " + (error == null ? "Unknown error" : error.LocalizedDescription);
                         Console.WriteLine(initError);
                     }
                 });
@@ -159,7 +159,7 @@ namespace DocumentReaderSingleSample.iOS
             (sender as UIImagePickerController).DismissModalViewController(true);
         }
 
-        void HandleRGLDocumentReaderCompletion(RGLDocReaderAction action, RGLDocumentReaderResults result, string error)
+        void HandleRGLDocumentReaderCompletion(RGLDocReaderAction action, RGLDocumentReaderResults result, NSError error)
         {
             switch (action)
             {
@@ -185,7 +185,7 @@ namespace DocumentReaderSingleSample.iOS
             }
         }
 
-        void HandleGLDocumentReaderRfidCompletion(RGLDocReaderAction action, RGLDocumentReaderResults result, string error)
+        void HandleGLDocumentReaderRfidCompletion(RGLDocReaderAction action, RGLDocumentReaderResults result, NSError error)
         {
             switch (action)
             {
