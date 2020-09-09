@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DocumentReaderSample.MainPage">
+    <StackLayout Margin="10,25,10,10">
+        <StackLayout x:Name="ParentLayout" IsEnabled="False">
+            <RelativeLayout>
+                <Label x:Name="NamesLabels"/>
+                <StackLayout RelativeLayout.XConstraint="{ConstraintExpression 
+                            Type=RelativeToParent,
+                            Property=Width, 
+                            Factor=1,
+                            Constant=-100}">
+                    <Label Text="Portrait Image" HorizontalOptions="Center" />
+                    <Image x:Name="PortraitImage" Source="portrait.png" WidthRequest="100" HeightRequest="100"/>
+                </StackLayout>
+            </RelativeLayout>
+            <Label Text="Document Image" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Image x:Name="DocumentImage" Source="id.png" HeightRequest="180" />
+            <Label Text="Available Scenarios" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <ListView x:Name="ScenariosListView" ItemsSource="{Binding Scenarios}" ItemSelected="ListView_ItemSelected" SelectionMode="Single">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" TextColor="Black" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal">
+                <Button HorizontalOptions="FillAndExpand" Text="Show scanner" Clicked="ShowScanner_Clicked" />
+                <Button HorizontalOptions="FillAndExpand" Text="Recignize image" Clicked="RecognizeImage_Clicked" />
+            </StackLayout>
+            <StackLayout x:Name="RfidLayout" Orientation="Horizontal" IsVisible="false">
+                <CheckBox x:Name="ReadRfidCb" Color="Blue" />
+                <Label Text="Perform NFC chip reading" VerticalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage> 

@@ -1,3 +1,6 @@
-
+**/obj/*
+**/bin/*
+**/packages/*
 *.license
-DocumentReaderSample/iOS/Resources/db.dat
+DocumentReaderSample.Forms/DocumentReaderSample.iOS/Resources/db.dat
+DocumentReaderSample.Forms/DocumentReaderSample.Android/Assets/Regula/db.dat
