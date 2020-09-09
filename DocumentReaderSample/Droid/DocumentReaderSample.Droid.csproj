@@ -195,12 +195,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DocumentReaderSample\DocumentReaderSample.csproj">
-      <Project>{A415521A-8128-4E6E-B3A4-45954A49626C}</Project>
-      <Name>DocumentReaderSample</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
