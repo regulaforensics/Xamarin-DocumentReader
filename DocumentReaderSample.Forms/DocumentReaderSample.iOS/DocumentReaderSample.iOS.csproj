@@ -131,8 +131,8 @@
     <PackageReference Include="Xamarin.DocumentReader.Api.iOS">
       <Version>5.2.1331</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Core.Full.iOS">
-      <Version>5.2.3098</Version>
+    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.iOS">
+      <Version>5.2.3112</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
