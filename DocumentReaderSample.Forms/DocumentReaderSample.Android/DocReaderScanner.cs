@@ -8,8 +8,9 @@ using Com.Regula.Documentreader.Api.Enums;
 using Com.Regula.Documentreader.Api.Results;
 using DocumentReaderSample.Droid;
 using Java.Lang;
+using Xamarin.Forms;
 
-[assembly: Xamarin.Forms.Dependency(
+[assembly: Dependency(
           typeof(DocReaderScanner))]
 namespace DocumentReaderSample.Droid
 {
@@ -32,9 +33,10 @@ namespace DocumentReaderSample.Droid
 
         private bool IsReadRfid = false;
 
+        [Obsolete]
         public void ShowScanner(bool IsReadRfid)
         {
-            DocumentReader.Instance().ShowScanner(Android.App.Application.Context, this);
+            DocumentReader.Instance().ShowScanner(Forms.Context, this);
             this.IsReadRfid = IsReadRfid;
         }
 
