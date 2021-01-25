@@ -5,6 +5,7 @@ using Android.Runtime;
 using Com.Regula.Documentreader.Api;
 using Com.Regula.Documentreader.Api.Completions;
 using Com.Regula.Documentreader.Api.Enums;
+using Com.Regula.Documentreader.Api.Errors;
 using Com.Regula.Documentreader.Api.Results;
 using DocumentReaderSample.Droid;
 using Java.Lang;
@@ -40,7 +41,7 @@ namespace DocumentReaderSample.Droid
             this.IsReadRfid = IsReadRfid;
         }
 
-        public void OnCompleted([IntDef(Type = "Com.Regula.Documentreader.Api.Enums.DocReaderAction", Fields = new[] { "Complete", "Process", "Cancel", "Error", "Notification", "ProcessWhiteUvImages", "MorePagesAvailable" })] int action, DocumentReaderResults results, Throwable error)
+        public void OnCompleted([IntDef(Type = "Com.Regula.Documentreader.Api.Enums.DocReaderAction", Fields = new[] { "Complete", "Process", "Cancel", "Error", "Notification", "ProcessWhiteUvImages", "MorePagesAvailable" })] int action, DocumentReaderResults results, DocumentReaderException error)
         {
             DocReaderScannerEvent readerScannerEvent = null;
             if (action == DocReaderAction.Complete)

@@ -2344,31 +2344,37 @@ namespace DocumentReaderSample.Droid
 			public const int reg_nfc_1120 = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int reg_nfc_id = 2131165324;
+			public const int reg_nfc_full_passport = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int reg_nfc_passport = 2131165325;
+			public const int reg_nfc_id = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int reg_nfc_phone = 2131165326;
+			public const int reg_nfc_passport = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int reg_ok = 2131165327;
+			public const int reg_nfc_phone = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int reg_rounded_purple_rect = 2131165328;
+			public const int reg_ok = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int reg_skip_page = 2131165329;
+			public const int reg_passport_holo_anim = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int tooltip_frame_dark = 2131165330;
+			public const int reg_rounded_purple_rect = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int tooltip_frame_light = 2131165331;
+			public const int reg_skip_page = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int torch = 2131165332;
+			public const int tooltip_frame_dark = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int tooltip_frame_light = 2131165333;
+			
+			// aapt resource value: 0x7F070096
+			public const int torch = 2131165334;
 			
 			static Drawable()
 			{
@@ -2704,431 +2710,443 @@ namespace DocumentReaderSample.Droid
 			// aapt resource value: 0x7F08006E
 			public const int forever = 2131230830;
 			
+			// aapt resource value: 0x7F08006F
+			public const int frameView = 2131230831;
+			
 			// aapt resource value: 0x7F080002
 			public const int FUNCTION = 2131230722;
 			
-			// aapt resource value: 0x7F08006F
-			public const int gone = 2131230831;
-			
 			// aapt resource value: 0x7F080070
-			public const int group_divider = 2131230832;
+			public const int gone = 2131230832;
 			
 			// aapt resource value: 0x7F080071
-			public const int home = 2131230833;
+			public const int group_divider = 2131230833;
 			
 			// aapt resource value: 0x7F080072
-			public const int homeAsUp = 2131230834;
+			public const int holoGuideline = 2131230834;
 			
 			// aapt resource value: 0x7F080073
-			public const int icon = 2131230835;
+			public const int home = 2131230835;
 			
 			// aapt resource value: 0x7F080074
-			public const int icon_group = 2131230836;
+			public const int homeAsUp = 2131230836;
 			
 			// aapt resource value: 0x7F080075
-			public const int icon_only = 2131230837;
+			public const int icon = 2131230837;
 			
 			// aapt resource value: 0x7F080076
-			public const int ifRoom = 2131230838;
+			public const int icon_group = 2131230838;
 			
 			// aapt resource value: 0x7F080077
-			public const int image = 2131230839;
+			public const int icon_only = 2131230839;
 			
 			// aapt resource value: 0x7F080078
-			public const int info = 2131230840;
+			public const int ifRoom = 2131230840;
 			
 			// aapt resource value: 0x7F080079
-			public const int instructionLayout = 2131230841;
+			public const int image = 2131230841;
 			
 			// aapt resource value: 0x7F08007A
-			public const int invisible = 2131230842;
+			public const int info = 2131230842;
 			
 			// aapt resource value: 0x7F08007B
-			public const int italic = 2131230843;
+			public const int instructionLayout = 2131230843;
 			
 			// aapt resource value: 0x7F08007C
-			public const int left = 2131230844;
+			public const int invisible = 2131230844;
 			
 			// aapt resource value: 0x7F08007D
-			public const int leftTextViewGroup = 2131230845;
+			public const int italic = 2131230845;
 			
 			// aapt resource value: 0x7F08007E
-			public const int light = 2131230846;
+			public const int landHoloAnimationIv = 2131230846;
 			
 			// aapt resource value: 0x7F08007F
-			public const int lightBtn = 2131230847;
+			public const int left = 2131230847;
 			
 			// aapt resource value: 0x7F080080
-			public const int line1 = 2131230848;
+			public const int leftTextViewGroup = 2131230848;
 			
 			// aapt resource value: 0x7F080081
-			public const int line3 = 2131230849;
+			public const int light = 2131230849;
 			
 			// aapt resource value: 0x7F080082
-			public const int listMode = 2131230850;
+			public const int lightBtn = 2131230850;
 			
 			// aapt resource value: 0x7F080083
-			public const int list_item = 2131230851;
+			public const int line1 = 2131230851;
 			
 			// aapt resource value: 0x7F080084
-			public const int loadingLt = 2131230852;
+			public const int line3 = 2131230852;
 			
 			// aapt resource value: 0x7F080085
-			public const int loadingPb = 2131230853;
+			public const int listMode = 2131230853;
 			
 			// aapt resource value: 0x7F080086
-			public const int logoImg = 2131230854;
+			public const int list_item = 2131230854;
 			
 			// aapt resource value: 0x7F080087
-			public const int logoLabel = 2131230855;
+			public const int loadingLt = 2131230855;
 			
 			// aapt resource value: 0x7F080088
-			public const int mainStatusClockTv = 2131230856;
+			public const int loadingPb = 2131230856;
 			
 			// aapt resource value: 0x7F080089
-			public const int mainStatusCounterTv = 2131230857;
+			public const int logoImg = 2131230857;
 			
 			// aapt resource value: 0x7F08008A
-			public const int mainStatusPortTv = 2131230858;
+			public const int logoLabel = 2131230858;
 			
 			// aapt resource value: 0x7F08008B
-			public const int media_actions = 2131230859;
+			public const int mainStatusClockTv = 2131230859;
 			
 			// aapt resource value: 0x7F08008C
-			public const int message = 2131230860;
+			public const int mainStatusCounterTv = 2131230860;
+			
+			// aapt resource value: 0x7F08008D
+			public const int mainStatusPortTv = 2131230861;
+			
+			// aapt resource value: 0x7F08008E
+			public const int media_actions = 2131230862;
+			
+			// aapt resource value: 0x7F08008F
+			public const int message = 2131230863;
 			
 			// aapt resource value: 0x7F080003
 			public const int META = 2131230723;
 			
-			// aapt resource value: 0x7F08008D
-			public const int metadataLandscapeClockTv = 2131230861;
-			
-			// aapt resource value: 0x7F08008E
-			public const int metadataLandscapeCounterTv = 2131230862;
-			
-			// aapt resource value: 0x7F08008F
-			public const int metadataTv = 2131230863;
-			
 			// aapt resource value: 0x7F080090
-			public const int middle = 2131230864;
+			public const int metadataLandscapeClockTv = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int multiply = 2131230865;
+			public const int metadataLandscapeCounterTv = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int nameTv = 2131230866;
+			public const int metadataTv = 2131230866;
 			
 			// aapt resource value: 0x7F080093
-			public const int never = 2131230867;
-			
-			// aapt resource value: 0x7F080095
-			public const int nfcAnimationBack = 2131230869;
+			public const int middle = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int nfcAnimFront = 2131230868;
+			public const int multiply = 2131230868;
+			
+			// aapt resource value: 0x7F080095
+			public const int nameTv = 2131230869;
 			
 			// aapt resource value: 0x7F080096
-			public const int none = 2131230870;
-			
-			// aapt resource value: 0x7F080097
-			public const int normal = 2131230871;
+			public const int never = 2131230870;
 			
 			// aapt resource value: 0x7F080098
-			public const int notification_background = 2131230872;
+			public const int nfcAnimationBack = 2131230872;
+			
+			// aapt resource value: 0x7F080097
+			public const int nfcAnimFront = 2131230871;
 			
 			// aapt resource value: 0x7F080099
-			public const int notification_main_column = 2131230873;
+			public const int none = 2131230873;
 			
 			// aapt resource value: 0x7F08009A
-			public const int notification_main_column_container = 2131230874;
+			public const int normal = 2131230874;
 			
 			// aapt resource value: 0x7F08009B
-			public const int overlayDrawView = 2131230875;
+			public const int notification_background = 2131230875;
 			
 			// aapt resource value: 0x7F08009C
-			public const int overlayFocusView = 2131230876;
+			public const int notification_main_column = 2131230876;
 			
 			// aapt resource value: 0x7F08009D
-			public const int overlayFrameView = 2131230877;
+			public const int notification_main_column_container = 2131230877;
 			
 			// aapt resource value: 0x7F08009E
-			public const int packed = 2131230878;
+			public const int overlayDrawView = 2131230878;
 			
 			// aapt resource value: 0x7F08009F
-			public const int parent = 2131230879;
+			public const int overlayFocusView = 2131230879;
 			
 			// aapt resource value: 0x7F0800A0
-			public const int parentPanel = 2131230880;
+			public const int overlayFrameView = 2131230880;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int percent = 2131230881;
+			public const int packed = 2131230881;
 			
 			// aapt resource value: 0x7F0800A2
-			public const int permissionBtn = 2131230882;
+			public const int parent = 2131230882;
 			
 			// aapt resource value: 0x7F0800A3
-			public const int polygonView = 2131230883;
+			public const int parentPanel = 2131230883;
 			
 			// aapt resource value: 0x7F0800A4
-			public const int portraitIv = 2131230884;
+			public const int percent = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int previewParent = 2131230885;
+			public const int permissionBtn = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int progressBar = 2131230886;
+			public const int polygonView = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int progressBar2 = 2131230887;
+			public const int portHoloAnimationIv = 2131230887;
 			
 			// aapt resource value: 0x7F0800A8
-			public const int progress_circular = 2131230888;
+			public const int portraitIv = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int progress_horizontal = 2131230889;
+			public const int previewParent = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int radio = 2131230890;
+			public const int progressBar = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int recognizeImageLink = 2131230891;
+			public const int progressBar2 = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int regulaLogoLayout = 2131230892;
+			public const int progress_circular = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int rfidProgress = 2131230893;
+			public const int progress_horizontal = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int rfidStatus = 2131230894;
+			public const int radio = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int rfidStatusIndicator = 2131230895;
+			public const int recognizeImageLink = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int right = 2131230896;
+			public const int regulaLogoLayout = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int rightTextViewGroup = 2131230897;
+			public const int rfidProgress = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int right_icon = 2131230898;
+			public const int rfidStatus = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int right_side = 2131230899;
+			public const int rfidStatusIndicator = 2131230899;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int scenariosList = 2131230900;
+			public const int right = 2131230900;
 			
 			// aapt resource value: 0x7F0800B5
-			public const int screen = 2131230901;
+			public const int rightTextViewGroup = 2131230901;
 			
 			// aapt resource value: 0x7F0800B6
-			public const int scrollIndicatorDown = 2131230902;
+			public const int right_icon = 2131230902;
 			
 			// aapt resource value: 0x7F0800B7
-			public const int scrollIndicatorUp = 2131230903;
+			public const int right_side = 2131230903;
 			
 			// aapt resource value: 0x7F0800B8
-			public const int scrollView = 2131230904;
+			public const int scenariosList = 2131230904;
 			
 			// aapt resource value: 0x7F0800B9
-			public const int search_badge = 2131230905;
+			public const int screen = 2131230905;
 			
 			// aapt resource value: 0x7F0800BA
-			public const int search_bar = 2131230906;
+			public const int scrollIndicatorDown = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int search_button = 2131230907;
+			public const int scrollIndicatorUp = 2131230907;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int search_close_btn = 2131230908;
+			public const int scrollView = 2131230908;
 			
 			// aapt resource value: 0x7F0800BD
-			public const int search_edit_frame = 2131230909;
+			public const int search_badge = 2131230909;
 			
 			// aapt resource value: 0x7F0800BE
-			public const int search_go_btn = 2131230910;
+			public const int search_bar = 2131230910;
 			
 			// aapt resource value: 0x7F0800BF
-			public const int search_mag_icon = 2131230911;
+			public const int search_button = 2131230911;
 			
 			// aapt resource value: 0x7F0800C0
-			public const int search_plate = 2131230912;
+			public const int search_close_btn = 2131230912;
 			
 			// aapt resource value: 0x7F0800C1
-			public const int search_src_text = 2131230913;
+			public const int search_edit_frame = 2131230913;
 			
 			// aapt resource value: 0x7F0800C2
-			public const int search_voice_btn = 2131230914;
+			public const int search_go_btn = 2131230914;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int select_dialog_listview = 2131230915;
+			public const int search_mag_icon = 2131230915;
+			
+			// aapt resource value: 0x7F0800C4
+			public const int search_plate = 2131230916;
+			
+			// aapt resource value: 0x7F0800C5
+			public const int search_src_text = 2131230917;
+			
+			// aapt resource value: 0x7F0800C6
+			public const int search_voice_btn = 2131230918;
+			
+			// aapt resource value: 0x7F0800C7
+			public const int select_dialog_listview = 2131230919;
 			
 			// aapt resource value: 0x7F080004
 			public const int SHIFT = 2131230724;
 			
-			// aapt resource value: 0x7F0800C4
-			public const int shortcut = 2131230916;
-			
-			// aapt resource value: 0x7F0800C5
-			public const int showCustom = 2131230917;
-			
-			// aapt resource value: 0x7F0800C6
-			public const int showHome = 2131230918;
-			
-			// aapt resource value: 0x7F0800C7
-			public const int showScannerLink = 2131230919;
-			
 			// aapt resource value: 0x7F0800C8
-			public const int showTitle = 2131230920;
+			public const int shortcut = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int skipHelpBtn = 2131230921;
+			public const int showCustom = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int skipPageBtn = 2131230922;
+			public const int showHome = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int skipRfidBtn = 2131230923;
+			public const int showScannerLink = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int sourceFrame = 2131230924;
+			public const int showTitle = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int sourceImageView = 2131230925;
+			public const int skipHelpBtn = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int spacer = 2131230926;
+			public const int skipPageBtn = 2131230926;
 			
 			// aapt resource value: 0x7F0800CF
-			public const int split_action_bar = 2131230927;
+			public const int skipRfidBtn = 2131230927;
 			
 			// aapt resource value: 0x7F0800D0
-			public const int spread = 2131230928;
+			public const int sourceFrame = 2131230928;
 			
 			// aapt resource value: 0x7F0800D1
-			public const int spread_inside = 2131230929;
+			public const int sourceImageView = 2131230929;
 			
 			// aapt resource value: 0x7F0800D2
-			public const int src_atop = 2131230930;
+			public const int spacer = 2131230930;
 			
 			// aapt resource value: 0x7F0800D3
-			public const int src_in = 2131230931;
+			public const int split_action_bar = 2131230931;
 			
 			// aapt resource value: 0x7F0800D4
-			public const int src_over = 2131230932;
+			public const int spread = 2131230932;
 			
 			// aapt resource value: 0x7F0800D5
-			public const int standard = 2131230933;
+			public const int spread_inside = 2131230933;
 			
 			// aapt resource value: 0x7F0800D6
-			public const int start = 2131230934;
+			public const int src_atop = 2131230934;
 			
 			// aapt resource value: 0x7F0800D7
-			public const int statusLayout = 2131230935;
+			public const int src_in = 2131230935;
 			
 			// aapt resource value: 0x7F0800D8
-			public const int status_bar_latest_event_content = 2131230936;
+			public const int src_over = 2131230936;
 			
 			// aapt resource value: 0x7F0800D9
-			public const int submenuarrow = 2131230937;
+			public const int standard = 2131230937;
 			
 			// aapt resource value: 0x7F0800DA
-			public const int submit_area = 2131230938;
+			public const int start = 2131230938;
 			
 			// aapt resource value: 0x7F0800DB
-			public const int swapCameraBtn = 2131230939;
+			public const int statusLayout = 2131230939;
+			
+			// aapt resource value: 0x7F0800DC
+			public const int status_bar_latest_event_content = 2131230940;
+			
+			// aapt resource value: 0x7F0800DD
+			public const int submenuarrow = 2131230941;
+			
+			// aapt resource value: 0x7F0800DE
+			public const int submit_area = 2131230942;
+			
+			// aapt resource value: 0x7F0800DF
+			public const int swapCameraBtn = 2131230943;
 			
 			// aapt resource value: 0x7F080005
 			public const int SYM = 2131230725;
 			
-			// aapt resource value: 0x7F0800DC
-			public const int tabMode = 2131230940;
-			
-			// aapt resource value: 0x7F0800DD
-			public const int tag_transition_group = 2131230941;
-			
-			// aapt resource value: 0x7F0800DE
-			public const int tag_unhandled_key_event_manager = 2131230942;
-			
-			// aapt resource value: 0x7F0800DF
-			public const int tag_unhandled_key_listeners = 2131230943;
-			
 			// aapt resource value: 0x7F0800E0
-			public const int text = 2131230944;
+			public const int tabMode = 2131230944;
 			
 			// aapt resource value: 0x7F0800E1
-			public const int text2 = 2131230945;
+			public const int tag_transition_group = 2131230945;
 			
 			// aapt resource value: 0x7F0800E2
-			public const int textSpacerNoButtons = 2131230946;
+			public const int tag_unhandled_key_event_manager = 2131230946;
 			
 			// aapt resource value: 0x7F0800E3
-			public const int textSpacerNoTitle = 2131230947;
+			public const int tag_unhandled_key_listeners = 2131230947;
 			
 			// aapt resource value: 0x7F0800E4
-			public const int texture = 2131230948;
+			public const int text = 2131230948;
 			
 			// aapt resource value: 0x7F0800E5
-			public const int time = 2131230949;
+			public const int text2 = 2131230949;
 			
 			// aapt resource value: 0x7F0800E6
-			public const int title = 2131230950;
+			public const int textSpacerNoButtons = 2131230950;
 			
 			// aapt resource value: 0x7F0800E7
-			public const int titleDividerNoCustom = 2131230951;
+			public const int textSpacerNoTitle = 2131230951;
 			
 			// aapt resource value: 0x7F0800E8
-			public const int title_template = 2131230952;
+			public const int texture = 2131230952;
 			
 			// aapt resource value: 0x7F0800E9
-			public const int top = 2131230953;
+			public const int time = 2131230953;
 			
 			// aapt resource value: 0x7F0800EA
-			public const int topInfoLayout = 2131230954;
+			public const int title = 2131230954;
 			
 			// aapt resource value: 0x7F0800EB
-			public const int topPanel = 2131230955;
+			public const int titleDividerNoCustom = 2131230955;
 			
 			// aapt resource value: 0x7F0800EC
-			public const int topTextViewGroup = 2131230956;
+			public const int title_template = 2131230956;
 			
 			// aapt resource value: 0x7F0800ED
-			public const int torchOnPhoneTxt = 2131230957;
+			public const int top = 2131230957;
 			
 			// aapt resource value: 0x7F0800EE
-			public const int torchOnTxt = 2131230958;
+			public const int topInfoLayout = 2131230958;
 			
 			// aapt resource value: 0x7F0800EF
-			public const int torchStatusLeftLl = 2131230959;
+			public const int topPanel = 2131230959;
 			
 			// aapt resource value: 0x7F0800F0
-			public const int torchStatusLl = 2131230960;
+			public const int topTextViewGroup = 2131230960;
 			
 			// aapt resource value: 0x7F0800F1
-			public const int torchStatusRightLl = 2131230961;
+			public const int torchOnPhoneTxt = 2131230961;
 			
 			// aapt resource value: 0x7F0800F2
-			public const int uniform = 2131230962;
+			public const int torchOnTxt = 2131230962;
 			
 			// aapt resource value: 0x7F0800F3
-			public const int up = 2131230963;
+			public const int torchStatusLeftLl = 2131230963;
 			
 			// aapt resource value: 0x7F0800F4
-			public const int useLogo = 2131230964;
+			public const int torchStatusLl = 2131230964;
 			
 			// aapt resource value: 0x7F0800F5
-			public const int wide = 2131230965;
+			public const int torchStatusRightLl = 2131230965;
 			
 			// aapt resource value: 0x7F0800F6
-			public const int withText = 2131230966;
+			public const int uniform = 2131230966;
 			
 			// aapt resource value: 0x7F0800F7
-			public const int wrap = 2131230967;
+			public const int up = 2131230967;
 			
 			// aapt resource value: 0x7F0800F8
-			public const int wrap_content = 2131230968;
+			public const int useLogo = 2131230968;
+			
+			// aapt resource value: 0x7F0800F9
+			public const int wide = 2131230969;
+			
+			// aapt resource value: 0x7F0800FA
+			public const int withText = 2131230970;
+			
+			// aapt resource value: 0x7F0800FB
+			public const int wrap = 2131230971;
+			
+			// aapt resource value: 0x7F0800FC
+			public const int wrap_content = 2131230972;
 			
 			static Id()
 			{
@@ -3522,1198 +3540,1240 @@ namespace DocumentReaderSample.Droid
 			public const int app_name = 2131493002;
 			
 			// aapt resource value: 0x7F0C008B
-			public const int chd_BackgroundComparisonError = 2131493003;
+			public const int chd_AlgorithmStepsError = 2131493003;
 			
 			// aapt resource value: 0x7F0C008C
-			public const int chd_BadAreaInAxial = 2131493004;
+			public const int chd_BackgroundComparisonError = 2131493004;
 			
 			// aapt resource value: 0x7F0C008D
-			public const int chd_BarcodeDataFormatError = 2131493005;
+			public const int chd_BadAreaInAxial = 2131493005;
 			
 			// aapt resource value: 0x7F0C008E
-			public const int chd_BarcodeReadedWithErrors = 2131493006;
+			public const int chd_BarcodeDataFormatError = 2131493006;
 			
 			// aapt resource value: 0x7F0C008F
-			public const int chd_BarcodeSizeParamsError = 2131493007;
+			public const int chd_BarcodeReadedWithErrors = 2131493007;
 			
 			// aapt resource value: 0x7F0C0090
-			public const int chd_DocumentIsCancelling = 2131493008;
+			public const int chd_BarcodeSizeParamsError = 2131493008;
 			
 			// aapt resource value: 0x7F0C0091
-			public const int chd_ElementShouldBeColored = 2131493009;
+			public const int chd_DocumentIsCancelling = 2131493009;
 			
 			// aapt resource value: 0x7F0C0092
-			public const int chd_ElementShouldBeGrayscale = 2131493010;
+			public const int chd_ElementShouldBeColored = 2131493010;
 			
 			// aapt resource value: 0x7F0C0093
-			public const int chd_ExceptionInModule = 2131493011;
+			public const int chd_ElementShouldBeGrayscale = 2131493011;
 			
 			// aapt resource value: 0x7F0C0094
-			public const int chd_FalseIPIParameters = 2131493012;
+			public const int chd_ExceptionInModule = 2131493012;
 			
 			// aapt resource value: 0x7F0C0095
-			public const int chd_FalseLuminiscenceError = 2131493013;
+			public const int chd_FalseIPIParameters = 2131493013;
 			
 			// aapt resource value: 0x7F0C0096
-			public const int chd_FalseLuminiscenceInBlank = 2131493014;
+			public const int chd_FalseLuminiscenceError = 2131493014;
 			
 			// aapt resource value: 0x7F0C0097
-			public const int chd_FalseLuminiscenceInMRZ = 2131493015;
+			public const int chd_FalseLuminiscenceInBlank = 2131493015;
 			
 			// aapt resource value: 0x7F0C0098
-			public const int chd_FibersNotFound = 2131493016;
+			public const int chd_FalseLuminiscenceInMRZ = 2131493016;
 			
 			// aapt resource value: 0x7F0C0099
-			public const int chd_FieldPosCorrector_Highlight_IR = 2131493017;
+			public const int chd_FibersNotFound = 2131493017;
 			
 			// aapt resource value: 0x7F0C009A
-			public const int chd_FieldsComparisonLogicError = 2131493018;
+			public const int chd_FieldPosCorrector_Glares_In_Photo_Area = 2131493018;
 			
 			// aapt resource value: 0x7F0C009B
-			public const int chd_FixedPatternError = 2131493019;
+			public const int chd_FieldPosCorrector_Highlight_IR = 2131493019;
 			
 			// aapt resource value: 0x7F0C009C
-			public const int chd_HologramElementAbsent = 2131493020;
+			public const int chd_FieldsComparisonLogicError = 2131493020;
 			
 			// aapt resource value: 0x7F0C009D
-			public const int chd_Hologram_Side_Top_Images_Absent = 2131493021;
+			public const int chd_FingerprintsComparisonMismatch = 2131493021;
 			
 			// aapt resource value: 0x7F0C009E
-			public const int chd_IncorrectBackgroundLight = 2131493022;
+			public const int chd_FinishedByTimeout = 2131493022;
 			
 			// aapt resource value: 0x7F0C009F
-			public const int chd_IncorrectTextColor = 2131493023;
+			public const int chd_FixedPatternError = 2131493023;
 			
 			// aapt resource value: 0x7F0C00A0
-			public const int chd_InternalError = 2131493024;
+			public const int chd_HoloAreasNotLoaded = 2131493024;
 			
 			// aapt resource value: 0x7F0C00A1
-			public const int chd_InvalidChecksum = 2131493025;
-			
-			// aapt resource value: 0x7F0C00A2
-			public const int chd_InvalidFieldFormat = 2131493026;
-			
-			// aapt resource value: 0x7F0C00A3
-			public const int chd_InvalidInputData = 2131493027;
-			
-			// aapt resource value: 0x7F0C00A4
-			public const int chd_InvisibleElementPresent = 2131493028;
+			public const int chd_HoloElementShapeError = 2131493025;
 			
 			// aapt resource value: 0x7F0C00A5
-			public const int chd_LogicError = 2131493029;
+			public const int chd_HologramElementAbsent = 2131493029;
 			
 			// aapt resource value: 0x7F0C00A6
-			public const int chd_LowContrastInIRLight = 2131493030;
+			public const int chd_HologramElementPresent = 2131493030;
 			
 			// aapt resource value: 0x7F0C00A7
-			public const int chd_MobileImages_LowLightConditions = 2131493031;
+			public const int chd_HologramFramesIsAbsent = 2131493031;
 			
 			// aapt resource value: 0x7F0C00A8
-			public const int chd_MobileImages_WhileUVNoDifference = 2131493032;
+			public const int chd_HologramHoloFieldIsAbsent = 2131493032;
 			
 			// aapt resource value: 0x7F0C00A9
-			public const int chd_NecessaryImageNotFound = 2131493033;
+			public const int chd_Hologram_Side_Top_Images_Absent = 2131493033;
+			
+			// aapt resource value: 0x7F0C00A2
+			public const int chd_HoloPhotoFaceComparisonFailed = 2131493026;
+			
+			// aapt resource value: 0x7F0C00A3
+			public const int chd_HoloPhotoFaceGlareInCenterAbsent = 2131493027;
+			
+			// aapt resource value: 0x7F0C00A4
+			public const int chd_HoloPhotoFaceNotDetected = 2131493028;
 			
 			// aapt resource value: 0x7F0C00AA
-			public const int chd_NotAllBarcodesRead = 2131493034;
+			public const int chd_IncorrectBackgroundLight = 2131493034;
 			
 			// aapt resource value: 0x7F0C00AB
-			public const int chd_OVI_BadColor_Front = 2131493035;
+			public const int chd_IncorrectTextColor = 2131493035;
 			
 			// aapt resource value: 0x7F0C00AC
-			public const int chd_OVI_BadColor_Percent = 2131493036;
+			public const int chd_InternalError = 2131493036;
 			
 			// aapt resource value: 0x7F0C00AD
-			public const int chd_OVI_BadColor_Side = 2131493037;
+			public const int chd_InvalidChecksum = 2131493037;
 			
 			// aapt resource value: 0x7F0C00AE
-			public const int chd_OVI_ColorInvariable = 2131493038;
-			
-			// aapt resource value: 0x7F0C00B0
-			public const int chd_OVI_InsufficientArea = 2131493040;
+			public const int chd_InvalidFieldFormat = 2131493038;
 			
 			// aapt resource value: 0x7F0C00AF
-			public const int chd_OVI_IR_Invisible = 2131493039;
+			public const int chd_InvalidInputData = 2131493039;
+			
+			// aapt resource value: 0x7F0C00B0
+			public const int chd_InvisibleElementPresent = 2131493040;
 			
 			// aapt resource value: 0x7F0C00B1
-			public const int chd_OVI_Wide_Color_Spread = 2131493041;
+			public const int chd_LastDiagnoseValue = 2131493041;
 			
 			// aapt resource value: 0x7F0C00B2
-			public const int chd_Pass = 2131493042;
+			public const int chd_LogicError = 2131493042;
 			
 			// aapt resource value: 0x7F0C00B3
-			public const int chd_PhotoFalseLuminiscence = 2131493043;
+			public const int chd_LowContrastInIRLight = 2131493043;
 			
 			// aapt resource value: 0x7F0C00B4
-			public const int chd_PhotoPattern_DifferentColors = 2131493044;
+			public const int chd_MobileImages_LowLightConditions = 2131493044;
 			
 			// aapt resource value: 0x7F0C00B5
-			public const int chd_PhotoPattern_DifferentLinesThickness = 2131493045;
-			
-			// aapt resource value: 0x7F0C00B7
-			public const int chd_PhotoPattern_Interrupted = 2131493047;
-			
-			// aapt resource value: 0x7F0C00B8
-			public const int chd_PhotoPattern_InvalidColor = 2131493048;
+			public const int chd_MobileImages_WhileUVNoDifference = 2131493045;
 			
 			// aapt resource value: 0x7F0C00B6
-			public const int chd_PhotoPattern_IR_Visible = 2131493046;
+			public const int chd_NecessaryImageNotFound = 2131493046;
+			
+			// aapt resource value: 0x7F0C00B7
+			public const int chd_NotAllBarcodesRead = 2131493047;
+			
+			// aapt resource value: 0x7F0C00B8
+			public const int chd_OVI_BadColor_Front = 2131493048;
 			
 			// aapt resource value: 0x7F0C00B9
-			public const int chd_PhotoPattern_Not_Intersect = 2131493049;
+			public const int chd_OVI_BadColor_Percent = 2131493049;
 			
 			// aapt resource value: 0x7F0C00BA
-			public const int chd_PhotoPattern_PatternNotFound = 2131493050;
+			public const int chd_OVI_BadColor_Side = 2131493050;
 			
 			// aapt resource value: 0x7F0C00BB
-			public const int chd_PhotoPattern_Shifted = 2131493051;
-			
-			// aapt resource value: 0x7F0C00BC
-			public const int chd_PhotoPattern_Shifted_Vert = 2131493052;
+			public const int chd_OVI_ColorInvariable = 2131493051;
 			
 			// aapt resource value: 0x7F0C00BD
-			public const int chd_PhotoSidesNotFound = 2131493053;
+			public const int chd_OVI_InsufficientArea = 2131493053;
+			
+			// aapt resource value: 0x7F0C00BC
+			public const int chd_OVI_IR_Invisible = 2131493052;
 			
 			// aapt resource value: 0x7F0C00BE
-			public const int chd_PhotoSize_Is_Wrong = 2131493054;
+			public const int chd_OVI_Wide_Color_Spread = 2131493054;
 			
 			// aapt resource value: 0x7F0C00BF
-			public const int chd_Photo_Corners_Is_Wrong = 2131493055;
+			public const int chd_Pass = 2131493055;
 			
 			// aapt resource value: 0x7F0C00C0
-			public const int chd_Photo_IsNot_Rectangle = 2131493056;
+			public const int chd_PhotoFalseLuminiscence = 2131493056;
 			
 			// aapt resource value: 0x7F0C00C1
-			public const int chd_PortraitComparison_NoLivePhoto = 2131493057;
+			public const int chd_PhotoPattern_DifferentColors = 2131493057;
 			
 			// aapt resource value: 0x7F0C00C2
-			public const int chd_PortraitComparison_NoPortraitDetected = 2131493058;
-			
-			// aapt resource value: 0x7F0C00C3
-			public const int chd_PortraitComparison_NoServiceLicense = 2131493059;
+			public const int chd_PhotoPattern_DifferentLinesThickness = 2131493058;
 			
 			// aapt resource value: 0x7F0C00C4
-			public const int chd_PortraitComparison_NoServiceReply = 2131493060;
+			public const int chd_PhotoPattern_Interrupted = 2131493060;
 			
 			// aapt resource value: 0x7F0C00C5
-			public const int chd_PortraitComparison_NotEnoughImages = 2131493061;
+			public const int chd_PhotoPattern_InvalidColor = 2131493061;
+			
+			// aapt resource value: 0x7F0C00C3
+			public const int chd_PhotoPattern_IR_Visible = 2131493059;
 			
 			// aapt resource value: 0x7F0C00C6
-			public const int chd_PortraitComparison_PortraitsDiffer = 2131493062;
+			public const int chd_PhotoPattern_Not_Intersect = 2131493062;
 			
 			// aapt resource value: 0x7F0C00C7
-			public const int chd_PortraitComparison_ServiceError = 2131493063;
+			public const int chd_PhotoPattern_PatternNotFound = 2131493063;
 			
 			// aapt resource value: 0x7F0C00C8
-			public const int chd_SourcesComparisonError = 2131493064;
+			public const int chd_PhotoPattern_Shifted = 2131493064;
 			
 			// aapt resource value: 0x7F0C00C9
-			public const int chd_SpecksInUV = 2131493065;
+			public const int chd_PhotoPattern_Shifted_Vert = 2131493065;
 			
 			// aapt resource value: 0x7F0C00CA
-			public const int chd_SyntaxError = 2131493066;
+			public const int chd_PhotoSidesNotFound = 2131493066;
 			
 			// aapt resource value: 0x7F0C00CB
-			public const int chd_TextColorShouldBeBlue = 2131493067;
+			public const int chd_PhotoSize_Is_Wrong = 2131493067;
 			
 			// aapt resource value: 0x7F0C00CC
-			public const int chd_TextColorShouldBeGreen = 2131493068;
+			public const int chd_PhotoWhiteIRDontMatch = 2131493068;
 			
 			// aapt resource value: 0x7F0C00CD
-			public const int chd_TextColorShouldBeRed = 2131493069;
+			public const int chd_Photo_Corners_Is_Wrong = 2131493069;
 			
 			// aapt resource value: 0x7F0C00CE
-			public const int chd_TextShouldBeBlack = 2131493070;
+			public const int chd_Photo_IsNot_Rectangle = 2131493070;
 			
 			// aapt resource value: 0x7F0C00CF
-			public const int chd_TooLowResolution = 2131493071;
+			public const int chd_PortraitComparison_NoLivePhoto = 2131493071;
 			
 			// aapt resource value: 0x7F0C00D0
-			public const int chd_TooManyObjects = 2131493072;
+			public const int chd_PortraitComparison_NoPortraitDetected = 2131493072;
 			
 			// aapt resource value: 0x7F0C00D1
-			public const int chd_TooMuchShift = 2131493073;
+			public const int chd_PortraitComparison_NoServiceLicense = 2131493073;
 			
 			// aapt resource value: 0x7F0C00D2
-			public const int chd_TrueLuminiscenceError = 2131493074;
-			
-			// aapt resource value: 0x7F0C00D7
-			public const int chd_UncertainVerification = 2131493079;
-			
-			// aapt resource value: 0x7F0C00D8
-			public const int chd_Unknown = 2131493080;
+			public const int chd_PortraitComparison_NoServiceReply = 2131493074;
 			
 			// aapt resource value: 0x7F0C00D3
-			public const int chd_UVDullPaperError = 2131493075;
+			public const int chd_PortraitComparison_NotEnoughImages = 2131493075;
 			
 			// aapt resource value: 0x7F0C00D4
-			public const int chd_UVDullPaper_Blank = 2131493076;
+			public const int chd_PortraitComparison_PortraitsDiffer = 2131493076;
 			
 			// aapt resource value: 0x7F0C00D5
-			public const int chd_UVDullPaper_MRZ = 2131493077;
+			public const int chd_PortraitComparison_ServiceError = 2131493077;
 			
 			// aapt resource value: 0x7F0C00D6
-			public const int chd_UVDullPaper_Photo = 2131493078;
+			public const int chd_SourcesComparisonError = 2131493078;
+			
+			// aapt resource value: 0x7F0C00D7
+			public const int chd_SpecksInUV = 2131493079;
+			
+			// aapt resource value: 0x7F0C00D8
+			public const int chd_SyntaxError = 2131493080;
 			
 			// aapt resource value: 0x7F0C00D9
-			public const int chd_VisibleElementAbsent = 2131493081;
+			public const int chd_TextColorShouldBeBlue = 2131493081;
 			
 			// aapt resource value: 0x7F0C00DA
-			public const int common_google_play_services_enable_button = 2131493082;
+			public const int chd_TextColorShouldBeGreen = 2131493082;
 			
 			// aapt resource value: 0x7F0C00DB
-			public const int common_google_play_services_enable_text = 2131493083;
+			public const int chd_TextColorShouldBeRed = 2131493083;
 			
 			// aapt resource value: 0x7F0C00DC
-			public const int common_google_play_services_enable_title = 2131493084;
+			public const int chd_TextShouldBeBlack = 2131493084;
 			
 			// aapt resource value: 0x7F0C00DD
-			public const int common_google_play_services_install_button = 2131493085;
+			public const int chd_TooLowResolution = 2131493085;
 			
 			// aapt resource value: 0x7F0C00DE
-			public const int common_google_play_services_install_text = 2131493086;
+			public const int chd_TooManyObjects = 2131493086;
 			
 			// aapt resource value: 0x7F0C00DF
-			public const int common_google_play_services_install_title = 2131493087;
+			public const int chd_TooMuchShift = 2131493087;
 			
 			// aapt resource value: 0x7F0C00E0
-			public const int common_google_play_services_notification_channel_name = 2131493088;
-			
-			// aapt resource value: 0x7F0C00E1
-			public const int common_google_play_services_notification_ticker = 2131493089;
-			
-			// aapt resource value: 0x7F0C00E2
-			public const int common_google_play_services_unknown_issue = 2131493090;
-			
-			// aapt resource value: 0x7F0C00E3
-			public const int common_google_play_services_unsupported_text = 2131493091;
-			
-			// aapt resource value: 0x7F0C00E4
-			public const int common_google_play_services_update_button = 2131493092;
+			public const int chd_TrueLuminiscenceError = 2131493088;
 			
 			// aapt resource value: 0x7F0C00E5
-			public const int common_google_play_services_update_text = 2131493093;
+			public const int chd_UncertainVerification = 2131493093;
 			
 			// aapt resource value: 0x7F0C00E6
-			public const int common_google_play_services_update_title = 2131493094;
+			public const int chd_Unknown = 2131493094;
+			
+			// aapt resource value: 0x7F0C00E1
+			public const int chd_UVDullPaperError = 2131493089;
+			
+			// aapt resource value: 0x7F0C00E2
+			public const int chd_UVDullPaper_Blank = 2131493090;
+			
+			// aapt resource value: 0x7F0C00E3
+			public const int chd_UVDullPaper_MRZ = 2131493091;
+			
+			// aapt resource value: 0x7F0C00E4
+			public const int chd_UVDullPaper_Photo = 2131493092;
 			
 			// aapt resource value: 0x7F0C00E7
-			public const int common_google_play_services_updating_text = 2131493095;
+			public const int chd_VisibleElementAbsent = 2131493095;
 			
 			// aapt resource value: 0x7F0C00E8
-			public const int common_google_play_services_wear_update_text = 2131493096;
+			public const int common_google_play_services_enable_button = 2131493096;
 			
 			// aapt resource value: 0x7F0C00E9
-			public const int common_open_on_phone = 2131493097;
+			public const int common_google_play_services_enable_text = 2131493097;
 			
 			// aapt resource value: 0x7F0C00EA
-			public const int common_signin_button_text = 2131493098;
+			public const int common_google_play_services_enable_title = 2131493098;
 			
 			// aapt resource value: 0x7F0C00EB
-			public const int common_signin_button_text_long = 2131493099;
+			public const int common_google_play_services_install_button = 2131493099;
 			
 			// aapt resource value: 0x7F0C00EC
-			public const int errLDS_AA_IncorrectTrailer = 2131493100;
+			public const int common_google_play_services_install_text = 2131493100;
 			
 			// aapt resource value: 0x7F0C00ED
-			public const int errLDS_AA_PublicKey_IncorrectData = 2131493101;
+			public const int common_google_play_services_install_title = 2131493101;
 			
 			// aapt resource value: 0x7F0C00EE
-			public const int errLDS_AA_PublicKey_IncorrectParameters = 2131493102;
+			public const int common_google_play_services_notification_channel_name = 2131493102;
 			
 			// aapt resource value: 0x7F0C00EF
-			public const int errLDS_AA_PublicKey_UndefinedParameters = 2131493103;
+			public const int common_google_play_services_notification_ticker = 2131493103;
 			
 			// aapt resource value: 0x7F0C00F0
-			public const int errLDS_AA_PublicKey_UnsupportedAlgorithm = 2131493104;
+			public const int common_google_play_services_unknown_issue = 2131493104;
 			
 			// aapt resource value: 0x7F0C00F1
-			public const int errLDS_AA_Signature_IncorrectData = 2131493105;
+			public const int common_google_play_services_unsupported_text = 2131493105;
 			
 			// aapt resource value: 0x7F0C00F2
-			public const int errLDS_AA_UnsupportedDigestAlgorithm = 2131493106;
+			public const int common_google_play_services_update_button = 2131493106;
 			
 			// aapt resource value: 0x7F0C00F3
-			public const int errLDS_AA_UnsupportedRecoveryScheme = 2131493107;
+			public const int common_google_play_services_update_text = 2131493107;
 			
 			// aapt resource value: 0x7F0C00F4
-			public const int errLDS_ASN_Certificate_Extensions_IncorrectData = 2131493108;
+			public const int common_google_play_services_update_title = 2131493108;
 			
 			// aapt resource value: 0x7F0C00F5
-			public const int errLDS_ASN_Certificate_IncorrectData = 2131493109;
+			public const int common_google_play_services_updating_text = 2131493109;
 			
 			// aapt resource value: 0x7F0C00F6
-			public const int errLDS_ASN_Certificate_Issuer_IncorrectData = 2131493110;
-			
-			// aapt resource value: 0x7F0C00F8
-			public const int errLDS_ASN_Certificate_Signature_IncorrectData = 2131493112;
+			public const int common_google_play_services_wear_update_text = 2131493110;
 			
 			// aapt resource value: 0x7F0C00F7
-			public const int errLDS_ASN_Certificate_SN_IncorrectData = 2131493111;
+			public const int common_open_on_phone = 2131493111;
+			
+			// aapt resource value: 0x7F0C00F8
+			public const int common_signin_button_text = 2131493112;
 			
 			// aapt resource value: 0x7F0C00F9
-			public const int errLDS_ASN_Certificate_SubjectPK_IncorrectData = 2131493113;
+			public const int common_signin_button_text_long = 2131493113;
 			
 			// aapt resource value: 0x7F0C00FA
-			public const int errLDS_ASN_Certificate_Subject_IncorrectData = 2131493114;
+			public const int errLDS_AA_IncorrectTrailer = 2131493114;
 			
 			// aapt resource value: 0x7F0C00FB
-			public const int errLDS_ASN_Certificate_Validity_IncorrectData = 2131493115;
+			public const int errLDS_AA_PublicKey_IncorrectData = 2131493115;
 			
 			// aapt resource value: 0x7F0C00FC
-			public const int errLDS_ASN_Certificate_Version_IncorrectData = 2131493116;
+			public const int errLDS_AA_PublicKey_IncorrectParameters = 2131493116;
 			
 			// aapt resource value: 0x7F0C00FD
-			public const int errLDS_ASN_Contents_UnexpectedData = 2131493117;
+			public const int errLDS_AA_PublicKey_UndefinedParameters = 2131493117;
 			
 			// aapt resource value: 0x7F0C00FE
-			public const int errLDS_ASN_IncorrectData = 2131493118;
+			public const int errLDS_AA_PublicKey_UnsupportedAlgorithm = 2131493118;
 			
 			// aapt resource value: 0x7F0C00FF
-			public const int errLDS_ASN_LDSObject_DGHashes_IncorrectData = 2131493119;
+			public const int errLDS_AA_Signature_IncorrectData = 2131493119;
 			
 			// aapt resource value: 0x7F0C0100
-			public const int errLDS_ASN_LDSObject_DigestAlgorithm_IncorrectData = 2131493120;
+			public const int errLDS_AA_UnsupportedDigestAlgorithm = 2131493120;
 			
 			// aapt resource value: 0x7F0C0101
-			public const int errLDS_ASN_LDSObject_IncorrectData = 2131493121;
+			public const int errLDS_AA_UnsupportedRecoveryScheme = 2131493121;
 			
 			// aapt resource value: 0x7F0C0102
-			public const int errLDS_ASN_LDSObject_VersionInfo_IncorrectData = 2131493122;
+			public const int errLDS_ASN_Certificate_Extensions_IncorrectData = 2131493122;
 			
 			// aapt resource value: 0x7F0C0103
-			public const int errLDS_ASN_LDSObject_Version_IncorrectData = 2131493123;
+			public const int errLDS_ASN_Certificate_IncorrectData = 2131493123;
 			
 			// aapt resource value: 0x7F0C0104
-			public const int errLDS_ASN_NotEnoughData = 2131493124;
-			
-			// aapt resource value: 0x7F0C0105
-			public const int errLDS_ASN_SignedData_DigestAlgorithms_IncorrectData = 2131493125;
+			public const int errLDS_ASN_Certificate_Issuer_IncorrectData = 2131493124;
 			
 			// aapt resource value: 0x7F0C0106
-			public const int errLDS_ASN_SignedData_EncapContents_IncorrectData = 2131493126;
+			public const int errLDS_ASN_Certificate_Signature_IncorrectData = 2131493126;
+			
+			// aapt resource value: 0x7F0C0105
+			public const int errLDS_ASN_Certificate_SN_IncorrectData = 2131493125;
 			
 			// aapt resource value: 0x7F0C0107
-			public const int errLDS_ASN_SignedData_IncorrectData = 2131493127;
+			public const int errLDS_ASN_Certificate_SubjectPK_IncorrectData = 2131493127;
 			
 			// aapt resource value: 0x7F0C0108
-			public const int errLDS_ASN_SignedData_Version_IncorrectData = 2131493128;
+			public const int errLDS_ASN_Certificate_Subject_IncorrectData = 2131493128;
 			
 			// aapt resource value: 0x7F0C0109
-			public const int errLDS_ASN_SignerInfo_DigestAlg_IncorrectData = 2131493129;
+			public const int errLDS_ASN_Certificate_Validity_IncorrectData = 2131493129;
 			
 			// aapt resource value: 0x7F0C010A
-			public const int errLDS_ASN_SignerInfo_IncorrectData = 2131493130;
+			public const int errLDS_ASN_Certificate_Version_IncorrectData = 2131493130;
 			
 			// aapt resource value: 0x7F0C010B
-			public const int errLDS_ASN_SignerInfo_SID_IncorrectData = 2131493131;
+			public const int errLDS_ASN_Contents_UnexpectedData = 2131493131;
 			
 			// aapt resource value: 0x7F0C010C
-			public const int errLDS_ASN_SignerInfo_SignAlg_IncorrectData = 2131493132;
+			public const int errLDS_ASN_IncorrectData = 2131493132;
 			
 			// aapt resource value: 0x7F0C010D
-			public const int errLDS_ASN_SignerInfo_Signature_IncorrectData = 2131493133;
+			public const int errLDS_ASN_LDSObject_DGHashes_IncorrectData = 2131493133;
 			
 			// aapt resource value: 0x7F0C010E
-			public const int errLDS_ASN_SignerInfo_SignedAttrs_IncorrectData = 2131493134;
+			public const int errLDS_ASN_LDSObject_DigestAlgorithm_IncorrectData = 2131493134;
 			
 			// aapt resource value: 0x7F0C010F
-			public const int errLDS_ASN_SignerInfo_UnsignedAttrs_IncorrectData = 2131493135;
+			public const int errLDS_ASN_LDSObject_IncorrectData = 2131493135;
 			
 			// aapt resource value: 0x7F0C0110
-			public const int errLDS_ASN_SignerInfo_Version_IncorrectData = 2131493136;
+			public const int errLDS_ASN_LDSObject_VersionInfo_IncorrectData = 2131493136;
 			
 			// aapt resource value: 0x7F0C0111
-			public const int errLDS_Auth_AlgorithmParametersDataInvalid = 2131493137;
+			public const int errLDS_ASN_LDSObject_Version_IncorrectData = 2131493137;
 			
 			// aapt resource value: 0x7F0C0112
-			public const int errLDS_Auth_AlgorithmParametersNotDefined = 2131493138;
+			public const int errLDS_ASN_NotEnoughData = 2131493138;
 			
 			// aapt resource value: 0x7F0C0113
-			public const int errLDS_Auth_Error = 2131493139;
+			public const int errLDS_ASN_SignedData_DigestAlgorithms_IncorrectData = 2131493139;
 			
 			// aapt resource value: 0x7F0C0114
-			public const int errLDS_Auth_MessedAlgorithms = 2131493140;
+			public const int errLDS_ASN_SignedData_EncapContents_IncorrectData = 2131493140;
 			
 			// aapt resource value: 0x7F0C0115
-			public const int errLDS_Auth_PublicKeyDataInvalid = 2131493141;
+			public const int errLDS_ASN_SignedData_IncorrectData = 2131493141;
 			
 			// aapt resource value: 0x7F0C0116
-			public const int errLDS_Auth_SignatureCheckFailed = 2131493142;
+			public const int errLDS_ASN_SignedData_Version_IncorrectData = 2131493142;
 			
 			// aapt resource value: 0x7F0C0117
-			public const int errLDS_Auth_SignatureDataIncorrect = 2131493143;
+			public const int errLDS_ASN_SignerInfo_DigestAlg_IncorrectData = 2131493143;
 			
 			// aapt resource value: 0x7F0C0118
-			public const int errLDS_Auth_SignatureDataInvalid = 2131493144;
+			public const int errLDS_ASN_SignerInfo_IncorrectData = 2131493144;
 			
 			// aapt resource value: 0x7F0C0119
-			public const int errLDS_Auth_SignerInfo_CantFindCertificate = 2131493145;
+			public const int errLDS_ASN_SignerInfo_SID_IncorrectData = 2131493145;
 			
 			// aapt resource value: 0x7F0C011A
-			public const int errLDS_Auth_UnsupportedDigestAlgorithm = 2131493146;
+			public const int errLDS_ASN_SignerInfo_SignAlg_IncorrectData = 2131493146;
 			
 			// aapt resource value: 0x7F0C011B
-			public const int errLDS_Auth_UnsupportedPublicKeyAlgorithm = 2131493147;
+			public const int errLDS_ASN_SignerInfo_Signature_IncorrectData = 2131493147;
 			
 			// aapt resource value: 0x7F0C011C
-			public const int errLDS_Auth_UnsupportedSignatureAlgorithm = 2131493148;
+			public const int errLDS_ASN_SignerInfo_SignedAttrs_IncorrectData = 2131493148;
 			
 			// aapt resource value: 0x7F0C011D
-			public const int errLDS_CA_CantFindDomainParameters = 2131493149;
+			public const int errLDS_ASN_SignerInfo_UnsignedAttrs_IncorrectData = 2131493149;
 			
 			// aapt resource value: 0x7F0C011E
-			public const int errLDS_CA_CantFindInfo = 2131493150;
+			public const int errLDS_ASN_SignerInfo_Version_IncorrectData = 2131493150;
 			
 			// aapt resource value: 0x7F0C011F
-			public const int errLDS_CA_CantFindPublicKey = 2131493151;
+			public const int errLDS_Auth_AlgorithmParametersDataInvalid = 2131493151;
 			
 			// aapt resource value: 0x7F0C0120
-			public const int errLDS_CA_EphemeralKeys_CantCreate = 2131493152;
+			public const int errLDS_Auth_AlgorithmParametersNotDefined = 2131493152;
 			
 			// aapt resource value: 0x7F0C0121
-			public const int errLDS_CA_IncorrectVersion = 2131493153;
+			public const int errLDS_Auth_Error = 2131493153;
 			
 			// aapt resource value: 0x7F0C0122
-			public const int errLDS_CA_KeyAgreement_CantInitialize = 2131493154;
+			public const int errLDS_Auth_MessedAlgorithms = 2131493154;
 			
 			// aapt resource value: 0x7F0C0123
-			public const int errLDS_CA_NonMatchingAuthTokens = 2131493155;
+			public const int errLDS_Auth_PublicKeyDataInvalid = 2131493155;
 			
 			// aapt resource value: 0x7F0C0124
-			public const int errLDS_CA_PublicKey_UnsupportedAlgorithm = 2131493156;
+			public const int errLDS_Auth_SignatureCheckFailed = 2131493156;
 			
 			// aapt resource value: 0x7F0C0125
-			public const int errLDS_CA_SharedSecret_CantCreate = 2131493157;
+			public const int errLDS_Auth_SignatureDataIncorrect = 2131493157;
 			
 			// aapt resource value: 0x7F0C0126
-			public const int errLDS_CVCertificate_MissingMandatoryData_PK = 2131493158;
+			public const int errLDS_Auth_SignatureDataInvalid = 2131493158;
 			
 			// aapt resource value: 0x7F0C0127
-			public const int errLDS_CV_Certificate_CAR_IncorrectData = 2131493159;
+			public const int errLDS_Auth_SignerInfo_CantFindCertificate = 2131493159;
 			
 			// aapt resource value: 0x7F0C0128
-			public const int errLDS_CV_Certificate_CHAT_IncorrectData = 2131493160;
+			public const int errLDS_Auth_UnsupportedDigestAlgorithm = 2131493160;
 			
 			// aapt resource value: 0x7F0C0129
-			public const int errLDS_CV_Certificate_CHAT_UnsupportedTerminalType = 2131493161;
+			public const int errLDS_Auth_UnsupportedPublicKeyAlgorithm = 2131493161;
 			
 			// aapt resource value: 0x7F0C012A
-			public const int errLDS_CV_Certificate_CHR_IncorrectData = 2131493162;
+			public const int errLDS_Auth_UnsupportedSignatureAlgorithm = 2131493162;
 			
 			// aapt resource value: 0x7F0C012B
-			public const int errLDS_CV_Certificate_CPI_IncorrectData = 2131493163;
+			public const int errLDS_CA_CantFindDomainParameters = 2131493163;
 			
 			// aapt resource value: 0x7F0C012C
-			public const int errLDS_CV_Certificate_Extensions_IncorrectData = 2131493164;
+			public const int errLDS_CA_CantFindInfo = 2131493164;
 			
 			// aapt resource value: 0x7F0C012D
-			public const int errLDS_CV_Certificate_IncorrectData = 2131493165;
+			public const int errLDS_CA_CantFindPublicKey = 2131493165;
 			
 			// aapt resource value: 0x7F0C012E
-			public const int errLDS_CV_Certificate_PrivateKey_IncorrectData = 2131493166;
+			public const int errLDS_CA_EphemeralKeys_CantCreate = 2131493166;
 			
 			// aapt resource value: 0x7F0C012F
-			public const int errLDS_CV_Certificate_PrivateKey_InvalidParams = 2131493167;
+			public const int errLDS_CA_IncorrectVersion = 2131493167;
 			
 			// aapt resource value: 0x7F0C0130
-			public const int errLDS_CV_Certificate_PrivateKey_Missing = 2131493168;
+			public const int errLDS_CA_KeyAgreement_CantInitialize = 2131493168;
 			
 			// aapt resource value: 0x7F0C0131
-			public const int errLDS_CV_Certificate_PrivateKey_Unsupported = 2131493169;
+			public const int errLDS_CA_NonMatchingAuthTokens = 2131493169;
 			
 			// aapt resource value: 0x7F0C0132
-			public const int errLDS_CV_Certificate_PublicKey_IncorrectData = 2131493170;
+			public const int errLDS_CA_PublicKey_UnsupportedAlgorithm = 2131493170;
 			
 			// aapt resource value: 0x7F0C0133
-			public const int errLDS_CV_Certificate_PublicKey_Unsupported = 2131493171;
+			public const int errLDS_CA_SharedSecret_CantCreate = 2131493171;
 			
 			// aapt resource value: 0x7F0C0134
-			public const int errLDS_CV_Certificate_ValidFrom_IncorrectData = 2131493172;
+			public const int errLDS_CVCertificate_MissingMandatoryData_PK = 2131493172;
 			
 			// aapt resource value: 0x7F0C0135
-			public const int errLDS_CV_Certificate_ValidTo_IncorrectData = 2131493173;
+			public const int errLDS_CV_Certificate_CAR_IncorrectData = 2131493173;
 			
 			// aapt resource value: 0x7F0C0136
-			public const int errLDS_DG_WrongTag = 2131493174;
+			public const int errLDS_CV_Certificate_CHAT_IncorrectData = 2131493174;
 			
 			// aapt resource value: 0x7F0C0137
-			public const int errLDS_ICAO_LDSObject_UnsupportedDigestAlgorithm = 2131493175;
+			public const int errLDS_CV_Certificate_CHAT_UnsupportedTerminalType = 2131493175;
 			
 			// aapt resource value: 0x7F0C0138
-			public const int errLDS_ICAO_SignedData_SignerInfos_Empty = 2131493176;
+			public const int errLDS_CV_Certificate_CHR_IncorrectData = 2131493176;
 			
 			// aapt resource value: 0x7F0C0139
-			public const int errLDS_ICAO_SignerInfo_MessageDigestError = 2131493177;
+			public const int errLDS_CV_Certificate_CPI_IncorrectData = 2131493177;
 			
 			// aapt resource value: 0x7F0C013A
-			public const int errLDS_ICAO_SignerInfo_SignedAttrs_Missed = 2131493178;
+			public const int errLDS_CV_Certificate_Extensions_IncorrectData = 2131493178;
 			
 			// aapt resource value: 0x7F0C013B
-			public const int errLDS_ICAO_SignerInfo_UnsupportedDigestAlgorithm = 2131493179;
+			public const int errLDS_CV_Certificate_IncorrectData = 2131493179;
 			
 			// aapt resource value: 0x7F0C013C
-			public const int errLDS_ICAO_SignerInfo_UnsupportedSignatureAlgorithm = 2131493180;
+			public const int errLDS_CV_Certificate_PrivateKey_IncorrectData = 2131493180;
 			
 			// aapt resource value: 0x7F0C013D
-			public const int errLDS_Ok = 2131493181;
+			public const int errLDS_CV_Certificate_PrivateKey_InvalidParams = 2131493181;
 			
 			// aapt resource value: 0x7F0C013E
-			public const int errLDS_PACE_DomainParams_UnsupportedFormat = 2131493182;
+			public const int errLDS_CV_Certificate_PrivateKey_Missing = 2131493182;
 			
 			// aapt resource value: 0x7F0C013F
-			public const int errLDS_PACE_EphemeralKeys_CantCreate = 2131493183;
+			public const int errLDS_CV_Certificate_PrivateKey_Unsupported = 2131493183;
 			
 			// aapt resource value: 0x7F0C0140
-			public const int errLDS_PACE_EphemeralKeys_Incorrect = 2131493184;
+			public const int errLDS_CV_Certificate_PublicKey_IncorrectData = 2131493184;
 			
 			// aapt resource value: 0x7F0C0141
-			public const int errLDS_PACE_Info_NotAvailable = 2131493185;
+			public const int errLDS_CV_Certificate_PublicKey_Unsupported = 2131493185;
 			
 			// aapt resource value: 0x7F0C0142
-			public const int errLDS_PACE_KeyAgreement_CantInitialize = 2131493186;
+			public const int errLDS_CV_Certificate_ValidFrom_IncorrectData = 2131493186;
 			
 			// aapt resource value: 0x7F0C0143
-			public const int errLDS_PACE_Mapping_CantDecodeNonce = 2131493187;
+			public const int errLDS_CV_Certificate_ValidTo_IncorrectData = 2131493187;
 			
 			// aapt resource value: 0x7F0C0144
-			public const int errLDS_PACE_Mapping_CantPerform = 2131493188;
+			public const int errLDS_DG_WrongTag = 2131493188;
 			
 			// aapt resource value: 0x7F0C0145
-			public const int errLDS_PACE_Mapping_EphemeralKeys_Incorrect = 2131493189;
+			public const int errLDS_ICAO_LDSObject_UnsupportedDigestAlgorithm = 2131493189;
 			
 			// aapt resource value: 0x7F0C0146
-			public const int errLDS_PACE_NonMatchingAuthTokens = 2131493190;
+			public const int errLDS_ICAO_SignedData_SignerInfos_Empty = 2131493190;
 			
 			// aapt resource value: 0x7F0C0147
-			public const int errLDS_PACE_SharedSecret_CantCreate = 2131493191;
+			public const int errLDS_ICAO_SignerInfo_MessageDigestError = 2131493191;
 			
 			// aapt resource value: 0x7F0C0148
-			public const int errLDS_PACE_SymmetricCypher_CantInitialize = 2131493192;
+			public const int errLDS_ICAO_SignerInfo_SignedAttrs_Missed = 2131493192;
 			
 			// aapt resource value: 0x7F0C0149
-			public const int errLDS_RI_SectorKey_CantFind = 2131493193;
+			public const int errLDS_ICAO_SignerInfo_UnsupportedDigestAlgorithm = 2131493193;
 			
 			// aapt resource value: 0x7F0C014A
-			public const int errLDS_RI_SectorKey_IncompleteData = 2131493194;
+			public const int errLDS_ICAO_SignerInfo_UnsupportedSignatureAlgorithm = 2131493194;
 			
 			// aapt resource value: 0x7F0C014B
-			public const int errLDS_RI_SectorKey_IncorrectData = 2131493195;
+			public const int errLDS_Ok = 2131493195;
 			
 			// aapt resource value: 0x7F0C014C
-			public const int errLDS_TA_CantBuildCertificateChain = 2131493196;
+			public const int errLDS_PACE_DomainParams_UnsupportedFormat = 2131493196;
 			
 			// aapt resource value: 0x7F0C014D
-			public const int errLDS_TA_CantFindISPrivateKey = 2131493197;
+			public const int errLDS_PACE_EphemeralKeys_CantCreate = 2131493197;
 			
 			// aapt resource value: 0x7F0C014E
-			public const int errLDS_TA_IncorrectVersion = 2131493198;
+			public const int errLDS_PACE_EphemeralKeys_Incorrect = 2131493198;
 			
 			// aapt resource value: 0x7F0C014F
-			public const int errLDS_TA_InvalidKeyAlgorithmParameters = 2131493199;
+			public const int errLDS_PACE_Info_NotAvailable = 2131493199;
 			
 			// aapt resource value: 0x7F0C0150
-			public const int errLDS_TA_PublicKey_UnsupportedAlgorithm = 2131493200;
+			public const int errLDS_PACE_KeyAgreement_CantInitialize = 2131493200;
 			
 			// aapt resource value: 0x7F0C0151
-			public const int errLDS_TA_SignatureBuildingError = 2131493201;
+			public const int errLDS_PACE_Mapping_CantDecodeNonce = 2131493201;
 			
 			// aapt resource value: 0x7F0C0152
-			public const int hello = 2131493202;
+			public const int errLDS_PACE_Mapping_CantPerform = 2131493202;
 			
 			// aapt resource value: 0x7F0C0153
-			public const int ntfLDS_ASN_Certificate_DuplicatingExtensions = 2131493203;
+			public const int errLDS_PACE_Mapping_EphemeralKeys_Incorrect = 2131493203;
 			
 			// aapt resource value: 0x7F0C0154
-			public const int ntfLDS_ASN_Certificate_EmptyIssuer = 2131493204;
+			public const int errLDS_PACE_NonMatchingAuthTokens = 2131493204;
 			
 			// aapt resource value: 0x7F0C0155
-			public const int ntfLDS_ASN_Certificate_EmptySubject = 2131493205;
+			public const int errLDS_PACE_SharedSecret_CantCreate = 2131493205;
 			
 			// aapt resource value: 0x7F0C0156
-			public const int ntfLDS_ASN_Certificate_ForcedDefaultCSCARole = 2131493206;
+			public const int errLDS_PACE_SymmetricCypher_CantInitialize = 2131493206;
 			
 			// aapt resource value: 0x7F0C0157
-			public const int ntfLDS_ASN_Certificate_ForcedDefaultDSRole = 2131493207;
+			public const int errLDS_RI_SectorKey_CantFind = 2131493207;
 			
 			// aapt resource value: 0x7F0C0158
-			public const int ntfLDS_ASN_Certificate_IncorrectIssuerSubjectDS = 2131493208;
+			public const int errLDS_RI_SectorKey_IncompleteData = 2131493208;
 			
 			// aapt resource value: 0x7F0C0159
-			public const int ntfLDS_ASN_Certificate_IncorrectTimeCoding = 2131493209;
+			public const int errLDS_RI_SectorKey_IncorrectData = 2131493209;
 			
 			// aapt resource value: 0x7F0C015A
-			public const int ntfLDS_ASN_Certificate_IncorrectUseOfGeneralizedTime = 2131493210;
+			public const int errLDS_TA_CantBuildCertificateChain = 2131493210;
 			
 			// aapt resource value: 0x7F0C015B
-			public const int ntfLDS_ASN_Certificate_IncorrectVersion = 2131493211;
+			public const int errLDS_TA_CantFindISPrivateKey = 2131493211;
 			
 			// aapt resource value: 0x7F0C015C
-			public const int ntfLDS_ASN_Certificate_NonMatchingSignatureAlgorithm = 2131493212;
+			public const int errLDS_TA_IncorrectVersion = 2131493212;
 			
 			// aapt resource value: 0x7F0C015D
-			public const int ntfLDS_ASN_Certificate_UnsupportedCriticalExtension = 2131493213;
+			public const int errLDS_TA_InvalidKeyAlgorithmParameters = 2131493213;
 			
 			// aapt resource value: 0x7F0C015E
-			public const int ntfLDS_ASN_SignedData_OID_Incorrect = 2131493214;
+			public const int errLDS_TA_PublicKey_UnsupportedAlgorithm = 2131493214;
 			
 			// aapt resource value: 0x7F0C015F
-			public const int ntfLDS_ASN_SignedData_Version_Incorrect = 2131493215;
+			public const int errLDS_TA_SignatureBuildingError = 2131493215;
 			
 			// aapt resource value: 0x7F0C0160
-			public const int ntfLDS_ASN_SignerInfo_ContentTypeAttr_Data = 2131493216;
+			public const int hello = 2131493216;
 			
 			// aapt resource value: 0x7F0C0161
-			public const int ntfLDS_ASN_SignerInfo_ContentTypeAttr_Missing = 2131493217;
+			public const int ntfLDS_ASN_Certificate_DuplicatingExtensions = 2131493217;
 			
 			// aapt resource value: 0x7F0C0162
-			public const int ntfLDS_ASN_SignerInfo_ContentTypeAttr_Value = 2131493218;
+			public const int ntfLDS_ASN_Certificate_EmptyIssuer = 2131493218;
 			
 			// aapt resource value: 0x7F0C0163
-			public const int ntfLDS_ASN_SignerInfo_MessageDigestAttr_Data = 2131493219;
+			public const int ntfLDS_ASN_Certificate_EmptySubject = 2131493219;
 			
 			// aapt resource value: 0x7F0C0164
-			public const int ntfLDS_ASN_SignerInfo_MessageDigestAttr_Missing = 2131493220;
+			public const int ntfLDS_ASN_Certificate_ForcedDefaultCSCARole = 2131493220;
 			
 			// aapt resource value: 0x7F0C0165
-			public const int ntfLDS_ASN_SignerInfo_MessageDigestAttr_Value = 2131493221;
+			public const int ntfLDS_ASN_Certificate_ForcedDefaultDSRole = 2131493221;
 			
 			// aapt resource value: 0x7F0C0166
-			public const int ntfLDS_ASN_SignerInfo_SID_DigestAlgorithmNotListed = 2131493222;
+			public const int ntfLDS_ASN_Certificate_IncorrectIssuerSubjectDS = 2131493222;
 			
 			// aapt resource value: 0x7F0C0167
-			public const int ntfLDS_ASN_SignerInfo_SID_IncorrectChoice = 2131493223;
+			public const int ntfLDS_ASN_Certificate_IncorrectTimeCoding = 2131493223;
 			
 			// aapt resource value: 0x7F0C0168
-			public const int ntfLDS_ASN_SignerInfo_SigningTimeAttr_Data = 2131493224;
+			public const int ntfLDS_ASN_Certificate_IncorrectUseOfGeneralizedTime = 2131493224;
 			
 			// aapt resource value: 0x7F0C0169
-			public const int ntfLDS_ASN_SignerInfo_SigningTimeAttr_Missing = 2131493225;
+			public const int ntfLDS_ASN_Certificate_IncorrectVersion = 2131493225;
 			
 			// aapt resource value: 0x7F0C016A
-			public const int ntfLDS_ASN_SignerInfo_SigningTimeAttr_Value = 2131493226;
+			public const int ntfLDS_ASN_Certificate_NonMatchingSignatureAlgorithm = 2131493226;
 			
 			// aapt resource value: 0x7F0C016B
-			public const int ntfLDS_ASN_SignerInfo_Version_Incorrect = 2131493227;
+			public const int ntfLDS_ASN_Certificate_UnsupportedCriticalExtension = 2131493227;
 			
 			// aapt resource value: 0x7F0C016C
-			public const int ntfLDS_Auth_MLSignerInfo_Certificate_CantFindCSCA = 2131493228;
+			public const int ntfLDS_ASN_SignedData_OID_Incorrect = 2131493228;
 			
 			// aapt resource value: 0x7F0C016D
-			public const int ntfLDS_Auth_MLSignerInfo_Certificate_Revoked = 2131493229;
+			public const int ntfLDS_ASN_SignedData_Version_Incorrect = 2131493229;
 			
 			// aapt resource value: 0x7F0C016E
-			public const int ntfLDS_Auth_MLSignerInfo_Certificate_RootIsNotTrusted = 2131493230;
+			public const int ntfLDS_ASN_SignerInfo_ContentTypeAttr_Data = 2131493230;
 			
 			// aapt resource value: 0x7F0C016F
-			public const int ntfLDS_Auth_MLSignerInfo_Certificate_SignatureInvalid = 2131493231;
+			public const int ntfLDS_ASN_SignerInfo_ContentTypeAttr_Missing = 2131493231;
 			
 			// aapt resource value: 0x7F0C0170
-			public const int ntfLDS_Auth_MLSignerInfo_Certificate_Validity = 2131493232;
+			public const int ntfLDS_ASN_SignerInfo_ContentTypeAttr_Value = 2131493232;
 			
 			// aapt resource value: 0x7F0C0171
-			public const int ntfLDS_Auth_SignerInfo_Certificate_CantFindCSCA = 2131493233;
+			public const int ntfLDS_ASN_SignerInfo_MessageDigestAttr_Data = 2131493233;
 			
 			// aapt resource value: 0x7F0C0172
-			public const int ntfLDS_Auth_SignerInfo_Certificate_Revoked = 2131493234;
+			public const int ntfLDS_ASN_SignerInfo_MessageDigestAttr_Missing = 2131493234;
 			
 			// aapt resource value: 0x7F0C0173
-			public const int ntfLDS_Auth_SignerInfo_Certificate_RootIsNotTrusted = 2131493235;
+			public const int ntfLDS_ASN_SignerInfo_MessageDigestAttr_Value = 2131493235;
 			
 			// aapt resource value: 0x7F0C0174
-			public const int ntfLDS_Auth_SignerInfo_Certificate_SignatureInvalid = 2131493236;
+			public const int ntfLDS_ASN_SignerInfo_SID_DigestAlgorithmNotListed = 2131493236;
 			
 			// aapt resource value: 0x7F0C0175
-			public const int ntfLDS_Auth_SignerInfo_Certificate_Validity = 2131493237;
+			public const int ntfLDS_ASN_SignerInfo_SID_IncorrectChoice = 2131493237;
 			
 			// aapt resource value: 0x7F0C0176
-			public const int ntfLDS_Biometrics_BDB_DataLength_Incorrect = 2131493238;
+			public const int ntfLDS_ASN_SignerInfo_SigningTimeAttr_Data = 2131493238;
 			
 			// aapt resource value: 0x7F0C0177
-			public const int ntfLDS_Biometrics_BDB_Data_EyeColor = 2131493239;
+			public const int ntfLDS_ASN_SignerInfo_SigningTimeAttr_Missing = 2131493239;
 			
 			// aapt resource value: 0x7F0C0178
-			public const int ntfLDS_Biometrics_BDB_Data_FaceImageType = 2131493240;
+			public const int ntfLDS_ASN_SignerInfo_SigningTimeAttr_Value = 2131493240;
 			
 			// aapt resource value: 0x7F0C0179
-			public const int ntfLDS_Biometrics_BDB_Data_Gender = 2131493241;
+			public const int ntfLDS_ASN_SignerInfo_Version_Incorrect = 2131493241;
 			
 			// aapt resource value: 0x7F0C017A
-			public const int ntfLDS_Biometrics_BDB_Data_HairColor = 2131493242;
+			public const int ntfLDS_Auth_MLSignerInfo_Certificate_CantFindCSCA = 2131493242;
 			
 			// aapt resource value: 0x7F0C017B
-			public const int ntfLDS_Biometrics_BDB_Data_ImageDataType = 2131493243;
+			public const int ntfLDS_Auth_MLSignerInfo_Certificate_Revoked = 2131493243;
 			
 			// aapt resource value: 0x7F0C017C
-			public const int ntfLDS_Biometrics_BDB_Data_PoseAngleU_Pitch = 2131493244;
+			public const int ntfLDS_Auth_MLSignerInfo_Certificate_RootIsNotTrusted = 2131493244;
 			
 			// aapt resource value: 0x7F0C017D
-			public const int ntfLDS_Biometrics_BDB_Data_PoseAngleU_Roll = 2131493245;
+			public const int ntfLDS_Auth_MLSignerInfo_Certificate_SignatureInvalid = 2131493245;
 			
 			// aapt resource value: 0x7F0C017E
-			public const int ntfLDS_Biometrics_BDB_Data_PoseAngleU_Yaw = 2131493246;
+			public const int ntfLDS_Auth_MLSignerInfo_Certificate_Validity = 2131493246;
 			
 			// aapt resource value: 0x7F0C017F
-			public const int ntfLDS_Biometrics_BDB_Data_PoseAngle_Pitch = 2131493247;
+			public const int ntfLDS_Auth_SignerInfo_Certificate_CantFindCSCA = 2131493247;
 			
 			// aapt resource value: 0x7F0C0180
-			public const int ntfLDS_Biometrics_BDB_Data_PoseAngle_Roll = 2131493248;
+			public const int ntfLDS_Auth_SignerInfo_Certificate_Revoked = 2131493248;
 			
 			// aapt resource value: 0x7F0C0181
-			public const int ntfLDS_Biometrics_BDB_Data_PoseAngle_Yaw = 2131493249;
+			public const int ntfLDS_Auth_SignerInfo_Certificate_RootIsNotTrusted = 2131493249;
 			
 			// aapt resource value: 0x7F0C0182
-			public const int ntfLDS_Biometrics_BDB_FormatID_Incorrect = 2131493250;
+			public const int ntfLDS_Auth_SignerInfo_Certificate_SignatureInvalid = 2131493250;
 			
 			// aapt resource value: 0x7F0C0183
-			public const int ntfLDS_Biometrics_BDB_Image_Missing = 2131493251;
+			public const int ntfLDS_Auth_SignerInfo_Certificate_Validity = 2131493251;
 			
 			// aapt resource value: 0x7F0C0184
-			public const int ntfLDS_Biometrics_BDB_Version_Incorrect = 2131493252;
+			public const int ntfLDS_Biometrics_BDB_DataLength_Incorrect = 2131493252;
 			
 			// aapt resource value: 0x7F0C0185
-			public const int ntfLDS_Biometrics_FormatOwner_Incorrect = 2131493253;
+			public const int ntfLDS_Biometrics_BDB_Data_EyeColor = 2131493253;
 			
 			// aapt resource value: 0x7F0C0186
-			public const int ntfLDS_Biometrics_FormatOwner_Missing = 2131493254;
+			public const int ntfLDS_Biometrics_BDB_Data_FaceImageType = 2131493254;
 			
 			// aapt resource value: 0x7F0C0187
-			public const int ntfLDS_Biometrics_FormatType_Incorrect = 2131493255;
+			public const int ntfLDS_Biometrics_BDB_Data_Gender = 2131493255;
 			
 			// aapt resource value: 0x7F0C0188
-			public const int ntfLDS_Biometrics_FormatType_Missing = 2131493256;
+			public const int ntfLDS_Biometrics_BDB_Data_HairColor = 2131493256;
 			
 			// aapt resource value: 0x7F0C0189
-			public const int ntfLDS_Biometrics_SubType_Incorrect = 2131493257;
+			public const int ntfLDS_Biometrics_BDB_Data_ImageDataType = 2131493257;
 			
 			// aapt resource value: 0x7F0C018A
-			public const int ntfLDS_Biometrics_SubType_Missing = 2131493258;
+			public const int ntfLDS_Biometrics_BDB_Data_PoseAngleU_Pitch = 2131493258;
 			
 			// aapt resource value: 0x7F0C018B
-			public const int ntfLDS_Biometrics_Type_Incorrect = 2131493259;
+			public const int ntfLDS_Biometrics_BDB_Data_PoseAngleU_Roll = 2131493259;
 			
 			// aapt resource value: 0x7F0C018C
-			public const int ntfLDS_CVCertificate_NonCVCADomainParameters = 2131493260;
+			public const int ntfLDS_Biometrics_BDB_Data_PoseAngleU_Yaw = 2131493260;
 			
 			// aapt resource value: 0x7F0C018D
-			public const int ntfLDS_CVCertificate_Profile_IncorrectVersion = 2131493261;
+			public const int ntfLDS_Biometrics_BDB_Data_PoseAngle_Pitch = 2131493261;
 			
 			// aapt resource value: 0x7F0C018E
-			public const int ntfLDS_CVCertificate_Validity = 2131493262;
+			public const int ntfLDS_Biometrics_BDB_Data_PoseAngle_Roll = 2131493262;
 			
 			// aapt resource value: 0x7F0C018F
-			public const int ntfLDS_CV_Certificate_PrivateKey_IncorrectVersion = 2131493263;
+			public const int ntfLDS_Biometrics_BDB_Data_PoseAngle_Yaw = 2131493263;
 			
 			// aapt resource value: 0x7F0C0190
-			public const int ntfLDS_ICAO_Application_LDSVersion_Inconsistent = 2131493264;
+			public const int ntfLDS_Biometrics_BDB_FormatID_Incorrect = 2131493264;
 			
 			// aapt resource value: 0x7F0C0191
-			public const int ntfLDS_ICAO_Application_LDSVersion_Unsupported = 2131493265;
+			public const int ntfLDS_Biometrics_BDB_Image_Missing = 2131493265;
 			
 			// aapt resource value: 0x7F0C0192
-			public const int ntfLDS_ICAO_Application_UnicodeVersion_Inconsistent = 2131493266;
+			public const int ntfLDS_Biometrics_BDB_Version_Incorrect = 2131493266;
 			
 			// aapt resource value: 0x7F0C0193
-			public const int ntfLDS_ICAO_Application_UnicodeVersion_Unsupported = 2131493267;
-			
-			// aapt resource value: 0x7F0C019B
-			public const int ntfLDS_ICAO_Certificate_Ext_AuthKeyID_IncorrectData = 2131493275;
-			
-			// aapt resource value: 0x7F0C019C
-			public const int ntfLDS_ICAO_Certificate_Ext_AuthKeyID_KeyID_Missed = 2131493276;
-			
-			// aapt resource value: 0x7F0C019D
-			public const int ntfLDS_ICAO_Certificate_Ext_AuthKeyID_Missed = 2131493277;
-			
-			// aapt resource value: 0x7F0C019E
-			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_IncorrectData = 2131493278;
-			
-			// aapt resource value: 0x7F0C019F
-			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_IncorrectUsage1 = 2131493279;
-			
-			// aapt resource value: 0x7F0C01A0
-			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_IncorrectUsage2 = 2131493280;
-			
-			// aapt resource value: 0x7F0C01A1
-			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_Missed = 2131493281;
-			
-			// aapt resource value: 0x7F0C01A2
-			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_NotCritical = 2131493282;
-			
-			// aapt resource value: 0x7F0C01A3
-			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_PathLenC_Incorrect = 2131493283;
-			
-			// aapt resource value: 0x7F0C01A4
-			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_PathLenC_Missed = 2131493284;
-			
-			// aapt resource value: 0x7F0C01A9
-			public const int ntfLDS_ICAO_Certificate_Ext_CertPolicies_Empty = 2131493289;
-			
-			// aapt resource value: 0x7F0C01AA
-			public const int ntfLDS_ICAO_Certificate_Ext_CertPolicies_IncorrectData = 2131493290;
-			
-			// aapt resource value: 0x7F0C01AB
-			public const int ntfLDS_ICAO_Certificate_Ext_CertPolicies_PolicyID_Missed = 2131493291;
-			
-			// aapt resource value: 0x7F0C01A5
-			public const int ntfLDS_ICAO_Certificate_Ext_CRLDistPoint_Empty = 2131493285;
-			
-			// aapt resource value: 0x7F0C01A6
-			public const int ntfLDS_ICAO_Certificate_Ext_CRLDistPoint_IncorrectData = 2131493286;
-			
-			// aapt resource value: 0x7F0C01A7
-			public const int ntfLDS_ICAO_Certificate_Ext_CRLDistPoint_Missed = 2131493287;
-			
-			// aapt resource value: 0x7F0C01A8
-			public const int ntfLDS_ICAO_Certificate_Ext_CRLDistPoint_PointMissed = 2131493288;
-			
-			// aapt resource value: 0x7F0C01AC
-			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_DocTypes = 2131493292;
-			
-			// aapt resource value: 0x7F0C01AD
-			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_DocTypes_Empty = 2131493293;
-			
-			// aapt resource value: 0x7F0C01AE
-			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_IncorrectData = 2131493294;
-			
-			// aapt resource value: 0x7F0C01AF
-			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_Missed = 2131493295;
-			
-			// aapt resource value: 0x7F0C01B0
-			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_Version = 2131493296;
-			
-			// aapt resource value: 0x7F0C01B1
-			public const int ntfLDS_ICAO_Certificate_Ext_ExtKeyUsage_IncorrectData = 2131493297;
-			
-			// aapt resource value: 0x7F0C01B2
-			public const int ntfLDS_ICAO_Certificate_Ext_ExtKeyUsage_IncorrectUsage = 2131493298;
-			
-			// aapt resource value: 0x7F0C01B3
-			public const int ntfLDS_ICAO_Certificate_Ext_ExtKeyUsage_NotCritical = 2131493299;
-			
-			// aapt resource value: 0x7F0C01B4
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_DN_Empty = 2131493300;
-			
-			// aapt resource value: 0x7F0C01B5
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_DN_Incorrect = 2131493301;
-			
-			// aapt resource value: 0x7F0C01B6
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_DN_Missed = 2131493302;
-			
-			// aapt resource value: 0x7F0C01B7
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_DN_NonCompliant = 2131493303;
-			
-			// aapt resource value: 0x7F0C01B8
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_Empty = 2131493304;
-			
-			// aapt resource value: 0x7F0C01B9
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_IncorrectData = 2131493305;
-			
-			// aapt resource value: 0x7F0C01BA
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_Info_Missed = 2131493306;
-			
-			// aapt resource value: 0x7F0C01BB
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_Missed = 2131493307;
-			
-			// aapt resource value: 0x7F0C01BC
-			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_NonCompliant = 2131493308;
-			
-			// aapt resource value: 0x7F0C01BD
-			public const int ntfLDS_ICAO_Certificate_Ext_KeyUsage_Missed = 2131493309;
-			
-			// aapt resource value: 0x7F0C01BE
-			public const int ntfLDS_ICAO_Certificate_Ext_KeyUsage_NotCritical = 2131493310;
-			
-			// aapt resource value: 0x7F0C01BF
-			public const int ntfLDS_ICAO_Certificate_Ext_PrivateKeyUP_Empty = 2131493311;
-			
-			// aapt resource value: 0x7F0C01C0
-			public const int ntfLDS_ICAO_Certificate_Ext_PrivateKeyUP_IncorrectData = 2131493312;
-			
-			// aapt resource value: 0x7F0C01C1
-			public const int ntfLDS_ICAO_Certificate_Ext_PrivateKeyUP_Missed = 2131493313;
-			
-			// aapt resource value: 0x7F0C01C2
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_DN_Empty = 2131493314;
-			
-			// aapt resource value: 0x7F0C01C3
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_DN_Incorrect = 2131493315;
-			
-			// aapt resource value: 0x7F0C01C4
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_DN_Missed = 2131493316;
-			
-			// aapt resource value: 0x7F0C01C5
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_DN_NonCompliant = 2131493317;
-			
-			// aapt resource value: 0x7F0C01C6
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_Empty = 2131493318;
-			
-			// aapt resource value: 0x7F0C01C7
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_IncorrectData = 2131493319;
-			
-			// aapt resource value: 0x7F0C01C8
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_Info_Missed = 2131493320;
-			
-			// aapt resource value: 0x7F0C01C9
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_Missed = 2131493321;
-			
-			// aapt resource value: 0x7F0C01CA
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_NonCompliant = 2131493322;
-			
-			// aapt resource value: 0x7F0C01CB
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectKeyID_IncorrectData = 2131493323;
-			
-			// aapt resource value: 0x7F0C01CC
-			public const int ntfLDS_ICAO_Certificate_Ext_SubjectKeyID_Missed = 2131493324;
-			
-			// aapt resource value: 0x7F0C01CD
-			public const int ntfLDS_ICAO_Certificate_Ext_UsingNonCompliantData = 2131493325;
-			
-			// aapt resource value: 0x7F0C01CE
-			public const int ntfLDS_ICAO_Certificate_Issuer_CommonName_Missed = 2131493326;
-			
-			// aapt resource value: 0x7F0C01CF
-			public const int ntfLDS_ICAO_Certificate_Issuer_CountryNonCompliant = 2131493327;
-			
-			// aapt resource value: 0x7F0C01D0
-			public const int ntfLDS_ICAO_Certificate_Issuer_Country_Missed = 2131493328;
-			
-			// aapt resource value: 0x7F0C01D1
-			public const int ntfLDS_ICAO_Certificate_MissedExtensions = 2131493329;
-			
-			// aapt resource value: 0x7F0C01D2
-			public const int ntfLDS_ICAO_Certificate_Subject_CommonName_Missed = 2131493330;
-			
-			// aapt resource value: 0x7F0C01D3
-			public const int ntfLDS_ICAO_Certificate_Subject_CountryNonCompliant = 2131493331;
-			
-			// aapt resource value: 0x7F0C01D4
-			public const int ntfLDS_ICAO_Certificate_Subject_Country_Missed = 2131493332;
-			
-			// aapt resource value: 0x7F0C01D5
-			public const int ntfLDS_ICAO_Certificate_UnsupportedPublicKeyAlgorithm = 2131493333;
-			
-			// aapt resource value: 0x7F0C01D6
-			public const int ntfLDS_ICAO_Certificate_UnsupportedSignatureAlgorithm = 2131493334;
-			
-			// aapt resource value: 0x7F0C01D7
-			public const int ntfLDS_ICAO_Certificate_UsingNonCompliantData = 2131493335;
-			
-			// aapt resource value: 0x7F0C01D8
-			public const int ntfLDS_ICAO_Certificate_Validity = 2131493336;
-			
-			// aapt resource value: 0x7F0C01D9
-			public const int ntfLDS_ICAO_Certificate_Version_Incorrect = 2131493337;
-			
-			// aapt resource value: 0x7F0C01DA
-			public const int ntfLDS_ICAO_Certificate_Version_Missed = 2131493338;
+			public const int ntfLDS_Biometrics_FormatOwner_Incorrect = 2131493267;
 			
 			// aapt resource value: 0x7F0C0194
-			public const int ntfLDS_ICAO_COM_DGPM_Incorrect = 2131493268;
+			public const int ntfLDS_Biometrics_FormatOwner_Missing = 2131493268;
 			
 			// aapt resource value: 0x7F0C0195
-			public const int ntfLDS_ICAO_COM_DGPM_Missing = 2131493269;
+			public const int ntfLDS_Biometrics_FormatType_Incorrect = 2131493269;
 			
 			// aapt resource value: 0x7F0C0196
-			public const int ntfLDS_ICAO_COM_DGPM_Unexpected = 2131493270;
+			public const int ntfLDS_Biometrics_FormatType_Missing = 2131493270;
 			
 			// aapt resource value: 0x7F0C0197
-			public const int ntfLDS_ICAO_COM_LDS_Version_Incorrect = 2131493271;
+			public const int ntfLDS_Biometrics_SubType_Incorrect = 2131493271;
 			
 			// aapt resource value: 0x7F0C0198
-			public const int ntfLDS_ICAO_COM_LDS_Version_Missing = 2131493272;
+			public const int ntfLDS_Biometrics_SubType_Missing = 2131493272;
 			
 			// aapt resource value: 0x7F0C0199
-			public const int ntfLDS_ICAO_COM_Unicode_Version_Incorrect = 2131493273;
+			public const int ntfLDS_Biometrics_Type_Incorrect = 2131493273;
 			
 			// aapt resource value: 0x7F0C019A
-			public const int ntfLDS_ICAO_COM_Unicode_Version_Missing = 2131493274;
+			public const int ntfLDS_CVCertificate_NonCVCADomainParameters = 2131493274;
+			
+			// aapt resource value: 0x7F0C019B
+			public const int ntfLDS_CVCertificate_Profile_IncorrectVersion = 2131493275;
+			
+			// aapt resource value: 0x7F0C019C
+			public const int ntfLDS_CVCertificate_Validity = 2131493276;
+			
+			// aapt resource value: 0x7F0C019D
+			public const int ntfLDS_CV_Certificate_PrivateKey_IncorrectVersion = 2131493277;
+			
+			// aapt resource value: 0x7F0C019E
+			public const int ntfLDS_ICAO_Application_LDSVersion_Inconsistent = 2131493278;
+			
+			// aapt resource value: 0x7F0C019F
+			public const int ntfLDS_ICAO_Application_LDSVersion_Unsupported = 2131493279;
+			
+			// aapt resource value: 0x7F0C01A0
+			public const int ntfLDS_ICAO_Application_UnicodeVersion_Inconsistent = 2131493280;
+			
+			// aapt resource value: 0x7F0C01A1
+			public const int ntfLDS_ICAO_Application_UnicodeVersion_Unsupported = 2131493281;
+			
+			// aapt resource value: 0x7F0C01A9
+			public const int ntfLDS_ICAO_Certificate_Ext_AuthKeyID_IncorrectData = 2131493289;
+			
+			// aapt resource value: 0x7F0C01AA
+			public const int ntfLDS_ICAO_Certificate_Ext_AuthKeyID_KeyID_Missed = 2131493290;
+			
+			// aapt resource value: 0x7F0C01AB
+			public const int ntfLDS_ICAO_Certificate_Ext_AuthKeyID_Missed = 2131493291;
+			
+			// aapt resource value: 0x7F0C01AC
+			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_IncorrectData = 2131493292;
+			
+			// aapt resource value: 0x7F0C01AD
+			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_IncorrectUsage1 = 2131493293;
+			
+			// aapt resource value: 0x7F0C01AE
+			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_IncorrectUsage2 = 2131493294;
+			
+			// aapt resource value: 0x7F0C01AF
+			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_Missed = 2131493295;
+			
+			// aapt resource value: 0x7F0C01B0
+			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_NotCritical = 2131493296;
+			
+			// aapt resource value: 0x7F0C01B1
+			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_PathLenC_Incorrect = 2131493297;
+			
+			// aapt resource value: 0x7F0C01B2
+			public const int ntfLDS_ICAO_Certificate_Ext_BasicC_PathLenC_Missed = 2131493298;
+			
+			// aapt resource value: 0x7F0C01B7
+			public const int ntfLDS_ICAO_Certificate_Ext_CertPolicies_Empty = 2131493303;
+			
+			// aapt resource value: 0x7F0C01B8
+			public const int ntfLDS_ICAO_Certificate_Ext_CertPolicies_IncorrectData = 2131493304;
+			
+			// aapt resource value: 0x7F0C01B9
+			public const int ntfLDS_ICAO_Certificate_Ext_CertPolicies_PolicyID_Missed = 2131493305;
+			
+			// aapt resource value: 0x7F0C01B3
+			public const int ntfLDS_ICAO_Certificate_Ext_CRLDistPoint_Empty = 2131493299;
+			
+			// aapt resource value: 0x7F0C01B4
+			public const int ntfLDS_ICAO_Certificate_Ext_CRLDistPoint_IncorrectData = 2131493300;
+			
+			// aapt resource value: 0x7F0C01B5
+			public const int ntfLDS_ICAO_Certificate_Ext_CRLDistPoint_Missed = 2131493301;
+			
+			// aapt resource value: 0x7F0C01B6
+			public const int ntfLDS_ICAO_Certificate_Ext_CRLDistPoint_PointMissed = 2131493302;
+			
+			// aapt resource value: 0x7F0C01BA
+			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_DocTypes = 2131493306;
+			
+			// aapt resource value: 0x7F0C01BB
+			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_DocTypes_Empty = 2131493307;
+			
+			// aapt resource value: 0x7F0C01BC
+			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_IncorrectData = 2131493308;
+			
+			// aapt resource value: 0x7F0C01BD
+			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_Missed = 2131493309;
+			
+			// aapt resource value: 0x7F0C01BE
+			public const int ntfLDS_ICAO_Certificate_Ext_DocTypeList_Version = 2131493310;
+			
+			// aapt resource value: 0x7F0C01BF
+			public const int ntfLDS_ICAO_Certificate_Ext_ExtKeyUsage_IncorrectData = 2131493311;
+			
+			// aapt resource value: 0x7F0C01C0
+			public const int ntfLDS_ICAO_Certificate_Ext_ExtKeyUsage_IncorrectUsage = 2131493312;
+			
+			// aapt resource value: 0x7F0C01C1
+			public const int ntfLDS_ICAO_Certificate_Ext_ExtKeyUsage_NotCritical = 2131493313;
+			
+			// aapt resource value: 0x7F0C01C2
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_DN_Empty = 2131493314;
+			
+			// aapt resource value: 0x7F0C01C3
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_DN_Incorrect = 2131493315;
+			
+			// aapt resource value: 0x7F0C01C4
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_DN_Missed = 2131493316;
+			
+			// aapt resource value: 0x7F0C01C5
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_DN_NonCompliant = 2131493317;
+			
+			// aapt resource value: 0x7F0C01C6
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_Empty = 2131493318;
+			
+			// aapt resource value: 0x7F0C01C7
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_IncorrectData = 2131493319;
+			
+			// aapt resource value: 0x7F0C01C8
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_Info_Missed = 2131493320;
+			
+			// aapt resource value: 0x7F0C01C9
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_Missed = 2131493321;
+			
+			// aapt resource value: 0x7F0C01CA
+			public const int ntfLDS_ICAO_Certificate_Ext_IssuerAltName_NonCompliant = 2131493322;
+			
+			// aapt resource value: 0x7F0C01CB
+			public const int ntfLDS_ICAO_Certificate_Ext_KeyUsage_Missed = 2131493323;
+			
+			// aapt resource value: 0x7F0C01CC
+			public const int ntfLDS_ICAO_Certificate_Ext_KeyUsage_NotCritical = 2131493324;
+			
+			// aapt resource value: 0x7F0C01CD
+			public const int ntfLDS_ICAO_Certificate_Ext_PrivateKeyUP_Empty = 2131493325;
+			
+			// aapt resource value: 0x7F0C01CE
+			public const int ntfLDS_ICAO_Certificate_Ext_PrivateKeyUP_IncorrectData = 2131493326;
+			
+			// aapt resource value: 0x7F0C01CF
+			public const int ntfLDS_ICAO_Certificate_Ext_PrivateKeyUP_Missed = 2131493327;
+			
+			// aapt resource value: 0x7F0C01D0
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_DN_Empty = 2131493328;
+			
+			// aapt resource value: 0x7F0C01D1
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_DN_Incorrect = 2131493329;
+			
+			// aapt resource value: 0x7F0C01D2
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_DN_Missed = 2131493330;
+			
+			// aapt resource value: 0x7F0C01D3
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_DN_NonCompliant = 2131493331;
+			
+			// aapt resource value: 0x7F0C01D4
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_Empty = 2131493332;
+			
+			// aapt resource value: 0x7F0C01D5
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_IncorrectData = 2131493333;
+			
+			// aapt resource value: 0x7F0C01D6
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_Info_Missed = 2131493334;
+			
+			// aapt resource value: 0x7F0C01D7
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_Missed = 2131493335;
+			
+			// aapt resource value: 0x7F0C01D8
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectAltName_NonCompliant = 2131493336;
+			
+			// aapt resource value: 0x7F0C01D9
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectKeyID_IncorrectData = 2131493337;
+			
+			// aapt resource value: 0x7F0C01DA
+			public const int ntfLDS_ICAO_Certificate_Ext_SubjectKeyID_Missed = 2131493338;
 			
 			// aapt resource value: 0x7F0C01DB
-			public const int ntfLDS_ICAO_LDSObject_DGHash_Extra = 2131493339;
+			public const int ntfLDS_ICAO_Certificate_Ext_UsingNonCompliantData = 2131493339;
 			
 			// aapt resource value: 0x7F0C01DC
-			public const int ntfLDS_ICAO_LDSObject_DGHash_Missing = 2131493340;
+			public const int ntfLDS_ICAO_Certificate_Issuer_CommonName_Missed = 2131493340;
 			
 			// aapt resource value: 0x7F0C01DD
-			public const int ntfLDS_ICAO_LDSObject_DGNumber_Incorrect = 2131493341;
+			public const int ntfLDS_ICAO_Certificate_Issuer_CountryNonCompliant = 2131493341;
 			
 			// aapt resource value: 0x7F0C01DE
-			public const int ntfLDS_ICAO_LDSObject_IncorrectContentOID = 2131493342;
+			public const int ntfLDS_ICAO_Certificate_Issuer_Country_Missed = 2131493342;
 			
 			// aapt resource value: 0x7F0C01DF
-			public const int ntfLDS_ICAO_LDSObject_Version_Incorrect = 2131493343;
+			public const int ntfLDS_ICAO_Certificate_MissedExtensions = 2131493343;
 			
 			// aapt resource value: 0x7F0C01E0
-			public const int ntfLDS_ICAO_MasterList_Version_Incorrect = 2131493344;
-			
-			// aapt resource value: 0x7F0C01E2
-			public const int ntfLDS_ICAO_SignedData_Certificates_Empty = 2131493346;
-			
-			// aapt resource value: 0x7F0C01E3
-			public const int ntfLDS_ICAO_SignedData_Certificates_Missed = 2131493347;
+			public const int ntfLDS_ICAO_Certificate_Subject_CommonName_Missed = 2131493344;
 			
 			// aapt resource value: 0x7F0C01E1
-			public const int ntfLDS_ICAO_SignedData_CRLs_IncorrectUsage = 2131493345;
+			public const int ntfLDS_ICAO_Certificate_Subject_CountryNonCompliant = 2131493345;
+			
+			// aapt resource value: 0x7F0C01E2
+			public const int ntfLDS_ICAO_Certificate_Subject_Country_Missed = 2131493346;
+			
+			// aapt resource value: 0x7F0C01E3
+			public const int ntfLDS_ICAO_Certificate_UnsupportedPublicKeyAlgorithm = 2131493347;
 			
 			// aapt resource value: 0x7F0C01E4
-			public const int ntfLDS_ICAO_SignedData_DigestAlgorithms_Empty = 2131493348;
+			public const int ntfLDS_ICAO_Certificate_UnsupportedSignatureAlgorithm = 2131493348;
 			
 			// aapt resource value: 0x7F0C01E5
-			public const int ntfLDS_ICAO_SignedData_DigestAlgorithms_Unsupported = 2131493349;
+			public const int ntfLDS_ICAO_Certificate_UsingNonCompliantData = 2131493349;
 			
 			// aapt resource value: 0x7F0C01E6
-			public const int ntfLDS_ICAO_SignedData_SignerInfos_MultipleEntries = 2131493350;
+			public const int ntfLDS_ICAO_Certificate_Validity = 2131493350;
 			
 			// aapt resource value: 0x7F0C01E7
-			public const int ntfLDS_ICAO_SignedData_Version_Incorrect = 2131493351;
+			public const int ntfLDS_ICAO_Certificate_Version_Incorrect = 2131493351;
 			
 			// aapt resource value: 0x7F0C01E8
-			public const int ntfLDS_MRZ_DOB_Error = 2131493352;
+			public const int ntfLDS_ICAO_Certificate_Version_Missed = 2131493352;
+			
+			// aapt resource value: 0x7F0C01A2
+			public const int ntfLDS_ICAO_COM_DGPM_Incorrect = 2131493282;
+			
+			// aapt resource value: 0x7F0C01A3
+			public const int ntfLDS_ICAO_COM_DGPM_Missing = 2131493283;
+			
+			// aapt resource value: 0x7F0C01A4
+			public const int ntfLDS_ICAO_COM_DGPM_Unexpected = 2131493284;
+			
+			// aapt resource value: 0x7F0C01A5
+			public const int ntfLDS_ICAO_COM_LDS_Version_Incorrect = 2131493285;
+			
+			// aapt resource value: 0x7F0C01A6
+			public const int ntfLDS_ICAO_COM_LDS_Version_Missing = 2131493286;
+			
+			// aapt resource value: 0x7F0C01A7
+			public const int ntfLDS_ICAO_COM_Unicode_Version_Incorrect = 2131493287;
+			
+			// aapt resource value: 0x7F0C01A8
+			public const int ntfLDS_ICAO_COM_Unicode_Version_Missing = 2131493288;
 			
 			// aapt resource value: 0x7F0C01E9
-			public const int ntfLDS_MRZ_DOB_IncorrectChecksum = 2131493353;
+			public const int ntfLDS_ICAO_LDSObject_DGHash_Extra = 2131493353;
 			
 			// aapt resource value: 0x7F0C01EA
-			public const int ntfLDS_MRZ_DOB_SyntaxError = 2131493354;
-			
-			// aapt resource value: 0x7F0C01EE
-			public const int ntfLDS_MRZ_DocumentType_Unknown = 2131493358;
+			public const int ntfLDS_ICAO_LDSObject_DGHash_Missing = 2131493354;
 			
 			// aapt resource value: 0x7F0C01EB
-			public const int ntfLDS_MRZ_DOE_Error = 2131493355;
+			public const int ntfLDS_ICAO_LDSObject_DGNumber_Incorrect = 2131493355;
 			
 			// aapt resource value: 0x7F0C01EC
-			public const int ntfLDS_MRZ_DOE_IncorrectChecksum = 2131493356;
+			public const int ntfLDS_ICAO_LDSObject_IncorrectContentOID = 2131493356;
 			
 			// aapt resource value: 0x7F0C01ED
-			public const int ntfLDS_MRZ_DOE_SyntaxError = 2131493357;
+			public const int ntfLDS_ICAO_LDSObject_Version_Incorrect = 2131493357;
 			
-			// aapt resource value: 0x7F0C01EF
-			public const int ntfLDS_MRZ_Incorrect = 2131493359;
+			// aapt resource value: 0x7F0C01EE
+			public const int ntfLDS_ICAO_MasterList_Version_Incorrect = 2131493358;
 			
 			// aapt resource value: 0x7F0C01F0
-			public const int ntfLDS_MRZ_IncorrectChecksum = 2131493360;
+			public const int ntfLDS_ICAO_SignedData_Certificates_Empty = 2131493360;
 			
 			// aapt resource value: 0x7F0C01F1
-			public const int ntfLDS_MRZ_IssuingState_SyntaxError = 2131493361;
+			public const int ntfLDS_ICAO_SignedData_Certificates_Missed = 2131493361;
+			
+			// aapt resource value: 0x7F0C01EF
+			public const int ntfLDS_ICAO_SignedData_CRLs_IncorrectUsage = 2131493359;
 			
 			// aapt resource value: 0x7F0C01F2
-			public const int ntfLDS_MRZ_Name_IsVoid = 2131493362;
+			public const int ntfLDS_ICAO_SignedData_DigestAlgorithms_Empty = 2131493362;
 			
 			// aapt resource value: 0x7F0C01F3
-			public const int ntfLDS_MRZ_Nationality_SyntaxError = 2131493363;
+			public const int ntfLDS_ICAO_SignedData_DigestAlgorithms_Unsupported = 2131493363;
 			
 			// aapt resource value: 0x7F0C01F4
-			public const int ntfLDS_MRZ_Number_IncorrectChecksum = 2131493364;
+			public const int ntfLDS_ICAO_SignedData_SignerInfos_MultipleEntries = 2131493364;
 			
 			// aapt resource value: 0x7F0C01F5
-			public const int ntfLDS_MRZ_OptionalData_IncorrectChecksum = 2131493365;
+			public const int ntfLDS_ICAO_SignedData_Version_Incorrect = 2131493365;
 			
 			// aapt resource value: 0x7F0C01F6
-			public const int ntfLDS_MRZ_Sex_Incorrect = 2131493366;
+			public const int ntfLDS_MRZ_DOB_Error = 2131493366;
 			
 			// aapt resource value: 0x7F0C01F7
-			public const int ntfLDS_SI_AA_Info_InconsistentAlgorithmReference = 2131493367;
+			public const int ntfLDS_MRZ_DOB_IncorrectChecksum = 2131493367;
 			
 			// aapt resource value: 0x7F0C01F8
-			public const int ntfLDS_SI_AA_Info_IncorrectVersion = 2131493368;
-			
-			// aapt resource value: 0x7F0C01F9
-			public const int ntfLDS_SI_AA_Info_UnsupportedAlgorithm = 2131493369;
-			
-			// aapt resource value: 0x7F0C01FA
-			public const int ntfLDS_SI_CA_DomainParams_UnsupportedAlgorithm = 2131493370;
-			
-			// aapt resource value: 0x7F0C01FB
-			public const int ntfLDS_SI_CA_Info_IncorrectVersion = 2131493371;
+			public const int ntfLDS_MRZ_DOB_SyntaxError = 2131493368;
 			
 			// aapt resource value: 0x7F0C01FC
-			public const int ntfLDS_SI_CA_PublicKey_UnsupportedAlgorithm = 2131493372;
+			public const int ntfLDS_MRZ_DocumentType_Unknown = 2131493372;
 			
-			// aapt resource value: 0x7F0C0216
-			public const int ntfLDS_SI_eIDSecurity_UnsupportedDigestAlgorithm = 2131493398;
+			// aapt resource value: 0x7F0C01F9
+			public const int ntfLDS_MRZ_DOE_Error = 2131493369;
+			
+			// aapt resource value: 0x7F0C01FA
+			public const int ntfLDS_MRZ_DOE_IncorrectChecksum = 2131493370;
+			
+			// aapt resource value: 0x7F0C01FB
+			public const int ntfLDS_MRZ_DOE_SyntaxError = 2131493371;
 			
 			// aapt resource value: 0x7F0C01FD
-			public const int ntfLDS_SI_PACE_DomainParams_UnsupportedAlgorithm = 2131493373;
+			public const int ntfLDS_MRZ_Incorrect = 2131493373;
 			
 			// aapt resource value: 0x7F0C01FE
-			public const int ntfLDS_SI_PACE_DomainParams_UsingStdRef = 2131493374;
+			public const int ntfLDS_MRZ_IncorrectChecksum = 2131493374;
 			
 			// aapt resource value: 0x7F0C01FF
-			public const int ntfLDS_SI_PACE_Info_DeprecatedVersion = 2131493375;
+			public const int ntfLDS_MRZ_IssuingState_SyntaxError = 2131493375;
 			
 			// aapt resource value: 0x7F0C0200
-			public const int ntfLDS_SI_PACE_Info_UnsupportedStdParameters = 2131493376;
+			public const int ntfLDS_MRZ_Name_IsVoid = 2131493376;
 			
 			// aapt resource value: 0x7F0C0201
-			public const int ntfLDS_SI_RI_DomainParams_UnsupportedAlgorithm = 2131493377;
+			public const int ntfLDS_MRZ_Nationality_SyntaxError = 2131493377;
 			
 			// aapt resource value: 0x7F0C0202
-			public const int ntfLDS_SI_RI_Info_IncorrectVersion = 2131493378;
-			
-			// aapt resource value: 0x7F0C020A
-			public const int ntfLDS_SI_Storage_CardInfoLocator_MultipleEntries = 2131493386;
+			public const int ntfLDS_MRZ_Number_IncorrectChecksum = 2131493378;
 			
 			// aapt resource value: 0x7F0C0203
-			public const int ntfLDS_SI_Storage_CA_AnonymousInfos = 2131493379;
+			public const int ntfLDS_MRZ_OptionalData_IncorrectChecksum = 2131493379;
 			
 			// aapt resource value: 0x7F0C0204
-			public const int ntfLDS_SI_Storage_CA_DomainParams_NoRequiredOption = 2131493380;
+			public const int ntfLDS_MRZ_Sex_Incorrect = 2131493380;
 			
 			// aapt resource value: 0x7F0C0205
-			public const int ntfLDS_SI_Storage_CA_DomainParams_NotAvailable = 2131493381;
+			public const int ntfLDS_SI_AA_Info_InconsistentAlgorithmReference = 2131493381;
 			
 			// aapt resource value: 0x7F0C0206
-			public const int ntfLDS_SI_Storage_CA_IncorrectInfosQuantity = 2131493382;
+			public const int ntfLDS_SI_AA_Info_IncorrectVersion = 2131493382;
 			
 			// aapt resource value: 0x7F0C0207
-			public const int ntfLDS_SI_Storage_CA_Info_NoMatchingDomainParams = 2131493383;
+			public const int ntfLDS_SI_AA_Info_UnsupportedAlgorithm = 2131493383;
 			
 			// aapt resource value: 0x7F0C0208
-			public const int ntfLDS_SI_Storage_CA_Info_NoMatchingPublicKey = 2131493384;
+			public const int ntfLDS_SI_CA_DomainParams_UnsupportedAlgorithm = 2131493384;
 			
 			// aapt resource value: 0x7F0C0209
-			public const int ntfLDS_SI_Storage_CA_Info_NotAvailable = 2131493385;
+			public const int ntfLDS_SI_CA_Info_IncorrectVersion = 2131493385;
 			
-			// aapt resource value: 0x7F0C0213
-			public const int ntfLDS_SI_Storage_eIDSecurityInfo_MultipleEntries = 2131493395;
+			// aapt resource value: 0x7F0C020A
+			public const int ntfLDS_SI_CA_PublicKey_UnsupportedAlgorithm = 2131493386;
+			
+			// aapt resource value: 0x7F0C0224
+			public const int ntfLDS_SI_eIDSecurity_UnsupportedDigestAlgorithm = 2131493412;
 			
 			// aapt resource value: 0x7F0C020B
-			public const int ntfLDS_SI_Storage_PACEInfos_NonConsistant = 2131493387;
+			public const int ntfLDS_SI_PACE_DomainParams_UnsupportedAlgorithm = 2131493387;
 			
 			// aapt resource value: 0x7F0C020C
-			public const int ntfLDS_SI_Storage_PACE_Info_NoMatchingDomainParams = 2131493388;
+			public const int ntfLDS_SI_PACE_DomainParams_UsingStdRef = 2131493388;
 			
 			// aapt resource value: 0x7F0C020D
-			public const int ntfLDS_SI_Storage_PACE_Info_NoStdParameters = 2131493389;
+			public const int ntfLDS_SI_PACE_Info_DeprecatedVersion = 2131493389;
 			
 			// aapt resource value: 0x7F0C020E
-			public const int ntfLDS_SI_Storage_PACE_Info_NotAvailable = 2131493390;
+			public const int ntfLDS_SI_PACE_Info_UnsupportedStdParameters = 2131493390;
 			
 			// aapt resource value: 0x7F0C020F
-			public const int ntfLDS_SI_Storage_PrivilegedTI_IncorrectUsage = 2131493391;
+			public const int ntfLDS_SI_RI_DomainParams_UnsupportedAlgorithm = 2131493391;
 			
 			// aapt resource value: 0x7F0C0210
-			public const int ntfLDS_SI_Storage_PrivilegedTI_MultipleEntries = 2131493392;
-			
-			// aapt resource value: 0x7F0C0211
-			public const int ntfLDS_SI_Storage_RI_DomainParams_MultipleEntries = 2131493393;
-			
-			// aapt resource value: 0x7F0C0212
-			public const int ntfLDS_SI_Storage_TA_Info_NotAvailable = 2131493394;
-			
-			// aapt resource value: 0x7F0C0214
-			public const int ntfLDS_SI_TA_Info_FileIDForVersion2 = 2131493396;
-			
-			// aapt resource value: 0x7F0C0215
-			public const int ntfLDS_SI_TA_Info_IncorrectVersion = 2131493397;
-			
-			// aapt resource value: 0x7F0C0217
-			public const int ntfLDS_TA_PACEStaticBindingUsed = 2131493399;
+			public const int ntfLDS_SI_RI_Info_IncorrectVersion = 2131493392;
 			
 			// aapt resource value: 0x7F0C0218
-			public const int ntfLDS_UnsupportedImageFormat = 2131493400;
+			public const int ntfLDS_SI_Storage_CardInfoLocator_MultipleEntries = 2131493400;
+			
+			// aapt resource value: 0x7F0C0211
+			public const int ntfLDS_SI_Storage_CA_AnonymousInfos = 2131493393;
+			
+			// aapt resource value: 0x7F0C0212
+			public const int ntfLDS_SI_Storage_CA_DomainParams_NoRequiredOption = 2131493394;
+			
+			// aapt resource value: 0x7F0C0213
+			public const int ntfLDS_SI_Storage_CA_DomainParams_NotAvailable = 2131493395;
+			
+			// aapt resource value: 0x7F0C0214
+			public const int ntfLDS_SI_Storage_CA_IncorrectInfosQuantity = 2131493396;
+			
+			// aapt resource value: 0x7F0C0215
+			public const int ntfLDS_SI_Storage_CA_Info_NoMatchingDomainParams = 2131493397;
+			
+			// aapt resource value: 0x7F0C0216
+			public const int ntfLDS_SI_Storage_CA_Info_NoMatchingPublicKey = 2131493398;
+			
+			// aapt resource value: 0x7F0C0217
+			public const int ntfLDS_SI_Storage_CA_Info_NotAvailable = 2131493399;
+			
+			// aapt resource value: 0x7F0C0221
+			public const int ntfLDS_SI_Storage_eIDSecurityInfo_MultipleEntries = 2131493409;
+			
+			// aapt resource value: 0x7F0C0219
+			public const int ntfLDS_SI_Storage_PACEInfos_NonConsistant = 2131493401;
+			
+			// aapt resource value: 0x7F0C021A
+			public const int ntfLDS_SI_Storage_PACE_Info_NoMatchingDomainParams = 2131493402;
+			
+			// aapt resource value: 0x7F0C021B
+			public const int ntfLDS_SI_Storage_PACE_Info_NoStdParameters = 2131493403;
+			
+			// aapt resource value: 0x7F0C021C
+			public const int ntfLDS_SI_Storage_PACE_Info_NotAvailable = 2131493404;
+			
+			// aapt resource value: 0x7F0C021D
+			public const int ntfLDS_SI_Storage_PrivilegedTI_IncorrectUsage = 2131493405;
+			
+			// aapt resource value: 0x7F0C021E
+			public const int ntfLDS_SI_Storage_PrivilegedTI_MultipleEntries = 2131493406;
+			
+			// aapt resource value: 0x7F0C021F
+			public const int ntfLDS_SI_Storage_RI_DomainParams_MultipleEntries = 2131493407;
+			
+			// aapt resource value: 0x7F0C0220
+			public const int ntfLDS_SI_Storage_TA_Info_NotAvailable = 2131493408;
+			
+			// aapt resource value: 0x7F0C0222
+			public const int ntfLDS_SI_TA_Info_FileIDForVersion2 = 2131493410;
+			
+			// aapt resource value: 0x7F0C0223
+			public const int ntfLDS_SI_TA_Info_IncorrectVersion = 2131493411;
+			
+			// aapt resource value: 0x7F0C0225
+			public const int ntfLDS_TA_PACEStaticBindingUsed = 2131493413;
+			
+			// aapt resource value: 0x7F0C0226
+			public const int ntfLDS_UnsupportedImageFormat = 2131493414;
 			
 			// aapt resource value: 0x7F0C0000
 			public const int RFID_Error_AlreadyDone = 2131492864;
@@ -5009,2201 +5069,2207 @@ namespace DocumentReaderSample.Droid
 			// aapt resource value: 0x7F0C0061
 			public const int RSDT_RFID_READING_FINISHED = 2131492961;
 			
-			// aapt resource value: 0x7F0C0219
-			public const int search_menu_title = 2131493401;
-			
-			// aapt resource value: 0x7F0C021A
-			public const int status_bar_notification_info_overflow = 2131493402;
-			
-			// aapt resource value: 0x7F0C0224
-			public const int strAa = 2131493412;
-			
-			// aapt resource value: 0x7F0C0225
-			public const int strAcademicTitle = 2131493413;
-			
-			// aapt resource value: 0x7F0C0226
-			public const int strAccessibilityCameraButton = 2131493414;
-			
 			// aapt resource value: 0x7F0C0227
-			public const int strAccessibilityCloseButton = 2131493415;
+			public const int search_menu_title = 2131493415;
 			
 			// aapt resource value: 0x7F0C0228
-			public const int strAccessibilityTorchButton = 2131493416;
-			
-			// aapt resource value: 0x7F0C0229
-			public const int strAccompaniedby = 2131493417;
-			
-			// aapt resource value: 0x7F0C022A
-			public const int strAddress = 2131493418;
-			
-			// aapt resource value: 0x7F0C022B
-			public const int strAddressArea = 2131493419;
-			
-			// aapt resource value: 0x7F0C022C
-			public const int strAddressBuilding = 2131493420;
-			
-			// aapt resource value: 0x7F0C022D
-			public const int strAddressCity = 2131493421;
-			
-			// aapt resource value: 0x7F0C022E
-			public const int strAddressFlat = 2131493422;
-			
-			// aapt resource value: 0x7F0C022F
-			public const int strAddressHouse = 2131493423;
-			
-			// aapt resource value: 0x7F0C0230
-			public const int strAddressJurisdictionCode = 2131493424;
-			
-			// aapt resource value: 0x7F0C0231
-			public const int strAddressLocation = 2131493425;
+			public const int status_bar_notification_info_overflow = 2131493416;
 			
 			// aapt resource value: 0x7F0C0232
-			public const int strAddressMunicipality = 2131493426;
+			public const int strAa = 2131493426;
 			
 			// aapt resource value: 0x7F0C0233
-			public const int strAddressPostalCode = 2131493427;
+			public const int strAcademicTitle = 2131493427;
 			
 			// aapt resource value: 0x7F0C0234
-			public const int strAddressState = 2131493428;
+			public const int strAccessibilityCameraButton = 2131493428;
 			
 			// aapt resource value: 0x7F0C0235
-			public const int strAddressStreet = 2131493429;
+			public const int strAccessibilityCloseButton = 2131493429;
 			
 			// aapt resource value: 0x7F0C0236
-			public const int strAdministrativeNumber = 2131493430;
+			public const int strAccessibilityTorchButton = 2131493430;
 			
 			// aapt resource value: 0x7F0C0237
-			public const int strAdressCountry = 2131493431;
+			public const int strAccompaniedby = 2131493431;
 			
 			// aapt resource value: 0x7F0C0238
-			public const int strAdressZipcode = 2131493432;
+			public const int strAddress = 2131493432;
 			
 			// aapt resource value: 0x7F0C0239
-			public const int strAge = 2131493433;
+			public const int strAddressArea = 2131493433;
 			
 			// aapt resource value: 0x7F0C023A
-			public const int strAgeAtIssue = 2131493434;
-			
-			// aapt resource value: 0x7F0C021B
-			public const int strAGY = 2131493403;
+			public const int strAddressBuilding = 2131493434;
 			
 			// aapt resource value: 0x7F0C023B
-			public const int strAirlineDesignatorofboardingpassissuer = 2131493435;
+			public const int strAddressCity = 2131493435;
 			
 			// aapt resource value: 0x7F0C023C
-			public const int strAirlineName = 2131493436;
+			public const int strAddressFlat = 2131493436;
 			
 			// aapt resource value: 0x7F0C023D
-			public const int strAirlineNameFrequentFlyer = 2131493437;
+			public const int strAddressHouse = 2131493437;
 			
 			// aapt resource value: 0x7F0C023E
-			public const int strAirlineNumericCode = 2131493438;
+			public const int strAddressJurisdictionCode = 2131493438;
 			
 			// aapt resource value: 0x7F0C023F
-			public const int strAirportFrom = 2131493439;
+			public const int strAddressLocation = 2131493439;
 			
 			// aapt resource value: 0x7F0C0240
-			public const int strAirportTo = 2131493440;
-			
-			// aapt resource value: 0x7F0C021C
-			public const int strAKADateofBirth = 2131493404;
-			
-			// aapt resource value: 0x7F0C021D
-			public const int strAKAGivenNames = 2131493405;
-			
-			// aapt resource value: 0x7F0C021E
-			public const int strAKANamePrefix = 2131493406;
-			
-			// aapt resource value: 0x7F0C021F
-			public const int strAKANameSuffix = 2131493407;
-			
-			// aapt resource value: 0x7F0C0220
-			public const int strAKASocialSecurityNumber = 2131493408;
-			
-			// aapt resource value: 0x7F0C0221
-			public const int strAKASurname = 2131493409;
-			
-			// aapt resource value: 0x7F0C0222
-			public const int strAKASurnameAndGivenNames = 2131493410;
+			public const int strAddressMunicipality = 2131493440;
 			
 			// aapt resource value: 0x7F0C0241
-			public const int strAllergies = 2131493441;
-			
-			// aapt resource value: 0x7F0C0223
-			public const int strALTCode = 2131493411;
+			public const int strAddressPostalCode = 2131493441;
 			
 			// aapt resource value: 0x7F0C0242
-			public const int strApplicationDoNotHavePermission = 2131493442;
+			public const int strAddressState = 2131493442;
 			
 			// aapt resource value: 0x7F0C0243
-			public const int strApplicationNumber = 2131493443;
+			public const int strAddressStreet = 2131493443;
 			
 			// aapt resource value: 0x7F0C0244
-			public const int strArtisticName = 2131493444;
+			public const int strAdministrativeNumber = 2131493444;
 			
 			// aapt resource value: 0x7F0C0245
-			public const int strAuditInformation = 2131493445;
+			public const int strAdressCountry = 2131493445;
 			
 			// aapt resource value: 0x7F0C0246
-			public const int strAuthenticatorAttached = 2131493446;
+			public const int strAdressZipcode = 2131493446;
 			
 			// aapt resource value: 0x7F0C0247
-			public const int strAuthenticatorTurnedOn = 2131493447;
+			public const int strAge = 2131493447;
 			
 			// aapt resource value: 0x7F0C0248
-			public const int strAuthentification = 2131493448;
+			public const int strAgeAtIssue = 2131493448;
+			
+			// aapt resource value: 0x7F0C0229
+			public const int strAGY = 2131493417;
 			
 			// aapt resource value: 0x7F0C0249
-			public const int strAuthority = 2131493449;
+			public const int strAirlineDesignatorofboardingpassissuer = 2131493449;
 			
 			// aapt resource value: 0x7F0C024A
-			public const int strAuthorityCode = 2131493450;
+			public const int strAirlineName = 2131493450;
 			
 			// aapt resource value: 0x7F0C024B
-			public const int strAuthorityRUS = 2131493451;
+			public const int strAirlineNameFrequentFlyer = 2131493451;
 			
 			// aapt resource value: 0x7F0C024C
-			public const int strAuthorizationNumber = 2131493452;
+			public const int strAirlineNumericCode = 2131493452;
 			
 			// aapt resource value: 0x7F0C024D
-			public const int strAxialProtection = 2131493453;
-			
-			// aapt resource value: 0x7F0C024F
-			public const int strBac = 2131493455;
-			
-			// aapt resource value: 0x7F0C0250
-			public const int strBankCardNumber = 2131493456;
-			
-			// aapt resource value: 0x7F0C0251
-			public const int strBankCardValidThru = 2131493457;
-			
-			// aapt resource value: 0x7F0C0252
-			public const int strBanknoteNumber = 2131493458;
-			
-			// aapt resource value: 0x7F0C0253
-			public const int strBarcode = 2131493459;
-			
-			// aapt resource value: 0x7F0C0254
-			public const int strBarcodeFormatCheck = 2131493460;
+			public const int strAirportFrom = 2131493453;
 			
 			// aapt resource value: 0x7F0C024E
-			public const int strBDBType = 2131493454;
+			public const int strAirportTo = 2131493454;
+			
+			// aapt resource value: 0x7F0C022A
+			public const int strAKADateofBirth = 2131493418;
+			
+			// aapt resource value: 0x7F0C022B
+			public const int strAKAGivenNames = 2131493419;
+			
+			// aapt resource value: 0x7F0C022C
+			public const int strAKANamePrefix = 2131493420;
+			
+			// aapt resource value: 0x7F0C022D
+			public const int strAKANameSuffix = 2131493421;
+			
+			// aapt resource value: 0x7F0C022E
+			public const int strAKASocialSecurityNumber = 2131493422;
+			
+			// aapt resource value: 0x7F0C022F
+			public const int strAKASurname = 2131493423;
+			
+			// aapt resource value: 0x7F0C0230
+			public const int strAKASurnameAndGivenNames = 2131493424;
+			
+			// aapt resource value: 0x7F0C024F
+			public const int strAllergies = 2131493455;
+			
+			// aapt resource value: 0x7F0C0231
+			public const int strALTCode = 2131493425;
+			
+			// aapt resource value: 0x7F0C0250
+			public const int strApplicationDoNotHavePermission = 2131493456;
+			
+			// aapt resource value: 0x7F0C0251
+			public const int strApplicationNumber = 2131493457;
+			
+			// aapt resource value: 0x7F0C0252
+			public const int strArtisticName = 2131493458;
+			
+			// aapt resource value: 0x7F0C0253
+			public const int strAuditInformation = 2131493459;
+			
+			// aapt resource value: 0x7F0C0254
+			public const int strAuthenticatorAttached = 2131493460;
 			
 			// aapt resource value: 0x7F0C0255
-			public const int strBenefitsNumber = 2131493461;
+			public const int strAuthenticatorTurnedOn = 2131493461;
 			
 			// aapt resource value: 0x7F0C0256
-			public const int strBinaryCode = 2131493462;
+			public const int strAuthentification = 2131493462;
 			
 			// aapt resource value: 0x7F0C0257
-			public const int strBiometricFormatOwner = 2131493463;
+			public const int strAuthority = 2131493463;
 			
 			// aapt resource value: 0x7F0C0258
-			public const int strBiometricFormatType = 2131493464;
+			public const int strAuthorityCode = 2131493464;
 			
 			// aapt resource value: 0x7F0C0259
-			public const int strBiometricProductID = 2131493465;
+			public const int strAuthorityRUS = 2131493465;
 			
 			// aapt resource value: 0x7F0C025A
-			public const int strBiometricSubtype = 2131493466;
+			public const int strAuthorizationNumber = 2131493466;
 			
 			// aapt resource value: 0x7F0C025B
-			public const int strBiometricType = 2131493467;
-			
-			// aapt resource value: 0x7F0C025C
-			public const int strBlankElement = 2131493468;
+			public const int strAxialProtection = 2131493467;
 			
 			// aapt resource value: 0x7F0C025D
-			public const int strBloodGroup = 2131493469;
+			public const int strBac = 2131493469;
 			
 			// aapt resource value: 0x7F0C025E
-			public const int strBluetoothEnabled = 2131493470;
+			public const int strBankCardNumber = 2131493470;
 			
 			// aapt resource value: 0x7F0C025F
-			public const int strBookletNumber = 2131493471;
-			
-			// aapt resource value: 0x7F0C0264
-			public const int strCa = 2131493476;
-			
-			// aapt resource value: 0x7F0C0265
-			public const int strCaliber = 2131493477;
-			
-			// aapt resource value: 0x7F0C0266
-			public const int strCameraUnavailable = 2131493478;
-			
-			// aapt resource value: 0x7F0C0267
-			public const int strCardAccessNumber = 2131493479;
-			
-			// aapt resource value: 0x7F0C0268
-			public const int strCardInfo = 2131493480;
-			
-			// aapt resource value: 0x7F0C0269
-			public const int strCategory = 2131493481;
+			public const int strBankCardValidThru = 2131493471;
 			
 			// aapt resource value: 0x7F0C0260
-			public const int strCCWUntil = 2131493472;
+			public const int strBanknoteNumber = 2131493472;
 			
 			// aapt resource value: 0x7F0C0261
-			public const int strCDLClass = 2131493473;
-			
-			// aapt resource value: 0x7F0C026A
-			public const int strCenturyDateOfBirth = 2131493482;
-			
-			// aapt resource value: 0x7F0C026B
-			public const int strChassisNumber = 2131493483;
-			
-			// aapt resource value: 0x7F0C026C
-			public const int strCheckInSequenceNumber = 2131493484;
-			
-			// aapt resource value: 0x7F0C026D
-			public const int strChildren = 2131493485;
-			
-			// aapt resource value: 0x7F0C026E
-			public const int strCitizenshipOfFirstPerson = 2131493486;
-			
-			// aapt resource value: 0x7F0C026F
-			public const int strCitizenshipOfSecondPerson = 2131493487;
-			
-			// aapt resource value: 0x7F0C0270
-			public const int strCivilStatus = 2131493488;
-			
-			// aapt resource value: 0x7F0C0271
-			public const int strColorDynamic = 2131493489;
-			
-			// aapt resource value: 0x7F0C0272
-			public const int strCommercialVehicleCodes = 2131493490;
-			
-			// aapt resource value: 0x7F0C0273
-			public const int strCompanyName = 2131493491;
-			
-			// aapt resource value: 0x7F0C0274
-			public const int strCompartmentCode = 2131493492;
-			
-			// aapt resource value: 0x7F0C0275
-			public const int strComplexion = 2131493493;
-			
-			// aapt resource value: 0x7F0C0276
-			public const int strComplianceType = 2131493494;
-			
-			// aapt resource value: 0x7F0C0277
-			public const int strConditions = 2131493495;
-			
-			// aapt resource value: 0x7F0C0278
-			public const int strConfiguration = 2131493496;
-			
-			// aapt resource value: 0x7F0C0279
-			public const int strControlNo = 2131493497;
-			
-			// aapt resource value: 0x7F0C027A
-			public const int strCopy = 2131493498;
-			
-			// aapt resource value: 0x7F0C027B
-			public const int strCourtCode = 2131493499;
+			public const int strBarcode = 2131493473;
 			
 			// aapt resource value: 0x7F0C0262
-			public const int strCSCCode = 2131493474;
+			public const int strBarcodeFormatCheck = 2131493474;
 			
-			// aapt resource value: 0x7F0C027C
-			public const int strCty = 2131493500;
-			
-			// aapt resource value: 0x7F0C027D
-			public const int strCurrentDate = 2131493501;
-			
-			// aapt resource value: 0x7F0C027E
-			public const int strCustodyInfo = 2131493502;
+			// aapt resource value: 0x7F0C025C
+			public const int strBDBType = 2131493468;
 			
 			// aapt resource value: 0x7F0C0263
-			public const int strCVV = 2131493475;
+			public const int strBenefitsNumber = 2131493475;
 			
-			// aapt resource value: 0x7F0C0348
-			public const int strDataDiscriminator = 2131493704;
+			// aapt resource value: 0x7F0C0264
+			public const int strBinaryCode = 2131493476;
 			
-			// aapt resource value: 0x7F0C0349
-			public const int strDateFirstRenewal = 2131493705;
+			// aapt resource value: 0x7F0C0265
+			public const int strBiometricFormatOwner = 2131493477;
 			
-			// aapt resource value: 0x7F0C034E
-			public const int strDateofBirth = 2131493710;
+			// aapt resource value: 0x7F0C0266
+			public const int strBiometricFormatType = 2131493478;
 			
-			// aapt resource value: 0x7F0C034F
-			public const int strDateofBirthCheckDigit = 2131493711;
+			// aapt resource value: 0x7F0C0267
+			public const int strBiometricProductID = 2131493479;
 			
-			// aapt resource value: 0x7F0C0350
-			public const int strDateofBirthChecksum = 2131493712;
+			// aapt resource value: 0x7F0C0268
+			public const int strBiometricSubtype = 2131493480;
 			
-			// aapt resource value: 0x7F0C034A
-			public const int strDateOfBirthOfHusband = 2131493706;
+			// aapt resource value: 0x7F0C0269
+			public const int strBiometricType = 2131493481;
 			
-			// aapt resource value: 0x7F0C034B
-			public const int strDateOfBirthOfWife = 2131493707;
+			// aapt resource value: 0x7F0C026A
+			public const int strBlankElement = 2131493482;
 			
-			// aapt resource value: 0x7F0C0351
-			public const int strDateofCreation = 2131493713;
+			// aapt resource value: 0x7F0C026B
+			public const int strBloodGroup = 2131493483;
 			
-			// aapt resource value: 0x7F0C0352
-			public const int strDateofExpiry = 2131493714;
+			// aapt resource value: 0x7F0C026C
+			public const int strBluetoothEnabled = 2131493484;
 			
-			// aapt resource value: 0x7F0C0353
-			public const int strDateofExpiryCheckDigit = 2131493715;
+			// aapt resource value: 0x7F0C026D
+			public const int strBookletNumber = 2131493485;
 			
-			// aapt resource value: 0x7F0C0354
-			public const int strDateofExpiryChecksum = 2131493716;
+			// aapt resource value: 0x7F0C0272
+			public const int strCa = 2131493490;
 			
-			// aapt resource value: 0x7F0C0355
-			public const int strDateofFlight = 2131493717;
+			// aapt resource value: 0x7F0C0273
+			public const int strCaliber = 2131493491;
 			
-			// aapt resource value: 0x7F0C034C
-			public const int strDateOfInsuranceExpiry = 2131493708;
+			// aapt resource value: 0x7F0C0274
+			public const int strCameraUnavailable = 2131493492;
 			
-			// aapt resource value: 0x7F0C0356
-			public const int strDateofIssue = 2131493718;
+			// aapt resource value: 0x7F0C0275
+			public const int strCardAccessNumber = 2131493493;
 			
-			// aapt resource value: 0x7F0C0357
-			public const int strDateofIssueBoardingPass = 2131493719;
+			// aapt resource value: 0x7F0C0276
+			public const int strCardInfo = 2131493494;
 			
-			// aapt resource value: 0x7F0C0358
-			public const int strDateofIssueCheckDigit = 2131493720;
+			// aapt resource value: 0x7F0C0277
+			public const int strCategory = 2131493495;
 			
-			// aapt resource value: 0x7F0C0359
-			public const int strDateofIssueChecksum = 2131493721;
+			// aapt resource value: 0x7F0C026E
+			public const int strCCWUntil = 2131493486;
 			
-			// aapt resource value: 0x7F0C035A
-			public const int strDateofPersonalization = 2131493722;
+			// aapt resource value: 0x7F0C026F
+			public const int strCDLClass = 2131493487;
 			
-			// aapt resource value: 0x7F0C035B
-			public const int strDateofRegistration = 2131493723;
+			// aapt resource value: 0x7F0C0278
+			public const int strCenturyDateOfBirth = 2131493496;
 			
-			// aapt resource value: 0x7F0C034D
-			public const int strDateSecondRenewal = 2131493709;
+			// aapt resource value: 0x7F0C0279
+			public const int strChassisNumber = 2131493497;
 			
-			// aapt resource value: 0x7F0C035C
-			public const int strDay = 2131493724;
+			// aapt resource value: 0x7F0C027A
+			public const int strCheckInSequenceNumber = 2131493498;
 			
-			// aapt resource value: 0x7F0C035D
-			public const int strDepartment = 2131493725;
+			// aapt resource value: 0x7F0C027B
+			public const int strChildren = 2131493499;
 			
-			// aapt resource value: 0x7F0C035E
-			public const int strDeptNumber = 2131493726;
+			// aapt resource value: 0x7F0C027C
+			public const int strCitizenshipOfFirstPerson = 2131493500;
 			
-			// aapt resource value: 0x7F0C035F
-			public const int strDestination = 2131493727;
+			// aapt resource value: 0x7F0C027D
+			public const int strCitizenshipOfSecondPerson = 2131493501;
+			
+			// aapt resource value: 0x7F0C027E
+			public const int strCivilStatus = 2131493502;
 			
 			// aapt resource value: 0x7F0C027F
-			public const int strDFTAppDirectory = 2131493503;
+			public const int strColorDynamic = 2131493503;
 			
 			// aapt resource value: 0x7F0C0280
-			public const int strDFTCertificate = 2131493504;
+			public const int strCommercialVehicleCodes = 2131493504;
 			
 			// aapt resource value: 0x7F0C0281
-			public const int strDG1 = 2131493505;
+			public const int strCompanyName = 2131493505;
 			
 			// aapt resource value: 0x7F0C0282
-			public const int strDG10 = 2131493506;
+			public const int strCompartmentCode = 2131493506;
 			
 			// aapt resource value: 0x7F0C0283
-			public const int strDG11 = 2131493507;
+			public const int strComplexion = 2131493507;
 			
 			// aapt resource value: 0x7F0C0284
-			public const int strDG12 = 2131493508;
+			public const int strComplianceType = 2131493508;
 			
 			// aapt resource value: 0x7F0C0285
-			public const int strDG13 = 2131493509;
+			public const int strConditions = 2131493509;
 			
 			// aapt resource value: 0x7F0C0286
-			public const int strDG14 = 2131493510;
+			public const int strConfiguration = 2131493510;
 			
 			// aapt resource value: 0x7F0C0287
-			public const int strDG15 = 2131493511;
+			public const int strControlNo = 2131493511;
 			
 			// aapt resource value: 0x7F0C0288
-			public const int strDG16 = 2131493512;
+			public const int strCopy = 2131493512;
 			
 			// aapt resource value: 0x7F0C0289
-			public const int strDG17 = 2131493513;
+			public const int strCourtCode = 2131493513;
+			
+			// aapt resource value: 0x7F0C0270
+			public const int strCSCCode = 2131493488;
 			
 			// aapt resource value: 0x7F0C028A
-			public const int strDG18 = 2131493514;
+			public const int strCty = 2131493514;
 			
 			// aapt resource value: 0x7F0C028B
-			public const int strDG19 = 2131493515;
+			public const int strCurrentDate = 2131493515;
 			
 			// aapt resource value: 0x7F0C028C
-			public const int strDG2 = 2131493516;
+			public const int strCustodyInfo = 2131493516;
 			
-			// aapt resource value: 0x7F0C028D
-			public const int strDG20 = 2131493517;
+			// aapt resource value: 0x7F0C0271
+			public const int strCVV = 2131493489;
 			
-			// aapt resource value: 0x7F0C028E
-			public const int strDG21 = 2131493518;
+			// aapt resource value: 0x7F0C0356
+			public const int strDataDiscriminator = 2131493718;
 			
-			// aapt resource value: 0x7F0C028F
-			public const int strDG3 = 2131493519;
+			// aapt resource value: 0x7F0C0357
+			public const int strDateFirstRenewal = 2131493719;
 			
-			// aapt resource value: 0x7F0C0290
-			public const int strDG4 = 2131493520;
+			// aapt resource value: 0x7F0C035C
+			public const int strDateofBirth = 2131493724;
 			
-			// aapt resource value: 0x7F0C0291
-			public const int strDG5 = 2131493521;
+			// aapt resource value: 0x7F0C035D
+			public const int strDateofBirthCheckDigit = 2131493725;
 			
-			// aapt resource value: 0x7F0C0292
-			public const int strDG6 = 2131493522;
+			// aapt resource value: 0x7F0C035E
+			public const int strDateofBirthChecksum = 2131493726;
 			
-			// aapt resource value: 0x7F0C0293
-			public const int strDG7 = 2131493523;
+			// aapt resource value: 0x7F0C0358
+			public const int strDateOfBirthOfHusband = 2131493720;
 			
-			// aapt resource value: 0x7F0C0294
-			public const int strDG8 = 2131493524;
+			// aapt resource value: 0x7F0C0359
+			public const int strDateOfBirthOfWife = 2131493721;
 			
-			// aapt resource value: 0x7F0C0295
-			public const int strDG9 = 2131493525;
+			// aapt resource value: 0x7F0C035F
+			public const int strDateofCreation = 2131493727;
 			
 			// aapt resource value: 0x7F0C0360
-			public const int strDisableNFC = 2131493728;
+			public const int strDateofExpiry = 2131493728;
 			
 			// aapt resource value: 0x7F0C0361
-			public const int strDiscretionaryData = 2131493729;
-			
-			// aapt resource value: 0x7F0C0296
-			public const int strDLCDLRestrictionCode = 2131493526;
-			
-			// aapt resource value: 0x7F0C0297
-			public const int strDLClass = 2131493527;
-			
-			// aapt resource value: 0x7F0C0298
-			public const int strDLClassCodeA1From = 2131493528;
-			
-			// aapt resource value: 0x7F0C0299
-			public const int strDLClassCodeA1Notes = 2131493529;
-			
-			// aapt resource value: 0x7F0C029A
-			public const int strDLClassCodeA1To = 2131493530;
-			
-			// aapt resource value: 0x7F0C029B
-			public const int strDLClassCodeA2From = 2131493531;
-			
-			// aapt resource value: 0x7F0C029C
-			public const int strDLClassCodeA2Notes = 2131493532;
-			
-			// aapt resource value: 0x7F0C029D
-			public const int strDLClassCodeA2To = 2131493533;
-			
-			// aapt resource value: 0x7F0C029E
-			public const int strDLClassCodeA3From = 2131493534;
-			
-			// aapt resource value: 0x7F0C029F
-			public const int strDLClassCodeA3Notes = 2131493535;
-			
-			// aapt resource value: 0x7F0C02A0
-			public const int strDLClassCodeA3To = 2131493536;
-			
-			// aapt resource value: 0x7F0C02A1
-			public const int strDLClassCodeAFrom = 2131493537;
-			
-			// aapt resource value: 0x7F0C02A2
-			public const int strDLClassCodeAMFrom = 2131493538;
-			
-			// aapt resource value: 0x7F0C02A3
-			public const int strDLClassCodeAMNotes = 2131493539;
-			
-			// aapt resource value: 0x7F0C02A4
-			public const int strDLClassCodeAMTo = 2131493540;
-			
-			// aapt resource value: 0x7F0C02A5
-			public const int strDLClassCodeANotes = 2131493541;
-			
-			// aapt resource value: 0x7F0C02A6
-			public const int strDLClassCodeATo = 2131493542;
-			
-			// aapt resource value: 0x7F0C02A7
-			public const int strDLClassCodeB1From = 2131493543;
-			
-			// aapt resource value: 0x7F0C02A8
-			public const int strDLClassCodeB1Notes = 2131493544;
-			
-			// aapt resource value: 0x7F0C02A9
-			public const int strDLClassCodeB1To = 2131493545;
-			
-			// aapt resource value: 0x7F0C02AA
-			public const int strDLClassCodeB2EFrom = 2131493546;
-			
-			// aapt resource value: 0x7F0C02AB
-			public const int strDLClassCodeB2ENotes = 2131493547;
-			
-			// aapt resource value: 0x7F0C02AC
-			public const int strDLClassCodeB2ETo = 2131493548;
-			
-			// aapt resource value: 0x7F0C02AD
-			public const int strDLClassCodeB2From = 2131493549;
-			
-			// aapt resource value: 0x7F0C02AE
-			public const int strDLClassCodeB2Notes = 2131493550;
-			
-			// aapt resource value: 0x7F0C02AF
-			public const int strDLClassCodeB2To = 2131493551;
-			
-			// aapt resource value: 0x7F0C02B0
-			public const int strDLClassCodeBEFrom = 2131493552;
-			
-			// aapt resource value: 0x7F0C02B1
-			public const int strDLClassCodeBENotes = 2131493553;
-			
-			// aapt resource value: 0x7F0C02B2
-			public const int strDLClassCodeBETo = 2131493554;
-			
-			// aapt resource value: 0x7F0C02B3
-			public const int strDLClassCodeBFrom = 2131493555;
-			
-			// aapt resource value: 0x7F0C02B4
-			public const int strDLClassCodeBNotes = 2131493556;
-			
-			// aapt resource value: 0x7F0C02B8
-			public const int strDLClassCodeBTo = 2131493560;
-			
-			// aapt resource value: 0x7F0C02B5
-			public const int strDLClassCodeBTPFrom = 2131493557;
-			
-			// aapt resource value: 0x7F0C02B6
-			public const int strDLClassCodeBTPNotes = 2131493558;
-			
-			// aapt resource value: 0x7F0C02B7
-			public const int strDLClassCodeBTPTo = 2131493559;
-			
-			// aapt resource value: 0x7F0C02B9
-			public const int strDLClassCodeC1EFrom = 2131493561;
-			
-			// aapt resource value: 0x7F0C02BA
-			public const int strDLClassCodeC1ENotes = 2131493562;
-			
-			// aapt resource value: 0x7F0C02BB
-			public const int strDLClassCodeC1ETo = 2131493563;
-			
-			// aapt resource value: 0x7F0C02BC
-			public const int strDLClassCodeC1From = 2131493564;
-			
-			// aapt resource value: 0x7F0C02BD
-			public const int strDLClassCodeC1Notes = 2131493565;
-			
-			// aapt resource value: 0x7F0C02BE
-			public const int strDLClassCodeC1To = 2131493566;
-			
-			// aapt resource value: 0x7F0C02BF
-			public const int strDLClassCodeC2From = 2131493567;
-			
-			// aapt resource value: 0x7F0C02C0
-			public const int strDLClassCodeC2Notes = 2131493568;
-			
-			// aapt resource value: 0x7F0C02C1
-			public const int strDLClassCodeC2To = 2131493569;
-			
-			// aapt resource value: 0x7F0C02C2
-			public const int strDLClassCodeC3From = 2131493570;
-			
-			// aapt resource value: 0x7F0C02C3
-			public const int strDLClassCodeC3Notes = 2131493571;
-			
-			// aapt resource value: 0x7F0C02C4
-			public const int strDLClassCodeC3To = 2131493572;
-			
-			// aapt resource value: 0x7F0C02C5
-			public const int strDLClassCodeCAFrom = 2131493573;
-			
-			// aapt resource value: 0x7F0C02C6
-			public const int strDLClassCodeCANotes = 2131493574;
-			
-			// aapt resource value: 0x7F0C02C7
-			public const int strDLClassCodeCATo = 2131493575;
-			
-			// aapt resource value: 0x7F0C02C8
-			public const int strDLClassCodeCEFrom = 2131493576;
-			
-			// aapt resource value: 0x7F0C02C9
-			public const int strDLClassCodeCENotes = 2131493577;
-			
-			// aapt resource value: 0x7F0C02CA
-			public const int strDLClassCodeCETo = 2131493578;
-			
-			// aapt resource value: 0x7F0C02CB
-			public const int strDLClassCodeCFrom = 2131493579;
-			
-			// aapt resource value: 0x7F0C02CC
-			public const int strDLClassCodeCNotes = 2131493580;
-			
-			// aapt resource value: 0x7F0C02CD
-			public const int strDLClassCodeCTo = 2131493581;
-			
-			// aapt resource value: 0x7F0C02CE
-			public const int strDLClassCodeD1EFrom = 2131493582;
-			
-			// aapt resource value: 0x7F0C02CF
-			public const int strDLClassCodeD1ENotes = 2131493583;
-			
-			// aapt resource value: 0x7F0C02D0
-			public const int strDLClassCodeD1ETo = 2131493584;
-			
-			// aapt resource value: 0x7F0C02D1
-			public const int strDLClassCodeD1From = 2131493585;
-			
-			// aapt resource value: 0x7F0C02D2
-			public const int strDLClassCodeD1Notes = 2131493586;
-			
-			// aapt resource value: 0x7F0C02D3
-			public const int strDLClassCodeD1To = 2131493587;
-			
-			// aapt resource value: 0x7F0C02D4
-			public const int strDLClassCodeD2From = 2131493588;
-			
-			// aapt resource value: 0x7F0C02D5
-			public const int strDLClassCodeD2Notes = 2131493589;
-			
-			// aapt resource value: 0x7F0C02D6
-			public const int strDLClassCodeD2To = 2131493590;
-			
-			// aapt resource value: 0x7F0C02D7
-			public const int strDLClassCodeDEFrom = 2131493591;
-			
-			// aapt resource value: 0x7F0C02D8
-			public const int strDLClassCodeDENotes = 2131493592;
-			
-			// aapt resource value: 0x7F0C02D9
-			public const int strDLClassCodeDETo = 2131493593;
-			
-			// aapt resource value: 0x7F0C02DA
-			public const int strDLClassCodeDFrom = 2131493594;
-			
-			// aapt resource value: 0x7F0C02DB
-			public const int strDLClassCodeDNotes = 2131493595;
-			
-			// aapt resource value: 0x7F0C02DC
-			public const int strDLClassCodeDTo = 2131493596;
-			
-			// aapt resource value: 0x7F0C02DD
-			public const int strDLClassCodeEFrom = 2131493597;
-			
-			// aapt resource value: 0x7F0C02DE
-			public const int strDLClassCodeENotes = 2131493598;
-			
-			// aapt resource value: 0x7F0C02DF
-			public const int strDLClassCodeETo = 2131493599;
-			
-			// aapt resource value: 0x7F0C02E0
-			public const int strDLClassCodeFA1From = 2131493600;
-			
-			// aapt resource value: 0x7F0C02E1
-			public const int strDLClassCodeFA1Notes = 2131493601;
-			
-			// aapt resource value: 0x7F0C02E2
-			public const int strDLClassCodeFA1To = 2131493602;
-			
-			// aapt resource value: 0x7F0C02E3
-			public const int strDLClassCodeFAFrom = 2131493603;
-			
-			// aapt resource value: 0x7F0C02E4
-			public const int strDLClassCodeFANotes = 2131493604;
-			
-			// aapt resource value: 0x7F0C02E5
-			public const int strDLClassCodeFATo = 2131493605;
-			
-			// aapt resource value: 0x7F0C02E6
-			public const int strDLClassCodeFBFrom = 2131493606;
-			
-			// aapt resource value: 0x7F0C02E7
-			public const int strDLClassCodeFBNotes = 2131493607;
-			
-			// aapt resource value: 0x7F0C02E8
-			public const int strDLClassCodeFBTo = 2131493608;
-			
-			// aapt resource value: 0x7F0C02E9
-			public const int strDLClassCodeFFrom = 2131493609;
-			
-			// aapt resource value: 0x7F0C02EA
-			public const int strDLClassCodeFNotes = 2131493610;
-			
-			// aapt resource value: 0x7F0C02EB
-			public const int strDLClassCodeFTo = 2131493611;
-			
-			// aapt resource value: 0x7F0C02EC
-			public const int strDLClassCodeG1From = 2131493612;
-			
-			// aapt resource value: 0x7F0C02ED
-			public const int strDLClassCodeG1Notes = 2131493613;
-			
-			// aapt resource value: 0x7F0C02EE
-			public const int strDLClassCodeG1To = 2131493614;
-			
-			// aapt resource value: 0x7F0C02EF
-			public const int strDLClassCodeGFrom = 2131493615;
-			
-			// aapt resource value: 0x7F0C02F0
-			public const int strDLClassCodeGNotes = 2131493616;
-			
-			// aapt resource value: 0x7F0C02F1
-			public const int strDLClassCodeGTo = 2131493617;
-			
-			// aapt resource value: 0x7F0C02F2
-			public const int strDLClassCodeHCFrom = 2131493618;
-			
-			// aapt resource value: 0x7F0C02F3
-			public const int strDLClassCodeHCNotes = 2131493619;
-			
-			// aapt resource value: 0x7F0C02F4
-			public const int strDLClassCodeHCTo = 2131493620;
-			
-			// aapt resource value: 0x7F0C02F5
-			public const int strDLClassCodeHFrom = 2131493621;
-			
-			// aapt resource value: 0x7F0C02F6
-			public const int strDLClassCodeHNotes = 2131493622;
-			
-			// aapt resource value: 0x7F0C02F7
-			public const int strDLClassCodeHRFrom = 2131493623;
-			
-			// aapt resource value: 0x7F0C02F8
-			public const int strDLClassCodeHRNotes = 2131493624;
-			
-			// aapt resource value: 0x7F0C02F9
-			public const int strDLClassCodeHRTo = 2131493625;
-			
-			// aapt resource value: 0x7F0C02FA
-			public const int strDLClassCodeHTo = 2131493626;
-			
-			// aapt resource value: 0x7F0C02FB
-			public const int strDLClassCodeIFrom = 2131493627;
-			
-			// aapt resource value: 0x7F0C02FC
-			public const int strDLClassCodeINotes = 2131493628;
-			
-			// aapt resource value: 0x7F0C02FD
-			public const int strDLClassCodeITo = 2131493629;
-			
-			// aapt resource value: 0x7F0C02FE
-			public const int strDLClassCodeJFrom = 2131493630;
-			
-			// aapt resource value: 0x7F0C02FF
-			public const int strDLClassCodeJNotes = 2131493631;
-			
-			// aapt resource value: 0x7F0C0300
-			public const int strDLClassCodeJTo = 2131493632;
-			
-			// aapt resource value: 0x7F0C0301
-			public const int strDLClassCodeKFrom = 2131493633;
-			
-			// aapt resource value: 0x7F0C0302
-			public const int strDLClassCodeKNotes = 2131493634;
-			
-			// aapt resource value: 0x7F0C0303
-			public const int strDLClassCodeKTo = 2131493635;
-			
-			// aapt resource value: 0x7F0C0304
-			public const int strDLClassCodeLCFrom = 2131493636;
-			
-			// aapt resource value: 0x7F0C0305
-			public const int strDLClassCodeLCNotes = 2131493637;
-			
-			// aapt resource value: 0x7F0C0306
-			public const int strDLClassCodeLCTo = 2131493638;
-			
-			// aapt resource value: 0x7F0C0307
-			public const int strDLClassCodeLFrom = 2131493639;
-			
-			// aapt resource value: 0x7F0C0308
-			public const int strDLClassCodeLKFrom = 2131493640;
-			
-			// aapt resource value: 0x7F0C0309
-			public const int strDLClassCodeLKNotes = 2131493641;
-			
-			// aapt resource value: 0x7F0C030A
-			public const int strDLClassCodeLKTo = 2131493642;
-			
-			// aapt resource value: 0x7F0C030B
-			public const int strDLClassCodeLNotes = 2131493643;
-			
-			// aapt resource value: 0x7F0C030C
-			public const int strDLClassCodeLRFrom = 2131493644;
-			
-			// aapt resource value: 0x7F0C030D
-			public const int strDLClassCodeLRNotes = 2131493645;
-			
-			// aapt resource value: 0x7F0C030E
-			public const int strDLClassCodeLRTo = 2131493646;
-			
-			// aapt resource value: 0x7F0C030F
-			public const int strDLClassCodeLTo = 2131493647;
-			
-			// aapt resource value: 0x7F0C0310
-			public const int strDLClassCodeMCFrom = 2131493648;
-			
-			// aapt resource value: 0x7F0C0311
-			public const int strDLClassCodeMCNotes = 2131493649;
-			
-			// aapt resource value: 0x7F0C0312
-			public const int strDLClassCodeMCTo = 2131493650;
-			
-			// aapt resource value: 0x7F0C0313
-			public const int strDLClassCodeMFrom = 2131493651;
-			
-			// aapt resource value: 0x7F0C0314
-			public const int strDLClassCodeMNotes = 2131493652;
-			
-			// aapt resource value: 0x7F0C0315
-			public const int strDLClassCodeMRFrom = 2131493653;
-			
-			// aapt resource value: 0x7F0C0316
-			public const int strDLClassCodeMRNotes = 2131493654;
-			
-			// aapt resource value: 0x7F0C0317
-			public const int strDLClassCodeMRTo = 2131493655;
-			
-			// aapt resource value: 0x7F0C0318
-			public const int strDLClassCodeMTo = 2131493656;
-			
-			// aapt resource value: 0x7F0C0319
-			public const int strDLClassCodeNFrom = 2131493657;
-			
-			// aapt resource value: 0x7F0C031A
-			public const int strDLClassCodeNNotes = 2131493658;
-			
-			// aapt resource value: 0x7F0C031B
-			public const int strDLClassCodeNTo = 2131493659;
-			
-			// aapt resource value: 0x7F0C031C
-			public const int strDLClassCodeREFrom = 2131493660;
-			
-			// aapt resource value: 0x7F0C031D
-			public const int strDLClassCodeRENotes = 2131493661;
-			
-			// aapt resource value: 0x7F0C031E
-			public const int strDLClassCodeRETo = 2131493662;
-			
-			// aapt resource value: 0x7F0C031F
-			public const int strDLClassCodeRFrom = 2131493663;
-			
-			// aapt resource value: 0x7F0C0320
-			public const int strDLClassCodeRNotes = 2131493664;
-			
-			// aapt resource value: 0x7F0C0321
-			public const int strDLClassCodeRTo = 2131493665;
-			
-			// aapt resource value: 0x7F0C0322
-			public const int strDLClassCodeSFrom = 2131493666;
-			
-			// aapt resource value: 0x7F0C0323
-			public const int strDLClassCodeSNotes = 2131493667;
-			
-			// aapt resource value: 0x7F0C0324
-			public const int strDLClassCodeSTo = 2131493668;
-			
-			// aapt resource value: 0x7F0C0325
-			public const int strDLClassCodeTBFrom = 2131493669;
-			
-			// aapt resource value: 0x7F0C0326
-			public const int strDLClassCodeTBNotes = 2131493670;
-			
-			// aapt resource value: 0x7F0C0327
-			public const int strDLClassCodeTBTo = 2131493671;
-			
-			// aapt resource value: 0x7F0C0328
-			public const int strDLClassCodeTFrom = 2131493672;
-			
-			// aapt resource value: 0x7F0C0329
-			public const int strDLClassCodeTMFrom = 2131493673;
-			
-			// aapt resource value: 0x7F0C032A
-			public const int strDLClassCodeTMNotes = 2131493674;
-			
-			// aapt resource value: 0x7F0C032B
-			public const int strDLClassCodeTMTo = 2131493675;
-			
-			// aapt resource value: 0x7F0C032C
-			public const int strDLClassCodeTNotes = 2131493676;
-			
-			// aapt resource value: 0x7F0C032D
-			public const int strDLClassCodeTRFrom = 2131493677;
-			
-			// aapt resource value: 0x7F0C032E
-			public const int strDLClassCodeTRNotes = 2131493678;
-			
-			// aapt resource value: 0x7F0C032F
-			public const int strDLClassCodeTRTo = 2131493679;
-			
-			// aapt resource value: 0x7F0C0330
-			public const int strDLClassCodeTTo = 2131493680;
-			
-			// aapt resource value: 0x7F0C0331
-			public const int strDLClassCodeTVFrom = 2131493681;
-			
-			// aapt resource value: 0x7F0C0332
-			public const int strDLClassCodeTVNotes = 2131493682;
-			
-			// aapt resource value: 0x7F0C0333
-			public const int strDLClassCodeTVTo = 2131493683;
-			
-			// aapt resource value: 0x7F0C0334
-			public const int strDLClassCodeVFrom = 2131493684;
-			
-			// aapt resource value: 0x7F0C0335
-			public const int strDLClassCodeVNotes = 2131493685;
-			
-			// aapt resource value: 0x7F0C0336
-			public const int strDLClassCodeVTo = 2131493686;
-			
-			// aapt resource value: 0x7F0C0337
-			public const int strDLClassCodeWFrom = 2131493687;
-			
-			// aapt resource value: 0x7F0C0338
-			public const int strDLClassCodeWNotes = 2131493688;
-			
-			// aapt resource value: 0x7F0C0339
-			public const int strDLClassCodeWTo = 2131493689;
-			
-			// aapt resource value: 0x7F0C033A
-			public const int strDLDuplicateDate = 2131493690;
-			
-			// aapt resource value: 0x7F0C033B
-			public const int strDLEndorsed = 2131493691;
-			
-			// aapt resource value: 0x7F0C033C
-			public const int strDLIssType = 2131493692;
-			
-			// aapt resource value: 0x7F0C033D
-			public const int strDLRecordCreated = 2131493693;
-			
-			// aapt resource value: 0x7F0C033E
-			public const int strDLRestrictionCode = 2131493694;
-			
-			// aapt resource value: 0x7F0C033F
-			public const int strDLUnder18Date = 2131493695;
-			
-			// aapt resource value: 0x7F0C0340
-			public const int strDLUnder19Date = 2131493696;
-			
-			// aapt resource value: 0x7F0C0341
-			public const int strDLUnder21Date = 2131493697;
-			
-			// aapt resource value: 0x7F0C0342
-			public const int strDNINumber = 2131493698;
-			
-			// aapt resource value: 0x7F0C0363
-			public const int strDocumentClassCode = 2131493731;
-			
-			// aapt resource value: 0x7F0C0364
-			public const int strDocumentClassName = 2131493732;
-			
-			// aapt resource value: 0x7F0C0365
-			public const int strDocumentDiscriminator = 2131493733;
-			
-			// aapt resource value: 0x7F0C0366
-			public const int strDocumentFront = 2131493734;
-			
-			// aapt resource value: 0x7F0C0367
-			public const int strDocumentNumber = 2131493735;
-			
-			// aapt resource value: 0x7F0C0368
-			public const int strDocumentNumberCheckDigit = 2131493736;
-			
-			// aapt resource value: 0x7F0C0369
-			public const int strDocumentNumberChecksum = 2131493737;
-			
-			// aapt resource value: 0x7F0C036A
-			public const int strDocumentRear = 2131493738;
-			
-			// aapt resource value: 0x7F0C036B
-			public const int strDocumentSeries = 2131493739;
-			
-			// aapt resource value: 0x7F0C036C
-			public const int strDocumentTooSmall = 2131493740;
+			public const int strDateofExpiryCheckDigit = 2131493729;
 			
 			// aapt resource value: 0x7F0C0362
-			public const int strDoDNumber = 2131493730;
+			public const int strDateofExpiryChecksum = 2131493730;
+			
+			// aapt resource value: 0x7F0C0363
+			public const int strDateofFlight = 2131493731;
+			
+			// aapt resource value: 0x7F0C035A
+			public const int strDateOfInsuranceExpiry = 2131493722;
+			
+			// aapt resource value: 0x7F0C0364
+			public const int strDateofIssue = 2131493732;
+			
+			// aapt resource value: 0x7F0C0365
+			public const int strDateofIssueBoardingPass = 2131493733;
+			
+			// aapt resource value: 0x7F0C0366
+			public const int strDateofIssueCheckDigit = 2131493734;
+			
+			// aapt resource value: 0x7F0C0367
+			public const int strDateofIssueChecksum = 2131493735;
+			
+			// aapt resource value: 0x7F0C0368
+			public const int strDateofPersonalization = 2131493736;
+			
+			// aapt resource value: 0x7F0C0369
+			public const int strDateofRegistration = 2131493737;
+			
+			// aapt resource value: 0x7F0C035B
+			public const int strDateSecondRenewal = 2131493723;
+			
+			// aapt resource value: 0x7F0C036A
+			public const int strDay = 2131493738;
+			
+			// aapt resource value: 0x7F0C036B
+			public const int strDepartment = 2131493739;
+			
+			// aapt resource value: 0x7F0C036C
+			public const int strDeptNumber = 2131493740;
 			
 			// aapt resource value: 0x7F0C036D
-			public const int strDonor = 2131493741;
+			public const int strDestination = 2131493741;
+			
+			// aapt resource value: 0x7F0C028D
+			public const int strDFTAppDirectory = 2131493517;
+			
+			// aapt resource value: 0x7F0C028E
+			public const int strDFTCertificate = 2131493518;
+			
+			// aapt resource value: 0x7F0C028F
+			public const int strDG1 = 2131493519;
+			
+			// aapt resource value: 0x7F0C0290
+			public const int strDG10 = 2131493520;
+			
+			// aapt resource value: 0x7F0C0291
+			public const int strDG11 = 2131493521;
+			
+			// aapt resource value: 0x7F0C0292
+			public const int strDG12 = 2131493522;
+			
+			// aapt resource value: 0x7F0C0293
+			public const int strDG13 = 2131493523;
+			
+			// aapt resource value: 0x7F0C0294
+			public const int strDG14 = 2131493524;
+			
+			// aapt resource value: 0x7F0C0295
+			public const int strDG15 = 2131493525;
+			
+			// aapt resource value: 0x7F0C0296
+			public const int strDG16 = 2131493526;
+			
+			// aapt resource value: 0x7F0C0297
+			public const int strDG17 = 2131493527;
+			
+			// aapt resource value: 0x7F0C0298
+			public const int strDG18 = 2131493528;
+			
+			// aapt resource value: 0x7F0C0299
+			public const int strDG19 = 2131493529;
+			
+			// aapt resource value: 0x7F0C029A
+			public const int strDG2 = 2131493530;
+			
+			// aapt resource value: 0x7F0C029B
+			public const int strDG20 = 2131493531;
+			
+			// aapt resource value: 0x7F0C029C
+			public const int strDG21 = 2131493532;
+			
+			// aapt resource value: 0x7F0C029D
+			public const int strDG3 = 2131493533;
+			
+			// aapt resource value: 0x7F0C029E
+			public const int strDG4 = 2131493534;
+			
+			// aapt resource value: 0x7F0C029F
+			public const int strDG5 = 2131493535;
+			
+			// aapt resource value: 0x7F0C02A0
+			public const int strDG6 = 2131493536;
+			
+			// aapt resource value: 0x7F0C02A1
+			public const int strDG7 = 2131493537;
+			
+			// aapt resource value: 0x7F0C02A2
+			public const int strDG8 = 2131493538;
+			
+			// aapt resource value: 0x7F0C02A3
+			public const int strDG9 = 2131493539;
 			
 			// aapt resource value: 0x7F0C036E
-			public const int strDossierNumber = 2131493742;
-			
-			// aapt resource value: 0x7F0C0343
-			public const int strDSCertificateIssuer = 2131493699;
-			
-			// aapt resource value: 0x7F0C0344
-			public const int strDSCertificateSubject = 2131493700;
-			
-			// aapt resource value: 0x7F0C0345
-			public const int strDSCertificateValidFrom = 2131493701;
-			
-			// aapt resource value: 0x7F0C0346
-			public const int strDSCertificateValidTo = 2131493702;
-			
-			// aapt resource value: 0x7F0C0347
-			public const int strDUFNumber = 2131493703;
+			public const int strDisableNFC = 2131493742;
 			
 			// aapt resource value: 0x7F0C036F
-			public const int strDurationofStay = 2131493743;
+			public const int strDiscretionaryData = 2131493743;
 			
-			// aapt resource value: 0x7F0C0370
-			public const int strECEnvironmentalType = 2131493744;
+			// aapt resource value: 0x7F0C02A4
+			public const int strDLCDLRestrictionCode = 2131493540;
+			
+			// aapt resource value: 0x7F0C02A5
+			public const int strDLClass = 2131493541;
+			
+			// aapt resource value: 0x7F0C02A6
+			public const int strDLClassCodeA1From = 2131493542;
+			
+			// aapt resource value: 0x7F0C02A7
+			public const int strDLClassCodeA1Notes = 2131493543;
+			
+			// aapt resource value: 0x7F0C02A8
+			public const int strDLClassCodeA1To = 2131493544;
+			
+			// aapt resource value: 0x7F0C02A9
+			public const int strDLClassCodeA2From = 2131493545;
+			
+			// aapt resource value: 0x7F0C02AA
+			public const int strDLClassCodeA2Notes = 2131493546;
+			
+			// aapt resource value: 0x7F0C02AB
+			public const int strDLClassCodeA2To = 2131493547;
+			
+			// aapt resource value: 0x7F0C02AC
+			public const int strDLClassCodeA3From = 2131493548;
+			
+			// aapt resource value: 0x7F0C02AD
+			public const int strDLClassCodeA3Notes = 2131493549;
+			
+			// aapt resource value: 0x7F0C02AE
+			public const int strDLClassCodeA3To = 2131493550;
+			
+			// aapt resource value: 0x7F0C02AF
+			public const int strDLClassCodeAFrom = 2131493551;
+			
+			// aapt resource value: 0x7F0C02B0
+			public const int strDLClassCodeAMFrom = 2131493552;
+			
+			// aapt resource value: 0x7F0C02B1
+			public const int strDLClassCodeAMNotes = 2131493553;
+			
+			// aapt resource value: 0x7F0C02B2
+			public const int strDLClassCodeAMTo = 2131493554;
+			
+			// aapt resource value: 0x7F0C02B3
+			public const int strDLClassCodeANotes = 2131493555;
+			
+			// aapt resource value: 0x7F0C02B4
+			public const int strDLClassCodeATo = 2131493556;
+			
+			// aapt resource value: 0x7F0C02B5
+			public const int strDLClassCodeB1From = 2131493557;
+			
+			// aapt resource value: 0x7F0C02B6
+			public const int strDLClassCodeB1Notes = 2131493558;
+			
+			// aapt resource value: 0x7F0C02B7
+			public const int strDLClassCodeB1To = 2131493559;
+			
+			// aapt resource value: 0x7F0C02B8
+			public const int strDLClassCodeB2EFrom = 2131493560;
+			
+			// aapt resource value: 0x7F0C02B9
+			public const int strDLClassCodeB2ENotes = 2131493561;
+			
+			// aapt resource value: 0x7F0C02BA
+			public const int strDLClassCodeB2ETo = 2131493562;
+			
+			// aapt resource value: 0x7F0C02BB
+			public const int strDLClassCodeB2From = 2131493563;
+			
+			// aapt resource value: 0x7F0C02BC
+			public const int strDLClassCodeB2Notes = 2131493564;
+			
+			// aapt resource value: 0x7F0C02BD
+			public const int strDLClassCodeB2To = 2131493565;
+			
+			// aapt resource value: 0x7F0C02BE
+			public const int strDLClassCodeBEFrom = 2131493566;
+			
+			// aapt resource value: 0x7F0C02BF
+			public const int strDLClassCodeBENotes = 2131493567;
+			
+			// aapt resource value: 0x7F0C02C0
+			public const int strDLClassCodeBETo = 2131493568;
+			
+			// aapt resource value: 0x7F0C02C1
+			public const int strDLClassCodeBFrom = 2131493569;
+			
+			// aapt resource value: 0x7F0C02C2
+			public const int strDLClassCodeBNotes = 2131493570;
+			
+			// aapt resource value: 0x7F0C02C6
+			public const int strDLClassCodeBTo = 2131493574;
+			
+			// aapt resource value: 0x7F0C02C3
+			public const int strDLClassCodeBTPFrom = 2131493571;
+			
+			// aapt resource value: 0x7F0C02C4
+			public const int strDLClassCodeBTPNotes = 2131493572;
+			
+			// aapt resource value: 0x7F0C02C5
+			public const int strDLClassCodeBTPTo = 2131493573;
+			
+			// aapt resource value: 0x7F0C02C7
+			public const int strDLClassCodeC1EFrom = 2131493575;
+			
+			// aapt resource value: 0x7F0C02C8
+			public const int strDLClassCodeC1ENotes = 2131493576;
+			
+			// aapt resource value: 0x7F0C02C9
+			public const int strDLClassCodeC1ETo = 2131493577;
+			
+			// aapt resource value: 0x7F0C02CA
+			public const int strDLClassCodeC1From = 2131493578;
+			
+			// aapt resource value: 0x7F0C02CB
+			public const int strDLClassCodeC1Notes = 2131493579;
+			
+			// aapt resource value: 0x7F0C02CC
+			public const int strDLClassCodeC1To = 2131493580;
+			
+			// aapt resource value: 0x7F0C02CD
+			public const int strDLClassCodeC2From = 2131493581;
+			
+			// aapt resource value: 0x7F0C02CE
+			public const int strDLClassCodeC2Notes = 2131493582;
+			
+			// aapt resource value: 0x7F0C02CF
+			public const int strDLClassCodeC2To = 2131493583;
+			
+			// aapt resource value: 0x7F0C02D0
+			public const int strDLClassCodeC3From = 2131493584;
+			
+			// aapt resource value: 0x7F0C02D1
+			public const int strDLClassCodeC3Notes = 2131493585;
+			
+			// aapt resource value: 0x7F0C02D2
+			public const int strDLClassCodeC3To = 2131493586;
+			
+			// aapt resource value: 0x7F0C02D3
+			public const int strDLClassCodeCAFrom = 2131493587;
+			
+			// aapt resource value: 0x7F0C02D4
+			public const int strDLClassCodeCANotes = 2131493588;
+			
+			// aapt resource value: 0x7F0C02D5
+			public const int strDLClassCodeCATo = 2131493589;
+			
+			// aapt resource value: 0x7F0C02D6
+			public const int strDLClassCodeCEFrom = 2131493590;
+			
+			// aapt resource value: 0x7F0C02D7
+			public const int strDLClassCodeCENotes = 2131493591;
+			
+			// aapt resource value: 0x7F0C02D8
+			public const int strDLClassCodeCETo = 2131493592;
+			
+			// aapt resource value: 0x7F0C02D9
+			public const int strDLClassCodeCFrom = 2131493593;
+			
+			// aapt resource value: 0x7F0C02DA
+			public const int strDLClassCodeCNotes = 2131493594;
+			
+			// aapt resource value: 0x7F0C02DB
+			public const int strDLClassCodeCTo = 2131493595;
+			
+			// aapt resource value: 0x7F0C02DC
+			public const int strDLClassCodeD1EFrom = 2131493596;
+			
+			// aapt resource value: 0x7F0C02DD
+			public const int strDLClassCodeD1ENotes = 2131493597;
+			
+			// aapt resource value: 0x7F0C02DE
+			public const int strDLClassCodeD1ETo = 2131493598;
+			
+			// aapt resource value: 0x7F0C02DF
+			public const int strDLClassCodeD1From = 2131493599;
+			
+			// aapt resource value: 0x7F0C02E0
+			public const int strDLClassCodeD1Notes = 2131493600;
+			
+			// aapt resource value: 0x7F0C02E1
+			public const int strDLClassCodeD1To = 2131493601;
+			
+			// aapt resource value: 0x7F0C02E2
+			public const int strDLClassCodeD2From = 2131493602;
+			
+			// aapt resource value: 0x7F0C02E3
+			public const int strDLClassCodeD2Notes = 2131493603;
+			
+			// aapt resource value: 0x7F0C02E4
+			public const int strDLClassCodeD2To = 2131493604;
+			
+			// aapt resource value: 0x7F0C02E5
+			public const int strDLClassCodeDEFrom = 2131493605;
+			
+			// aapt resource value: 0x7F0C02E6
+			public const int strDLClassCodeDENotes = 2131493606;
+			
+			// aapt resource value: 0x7F0C02E7
+			public const int strDLClassCodeDETo = 2131493607;
+			
+			// aapt resource value: 0x7F0C02E8
+			public const int strDLClassCodeDFrom = 2131493608;
+			
+			// aapt resource value: 0x7F0C02E9
+			public const int strDLClassCodeDNotes = 2131493609;
+			
+			// aapt resource value: 0x7F0C02EA
+			public const int strDLClassCodeDTo = 2131493610;
+			
+			// aapt resource value: 0x7F0C02EB
+			public const int strDLClassCodeEFrom = 2131493611;
+			
+			// aapt resource value: 0x7F0C02EC
+			public const int strDLClassCodeENotes = 2131493612;
+			
+			// aapt resource value: 0x7F0C02ED
+			public const int strDLClassCodeETo = 2131493613;
+			
+			// aapt resource value: 0x7F0C02EE
+			public const int strDLClassCodeFA1From = 2131493614;
+			
+			// aapt resource value: 0x7F0C02EF
+			public const int strDLClassCodeFA1Notes = 2131493615;
+			
+			// aapt resource value: 0x7F0C02F0
+			public const int strDLClassCodeFA1To = 2131493616;
+			
+			// aapt resource value: 0x7F0C02F1
+			public const int strDLClassCodeFAFrom = 2131493617;
+			
+			// aapt resource value: 0x7F0C02F2
+			public const int strDLClassCodeFANotes = 2131493618;
+			
+			// aapt resource value: 0x7F0C02F3
+			public const int strDLClassCodeFATo = 2131493619;
+			
+			// aapt resource value: 0x7F0C02F4
+			public const int strDLClassCodeFBFrom = 2131493620;
+			
+			// aapt resource value: 0x7F0C02F5
+			public const int strDLClassCodeFBNotes = 2131493621;
+			
+			// aapt resource value: 0x7F0C02F6
+			public const int strDLClassCodeFBTo = 2131493622;
+			
+			// aapt resource value: 0x7F0C02F7
+			public const int strDLClassCodeFFrom = 2131493623;
+			
+			// aapt resource value: 0x7F0C02F8
+			public const int strDLClassCodeFNotes = 2131493624;
+			
+			// aapt resource value: 0x7F0C02F9
+			public const int strDLClassCodeFTo = 2131493625;
+			
+			// aapt resource value: 0x7F0C02FA
+			public const int strDLClassCodeG1From = 2131493626;
+			
+			// aapt resource value: 0x7F0C02FB
+			public const int strDLClassCodeG1Notes = 2131493627;
+			
+			// aapt resource value: 0x7F0C02FC
+			public const int strDLClassCodeG1To = 2131493628;
+			
+			// aapt resource value: 0x7F0C02FD
+			public const int strDLClassCodeGFrom = 2131493629;
+			
+			// aapt resource value: 0x7F0C02FE
+			public const int strDLClassCodeGNotes = 2131493630;
+			
+			// aapt resource value: 0x7F0C02FF
+			public const int strDLClassCodeGTo = 2131493631;
+			
+			// aapt resource value: 0x7F0C0300
+			public const int strDLClassCodeHCFrom = 2131493632;
+			
+			// aapt resource value: 0x7F0C0301
+			public const int strDLClassCodeHCNotes = 2131493633;
+			
+			// aapt resource value: 0x7F0C0302
+			public const int strDLClassCodeHCTo = 2131493634;
+			
+			// aapt resource value: 0x7F0C0303
+			public const int strDLClassCodeHFrom = 2131493635;
+			
+			// aapt resource value: 0x7F0C0304
+			public const int strDLClassCodeHNotes = 2131493636;
+			
+			// aapt resource value: 0x7F0C0305
+			public const int strDLClassCodeHRFrom = 2131493637;
+			
+			// aapt resource value: 0x7F0C0306
+			public const int strDLClassCodeHRNotes = 2131493638;
+			
+			// aapt resource value: 0x7F0C0307
+			public const int strDLClassCodeHRTo = 2131493639;
+			
+			// aapt resource value: 0x7F0C0308
+			public const int strDLClassCodeHTo = 2131493640;
+			
+			// aapt resource value: 0x7F0C0309
+			public const int strDLClassCodeIFrom = 2131493641;
+			
+			// aapt resource value: 0x7F0C030A
+			public const int strDLClassCodeINotes = 2131493642;
+			
+			// aapt resource value: 0x7F0C030B
+			public const int strDLClassCodeITo = 2131493643;
+			
+			// aapt resource value: 0x7F0C030C
+			public const int strDLClassCodeJFrom = 2131493644;
+			
+			// aapt resource value: 0x7F0C030D
+			public const int strDLClassCodeJNotes = 2131493645;
+			
+			// aapt resource value: 0x7F0C030E
+			public const int strDLClassCodeJTo = 2131493646;
+			
+			// aapt resource value: 0x7F0C030F
+			public const int strDLClassCodeKFrom = 2131493647;
+			
+			// aapt resource value: 0x7F0C0310
+			public const int strDLClassCodeKNotes = 2131493648;
+			
+			// aapt resource value: 0x7F0C0311
+			public const int strDLClassCodeKTo = 2131493649;
+			
+			// aapt resource value: 0x7F0C0312
+			public const int strDLClassCodeLCFrom = 2131493650;
+			
+			// aapt resource value: 0x7F0C0313
+			public const int strDLClassCodeLCNotes = 2131493651;
+			
+			// aapt resource value: 0x7F0C0314
+			public const int strDLClassCodeLCTo = 2131493652;
+			
+			// aapt resource value: 0x7F0C0315
+			public const int strDLClassCodeLFrom = 2131493653;
+			
+			// aapt resource value: 0x7F0C0316
+			public const int strDLClassCodeLKFrom = 2131493654;
+			
+			// aapt resource value: 0x7F0C0317
+			public const int strDLClassCodeLKNotes = 2131493655;
+			
+			// aapt resource value: 0x7F0C0318
+			public const int strDLClassCodeLKTo = 2131493656;
+			
+			// aapt resource value: 0x7F0C0319
+			public const int strDLClassCodeLNotes = 2131493657;
+			
+			// aapt resource value: 0x7F0C031A
+			public const int strDLClassCodeLRFrom = 2131493658;
+			
+			// aapt resource value: 0x7F0C031B
+			public const int strDLClassCodeLRNotes = 2131493659;
+			
+			// aapt resource value: 0x7F0C031C
+			public const int strDLClassCodeLRTo = 2131493660;
+			
+			// aapt resource value: 0x7F0C031D
+			public const int strDLClassCodeLTo = 2131493661;
+			
+			// aapt resource value: 0x7F0C031E
+			public const int strDLClassCodeMCFrom = 2131493662;
+			
+			// aapt resource value: 0x7F0C031F
+			public const int strDLClassCodeMCNotes = 2131493663;
+			
+			// aapt resource value: 0x7F0C0320
+			public const int strDLClassCodeMCTo = 2131493664;
+			
+			// aapt resource value: 0x7F0C0321
+			public const int strDLClassCodeMFrom = 2131493665;
+			
+			// aapt resource value: 0x7F0C0322
+			public const int strDLClassCodeMNotes = 2131493666;
+			
+			// aapt resource value: 0x7F0C0323
+			public const int strDLClassCodeMRFrom = 2131493667;
+			
+			// aapt resource value: 0x7F0C0324
+			public const int strDLClassCodeMRNotes = 2131493668;
+			
+			// aapt resource value: 0x7F0C0325
+			public const int strDLClassCodeMRTo = 2131493669;
+			
+			// aapt resource value: 0x7F0C0326
+			public const int strDLClassCodeMTo = 2131493670;
+			
+			// aapt resource value: 0x7F0C0327
+			public const int strDLClassCodeNFrom = 2131493671;
+			
+			// aapt resource value: 0x7F0C0328
+			public const int strDLClassCodeNNotes = 2131493672;
+			
+			// aapt resource value: 0x7F0C0329
+			public const int strDLClassCodeNTo = 2131493673;
+			
+			// aapt resource value: 0x7F0C032A
+			public const int strDLClassCodeREFrom = 2131493674;
+			
+			// aapt resource value: 0x7F0C032B
+			public const int strDLClassCodeRENotes = 2131493675;
+			
+			// aapt resource value: 0x7F0C032C
+			public const int strDLClassCodeRETo = 2131493676;
+			
+			// aapt resource value: 0x7F0C032D
+			public const int strDLClassCodeRFrom = 2131493677;
+			
+			// aapt resource value: 0x7F0C032E
+			public const int strDLClassCodeRNotes = 2131493678;
+			
+			// aapt resource value: 0x7F0C032F
+			public const int strDLClassCodeRTo = 2131493679;
+			
+			// aapt resource value: 0x7F0C0330
+			public const int strDLClassCodeSFrom = 2131493680;
+			
+			// aapt resource value: 0x7F0C0331
+			public const int strDLClassCodeSNotes = 2131493681;
+			
+			// aapt resource value: 0x7F0C0332
+			public const int strDLClassCodeSTo = 2131493682;
+			
+			// aapt resource value: 0x7F0C0333
+			public const int strDLClassCodeTBFrom = 2131493683;
+			
+			// aapt resource value: 0x7F0C0334
+			public const int strDLClassCodeTBNotes = 2131493684;
+			
+			// aapt resource value: 0x7F0C0335
+			public const int strDLClassCodeTBTo = 2131493685;
+			
+			// aapt resource value: 0x7F0C0336
+			public const int strDLClassCodeTFrom = 2131493686;
+			
+			// aapt resource value: 0x7F0C0337
+			public const int strDLClassCodeTMFrom = 2131493687;
+			
+			// aapt resource value: 0x7F0C0338
+			public const int strDLClassCodeTMNotes = 2131493688;
+			
+			// aapt resource value: 0x7F0C0339
+			public const int strDLClassCodeTMTo = 2131493689;
+			
+			// aapt resource value: 0x7F0C033A
+			public const int strDLClassCodeTNotes = 2131493690;
+			
+			// aapt resource value: 0x7F0C033B
+			public const int strDLClassCodeTRFrom = 2131493691;
+			
+			// aapt resource value: 0x7F0C033C
+			public const int strDLClassCodeTRNotes = 2131493692;
+			
+			// aapt resource value: 0x7F0C033D
+			public const int strDLClassCodeTRTo = 2131493693;
+			
+			// aapt resource value: 0x7F0C033E
+			public const int strDLClassCodeTTo = 2131493694;
+			
+			// aapt resource value: 0x7F0C033F
+			public const int strDLClassCodeTVFrom = 2131493695;
+			
+			// aapt resource value: 0x7F0C0340
+			public const int strDLClassCodeTVNotes = 2131493696;
+			
+			// aapt resource value: 0x7F0C0341
+			public const int strDLClassCodeTVTo = 2131493697;
+			
+			// aapt resource value: 0x7F0C0342
+			public const int strDLClassCodeVFrom = 2131493698;
+			
+			// aapt resource value: 0x7F0C0343
+			public const int strDLClassCodeVNotes = 2131493699;
+			
+			// aapt resource value: 0x7F0C0344
+			public const int strDLClassCodeVTo = 2131493700;
+			
+			// aapt resource value: 0x7F0C0345
+			public const int strDLClassCodeWFrom = 2131493701;
+			
+			// aapt resource value: 0x7F0C0346
+			public const int strDLClassCodeWNotes = 2131493702;
+			
+			// aapt resource value: 0x7F0C0347
+			public const int strDLClassCodeWTo = 2131493703;
+			
+			// aapt resource value: 0x7F0C0348
+			public const int strDLDuplicateDate = 2131493704;
+			
+			// aapt resource value: 0x7F0C0349
+			public const int strDLEndorsed = 2131493705;
+			
+			// aapt resource value: 0x7F0C034A
+			public const int strDLIssType = 2131493706;
+			
+			// aapt resource value: 0x7F0C034B
+			public const int strDLRecordCreated = 2131493707;
+			
+			// aapt resource value: 0x7F0C034C
+			public const int strDLRestrictionCode = 2131493708;
+			
+			// aapt resource value: 0x7F0C034D
+			public const int strDLUnder18Date = 2131493709;
+			
+			// aapt resource value: 0x7F0C034E
+			public const int strDLUnder19Date = 2131493710;
+			
+			// aapt resource value: 0x7F0C034F
+			public const int strDLUnder21Date = 2131493711;
+			
+			// aapt resource value: 0x7F0C0350
+			public const int strDNINumber = 2131493712;
 			
 			// aapt resource value: 0x7F0C0371
-			public const int strEDLDG1 = 2131493745;
+			public const int strDocumentClassCode = 2131493745;
 			
 			// aapt resource value: 0x7F0C0372
-			public const int strEDLDG10 = 2131493746;
+			public const int strDocumentClassName = 2131493746;
 			
 			// aapt resource value: 0x7F0C0373
-			public const int strEDLDG11 = 2131493747;
+			public const int strDocumentDiscriminator = 2131493747;
 			
 			// aapt resource value: 0x7F0C0374
-			public const int strEDLDG12 = 2131493748;
+			public const int strDocumentFront = 2131493748;
 			
 			// aapt resource value: 0x7F0C0375
-			public const int strEDLDG13 = 2131493749;
+			public const int strDocumentNumber = 2131493749;
 			
 			// aapt resource value: 0x7F0C0376
-			public const int strEDLDG14 = 2131493750;
+			public const int strDocumentNumberCheckDigit = 2131493750;
 			
 			// aapt resource value: 0x7F0C0377
-			public const int strEDLDG2 = 2131493751;
+			public const int strDocumentNumberChecksum = 2131493751;
 			
 			// aapt resource value: 0x7F0C0378
-			public const int strEDLDG3 = 2131493752;
+			public const int strDocumentRear = 2131493752;
 			
 			// aapt resource value: 0x7F0C0379
-			public const int strEDLDG4 = 2131493753;
+			public const int strDocumentSeries = 2131493753;
 			
 			// aapt resource value: 0x7F0C037A
-			public const int strEDLDG5 = 2131493754;
+			public const int strDocumentTooSmall = 2131493754;
+			
+			// aapt resource value: 0x7F0C0370
+			public const int strDoDNumber = 2131493744;
 			
 			// aapt resource value: 0x7F0C037B
-			public const int strEDLDG6 = 2131493755;
+			public const int strDonor = 2131493755;
 			
 			// aapt resource value: 0x7F0C037C
-			public const int strEDLDG7 = 2131493756;
+			public const int strDossierNumber = 2131493756;
+			
+			// aapt resource value: 0x7F0C0351
+			public const int strDSCertificateIssuer = 2131493713;
+			
+			// aapt resource value: 0x7F0C0352
+			public const int strDSCertificateSubject = 2131493714;
+			
+			// aapt resource value: 0x7F0C0353
+			public const int strDSCertificateValidFrom = 2131493715;
+			
+			// aapt resource value: 0x7F0C0354
+			public const int strDSCertificateValidTo = 2131493716;
+			
+			// aapt resource value: 0x7F0C0355
+			public const int strDUFNumber = 2131493717;
 			
 			// aapt resource value: 0x7F0C037D
-			public const int strEDLDG8 = 2131493757;
+			public const int strDurationofStay = 2131493757;
 			
 			// aapt resource value: 0x7F0C037E
-			public const int strEDLDG9 = 2131493758;
-			
-			// aapt resource value: 0x7F0C0381
-			public const int strEFCardAccess = 2131493761;
-			
-			// aapt resource value: 0x7F0C0382
-			public const int strEFCardSecurity = 2131493762;
-			
-			// aapt resource value: 0x7F0C0383
-			public const int strEFChipSecurity = 2131493763;
+			public const int strECEnvironmentalType = 2131493758;
 			
 			// aapt resource value: 0x7F0C037F
-			public const int strEFCOM = 2131493759;
+			public const int strEDLDG1 = 2131493759;
 			
 			// aapt resource value: 0x7F0C0380
-			public const int strEFCVCA = 2131493760;
+			public const int strEDLDG10 = 2131493760;
+			
+			// aapt resource value: 0x7F0C0381
+			public const int strEDLDG11 = 2131493761;
+			
+			// aapt resource value: 0x7F0C0382
+			public const int strEDLDG12 = 2131493762;
+			
+			// aapt resource value: 0x7F0C0383
+			public const int strEDLDG13 = 2131493763;
 			
 			// aapt resource value: 0x7F0C0384
-			public const int strEFSOD = 2131493764;
-			
-			// aapt resource value: 0x7F0C04E4
-			public const int streIDPlaceOfBirthCity = 2131494116;
-			
-			// aapt resource value: 0x7F0C04E5
-			public const int streIDPlaceOfBirthCountry = 2131494117;
-			
-			// aapt resource value: 0x7F0C04E6
-			public const int streIDPlaceOfBirthState = 2131494118;
-			
-			// aapt resource value: 0x7F0C04E7
-			public const int streIDPlaceOfBirthStreet = 2131494119;
-			
-			// aapt resource value: 0x7F0C04E8
-			public const int streIDPlaceOfBirthZipcode = 2131494120;
-			
-			// aapt resource value: 0x7F0C04E9
-			public const int streIDResidencePermit1 = 2131494121;
-			
-			// aapt resource value: 0x7F0C04EA
-			public const int streIDResidencePermit2 = 2131494122;
-			
-			// aapt resource value: 0x7F0C0386
-			public const int strElectronicTicketIndicator = 2131493766;
-			
-			// aapt resource value: 0x7F0C0387
-			public const int strElement = 2131493767;
-			
-			// aapt resource value: 0x7F0C0388
-			public const int strEnableNFC = 2131493768;
-			
-			// aapt resource value: 0x7F0C0389
-			public const int strEndorsementExpirationDate = 2131493769;
-			
-			// aapt resource value: 0x7F0C038A
-			public const int strEngineModel = 2131493770;
-			
-			// aapt resource value: 0x7F0C038B
-			public const int strEngineNumber = 2131493771;
-			
-			// aapt resource value: 0x7F0C038C
-			public const int strEnginePower = 2131493772;
-			
-			// aapt resource value: 0x7F0C038D
-			public const int strEngineVolume = 2131493773;
+			public const int strEDLDG14 = 2131493764;
 			
 			// aapt resource value: 0x7F0C0385
-			public const int strEQVCode = 2131493765;
+			public const int strEDLDG2 = 2131493765;
 			
-			// aapt resource value: 0x7F0C038E
-			public const int strError = 2131493774;
+			// aapt resource value: 0x7F0C0386
+			public const int strEDLDG3 = 2131493766;
+			
+			// aapt resource value: 0x7F0C0387
+			public const int strEDLDG4 = 2131493767;
+			
+			// aapt resource value: 0x7F0C0388
+			public const int strEDLDG5 = 2131493768;
+			
+			// aapt resource value: 0x7F0C0389
+			public const int strEDLDG6 = 2131493769;
+			
+			// aapt resource value: 0x7F0C038A
+			public const int strEDLDG7 = 2131493770;
+			
+			// aapt resource value: 0x7F0C038B
+			public const int strEDLDG8 = 2131493771;
+			
+			// aapt resource value: 0x7F0C038C
+			public const int strEDLDG9 = 2131493772;
 			
 			// aapt resource value: 0x7F0C038F
-			public const int strExamDate = 2131493775;
+			public const int strEFCardAccess = 2131493775;
 			
 			// aapt resource value: 0x7F0C0390
-			public const int strExeptInTanks = 2131493776;
+			public const int strEFCardSecurity = 2131493776;
 			
 			// aapt resource value: 0x7F0C0391
-			public const int strEye = 2131493777;
+			public const int strEFChipSecurity = 2131493777;
+			
+			// aapt resource value: 0x7F0C038D
+			public const int strEFCOM = 2131493773;
+			
+			// aapt resource value: 0x7F0C038E
+			public const int strEFCVCA = 2131493774;
 			
 			// aapt resource value: 0x7F0C0392
-			public const int strEyesColor = 2131493778;
-			
-			// aapt resource value: 0x7F0C0393
-			public const int strFaculty = 2131493779;
-			
-			// aapt resource value: 0x7F0C0394
-			public const int strFalseLuminescence = 2131493780;
-			
-			// aapt resource value: 0x7F0C0395
-			public const int strFamilyName = 2131493781;
-			
-			// aapt resource value: 0x7F0C0396
-			public const int strFamilyNameTruncation = 2131493782;
-			
-			// aapt resource value: 0x7F0C0397
-			public const int strFastTrack = 2131493783;
-			
-			// aapt resource value: 0x7F0C0398
-			public const int strFatherCountryOfBirth = 2131493784;
-			
-			// aapt resource value: 0x7F0C0399
-			public const int strFatherDateOfBirth = 2131493785;
-			
-			// aapt resource value: 0x7F0C039A
-			public const int strFatherGivenName = 2131493786;
-			
-			// aapt resource value: 0x7F0C039B
-			public const int strFatherPersonalNumber = 2131493787;
-			
-			// aapt resource value: 0x7F0C039C
-			public const int strFatherPlaceOfBirth = 2131493788;
-			
-			// aapt resource value: 0x7F0C039E
-			public const int strFathersName = 2131493790;
-			
-			// aapt resource value: 0x7F0C039F
-			public const int strFathersNameRUS = 2131493791;
-			
-			// aapt resource value: 0x7F0C039D
-			public const int strFatherSurname = 2131493789;
-			
-			// aapt resource value: 0x7F0C03A0
-			public const int strFederalElections = 2131493792;
-			
-			// aapt resource value: 0x7F0C03A1
-			public const int strFee = 2131493793;
-			
-			// aapt resource value: 0x7F0C03A2
-			public const int strFieldFromMRZ = 2131493794;
-			
-			// aapt resource value: 0x7F0C03A3
-			public const int strFieldTypeDocumentImage = 2131493795;
-			
-			// aapt resource value: 0x7F0C03A4
-			public const int strFillElement = 2131493796;
-			
-			// aapt resource value: 0x7F0C03A5
-			public const int strFinalCheckDigit = 2131493797;
-			
-			// aapt resource value: 0x7F0C03A6
-			public const int strFinalChecksum = 2131493798;
-			
-			// aapt resource value: 0x7F0C03A7
-			public const int strFingerprint = 2131493799;
-			
-			// aapt resource value: 0x7F0C03A8
-			public const int strFirstIssueDate = 2131493800;
-			
-			// aapt resource value: 0x7F0C03A9
-			public const int strFirstNameTruncation = 2131493801;
-			
-			// aapt resource value: 0x7F0C03AA
-			public const int strFlightNumber = 2131493802;
-			
-			// aapt resource value: 0x7F0C03AB
-			public const int strFolioNumber = 2131493803;
-			
-			// aapt resource value: 0x7F0C03AC
-			public const int strFormOfEducation = 2131493804;
-			
-			// aapt resource value: 0x7F0C04EB
-			public const int strfppLeftIndexFinger = 2131494123;
-			
-			// aapt resource value: 0x7F0C04EC
-			public const int strfppLeftLittleFinger = 2131494124;
-			
-			// aapt resource value: 0x7F0C04ED
-			public const int strfppLeftMiddleFinger = 2131494125;
-			
-			// aapt resource value: 0x7F0C04EE
-			public const int strfppLeftRingFinger = 2131494126;
-			
-			// aapt resource value: 0x7F0C04EF
-			public const int strfppLeftThumb = 2131494127;
-			
-			// aapt resource value: 0x7F0C04F0
-			public const int strfppRightIndexFinger = 2131494128;
-			
-			// aapt resource value: 0x7F0C04F1
-			public const int strfppRightLittleFinger = 2131494129;
-			
-			// aapt resource value: 0x7F0C04F2
-			public const int strfppRightMiddleFinger = 2131494130;
-			
-			// aapt resource value: 0x7F0C04F3
-			public const int strfppRightRingFinger = 2131494131;
+			public const int strEFSOD = 2131493778;
 			
 			// aapt resource value: 0x7F0C04F4
-			public const int strfppRightThumb = 2131494132;
+			public const int streIDPlaceOfBirthCity = 2131494132;
+			
+			// aapt resource value: 0x7F0C04F5
+			public const int streIDPlaceOfBirthCountry = 2131494133;
+			
+			// aapt resource value: 0x7F0C04F6
+			public const int streIDPlaceOfBirthState = 2131494134;
+			
+			// aapt resource value: 0x7F0C04F7
+			public const int streIDPlaceOfBirthStreet = 2131494135;
+			
+			// aapt resource value: 0x7F0C04F8
+			public const int streIDPlaceOfBirthZipcode = 2131494136;
+			
+			// aapt resource value: 0x7F0C04F9
+			public const int streIDResidencePermit1 = 2131494137;
+			
+			// aapt resource value: 0x7F0C04FA
+			public const int streIDResidencePermit2 = 2131494138;
+			
+			// aapt resource value: 0x7F0C0394
+			public const int strElectronicTicketIndicator = 2131493780;
+			
+			// aapt resource value: 0x7F0C0395
+			public const int strElement = 2131493781;
+			
+			// aapt resource value: 0x7F0C0396
+			public const int strEnableNFC = 2131493782;
+			
+			// aapt resource value: 0x7F0C0397
+			public const int strEndorsementExpirationDate = 2131493783;
+			
+			// aapt resource value: 0x7F0C0398
+			public const int strEngineModel = 2131493784;
+			
+			// aapt resource value: 0x7F0C0399
+			public const int strEngineNumber = 2131493785;
+			
+			// aapt resource value: 0x7F0C039A
+			public const int strEnginePower = 2131493786;
+			
+			// aapt resource value: 0x7F0C039B
+			public const int strEngineVolume = 2131493787;
+			
+			// aapt resource value: 0x7F0C0393
+			public const int strEQVCode = 2131493779;
+			
+			// aapt resource value: 0x7F0C039C
+			public const int strError = 2131493788;
+			
+			// aapt resource value: 0x7F0C039D
+			public const int strExamDate = 2131493789;
+			
+			// aapt resource value: 0x7F0C039E
+			public const int strExeptInTanks = 2131493790;
+			
+			// aapt resource value: 0x7F0C039F
+			public const int strEye = 2131493791;
+			
+			// aapt resource value: 0x7F0C03A0
+			public const int strEyesColor = 2131493792;
+			
+			// aapt resource value: 0x7F0C03A1
+			public const int strFaculty = 2131493793;
+			
+			// aapt resource value: 0x7F0C03A2
+			public const int strFalseLuminescence = 2131493794;
+			
+			// aapt resource value: 0x7F0C03A3
+			public const int strFamilyName = 2131493795;
+			
+			// aapt resource value: 0x7F0C03A4
+			public const int strFamilyNameTruncation = 2131493796;
+			
+			// aapt resource value: 0x7F0C03A5
+			public const int strFastTrack = 2131493797;
+			
+			// aapt resource value: 0x7F0C03A6
+			public const int strFatherCountryOfBirth = 2131493798;
+			
+			// aapt resource value: 0x7F0C03A7
+			public const int strFatherDateOfBirth = 2131493799;
+			
+			// aapt resource value: 0x7F0C03A8
+			public const int strFatherGivenName = 2131493800;
+			
+			// aapt resource value: 0x7F0C03A9
+			public const int strFatherPersonalNumber = 2131493801;
+			
+			// aapt resource value: 0x7F0C03AA
+			public const int strFatherPlaceOfBirth = 2131493802;
+			
+			// aapt resource value: 0x7F0C03AC
+			public const int strFathersName = 2131493804;
 			
 			// aapt resource value: 0x7F0C03AD
-			public const int strFreeBaggageAllowance = 2131493805;
+			public const int strFathersNameRUS = 2131493805;
+			
+			// aapt resource value: 0x7F0C03AB
+			public const int strFatherSurname = 2131493803;
 			
 			// aapt resource value: 0x7F0C03AE
-			public const int strFrequentFlyerAirlineDesignator = 2131493806;
+			public const int strFederalElections = 2131493806;
 			
 			// aapt resource value: 0x7F0C03AF
-			public const int strFrequentFlyerNumber = 2131493807;
+			public const int strFee = 2131493807;
 			
 			// aapt resource value: 0x7F0C03B0
-			public const int strFromAirportCode = 2131493808;
+			public const int strFieldFromMRZ = 2131493808;
 			
 			// aapt resource value: 0x7F0C03B1
-			public const int strFuelType = 2131493809;
-			
-			// aapt resource value: 0x7F0C03B3
-			public const int strGhostPortrait = 2131493811;
-			
-			// aapt resource value: 0x7F0C03B4
-			public const int strGivenNames = 2131493812;
-			
-			// aapt resource value: 0x7F0C03B5
-			public const int strGivenNamesRUS = 2131493813;
-			
-			// aapt resource value: 0x7F0C03B6
-			public const int strGlaresOnDocument = 2131493814;
+			public const int strFieldTypeDocumentImage = 2131493809;
 			
 			// aapt resource value: 0x7F0C03B2
-			public const int strGNIBNumber = 2131493810;
+			public const int strFillElement = 2131493810;
+			
+			// aapt resource value: 0x7F0C03B3
+			public const int strFinalCheckDigit = 2131493811;
+			
+			// aapt resource value: 0x7F0C03B4
+			public const int strFinalChecksum = 2131493812;
+			
+			// aapt resource value: 0x7F0C03B5
+			public const int strFingerprint = 2131493813;
+			
+			// aapt resource value: 0x7F0C03B6
+			public const int strFirstIssueDate = 2131493814;
 			
 			// aapt resource value: 0x7F0C03B7
-			public const int strGrandfatherName = 2131493815;
+			public const int strFirstNameTruncation = 2131493815;
 			
 			// aapt resource value: 0x7F0C03B8
-			public const int strHairColor = 2131493816;
+			public const int strFlightNumber = 2131493816;
 			
 			// aapt resource value: 0x7F0C03B9
-			public const int strHealthNumber = 2131493817;
+			public const int strFolioNumber = 2131493817;
 			
 			// aapt resource value: 0x7F0C03BA
-			public const int strHeight = 2131493818;
+			public const int strFormOfEducation = 2131493818;
+			
+			// aapt resource value: 0x7F0C04FB
+			public const int strfppLeftIndexFinger = 2131494139;
+			
+			// aapt resource value: 0x7F0C04FC
+			public const int strfppLeftLittleFinger = 2131494140;
+			
+			// aapt resource value: 0x7F0C04FD
+			public const int strfppLeftMiddleFinger = 2131494141;
+			
+			// aapt resource value: 0x7F0C04FE
+			public const int strfppLeftRingFinger = 2131494142;
+			
+			// aapt resource value: 0x7F0C04FF
+			public const int strfppLeftThumb = 2131494143;
+			
+			// aapt resource value: 0x7F0C0500
+			public const int strfppRightIndexFinger = 2131494144;
+			
+			// aapt resource value: 0x7F0C0501
+			public const int strfppRightLittleFinger = 2131494145;
+			
+			// aapt resource value: 0x7F0C0502
+			public const int strfppRightMiddleFinger = 2131494146;
+			
+			// aapt resource value: 0x7F0C0503
+			public const int strfppRightRingFinger = 2131494147;
+			
+			// aapt resource value: 0x7F0C0504
+			public const int strfppRightThumb = 2131494148;
 			
 			// aapt resource value: 0x7F0C03BB
-			public const int strHoldDocumentStraight = 2131493819;
-			
-			// aapt resource value: 0x7F0C03C0
-			public const int strHolograms = 2131493824;
+			public const int strFreeBaggageAllowance = 2131493819;
 			
 			// aapt resource value: 0x7F0C03BC
-			public const int strHoloSimple = 2131493820;
+			public const int strFrequentFlyerAirlineDesignator = 2131493820;
 			
 			// aapt resource value: 0x7F0C03BD
-			public const int strHoloVerifyDinamic = 2131493821;
+			public const int strFrequentFlyerNumber = 2131493821;
 			
 			// aapt resource value: 0x7F0C03BE
-			public const int strHoloVerifyMultiStatic = 2131493822;
+			public const int strFromAirportCode = 2131493822;
 			
 			// aapt resource value: 0x7F0C03BF
-			public const int strHoloVerifyStatic = 2131493823;
-			
-			// aapt resource value: 0x7F0C03C5
-			public const int strIdentifier = 2131493829;
-			
-			// aapt resource value: 0x7F0C03C6
-			public const int strIdentityCardNumber = 2131493830;
-			
-			// aapt resource value: 0x7F0C03C7
-			public const int strIdentityCardNumberCheckDigit = 2131493831;
-			
-			// aapt resource value: 0x7F0C03C8
-			public const int strIdentityCardNumberChecksum = 2131493832;
-			
-			// aapt resource value: 0x7F0C03C9
-			public const int strImagePattern = 2131493833;
-			
-			// aapt resource value: 0x7F0C03CA
-			public const int strInTanks = 2131493834;
-			
-			// aapt resource value: 0x7F0C03CB
-			public const int strInventoryNumber = 2131493835;
-			
-			// aapt resource value: 0x7F0C03CC
-			public const int strInvitationNumber = 2131493836;
-			
-			// aapt resource value: 0x7F0C03CD
-			public const int strInvitationNumberCheckDigit = 2131493837;
-			
-			// aapt resource value: 0x7F0C03CE
-			public const int strInvitationNumberChecksum = 2131493838;
-			
-			// aapt resource value: 0x7F0C03CF
-			public const int strInvitedBy = 2131493839;
+			public const int strFuelType = 2131493823;
 			
 			// aapt resource value: 0x7F0C03C1
-			public const int strIPI = 2131493825;
+			public const int strGhostPortrait = 2131493825;
 			
 			// aapt resource value: 0x7F0C03C2
-			public const int strIRB900 = 2131493826;
+			public const int strGivenNames = 2131493826;
 			
 			// aapt resource value: 0x7F0C03C3
-			public const int strIRVis = 2131493827;
+			public const int strGivenNamesRUS = 2131493827;
 			
 			// aapt resource value: 0x7F0C03C4
-			public const int strISOIssuerIDNumber = 2131493828;
+			public const int strGlaresOnDocument = 2131493828;
 			
-			// aapt resource value: 0x7F0C03D0
-			public const int strIssueTimestamp = 2131493840;
+			// aapt resource value: 0x7F0C03C0
+			public const int strGNIBNumber = 2131493824;
 			
-			// aapt resource value: 0x7F0C03D1
-			public const int strIssuingStateCode = 2131493841;
+			// aapt resource value: 0x7F0C03C5
+			public const int strGrandfatherName = 2131493829;
 			
-			// aapt resource value: 0x7F0C03D2
-			public const int strIssuingStateCodeNumeric = 2131493842;
+			// aapt resource value: 0x7F0C03C6
+			public const int strHairColor = 2131493830;
 			
-			// aapt resource value: 0x7F0C03D3
-			public const int strIssuingStateName = 2131493843;
+			// aapt resource value: 0x7F0C03C7
+			public const int strHealthNumber = 2131493831;
+			
+			// aapt resource value: 0x7F0C03C8
+			public const int strHeight = 2131493832;
+			
+			// aapt resource value: 0x7F0C03C9
+			public const int strHoldDocumentStraight = 2131493833;
+			
+			// aapt resource value: 0x7F0C03CE
+			public const int strHologramDetection = 2131493838;
+			
+			// aapt resource value: 0x7F0C03CF
+			public const int strHolograms = 2131493839;
+			
+			// aapt resource value: 0x7F0C03CA
+			public const int strHoloSimple = 2131493834;
+			
+			// aapt resource value: 0x7F0C03CB
+			public const int strHoloVerifyDinamic = 2131493835;
+			
+			// aapt resource value: 0x7F0C03CC
+			public const int strHoloVerifyMultiStatic = 2131493836;
+			
+			// aapt resource value: 0x7F0C03CD
+			public const int strHoloVerifyStatic = 2131493837;
 			
 			// aapt resource value: 0x7F0C03D4
-			public const int strJurisdictionEndorsementCode = 2131493844;
+			public const int strIdentifier = 2131493844;
 			
 			// aapt resource value: 0x7F0C03D5
-			public const int strJurisdictionRestrictionCode = 2131493845;
+			public const int strIdentityCardNumber = 2131493845;
 			
 			// aapt resource value: 0x7F0C03D6
-			public const int strJurisdictionVehicleClass = 2131493846;
+			public const int strIdentityCardNumberCheckDigit = 2131493846;
 			
 			// aapt resource value: 0x7F0C03D7
-			public const int strKeepDeviceStill = 2131493847;
+			public const int strIdentityCardNumberChecksum = 2131493847;
 			
 			// aapt resource value: 0x7F0C03D8
-			public const int strLicenseNumber = 2131493848;
+			public const int strImagePattern = 2131493848;
 			
 			// aapt resource value: 0x7F0C03D9
-			public const int strLimitedDurationDocumentIndicator = 2131493849;
+			public const int strInTanks = 2131493849;
 			
 			// aapt resource value: 0x7F0C03DA
-			public const int strLine1CheckDigit = 2131493850;
+			public const int strInventoryNumber = 2131493850;
 			
 			// aapt resource value: 0x7F0C03DB
-			public const int strLine1Checksum = 2131493851;
+			public const int strInvitationNumber = 2131493851;
 			
 			// aapt resource value: 0x7F0C03DC
-			public const int strLine1OptionalData = 2131493852;
+			public const int strInvitationNumberCheckDigit = 2131493852;
 			
 			// aapt resource value: 0x7F0C03DD
-			public const int strLine2CheckDigit = 2131493853;
+			public const int strInvitationNumberChecksum = 2131493853;
 			
 			// aapt resource value: 0x7F0C03DE
-			public const int strLine2Checksum = 2131493854;
+			public const int strInvitedBy = 2131493854;
+			
+			// aapt resource value: 0x7F0C03D0
+			public const int strIPI = 2131493840;
+			
+			// aapt resource value: 0x7F0C03D1
+			public const int strIRB900 = 2131493841;
+			
+			// aapt resource value: 0x7F0C03D2
+			public const int strIRVis = 2131493842;
+			
+			// aapt resource value: 0x7F0C03D3
+			public const int strISOIssuerIDNumber = 2131493843;
 			
 			// aapt resource value: 0x7F0C03DF
-			public const int strLine2OptionalData = 2131493855;
+			public const int strIssueTimestamp = 2131493855;
 			
 			// aapt resource value: 0x7F0C03E0
-			public const int strLine3CheckDigit = 2131493856;
+			public const int strIssuingStateCode = 2131493856;
 			
 			// aapt resource value: 0x7F0C03E1
-			public const int strLine3Checksum = 2131493857;
+			public const int strIssuingStateCodeNumeric = 2131493857;
 			
 			// aapt resource value: 0x7F0C03E2
-			public const int strLine3OptionalData = 2131493858;
+			public const int strIssuingStateName = 2131493858;
 			
 			// aapt resource value: 0x7F0C03E3
-			public const int strLookingDocument = 2131493859;
-			
-			// aapt resource value: 0x7F0C03ED
-			public const int strMailingAddressCity = 2131493869;
-			
-			// aapt resource value: 0x7F0C03EE
-			public const int strMailingAddressJurisdictionCode = 2131493870;
-			
-			// aapt resource value: 0x7F0C03EF
-			public const int strMailingAddressPostalCode = 2131493871;
-			
-			// aapt resource value: 0x7F0C03F0
-			public const int strMailingAddressStreet = 2131493872;
-			
-			// aapt resource value: 0x7F0C03F1
-			public const int strMake = 2131493873;
-			
-			// aapt resource value: 0x7F0C03F2
-			public const int strMakeSure = 2131493874;
-			
-			// aapt resource value: 0x7F0C03F3
-			public const int strMaritalStatus = 2131493875;
-			
-			// aapt resource value: 0x7F0C03F4
-			public const int strMaxMassofTrailerBraked = 2131493876;
-			
-			// aapt resource value: 0x7F0C03F5
-			public const int strMaxMassofTrailerUnbraked = 2131493877;
-			
-			// aapt resource value: 0x7F0C03F6
-			public const int strMaxSpeed = 2131493878;
+			public const int strJurisdictionEndorsementCode = 2131493859;
 			
 			// aapt resource value: 0x7F0C03E4
-			public const int strMCNoviceDate = 2131493860;
-			
-			// aapt resource value: 0x7F0C03F7
-			public const int strMedicalIndicatorCodes = 2131493879;
-			
-			// aapt resource value: 0x7F0C03F8
-			public const int strMiddleName = 2131493880;
-			
-			// aapt resource value: 0x7F0C03F9
-			public const int strMiddleNameTruncation = 2131493881;
-			
-			// aapt resource value: 0x7F0C03FA
-			public const int strMifareData = 2131493882;
-			
-			// aapt resource value: 0x7F0C03FB
-			public const int strMifareValidity = 2131493883;
-			
-			// aapt resource value: 0x7F0C03FC
-			public const int strMilitaryBookNumber = 2131493884;
-			
-			// aapt resource value: 0x7F0C03FD
-			public const int strModel = 2131493885;
-			
-			// aapt resource value: 0x7F0C03FE
-			public const int strMonth = 2131493886;
-			
-			// aapt resource value: 0x7F0C03FF
-			public const int strMortgageBy = 2131493887;
-			
-			// aapt resource value: 0x7F0C0400
-			public const int strMotherCountryOfBirth = 2131493888;
-			
-			// aapt resource value: 0x7F0C0401
-			public const int strMotherDateOfBirth = 2131493889;
-			
-			// aapt resource value: 0x7F0C0402
-			public const int strMotherGivenName = 2131493890;
-			
-			// aapt resource value: 0x7F0C0403
-			public const int strMotherPersonalNumber = 2131493891;
-			
-			// aapt resource value: 0x7F0C0404
-			public const int strMotherPlaceOfBirth = 2131493892;
-			
-			// aapt resource value: 0x7F0C0406
-			public const int strMothersName = 2131493894;
-			
-			// aapt resource value: 0x7F0C0405
-			public const int strMotherSurname = 2131493893;
+			public const int strJurisdictionRestrictionCode = 2131493860;
 			
 			// aapt resource value: 0x7F0C03E5
-			public const int strMRZ = 2131493861;
+			public const int strJurisdictionVehicleClass = 2131493861;
 			
 			// aapt resource value: 0x7F0C03E6
-			public const int strMRZLinesICAORFID = 2131493862;
+			public const int strKeepDeviceStill = 2131493862;
 			
 			// aapt resource value: 0x7F0C03E7
-			public const int strMRZString1 = 2131493863;
+			public const int strLicenseNumber = 2131493863;
 			
 			// aapt resource value: 0x7F0C03E8
-			public const int strMRZString2 = 2131493864;
+			public const int strLimitedDurationDocumentIndicator = 2131493864;
 			
 			// aapt resource value: 0x7F0C03E9
-			public const int strMRZString3 = 2131493865;
+			public const int strLine1CheckDigit = 2131493865;
 			
 			// aapt resource value: 0x7F0C03EA
-			public const int strMRZStrings = 2131493866;
+			public const int strLine1Checksum = 2131493866;
 			
 			// aapt resource value: 0x7F0C03EB
-			public const int strMRZStringsWithCorrectCheckSums = 2131493867;
+			public const int strLine1OptionalData = 2131493867;
 			
 			// aapt resource value: 0x7F0C03EC
-			public const int strMRZType = 2131493868;
+			public const int strLine2CheckDigit = 2131493868;
+			
+			// aapt resource value: 0x7F0C03ED
+			public const int strLine2Checksum = 2131493869;
+			
+			// aapt resource value: 0x7F0C03EE
+			public const int strLine2OptionalData = 2131493870;
+			
+			// aapt resource value: 0x7F0C03EF
+			public const int strLine3CheckDigit = 2131493871;
+			
+			// aapt resource value: 0x7F0C03F0
+			public const int strLine3Checksum = 2131493872;
+			
+			// aapt resource value: 0x7F0C03F1
+			public const int strLine3OptionalData = 2131493873;
+			
+			// aapt resource value: 0x7F0C03F2
+			public const int strLookingDocument = 2131493874;
+			
+			// aapt resource value: 0x7F0C03FC
+			public const int strMailingAddressCity = 2131493884;
+			
+			// aapt resource value: 0x7F0C03FD
+			public const int strMailingAddressJurisdictionCode = 2131493885;
+			
+			// aapt resource value: 0x7F0C03FE
+			public const int strMailingAddressPostalCode = 2131493886;
+			
+			// aapt resource value: 0x7F0C03FF
+			public const int strMailingAddressStreet = 2131493887;
+			
+			// aapt resource value: 0x7F0C0400
+			public const int strMake = 2131493888;
+			
+			// aapt resource value: 0x7F0C0401
+			public const int strMakeSure = 2131493889;
+			
+			// aapt resource value: 0x7F0C0402
+			public const int strMaritalStatus = 2131493890;
+			
+			// aapt resource value: 0x7F0C0403
+			public const int strMaxMassofTrailerBraked = 2131493891;
+			
+			// aapt resource value: 0x7F0C0404
+			public const int strMaxMassofTrailerUnbraked = 2131493892;
+			
+			// aapt resource value: 0x7F0C0405
+			public const int strMaxSpeed = 2131493893;
+			
+			// aapt resource value: 0x7F0C03F3
+			public const int strMCNoviceDate = 2131493875;
+			
+			// aapt resource value: 0x7F0C0406
+			public const int strMedicalIndicatorCodes = 2131493894;
 			
 			// aapt resource value: 0x7F0C0407
-			public const int strNamePrefix = 2131493895;
+			public const int strMiddleName = 2131493895;
 			
 			// aapt resource value: 0x7F0C0408
-			public const int strNameSuffix = 2131493896;
+			public const int strMiddleNameTruncation = 2131493896;
 			
 			// aapt resource value: 0x7F0C0409
-			public const int strNationality = 2131493897;
+			public const int strMifareData = 2131493897;
 			
 			// aapt resource value: 0x7F0C040A
-			public const int strNationalityCode = 2131493898;
+			public const int strMifareValidity = 2131493898;
 			
 			// aapt resource value: 0x7F0C040B
-			public const int strNationalityCodeNumeric = 2131493899;
+			public const int strMilitaryBookNumber = 2131493899;
 			
 			// aapt resource value: 0x7F0C040C
-			public const int strNfcTagNotFound = 2131493900;
-			
-			// aapt resource value: 0x7F0C040E
-			public const int strNone = 2131493902;
+			public const int strModel = 2131493900;
 			
 			// aapt resource value: 0x7F0C040D
-			public const int strNonResidentIndicator = 2131493901;
+			public const int strMonth = 2131493901;
+			
+			// aapt resource value: 0x7F0C040E
+			public const int strMortgageBy = 2131493902;
 			
 			// aapt resource value: 0x7F0C040F
-			public const int strNotDefined = 2131493903;
-			
-			// aapt resource value: 0x7F0C0414
-			public const int strNumberofAxels = 2131493908;
+			public const int strMotherCountryOfBirth = 2131493903;
 			
 			// aapt resource value: 0x7F0C0410
-			public const int strNumberOfCardIssuance = 2131493904;
+			public const int strMotherDateOfBirth = 2131493904;
 			
 			// aapt resource value: 0x7F0C0411
-			public const int strNumberOfCardIssuanceCheckDigit = 2131493905;
+			public const int strMotherGivenName = 2131493905;
 			
 			// aapt resource value: 0x7F0C0412
-			public const int strNumberOfCardIssuanceChecksum = 2131493906;
+			public const int strMotherPersonalNumber = 2131493906;
 			
 			// aapt resource value: 0x7F0C0413
-			public const int strNumberOfCylinders = 2131493907;
+			public const int strMotherPlaceOfBirth = 2131493907;
 			
 			// aapt resource value: 0x7F0C0415
-			public const int strNumberofDuplicates = 2131493909;
+			public const int strMothersName = 2131493909;
+			
+			// aapt resource value: 0x7F0C0414
+			public const int strMotherSurname = 2131493908;
+			
+			// aapt resource value: 0x7F0C03F4
+			public const int strMRZ = 2131493876;
+			
+			// aapt resource value: 0x7F0C03F5
+			public const int strMRZLinesICAORFID = 2131493877;
+			
+			// aapt resource value: 0x7F0C03F6
+			public const int strMRZString1 = 2131493878;
+			
+			// aapt resource value: 0x7F0C03F7
+			public const int strMRZString2 = 2131493879;
+			
+			// aapt resource value: 0x7F0C03F8
+			public const int strMRZString3 = 2131493880;
+			
+			// aapt resource value: 0x7F0C03F9
+			public const int strMRZStrings = 2131493881;
+			
+			// aapt resource value: 0x7F0C03FA
+			public const int strMRZStringsWithCorrectCheckSums = 2131493882;
+			
+			// aapt resource value: 0x7F0C03FB
+			public const int strMRZType = 2131493883;
 			
 			// aapt resource value: 0x7F0C0416
-			public const int strNumberofEntries = 2131493910;
+			public const int strNamePrefix = 2131493910;
 			
 			// aapt resource value: 0x7F0C0417
-			public const int strNumberofSeats = 2131493911;
+			public const int strNameSuffix = 2131493911;
 			
 			// aapt resource value: 0x7F0C0418
-			public const int strNumberofStandingPlaces = 2131493912;
-			
-			// aapt resource value: 0x7F0C041B
-			public const int strObservations = 2131493915;
+			public const int strNationality = 2131493912;
 			
 			// aapt resource value: 0x7F0C0419
-			public const int strOCRNumber = 2131493913;
+			public const int strNationalityCode = 2131493913;
 			
 			// aapt resource value: 0x7F0C041A
-			public const int strOK = 2131493914;
+			public const int strNationalityCodeNumeric = 2131493914;
 			
-			// aapt resource value: 0x7F0C041C
-			public const int strOldDateOfIssue = 2131493916;
+			// aapt resource value: 0x7F0C041B
+			public const int strNfcTagNotFound = 2131493915;
 			
 			// aapt resource value: 0x7F0C041D
-			public const int strOldDocumentNumber = 2131493917;
+			public const int strNone = 2131493917;
+			
+			// aapt resource value: 0x7F0C041C
+			public const int strNonResidentIndicator = 2131493916;
 			
 			// aapt resource value: 0x7F0C041E
-			public const int strOldPlaceOfIssue = 2131493918;
-			
-			// aapt resource value: 0x7F0C041F
-			public const int strOptionalData = 2131493919;
-			
-			// aapt resource value: 0x7F0C0420
-			public const int strOptionalDataCheckDigit = 2131493920;
-			
-			// aapt resource value: 0x7F0C0421
-			public const int strOptionalDataChecksum = 2131493921;
-			
-			// aapt resource value: 0x7F0C0422
-			public const int strOptionalDetails = 2131493922;
+			public const int strNotDefined = 2131493918;
 			
 			// aapt resource value: 0x7F0C0423
-			public const int strOrganization = 2131493923;
+			public const int strNumberofAxels = 2131493923;
+			
+			// aapt resource value: 0x7F0C041F
+			public const int strNumberOfCardIssuance = 2131493919;
+			
+			// aapt resource value: 0x7F0C0420
+			public const int strNumberOfCardIssuanceCheckDigit = 2131493920;
+			
+			// aapt resource value: 0x7F0C0421
+			public const int strNumberOfCardIssuanceChecksum = 2131493921;
+			
+			// aapt resource value: 0x7F0C0422
+			public const int strNumberOfCylinders = 2131493922;
 			
 			// aapt resource value: 0x7F0C0424
-			public const int strOther = 2131493924;
+			public const int strNumberofDuplicates = 2131493924;
 			
 			// aapt resource value: 0x7F0C0425
-			public const int strOtherName = 2131493925;
+			public const int strNumberofEntries = 2131493925;
 			
 			// aapt resource value: 0x7F0C0426
-			public const int strOtherPersonName = 2131493926;
+			public const int strNumberofSeats = 2131493926;
 			
 			// aapt resource value: 0x7F0C0427
-			public const int strOtherValidID = 2131493927;
-			
-			// aapt resource value: 0x7F0C0428
-			public const int strOwner = 2131493928;
-			
-			// aapt resource value: 0x7F0C042B
-			public const int strPa = 2131493931;
-			
-			// aapt resource value: 0x7F0C042C
-			public const int strPace = 2131493932;
-			
-			// aapt resource value: 0x7F0C042D
-			public const int strParrentsGivenNames = 2131493933;
-			
-			// aapt resource value: 0x7F0C042E
-			public const int strPassportNumber = 2131493934;
-			
-			// aapt resource value: 0x7F0C042F
-			public const int strPassportNumberCheckDigit = 2131493935;
-			
-			// aapt resource value: 0x7F0C0430
-			public const int strPassportNumberChecksum = 2131493936;
-			
-			// aapt resource value: 0x7F0C0431
-			public const int strPatronHeaderVersion = 2131493937;
-			
-			// aapt resource value: 0x7F0C0432
-			public const int strPatternDifferentLinesThickness = 2131493938;
-			
-			// aapt resource value: 0x7F0C0433
-			public const int strPatternIRInvisible = 2131493939;
-			
-			// aapt resource value: 0x7F0C0434
-			public const int strPatternNotInterrupted = 2131493940;
-			
-			// aapt resource value: 0x7F0C0435
-			public const int strPatternNotShifted = 2131493941;
-			
-			// aapt resource value: 0x7F0C0436
-			public const int strPatternSameColors = 2131493942;
-			
-			// aapt resource value: 0x7F0C0437
-			public const int strPaused = 2131493943;
-			
-			// aapt resource value: 0x7F0C0438
-			public const int strPayGrade = 2131493944;
-			
-			// aapt resource value: 0x7F0C0439
-			public const int strPayloadCapacity = 2131493945;
-			
-			// aapt resource value: 0x7F0C0429
-			public const int strPDF417Codec = 2131493929;
-			
-			// aapt resource value: 0x7F0C043A
-			public const int strPermissibleAxleLoad = 2131493946;
-			
-			// aapt resource value: 0x7F0C043C
-			public const int strPermitDateofExpiry = 2131493948;
-			
-			// aapt resource value: 0x7F0C043D
-			public const int strPermitDateofIssue = 2131493949;
-			
-			// aapt resource value: 0x7F0C043B
-			public const int strPermitDLClass = 2131493947;
-			
-			// aapt resource value: 0x7F0C043E
-			public const int strPermitEndorsed = 2131493950;
-			
-			// aapt resource value: 0x7F0C043F
-			public const int strPermitIdentifier = 2131493951;
-			
-			// aapt resource value: 0x7F0C0440
-			public const int strPermitRestrictionCode = 2131493952;
-			
-			// aapt resource value: 0x7F0C0449
-			public const int strPersonalizationSN = 2131493961;
-			
-			// aapt resource value: 0x7F0C0445
-			public const int strPersonalNumber = 2131493957;
-			
-			// aapt resource value: 0x7F0C0446
-			public const int strPersonalNumberCheckDigit = 2131493958;
-			
-			// aapt resource value: 0x7F0C0447
-			public const int strPersonalNumberChecksum = 2131493959;
-			
-			// aapt resource value: 0x7F0C0448
-			public const int strPersonalSummary = 2131493960;
-			
-			// aapt resource value: 0x7F0C0441
-			public const int strPersonToNotifyAddress = 2131493953;
-			
-			// aapt resource value: 0x7F0C0442
-			public const int strPersonToNotifyDateofRecord = 2131493954;
-			
-			// aapt resource value: 0x7F0C0443
-			public const int strPersonToNotifyName = 2131493955;
-			
-			// aapt resource value: 0x7F0C0444
-			public const int strPersonToNotifyPhone = 2131493956;
-			
-			// aapt resource value: 0x7F0C044A
-			public const int strPhone = 2131493962;
-			
-			// aapt resource value: 0x7F0C044B
-			public const int strPhotoArea = 2131493963;
-			
-			// aapt resource value: 0x7F0C044C
-			public const int strPhotoColor = 2131493964;
-			
-			// aapt resource value: 0x7F0C044D
-			public const int strPhotoCorners = 2131493965;
-			
-			// aapt resource value: 0x7F0C044E
-			public const int strPhotoElement = 2131493966;
-			
-			// aapt resource value: 0x7F0C044F
-			public const int strPhotoEmbedType = 2131493967;
-			
-			// aapt resource value: 0x7F0C0450
-			public const int strPhotoProcessing = 2131493968;
-			
-			// aapt resource value: 0x7F0C0451
-			public const int strPhotoShape = 2131493969;
-			
-			// aapt resource value: 0x7F0C0452
-			public const int strPhotoSizeCheck = 2131493970;
-			
-			// aapt resource value: 0x7F0C0453
-			public const int strPlace1120OnTheDocument = 2131493971;
-			
-			// aapt resource value: 0x7F0C0454
-			public const int strPlaceDocumentInFrame = 2131493972;
-			
-			// aapt resource value: 0x7F0C045A
-			public const int strPlaceofBirth = 2131493978;
-			
-			// aapt resource value: 0x7F0C045B
-			public const int strPlaceofBirthArea = 2131493979;
-			
-			// aapt resource value: 0x7F0C0455
-			public const int strPlaceOfBirthRUS = 2131493973;
-			
-			// aapt resource value: 0x7F0C0456
-			public const int strPlaceOfBirthStateCode = 2131493974;
-			
-			// aapt resource value: 0x7F0C0457
-			public const int strPlaceOfExamination = 2131493975;
-			
-			// aapt resource value: 0x7F0C0458
-			public const int strPlaceOfIssue = 2131493976;
-			
-			// aapt resource value: 0x7F0C045C
-			public const int strPlaceofRegistration = 2131493980;
-			
-			// aapt resource value: 0x7F0C0459
-			public const int strPlacePhoneOnDoc = 2131493977;
+			public const int strNumberofStandingPlaces = 2131493927;
 			
 			// aapt resource value: 0x7F0C042A
-			public const int strPNRCode = 2131493930;
+			public const int strObservations = 2131493930;
+			
+			// aapt resource value: 0x7F0C0428
+			public const int strOCRNumber = 2131493928;
+			
+			// aapt resource value: 0x7F0C0429
+			public const int strOK = 2131493929;
+			
+			// aapt resource value: 0x7F0C042B
+			public const int strOldDateOfIssue = 2131493931;
+			
+			// aapt resource value: 0x7F0C042C
+			public const int strOldDocumentNumber = 2131493932;
+			
+			// aapt resource value: 0x7F0C042D
+			public const int strOldPlaceOfIssue = 2131493933;
+			
+			// aapt resource value: 0x7F0C042E
+			public const int strOptionalData = 2131493934;
+			
+			// aapt resource value: 0x7F0C042F
+			public const int strOptionalDataCheckDigit = 2131493935;
+			
+			// aapt resource value: 0x7F0C0430
+			public const int strOptionalDataChecksum = 2131493936;
+			
+			// aapt resource value: 0x7F0C0431
+			public const int strOptionalDetails = 2131493937;
+			
+			// aapt resource value: 0x7F0C0432
+			public const int strOrganization = 2131493938;
+			
+			// aapt resource value: 0x7F0C0433
+			public const int strOther = 2131493939;
+			
+			// aapt resource value: 0x7F0C0434
+			public const int strOtherName = 2131493940;
+			
+			// aapt resource value: 0x7F0C0435
+			public const int strOtherPersonName = 2131493941;
+			
+			// aapt resource value: 0x7F0C0436
+			public const int strOtherValidID = 2131493942;
+			
+			// aapt resource value: 0x7F0C0437
+			public const int strOwner = 2131493943;
+			
+			// aapt resource value: 0x7F0C043A
+			public const int strPa = 2131493946;
+			
+			// aapt resource value: 0x7F0C043B
+			public const int strPace = 2131493947;
+			
+			// aapt resource value: 0x7F0C043C
+			public const int strParrentsGivenNames = 2131493948;
+			
+			// aapt resource value: 0x7F0C043D
+			public const int strPassportNumber = 2131493949;
+			
+			// aapt resource value: 0x7F0C043E
+			public const int strPassportNumberCheckDigit = 2131493950;
+			
+			// aapt resource value: 0x7F0C043F
+			public const int strPassportNumberChecksum = 2131493951;
+			
+			// aapt resource value: 0x7F0C0440
+			public const int strPatronHeaderVersion = 2131493952;
+			
+			// aapt resource value: 0x7F0C0441
+			public const int strPatternDifferentLinesThickness = 2131493953;
+			
+			// aapt resource value: 0x7F0C0442
+			public const int strPatternIRInvisible = 2131493954;
+			
+			// aapt resource value: 0x7F0C0443
+			public const int strPatternNotInterrupted = 2131493955;
+			
+			// aapt resource value: 0x7F0C0444
+			public const int strPatternNotShifted = 2131493956;
+			
+			// aapt resource value: 0x7F0C0445
+			public const int strPatternSameColors = 2131493957;
+			
+			// aapt resource value: 0x7F0C0446
+			public const int strPaused = 2131493958;
+			
+			// aapt resource value: 0x7F0C0447
+			public const int strPayGrade = 2131493959;
+			
+			// aapt resource value: 0x7F0C0448
+			public const int strPayloadCapacity = 2131493960;
+			
+			// aapt resource value: 0x7F0C0438
+			public const int strPDF417Codec = 2131493944;
+			
+			// aapt resource value: 0x7F0C0449
+			public const int strPermissibleAxleLoad = 2131493961;
+			
+			// aapt resource value: 0x7F0C044B
+			public const int strPermitDateofExpiry = 2131493963;
+			
+			// aapt resource value: 0x7F0C044C
+			public const int strPermitDateofIssue = 2131493964;
+			
+			// aapt resource value: 0x7F0C044A
+			public const int strPermitDLClass = 2131493962;
+			
+			// aapt resource value: 0x7F0C044D
+			public const int strPermitEndorsed = 2131493965;
+			
+			// aapt resource value: 0x7F0C044E
+			public const int strPermitIdentifier = 2131493966;
+			
+			// aapt resource value: 0x7F0C044F
+			public const int strPermitRestrictionCode = 2131493967;
+			
+			// aapt resource value: 0x7F0C0458
+			public const int strPersonalizationSN = 2131493976;
+			
+			// aapt resource value: 0x7F0C0454
+			public const int strPersonalNumber = 2131493972;
+			
+			// aapt resource value: 0x7F0C0455
+			public const int strPersonalNumberCheckDigit = 2131493973;
+			
+			// aapt resource value: 0x7F0C0456
+			public const int strPersonalNumberChecksum = 2131493974;
+			
+			// aapt resource value: 0x7F0C0457
+			public const int strPersonalSummary = 2131493975;
+			
+			// aapt resource value: 0x7F0C0450
+			public const int strPersonToNotifyAddress = 2131493968;
+			
+			// aapt resource value: 0x7F0C0451
+			public const int strPersonToNotifyDateofRecord = 2131493969;
+			
+			// aapt resource value: 0x7F0C0452
+			public const int strPersonToNotifyName = 2131493970;
+			
+			// aapt resource value: 0x7F0C0453
+			public const int strPersonToNotifyPhone = 2131493971;
+			
+			// aapt resource value: 0x7F0C0459
+			public const int strPhone = 2131493977;
+			
+			// aapt resource value: 0x7F0C045A
+			public const int strPhotoArea = 2131493978;
+			
+			// aapt resource value: 0x7F0C045B
+			public const int strPhotoColor = 2131493979;
+			
+			// aapt resource value: 0x7F0C045C
+			public const int strPhotoCorners = 2131493980;
 			
 			// aapt resource value: 0x7F0C045D
-			public const int strPoliceDistrict = 2131493981;
+			public const int strPhotoElement = 2131493981;
 			
 			// aapt resource value: 0x7F0C045E
-			public const int strPortrait = 2131493982;
+			public const int strPhotoEmbedType = 2131493982;
 			
 			// aapt resource value: 0x7F0C045F
-			public const int strPortraitComparison = 2131493983;
+			public const int strPhotoProcessing = 2131493983;
 			
 			// aapt resource value: 0x7F0C0460
-			public const int strPortraitOfChild = 2131493984;
+			public const int strPhotoShape = 2131493984;
 			
 			// aapt resource value: 0x7F0C0461
-			public const int strPortraitVSCamera = 2131493985;
+			public const int strPhotoSizeCheck = 2131493985;
 			
 			// aapt resource value: 0x7F0C0462
-			public const int strPortraitVSGhost = 2131493986;
+			public const int strPlace1120OnTheDocument = 2131493986;
 			
 			// aapt resource value: 0x7F0C0463
-			public const int strPortraitVSRFID = 2131493987;
-			
-			// aapt resource value: 0x7F0C0464
-			public const int strPowerWeightRatio = 2131493988;
-			
-			// aapt resource value: 0x7F0C0465
-			public const int strPrecinct = 2131493989;
-			
-			// aapt resource value: 0x7F0C0466
-			public const int strPrepareCamera = 2131493990;
-			
-			// aapt resource value: 0x7F0C0467
-			public const int strPresentNextPage = 2131493991;
-			
-			// aapt resource value: 0x7F0C0468
-			public const int strPreviousType = 2131493992;
+			public const int strPlaceDocumentInFrame = 2131493987;
 			
 			// aapt resource value: 0x7F0C0469
-			public const int strProcessingDocument = 2131493993;
+			public const int strPlaceofBirth = 2131493993;
 			
 			// aapt resource value: 0x7F0C046A
-			public const int strProfession = 2131493994;
+			public const int strPlaceofBirthArea = 2131493994;
+			
+			// aapt resource value: 0x7F0C0464
+			public const int strPlaceOfBirthRUS = 2131493988;
+			
+			// aapt resource value: 0x7F0C0465
+			public const int strPlaceOfBirthStateCode = 2131493989;
+			
+			// aapt resource value: 0x7F0C0466
+			public const int strPlaceOfExamination = 2131493990;
+			
+			// aapt resource value: 0x7F0C0467
+			public const int strPlaceOfIssue = 2131493991;
 			
 			// aapt resource value: 0x7F0C046B
-			public const int strProfessionalIdNumber = 2131493995;
+			public const int strPlaceofRegistration = 2131493995;
+			
+			// aapt resource value: 0x7F0C0468
+			public const int strPlacePhoneOnDoc = 2131493992;
+			
+			// aapt resource value: 0x7F0C0439
+			public const int strPNRCode = 2131493945;
 			
 			// aapt resource value: 0x7F0C046C
-			public const int strProofOfCitizenship = 2131493996;
+			public const int strPoliceDistrict = 2131493996;
 			
 			// aapt resource value: 0x7F0C046D
-			public const int strPseudoCode = 2131493997;
+			public const int strPortrait = 2131493997;
 			
 			// aapt resource value: 0x7F0C046E
-			public const int strPurposeOfEntry = 2131493998;
-			
-			// aapt resource value: 0x7F0C0470
-			public const int strRaceEthnicity = 2131494000;
-			
-			// aapt resource value: 0x7F0C0471
-			public const int strRank = 2131494001;
-			
-			// aapt resource value: 0x7F0C0472
-			public const int strReadingRFID = 2131494002;
-			
-			// aapt resource value: 0x7F0C0473
-			public const int strReadingRFIDDG = 2131494003;
-			
-			// aapt resource value: 0x7F0C0474
-			public const int strRecognizedDocumentType = 2131494004;
-			
-			// aapt resource value: 0x7F0C0475
-			public const int strReferenceNumber = 2131494005;
-			
-			// aapt resource value: 0x7F0C0476
-			public const int strReferenceNumberCheckDigit = 2131494006;
-			
-			// aapt resource value: 0x7F0C0477
-			public const int strReferenceNumberChecksum = 2131494007;
-			
-			// aapt resource value: 0x7F0C0478
-			public const int strRegCertBodyNumber = 2131494008;
-			
-			// aapt resource value: 0x7F0C0479
-			public const int strRegCertBodyType = 2131494009;
-			
-			// aapt resource value: 0x7F0C047A
-			public const int strRegCertCarColor = 2131494010;
-			
-			// aapt resource value: 0x7F0C047B
-			public const int strRegCertCarMark = 2131494011;
-			
-			// aapt resource value: 0x7F0C047C
-			public const int strRegCertCarModel = 2131494012;
-			
-			// aapt resource value: 0x7F0C047D
-			public const int strRegCertCarType = 2131494013;
-			
-			// aapt resource value: 0x7F0C047E
-			public const int strRegCertMaxWeight = 2131494014;
-			
-			// aapt resource value: 0x7F0C047F
-			public const int strRegCertRegNumber = 2131494015;
-			
-			// aapt resource value: 0x7F0C0480
-			public const int strRegCertRegNumberCheckDigit = 2131494016;
-			
-			// aapt resource value: 0x7F0C0481
-			public const int strRegCertRegNumberChecksum = 2131494017;
-			
-			// aapt resource value: 0x7F0C0485
-			public const int strRegCertVehicleITSCode = 2131494021;
-			
-			// aapt resource value: 0x7F0C0482
-			public const int strRegCertVIN = 2131494018;
-			
-			// aapt resource value: 0x7F0C0483
-			public const int strRegCertVINCheckDigit = 2131494019;
-			
-			// aapt resource value: 0x7F0C0484
-			public const int strRegCertVINChecksum = 2131494020;
-			
-			// aapt resource value: 0x7F0C0486
-			public const int strRegCertWeight = 2131494022;
-			
-			// aapt resource value: 0x7F0C0487
-			public const int strRelationship = 2131494023;
-			
-			// aapt resource value: 0x7F0C0488
-			public const int strReligion = 2131494024;
-			
-			// aapt resource value: 0x7F0C0489
-			public const int strRemainderTerm = 2131494025;
-			
-			// aapt resource value: 0x7F0C048A
-			public const int strResidentFrom = 2131494026;
-			
-			// aapt resource value: 0x7F0C048B
-			public const int strResidentUntil = 2131494027;
-			
-			// aapt resource value: 0x7F0C048C
-			public const int strRetirementNumber = 2131494028;
-			
-			// aapt resource value: 0x7F0C048D
-			public const int strRevisionDate = 2131494029;
+			public const int strPortraitComparison = 2131493998;
 			
 			// aapt resource value: 0x7F0C046F
-			public const int strRFIDVSCamera = 2131493999;
+			public const int strPortraitOfChild = 2131493999;
+			
+			// aapt resource value: 0x7F0C0470
+			public const int strPortraitVSCamera = 2131494000;
+			
+			// aapt resource value: 0x7F0C0471
+			public const int strPortraitVSGhost = 2131494001;
+			
+			// aapt resource value: 0x7F0C0472
+			public const int strPortraitVSRFID = 2131494002;
+			
+			// aapt resource value: 0x7F0C0473
+			public const int strPowerWeightRatio = 2131494003;
+			
+			// aapt resource value: 0x7F0C0474
+			public const int strPrecinct = 2131494004;
+			
+			// aapt resource value: 0x7F0C0475
+			public const int strPrepareCamera = 2131494005;
+			
+			// aapt resource value: 0x7F0C0476
+			public const int strPresentNextPage = 2131494006;
+			
+			// aapt resource value: 0x7F0C0477
+			public const int strPreviousType = 2131494007;
+			
+			// aapt resource value: 0x7F0C0478
+			public const int strProcessingDocument = 2131494008;
+			
+			// aapt resource value: 0x7F0C0479
+			public const int strProfession = 2131494009;
+			
+			// aapt resource value: 0x7F0C047A
+			public const int strProfessionalIdNumber = 2131494010;
+			
+			// aapt resource value: 0x7F0C047B
+			public const int strProofOfCitizenship = 2131494011;
+			
+			// aapt resource value: 0x7F0C047C
+			public const int strPseudoCode = 2131494012;
+			
+			// aapt resource value: 0x7F0C047D
+			public const int strPurposeOfEntry = 2131494013;
+			
+			// aapt resource value: 0x7F0C047F
+			public const int strRaceEthnicity = 2131494015;
+			
+			// aapt resource value: 0x7F0C0480
+			public const int strRank = 2131494016;
+			
+			// aapt resource value: 0x7F0C0481
+			public const int strReadingRFID = 2131494017;
+			
+			// aapt resource value: 0x7F0C0482
+			public const int strReadingRFIDDG = 2131494018;
+			
+			// aapt resource value: 0x7F0C0483
+			public const int strRecognizedDocumentType = 2131494019;
+			
+			// aapt resource value: 0x7F0C0484
+			public const int strReferenceNumber = 2131494020;
+			
+			// aapt resource value: 0x7F0C0485
+			public const int strReferenceNumberCheckDigit = 2131494021;
+			
+			// aapt resource value: 0x7F0C0486
+			public const int strReferenceNumberChecksum = 2131494022;
+			
+			// aapt resource value: 0x7F0C0487
+			public const int strRegCertBodyNumber = 2131494023;
+			
+			// aapt resource value: 0x7F0C0488
+			public const int strRegCertBodyType = 2131494024;
+			
+			// aapt resource value: 0x7F0C0489
+			public const int strRegCertCarColor = 2131494025;
+			
+			// aapt resource value: 0x7F0C048A
+			public const int strRegCertCarMark = 2131494026;
+			
+			// aapt resource value: 0x7F0C048B
+			public const int strRegCertCarModel = 2131494027;
+			
+			// aapt resource value: 0x7F0C048C
+			public const int strRegCertCarType = 2131494028;
+			
+			// aapt resource value: 0x7F0C048D
+			public const int strRegCertMaxWeight = 2131494029;
 			
 			// aapt resource value: 0x7F0C048E
-			public const int strRi = 2131494030;
+			public const int strRegCertRegNumber = 2131494030;
 			
 			// aapt resource value: 0x7F0C048F
-			public const int strRoomNumber = 2131494031;
+			public const int strRegCertRegNumberCheckDigit = 2131494031;
 			
 			// aapt resource value: 0x7F0C0490
-			public const int strSBHIntegrityOptions = 2131494032;
-			
-			// aapt resource value: 0x7F0C0491
-			public const int strSBHSecurityOptions = 2131494033;
-			
-			// aapt resource value: 0x7F0C0492
-			public const int strScenarioNameCapture = 2131494034;
-			
-			// aapt resource value: 0x7F0C0493
-			public const int strScenarioNameCaptureDesc = 2131494035;
+			public const int strRegCertRegNumberChecksum = 2131494032;
 			
 			// aapt resource value: 0x7F0C0494
-			public const int strSeatNumber = 2131494036;
+			public const int strRegCertVehicleITSCode = 2131494036;
+			
+			// aapt resource value: 0x7F0C0491
+			public const int strRegCertVIN = 2131494033;
+			
+			// aapt resource value: 0x7F0C0492
+			public const int strRegCertVINCheckDigit = 2131494034;
+			
+			// aapt resource value: 0x7F0C0493
+			public const int strRegCertVINChecksum = 2131494035;
 			
 			// aapt resource value: 0x7F0C0495
-			public const int strSecondSurname = 2131494037;
+			public const int strRegCertWeight = 2131494037;
 			
 			// aapt resource value: 0x7F0C0496
-			public const int strSection = 2131494038;
+			public const int strRelationship = 2131494038;
 			
 			// aapt resource value: 0x7F0C0497
-			public const int strSecurityText = 2131494039;
-			
-			// aapt resource value: 0x7F0C0499
-			public const int strSelecteeIndicator = 2131494041;
+			public const int strReligion = 2131494039;
 			
 			// aapt resource value: 0x7F0C0498
-			public const int strSelectScenario = 2131494040;
+			public const int strRemainderTerm = 2131494040;
+			
+			// aapt resource value: 0x7F0C0499
+			public const int strResidentFrom = 2131494041;
 			
 			// aapt resource value: 0x7F0C049A
-			public const int strSequenceNumber = 2131494042;
+			public const int strResidentUntil = 2131494042;
 			
 			// aapt resource value: 0x7F0C049B
-			public const int strSerialNumber = 2131494043;
+			public const int strRetirementNumber = 2131494043;
 			
 			// aapt resource value: 0x7F0C049C
-			public const int strSettings = 2131494044;
+			public const int strRevisionDate = 2131494044;
+			
+			// aapt resource value: 0x7F0C047E
+			public const int strRFIDVSCamera = 2131494014;
 			
 			// aapt resource value: 0x7F0C049D
-			public const int strSex = 2131494045;
+			public const int strRi = 2131494045;
 			
 			// aapt resource value: 0x7F0C049E
-			public const int strSignature = 2131494046;
+			public const int strRoomNumber = 2131494046;
 			
 			// aapt resource value: 0x7F0C049F
-			public const int strSkinColor = 2131494047;
+			public const int strSBHIntegrityOptions = 2131494047;
 			
 			// aapt resource value: 0x7F0C04A0
-			public const int strSocialSecurityNumber = 2131494048;
+			public const int strSBHSecurityOptions = 2131494048;
 			
 			// aapt resource value: 0x7F0C04A1
-			public const int strSpCode = 2131494049;
+			public const int strScenarioNameCapture = 2131494049;
 			
 			// aapt resource value: 0x7F0C04A2
-			public const int strSpecialNotes = 2131494050;
+			public const int strScenarioNameCaptureDesc = 2131494050;
 			
 			// aapt resource value: 0x7F0C04A3
-			public const int strSponsor = 2131494051;
-			
-			// aapt resource value: 0x7F0C04A5
-			public const int strSponsorService = 2131494053;
+			public const int strSeatNumber = 2131494051;
 			
 			// aapt resource value: 0x7F0C04A4
-			public const int strSponsorSSN = 2131494052;
+			public const int strSecondSurname = 2131494052;
+			
+			// aapt resource value: 0x7F0C04A5
+			public const int strSection = 2131494053;
 			
 			// aapt resource value: 0x7F0C04A6
-			public const int strSponsorStatus = 2131494054;
-			
-			// aapt resource value: 0x7F0C04A7
-			public const int strStamp = 2131494055;
+			public const int strSecurityText = 2131494054;
 			
 			// aapt resource value: 0x7F0C04A8
-			public const int strStampNumber = 2131494056;
+			public const int strSelecteeIndicator = 2131494056;
+			
+			// aapt resource value: 0x7F0C04A7
+			public const int strSelectScenario = 2131494055;
 			
 			// aapt resource value: 0x7F0C04A9
-			public const int strStatusDateofExpiry = 2131494057;
+			public const int strSequenceNumber = 2131494057;
 			
 			// aapt resource value: 0x7F0C04AA
-			public const int strSurname = 2131494058;
+			public const int strSerialNumber = 2131494058;
 			
 			// aapt resource value: 0x7F0C04AB
-			public const int strSurnameAndGivenNames = 2131494059;
+			public const int strSettings = 2131494059;
 			
 			// aapt resource value: 0x7F0C04AC
-			public const int strSurnameAndGivenNamesCheckDigit = 2131494060;
+			public const int strSex = 2131494060;
 			
 			// aapt resource value: 0x7F0C04AD
-			public const int strSurnameAndGivenNamesChecksum = 2131494061;
+			public const int strSignature = 2131494061;
 			
 			// aapt resource value: 0x7F0C04AE
-			public const int strSurnameAndGivenNamesRUS = 2131494062;
+			public const int strSkinColor = 2131494062;
 			
 			// aapt resource value: 0x7F0C04AF
-			public const int strSurnameAtBirth = 2131494063;
+			public const int strSocialSecurityNumber = 2131494063;
 			
 			// aapt resource value: 0x7F0C04B0
-			public const int strSurnameOfHusbandAfterRegistration = 2131494064;
-			
-			// aapt resource value: 0x7F0C04B2
-			public const int strSurnameofSpose = 2131494066;
+			public const int strSpCode = 2131494064;
 			
 			// aapt resource value: 0x7F0C04B1
-			public const int strSurnameOfWifeAfterRegistration = 2131494065;
+			public const int strSpecialNotes = 2131494065;
 			
-			// aapt resource value: 0x7F0C04B3
-			public const int strTa = 2131494067;
+			// aapt resource value: 0x7F0C04B2
+			public const int strSponsor = 2131494066;
 			
 			// aapt resource value: 0x7F0C04B4
-			public const int strTax = 2131494068;
+			public const int strSponsorService = 2131494068;
+			
+			// aapt resource value: 0x7F0C04B3
+			public const int strSponsorSSN = 2131494067;
 			
 			// aapt resource value: 0x7F0C04B5
-			public const int strTaxNumber = 2131494069;
+			public const int strSponsorStatus = 2131494069;
 			
 			// aapt resource value: 0x7F0C04B6
-			public const int strTelexCode = 2131494070;
+			public const int strStamp = 2131494070;
 			
 			// aapt resource value: 0x7F0C04B7
-			public const int strTerritorialValidity = 2131494071;
+			public const int strStampNumber = 2131494071;
 			
 			// aapt resource value: 0x7F0C04B8
-			public const int strTicketNumber = 2131494072;
+			public const int strStatusDateofExpiry = 2131494072;
 			
 			// aapt resource value: 0x7F0C04B9
-			public const int strTitle = 2131494073;
+			public const int strSurname = 2131494073;
 			
 			// aapt resource value: 0x7F0C04BA
-			public const int strToAirportCode = 2131494074;
+			public const int strSurnameAndGivenNames = 2131494074;
 			
 			// aapt resource value: 0x7F0C04BB
-			public const int strTorchUnavailable = 2131494075;
+			public const int strSurnameAndGivenNamesCheckDigit = 2131494075;
 			
 			// aapt resource value: 0x7F0C04BC
-			public const int strTrackingNumber = 2131494076;
+			public const int strSurnameAndGivenNamesChecksum = 2131494076;
 			
 			// aapt resource value: 0x7F0C04BD
-			public const int strTrailerHitch = 2131494077;
+			public const int strSurnameAndGivenNamesRUS = 2131494077;
 			
 			// aapt resource value: 0x7F0C04BE
-			public const int strTransactionNumber = 2131494078;
+			public const int strSurnameAtBirth = 2131494078;
 			
 			// aapt resource value: 0x7F0C04BF
-			public const int strTransmissionType = 2131494079;
-			
-			// aapt resource value: 0x7F0C04C0
-			public const int strTypeApprovalNumber = 2131494080;
-			
-			// aapt resource value: 0x7F0C04C6
-			public const int strUnableCaptureMedia = 2131494086;
-			
-			// aapt resource value: 0x7F0C04C7
-			public const int strUniqueCustomerIdentifier = 2131494087;
+			public const int strSurnameOfHusbandAfterRegistration = 2131494079;
 			
 			// aapt resource value: 0x7F0C04C1
-			public const int strURL = 2131494081;
+			public const int strSurnameofSpose = 2131494081;
+			
+			// aapt resource value: 0x7F0C04C0
+			public const int strSurnameOfWifeAfterRegistration = 2131494080;
 			
 			// aapt resource value: 0x7F0C04C2
-			public const int strUSCIS = 2131494082;
+			public const int strTa = 2131494082;
 			
 			// aapt resource value: 0x7F0C04C3
-			public const int strUV = 2131494083;
+			public const int strTax = 2131494083;
 			
 			// aapt resource value: 0x7F0C04C4
-			public const int strUVFibers = 2131494084;
+			public const int strTaxNumber = 2131494084;
 			
 			// aapt resource value: 0x7F0C04C5
-			public const int strUVLuminescence = 2131494085;
+			public const int strTelexCode = 2131494085;
 			
-			// aapt resource value: 0x7F0C04C9
-			public const int strValidityPeriod = 2131494089;
+			// aapt resource value: 0x7F0C04C6
+			public const int strTerritorialValidity = 2131494086;
 			
-			// aapt resource value: 0x7F0C04CA
-			public const int strValue = 2131494090;
-			
-			// aapt resource value: 0x7F0C04CB
-			public const int strVehicleCategory = 2131494091;
-			
-			// aapt resource value: 0x7F0C04CC
-			public const int strVeteran = 2131494092;
-			
-			// aapt resource value: 0x7F0C04CD
-			public const int strVisaClass = 2131494093;
-			
-			// aapt resource value: 0x7F0C04CE
-			public const int strVisaID = 2131494094;
-			
-			// aapt resource value: 0x7F0C04CF
-			public const int strVisaIDCheckDigit = 2131494095;
-			
-			// aapt resource value: 0x7F0C04D0
-			public const int strVisaIDChecksum = 2131494096;
-			
-			// aapt resource value: 0x7F0C04D1
-			public const int strVisaIDRUS = 2131494097;
-			
-			// aapt resource value: 0x7F0C04D2
-			public const int strVisaNumber = 2131494098;
-			
-			// aapt resource value: 0x7F0C04D3
-			public const int strVisaNumberCheckDigit = 2131494099;
-			
-			// aapt resource value: 0x7F0C04D4
-			public const int strVisaNumberChecksum = 2131494100;
-			
-			// aapt resource value: 0x7F0C04D5
-			public const int strVisaSubClass = 2131494101;
-			
-			// aapt resource value: 0x7F0C04D6
-			public const int strVisaType = 2131494102;
-			
-			// aapt resource value: 0x7F0C04D7
-			public const int strVisaValidFrom = 2131494103;
-			
-			// aapt resource value: 0x7F0C04D8
-			public const int strVisaValidUntil = 2131494104;
-			
-			// aapt resource value: 0x7F0C04D9
-			public const int strVisaValidUntilCheckDigit = 2131494105;
-			
-			// aapt resource value: 0x7F0C04DA
-			public const int strVisaValidUntilChecksum = 2131494106;
-			
-			// aapt resource value: 0x7F0C04DB
-			public const int strVisibleLight = 2131494107;
-			
-			// aapt resource value: 0x7F0C04DC
-			public const int strVoter = 2131494108;
-			
-			// aapt resource value: 0x7F0C04DD
-			public const int strVoterKey = 2131494109;
-			
-			// aapt resource value: 0x7F0C04DE
-			public const int strVoucherNumber = 2131494110;
+			// aapt resource value: 0x7F0C04C7
+			public const int strTicketNumber = 2131494087;
 			
 			// aapt resource value: 0x7F0C04C8
-			public const int strVRCDataObjectEntry = 2131494088;
+			public const int strTiltTheDocumentHologram = 2131494088;
 			
-			// aapt resource value: 0x7F0C04E0
-			public const int strWeight = 2131494112;
+			// aapt resource value: 0x7F0C04C9
+			public const int strTitle = 2131494089;
 			
-			// aapt resource value: 0x7F0C04E1
-			public const int strWeightPound = 2131494113;
+			// aapt resource value: 0x7F0C04CA
+			public const int strToAirportCode = 2131494090;
+			
+			// aapt resource value: 0x7F0C04CB
+			public const int strTorchUnavailable = 2131494091;
+			
+			// aapt resource value: 0x7F0C04CC
+			public const int strTrackingNumber = 2131494092;
+			
+			// aapt resource value: 0x7F0C04CD
+			public const int strTrailerHitch = 2131494093;
+			
+			// aapt resource value: 0x7F0C04CE
+			public const int strTransactionNumber = 2131494094;
+			
+			// aapt resource value: 0x7F0C04CF
+			public const int strTransmissionType = 2131494095;
+			
+			// aapt resource value: 0x7F0C04D0
+			public const int strTypeApprovalNumber = 2131494096;
+			
+			// aapt resource value: 0x7F0C04D6
+			public const int strUnableCaptureMedia = 2131494102;
+			
+			// aapt resource value: 0x7F0C04D7
+			public const int strUniqueCustomerIdentifier = 2131494103;
+			
+			// aapt resource value: 0x7F0C04D1
+			public const int strURL = 2131494097;
+			
+			// aapt resource value: 0x7F0C04D2
+			public const int strUSCIS = 2131494098;
+			
+			// aapt resource value: 0x7F0C04D3
+			public const int strUV = 2131494099;
+			
+			// aapt resource value: 0x7F0C04D4
+			public const int strUVFibers = 2131494100;
+			
+			// aapt resource value: 0x7F0C04D5
+			public const int strUVLuminescence = 2131494101;
+			
+			// aapt resource value: 0x7F0C04D9
+			public const int strValidityPeriod = 2131494105;
+			
+			// aapt resource value: 0x7F0C04DA
+			public const int strValue = 2131494106;
+			
+			// aapt resource value: 0x7F0C04DB
+			public const int strVehicleCategory = 2131494107;
+			
+			// aapt resource value: 0x7F0C04DC
+			public const int strVeteran = 2131494108;
+			
+			// aapt resource value: 0x7F0C04DD
+			public const int strVisaClass = 2131494109;
+			
+			// aapt resource value: 0x7F0C04DE
+			public const int strVisaID = 2131494110;
 			
 			// aapt resource value: 0x7F0C04DF
-			public const int strWHITE = 2131494111;
+			public const int strVisaIDCheckDigit = 2131494111;
+			
+			// aapt resource value: 0x7F0C04E0
+			public const int strVisaIDChecksum = 2131494112;
+			
+			// aapt resource value: 0x7F0C04E1
+			public const int strVisaIDRUS = 2131494113;
 			
 			// aapt resource value: 0x7F0C04E2
-			public const int strYear = 2131494114;
+			public const int strVisaNumber = 2131494114;
 			
 			// aapt resource value: 0x7F0C04E3
-			public const int strYearsSinceIssue = 2131494115;
+			public const int strVisaNumberCheckDigit = 2131494115;
+			
+			// aapt resource value: 0x7F0C04E4
+			public const int strVisaNumberChecksum = 2131494116;
+			
+			// aapt resource value: 0x7F0C04E5
+			public const int strVisaSubClass = 2131494117;
+			
+			// aapt resource value: 0x7F0C04E6
+			public const int strVisaType = 2131494118;
+			
+			// aapt resource value: 0x7F0C04E7
+			public const int strVisaValidFrom = 2131494119;
+			
+			// aapt resource value: 0x7F0C04E8
+			public const int strVisaValidUntil = 2131494120;
+			
+			// aapt resource value: 0x7F0C04E9
+			public const int strVisaValidUntilCheckDigit = 2131494121;
+			
+			// aapt resource value: 0x7F0C04EA
+			public const int strVisaValidUntilChecksum = 2131494122;
+			
+			// aapt resource value: 0x7F0C04EB
+			public const int strVisibleLight = 2131494123;
+			
+			// aapt resource value: 0x7F0C04EC
+			public const int strVoter = 2131494124;
+			
+			// aapt resource value: 0x7F0C04ED
+			public const int strVoterKey = 2131494125;
+			
+			// aapt resource value: 0x7F0C04EE
+			public const int strVoucherNumber = 2131494126;
+			
+			// aapt resource value: 0x7F0C04D8
+			public const int strVRCDataObjectEntry = 2131494104;
+			
+			// aapt resource value: 0x7F0C04F0
+			public const int strWeight = 2131494128;
+			
+			// aapt resource value: 0x7F0C04F1
+			public const int strWeightPound = 2131494129;
+			
+			// aapt resource value: 0x7F0C04EF
+			public const int strWHITE = 2131494127;
+			
+			// aapt resource value: 0x7F0C04F2
+			public const int strYear = 2131494130;
+			
+			// aapt resource value: 0x7F0C04F3
+			public const int strYearsSinceIssue = 2131494131;
 			
 			// aapt resource value: 0x7F0C0062
 			public const int TCT_Unknown = 2131492962;

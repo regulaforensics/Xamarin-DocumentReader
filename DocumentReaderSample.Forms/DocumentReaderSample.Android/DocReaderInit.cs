@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Com.Regula.Documentreader.Api;
 using Com.Regula.Documentreader.Api.Completions;
+using Com.Regula.Documentreader.Api.Errors;
 using Com.Regula.Documentreader.Api.Results;
 using DocumentReaderSample.Droid;
 
@@ -49,7 +50,7 @@ namespace DocumentReaderSample.Droid
         }
 
         //Document Reader Completions
-        public void OnInitCompleted(bool success, Java.Lang.Throwable error)
+        public void OnInitCompleted(bool success, DocumentReaderException error)
         {
             DocReaderInitEvent readerInitEvent = new DocReaderInitEvent() { IsSuccess = success };
             if (success)

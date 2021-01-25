@@ -13,13 +13,13 @@ using Com.Regula.Documentreader.Api.Results;
 using System.Collections.Generic;
 using static Android.Widget.AdapterView;
 using Com.Regula.Documentreader.Api.Enums;
-using Com.Regula.Documentreader.Api.Params;
 using Android.Util;
 using Android.Graphics;
 using Android;
 using Android.Support.V4.App;
 using Android.Support.V4.Content;
 using Com.Regula.Documentreader.Api.Completions;
+using Com.Regula.Documentreader.Api.Errors;
 
 namespace DocumentReaderSample.Droid
 {
@@ -193,7 +193,7 @@ namespace DocumentReaderSample.Droid
             }
         }
 
-        public void OnInitCompleted(bool success, Java.Lang.Throwable error)
+        public void OnInitCompleted(bool success, DocumentReaderException error)
         {
             if (initDialog != null && initDialog.IsShowing)
             {
@@ -274,7 +274,7 @@ namespace DocumentReaderSample.Droid
 
         }
 
-        public void OnCompleted(int action, DocumentReaderResults results, Java.Lang.Throwable error)
+        public void OnCompleted(int action, DocumentReaderResults results, DocumentReaderException error)
         {
             if (action == DocReaderAction.Complete)
             {
@@ -332,7 +332,7 @@ namespace DocumentReaderSample.Droid
             }
         }
 
-        public void OnPrepareCompleted(bool status, Java.Lang.Throwable error1)
+        public void OnPrepareCompleted(bool status, DocumentReaderException error1)
         {
             if (updateDBDialog != null && updateDBDialog.IsShowing)
             {

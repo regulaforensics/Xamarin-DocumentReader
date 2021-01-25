@@ -185,13 +185,13 @@
       <HintPath>..\packages\Xamarin.GooglePlayServices.Clearcut.71.1600.4\lib\monoandroid90\Xamarin.GooglePlayServices.Clearcut.dll</HintPath>
     </Reference>
     <Reference Include="DocReaderCommon.Droid">
-      <HintPath>..\packages\Xamarin.DocumentReader.Common.Android.5.3.376\lib\monoandroid90\DocReaderCommon.Droid.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Common.Android.5.4.489\lib\monoandroid90\DocReaderCommon.Droid.dll</HintPath>
     </Reference>
     <Reference Include="DocReaderApi.Droid">
-      <HintPath>..\packages\Xamarin.DocumentReader.Api.Android.5.3.3551\lib\monoandroid90\DocReaderApi.Droid.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Api.Android.5.4.3934\lib\monoandroid90\DocReaderApi.Droid.dll</HintPath>
     </Reference>
     <Reference Include="DocReaderCore.FullRfid.Droid">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.Android.5.3.3940\lib\monoandroid80\DocReaderCore.FullRfid.Droid.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.Android.5.4.4342\lib\monoandroid80\DocReaderCore.FullRfid.Droid.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
