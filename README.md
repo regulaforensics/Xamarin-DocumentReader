@@ -10,14 +10,14 @@ We have provided a simple application that demonstrates the ***API*** calls you 
 * [Troubleshooting license issues](#troubleshooting_license_issues)
 
 ## <a name="how_to_build_demo_application"></a> How to build demo application
-1. Get trial license for demo application at [licensing.regulaforensics.com](https://licensing.regulaforensics.com) (`regula.license` file).
+1. Visit [licensing.regulaforensics.com](https://licensing.regulaforensics.com) to get a trial license (`regula.license` file). The license creation wizard will guide you through the necessary steps.
 1. Clone current repository using command `git clone https://github.com/regulaforensics/Xamarin-DocumentReader.git`.
 1. Download and install latest [Visual Studio](https://visualstudio.microsoft.com/xamarin/) depend on your OS.
 1. Copy file `regula.license` to `DocumentReaderSample/Droid/Assets` or `DocumentReaderSample/iOS/Resources` folder. 
 1. Copy file `db.dat` to `DocumentReaderSample/Droid/Assets/Regula` or `DocumentReaderSample/iOS/Resources` folder. 
 1. Launch _Visual Studio_ and select _File -> Open_ then select _DocumentReaderSample/DocumentReaderSample.sln_ file in file browser.
 1. Download additional files proposed by _Visual Studio_ to build project (build tools, for example).
-1. Change application ID (at _Properties/AndroidManifest.xml_ file) for `Android` or Bundle Identifier (at _Info.plist_ file) for `iOS` to specified during registration of your license key at [licensing.regulaforensics.com](https://licensing.regulaforensics.com) (`com.regula.dr.fullrfid` by default).
+1. Change application ID (at _Properties/AndroidManifest.xml_ file) for `Android` or Bundle Identifier (at _Info.plist_ file) for `iOS` to the one you have specified during the registration at [licensing.regulaforensics.com](https://licensing.regulaforensics.com).
 1. Select appropriate build variant and run application.
 
 ## <a name="troubleshooting_license_issues"></a> Troubleshooting license issues
