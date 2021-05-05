@@ -129,10 +129,10 @@
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="Xamarin.DocumentReader.Api.iOS">
-      <Version>5.4.1661</Version>
+      <Version>5.5.1910</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.iOS">
-      <Version>5.4.3849</Version>
+      <Version>5.5.4239</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
