@@ -138,13 +138,13 @@
     <Reference Include="DocReaderCore.Full.Beta.iOS">
       <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.Beta.iOS.3.6.89197.2265\lib\xamarinios10\DocReaderCore.Full.Beta.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="NativeLibrary">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.iOS.5.6.4517\lib\xamarinios10\NativeLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="DocReaderApi.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.5.6.2001\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.5.7.2075\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Common.dll" />
+    <Reference Include="DocReaderCore.FullRfid.iOS">
+      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.iOS.5.7.4876\lib\xamarinios10\DocReaderCore.FullRfid.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
