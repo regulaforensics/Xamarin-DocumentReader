@@ -138,15 +138,15 @@
     <Reference Include="DocReaderCore.Full.Beta.iOS">
       <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.Beta.iOS.3.6.89197.2265\lib\xamarinios10\DocReaderCore.Full.Beta.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="DocReaderApi.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.5.8.2215\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
-    </Reference>
     <Reference Include="System.Drawing.Common.dll" />
     <Reference Include="DocReaderCore.FullRfid.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.iOS.5.8.5164\lib\xamarinios10\DocReaderCore.FullRfid.iOS.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.Beta.iOS.6.1.5618\lib\xamarinios10\DocReaderCore.FullRfid.iOS.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.RegulaCommon.iOS">
-      <HintPath>..\packages\Xamarin.RegulaCommon.iOS.5.8.59\lib\xamarinios10\Xamarin.RegulaCommon.iOS.dll</HintPath>
+      <HintPath>..\packages\Xamarin.RegulaCommon.Beta.iOS.6.1.96\lib\xamarinios10\Xamarin.RegulaCommon.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="DocReaderApi.iOS">
+      <HintPath>..\packages\Xamarin.DocumentReader.Api.Beta.iOS.6.1.2294\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
