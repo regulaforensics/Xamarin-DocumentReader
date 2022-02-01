@@ -58,17 +58,17 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android">
-      <Version>6.1.6257</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android">
-      <Version>6.1.6452</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Common.Beta.Android">
-      <Version>6.1.948</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.ConstraintLayout.Solver">
       <Version>2.0.4.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Android">
+      <Version>6.1.6447</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.DocumentReader.Api.Android">
+      <Version>6.1.6564</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.DocumentReader.Common.Android">
+      <Version>6.1.957</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

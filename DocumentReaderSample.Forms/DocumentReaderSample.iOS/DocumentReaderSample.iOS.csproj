@@ -128,14 +128,11 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
-    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS">
-      <Version>6.1.2294</Version>
+    <PackageReference Include="Xamarin.DocumentReader.Api.iOS">
+      <Version>6.1.2358</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.RegulaCommon.Beta.iOS">
-      <Version>6.1.96</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS">
-      <Version>6.1.5618</Version>
+    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.iOS">
+      <Version>6.1.5791</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
