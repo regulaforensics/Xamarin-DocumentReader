@@ -46,18 +46,6 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="Java.Interop" />
-    <Reference Include="DocReaderCore.Full.Droid">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.Android.4.2.93468\lib\monoandroid81\DocReaderCore.Full.Droid.dll</HintPath>
-    </Reference>
-    <Reference Include="GoogleGson">
-      <HintPath>..\packages\GoogleGson.2.8.5\lib\monoandroid44\GoogleGson.dll</HintPath>
-    </Reference>
-    <Reference Include="DocReaderCore.Full.Beta.Droid">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.Full.Beta.Android.3.5.89165.5489\lib\monoandroid90\DocReaderCore.Full.Beta.Droid.dll</HintPath>
-    </Reference>
-    <Reference Include="DocReaderApi.Beta.Droid">
-      <HintPath>..\packages\Xamarin.DocumentReader.Api.Beta.Android.3.5.89109.543\lib\monoandroid90\DocReaderApi.Beta.Droid.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Android.Arch.Core.Common">
       <HintPath>..\packages\Xamarin.Android.Arch.Core.Common.1.1.1.3\lib\monoandroid90\Xamarin.Android.Arch.Core.Common.dll</HintPath>
     </Reference>
