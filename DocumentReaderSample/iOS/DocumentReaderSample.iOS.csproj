@@ -140,13 +140,13 @@
     </Reference>
     <Reference Include="System.Drawing.Common.dll" />
     <Reference Include="Xamarin.RegulaCommon.iOS">
-      <HintPath>..\packages\Xamarin.RegulaCommon.iOS.6.1.102\lib\xamarinios10\Xamarin.RegulaCommon.iOS.dll</HintPath>
+      <HintPath>..\packages\Xamarin.RegulaCommon.iOS.6.2.110\lib\xamarinios10\Xamarin.RegulaCommon.iOS.dll</HintPath>
     </Reference>
     <Reference Include="DocReaderApi.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.6.1.2358\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Api.iOS.6.2.2422\lib\xamarinios10\DocReaderApi.iOS.dll</HintPath>
     </Reference>
     <Reference Include="DocReaderCore.FullRfid.iOS">
-      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.iOS.6.1.5791\lib\xamarinios10\DocReaderCore.FullRfid.iOS.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Core.FullRfid.iOS.6.2.5964\lib\xamarinios10\DocReaderCore.FullRfid.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
