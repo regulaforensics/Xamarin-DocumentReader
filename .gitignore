@@ -3,3 +3,4 @@
 **/packages/*
 *.license
 **/db.dat
+**/Resource.designer.cs

@@ -24,8 +24,8 @@ namespace DocumentReaderSample.Droid
     public class MainActivity : Activity, IDocumentReaderInitCompletion, IDocumentReaderCompletion, IDocumentReaderPrepareCompletion
     {
         const int REQUEST_BROWSE_PICTURE = 11;
-        const String MY_SHARED_PREFS = "MySharedPrefs";
-        const String DO_RFID = "doRfid";
+        const string MY_SHARED_PREFS = "MySharedPrefs";
+        const string DO_RFID = "doRfid";
 
         public TextView nameTv;
         public TextView showScanner;
@@ -39,8 +39,8 @@ namespace DocumentReaderSample.Droid
         private ListView scenarioLv;
 
         private ISharedPreferences sharedPreferences;
-        private Boolean doRfid;
-        private Boolean isStartRfid;
+        private bool doRfid;
+        private bool isStartRfid;
 
         AlertDialog initDialog;
         AlertDialog updateDBDialog;
@@ -249,19 +249,19 @@ namespace DocumentReaderSample.Droid
                 {
                     //setting the chip's access key - mrz on car access number
                     string accessKey;
-                    if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid)) != null && !String.IsNullOrEmpty(accessKey))
+                    if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid)) != null && !string.IsNullOrEmpty(accessKey))
                     {
                         accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid).Replace("^", "").Replace("\n", "");
                         DocumentReader.Instance().RfidScenario().Mrz = accessKey;
                         DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
                     }
-                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !String.IsNullOrEmpty(accessKey))
+                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !string.IsNullOrEmpty(accessKey))
                     {
                         accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings).Replace("^", "").Replace("\n", "");
                         DocumentReader.Instance().RfidScenario().Mrz = accessKey;
                         DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
                     }
-                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtCardAccessNumber)) != null && !String.IsNullOrEmpty(accessKey))
+                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtCardAccessNumber)) != null && !string.IsNullOrEmpty(accessKey))
                     {
                         DocumentReader.Instance().RfidScenario().Password = accessKey;
                         DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptCan;
@@ -351,7 +351,7 @@ namespace DocumentReaderSample.Droid
             return inSampleSize;
         }
 
-        class ScenarioAdapter : ArrayAdapter<String>
+        class ScenarioAdapter : ArrayAdapter<string>
         {
             public int SelectedPosition
             {
