@@ -2,5 +2,4 @@
 **/bin/*
 **/packages/*
 *.license
-DocumentReaderSample.Forms/DocumentReaderSample.iOS/Resources/db.dat
-DocumentReaderSample.Forms/DocumentReaderSample.Android/Assets/Regula/db.dat
+**/db.dat

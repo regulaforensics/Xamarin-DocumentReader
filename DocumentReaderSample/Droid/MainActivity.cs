@@ -16,15 +16,13 @@ using Com.Regula.Documentreader.Api.Enums;
 using Android.Util;
 using Android.Graphics;
 using Android;
-using Android.Support.V4.App;
-using Android.Support.V4.Content;
 using Com.Regula.Documentreader.Api.Completions;
 using Com.Regula.Documentreader.Api.Errors;
 
 namespace DocumentReaderSample.Droid
 {
     [Activity(Label = "DocumentReaderSample", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity : FragmentActivity, IDocumentReaderInitCompletion, IDocumentReaderCompletion, IDocumentReaderPrepareCompletion
+    public class MainActivity : Activity, IDocumentReaderInitCompletion, IDocumentReaderCompletion, IDocumentReaderPrepareCompletion
     {
         const int REQUEST_BROWSE_PICTURE = 11;
         const int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 22;
@@ -212,17 +210,7 @@ namespace DocumentReaderSample.Droid
 
                 recognizeImage.Click += delegate {
                     СlearResults();
-
-                    //checking for image browsing permissions
-                    if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.ReadExternalStorage) != Permission.Granted)
-                    {
-                        ActivityCompat.RequestPermissions(this, new string[] { Manifest.Permission.ReadExternalStorage }, PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE);
-                    }
-                    else
-                    {
-                        //start image browsing
-                        CreateImageBrowsingRequest();
-                    }
+                    CreateImageBrowsingRequest();
                 };
 
                 if (DocumentReader.Instance().IsRFIDAvailableForUse)
