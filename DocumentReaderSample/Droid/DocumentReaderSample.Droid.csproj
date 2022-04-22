@@ -249,7 +249,7 @@
       <HintPath>..\packages\Xamarin.GooglePlayServices.Vision.120.1.3.5\lib\monoandroid12.0\Xamarin.GooglePlayServices.Vision.dll</HintPath>
     </Reference>
     <Reference Include="DocReaderCommon.Droid">
-      <HintPath>..\packages\Xamarin.DocumentReader.Common.Beta.Android.6.3.1023\lib\monoandroid12.0\DocReaderCommon.Droid.dll</HintPath>
+      <HintPath>..\packages\Xamarin.DocumentReader.Common.Beta.Android.6.3.1023.5\lib\monoandroid12.0\DocReaderCommon.Droid.dll</HintPath>
     </Reference>
     <Reference Include="DocReaderApi.Droid">
       <HintPath>..\packages\Xamarin.DocumentReader.Api.Beta.Android.6.3.6946\lib\monoandroid12.0\DocReaderApi.Droid.dll</HintPath>

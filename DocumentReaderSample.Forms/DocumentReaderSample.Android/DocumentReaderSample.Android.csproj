@@ -68,7 +68,7 @@
       <Version>6.3.6946</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Common.Beta.Android">
-      <Version>6.3.1023</Version>
+      <Version>6.3.1023.5</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
