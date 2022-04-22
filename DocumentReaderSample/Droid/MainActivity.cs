@@ -2,7 +2,6 @@ using System;
 
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
@@ -15,21 +14,18 @@ using static Android.Widget.AdapterView;
 using Com.Regula.Documentreader.Api.Enums;
 using Android.Util;
 using Android.Graphics;
-using Android;
-using Android.Support.V4.App;
-using Android.Support.V4.Content;
 using Com.Regula.Documentreader.Api.Completions;
 using Com.Regula.Documentreader.Api.Errors;
+using Com.Regula.Documentreader.Api.Params;
 
 namespace DocumentReaderSample.Droid
 {
     [Activity(Label = "DocumentReaderSample", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity : FragmentActivity, IDocumentReaderInitCompletion, IDocumentReaderCompletion, IDocumentReaderPrepareCompletion
+    public class MainActivity : Activity, IDocumentReaderInitCompletion, IDocumentReaderCompletion, IDocumentReaderPrepareCompletion
     {
         const int REQUEST_BROWSE_PICTURE = 11;
-        const int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 22;
-        const String MY_SHARED_PREFS = "MySharedPrefs";
-        const String DO_RFID = "doRfid";
+        const string MY_SHARED_PREFS = "MySharedPrefs";
+        const string DO_RFID = "doRfid";
 
         public TextView nameTv;
         public TextView showScanner;
@@ -43,8 +39,8 @@ namespace DocumentReaderSample.Droid
         private ListView scenarioLv;
 
         private ISharedPreferences sharedPreferences;
-        private Boolean doRfid;
-        private Boolean isStartRfid;
+        private bool doRfid;
+        private bool isStartRfid;
 
         AlertDialog initDialog;
         AlertDialog updateDBDialog;
@@ -72,28 +68,25 @@ namespace DocumentReaderSample.Droid
 
             sharedPreferences = GetSharedPreferences(MY_SHARED_PREFS, FileCreationMode.Private);
 
-            updateDBDialog = showDialog("Updating DB");
+            updateDBDialog = ShowDialog("Updating DB");
             DocumentReader.Instance().PrepareDatabase(this, "Full", this);
         }
 
-        protected void initReader()
+        protected void InitReader()
         {
             var bytes = default(byte[]);
             using (var streamReader = new StreamReader(Assets.Open("regula.license")))
             {
-                using (var memstream = new MemoryStream())
-                {
-                    streamReader.BaseStream.CopyTo(memstream);
-                    bytes = memstream.ToArray();
-                }
+                using var memstream = new MemoryStream();
+                streamReader.BaseStream.CopyTo(memstream);
+                bytes = memstream.ToArray();
             }
 
-            initDialog = showDialog("Initializing");
-            DocumentReader.Instance().InitializeReader(this, bytes, this);
+            initDialog = ShowDialog("Initializing");
+            DocumentReader.Instance().InitializeReader(this, new DocReaderConfig(bytes), this);
         }
 
-
-        protected AlertDialog showDialog(String msg)
+        protected AlertDialog ShowDialog(string msg)
         {
             AlertDialog.Builder dialog = new AlertDialog.Builder(this);
             View dialogView = LayoutInflater.Inflate(Resource.Layout.simple_dialog, null);
@@ -115,7 +108,7 @@ namespace DocumentReaderSample.Droid
             if (results != null)
             {
                 var name = results.GetTextFieldValueByType(EVisualFieldType.FtSurnameAndGivenNames);
-                if (!String.IsNullOrEmpty(name))
+                if (!string.IsNullOrEmpty(name))
                 {
                     nameTv.Text = name;
                 }
@@ -130,17 +123,13 @@ namespace DocumentReaderSample.Droid
                     }
                 }
 
-                using (var portraitImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait))
-                {
-                    if (portraitImage != null)
-                        portraitIv.SetImageBitmap(portraitImage);
-                }
+                using var portraitImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait);
+                if (portraitImage != null)
+                    portraitIv.SetImageBitmap(portraitImage);
 
-                using (var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GfDocumentImage))
-                {
-                    if (documentImage != null)
-                        docImageIv.SetImageBitmap(documentImage);
-                }
+                using var documentImage = results.GetGraphicFieldImageByType(EGraphicFieldType.GfDocumentImage);
+                if (documentImage != null)
+                    docImageIv.SetImageBitmap(documentImage);
 
             }
         }
@@ -156,24 +145,6 @@ namespace DocumentReaderSample.Droid
             StartActivityForResult(Intent.CreateChooser(intent, "Select Picture"), REQUEST_BROWSE_PICTURE);
         }
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
-        {
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-            if (requestCode == PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE)
-            {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.Length > 0 && grantResults[0] == Permission.Granted)
-                {
-                    //access to gallery is allowed
-                    CreateImageBrowsingRequest();
-                }
-                else
-                {
-                    Toast.MakeText(this, "Permission required, to browse images", ToastLength.Long).Show();
-                }
-            }
-        }
-
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
@@ -185,7 +156,7 @@ namespace DocumentReaderSample.Droid
                     var selectedImage = data.Data;
                     var bmp = GetBitmap(selectedImage, 1920, 1080);
 
-                    loadingDialog = showDialog("Processing image");
+                    loadingDialog = ShowDialog("Processing image");
 
                     DocumentReader.Instance().StopScanner(this);
                     DocumentReader.Instance().RecognizeImage(bmp, this);
@@ -212,17 +183,7 @@ namespace DocumentReaderSample.Droid
 
                 recognizeImage.Click += delegate {
                     СlearResults();
-
-                    //checking for image browsing permissions
-                    if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.ReadExternalStorage) != Permission.Granted)
-                    {
-                        ActivityCompat.RequestPermissions(this, new string[] { Manifest.Permission.ReadExternalStorage }, PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE);
-                    }
-                    else
-                    {
-                        //start image browsing
-                        CreateImageBrowsingRequest();
-                    }
+                    CreateImageBrowsingRequest();
                 };
 
                 if (DocumentReader.Instance().IsRFIDAvailableForUse)
@@ -241,7 +202,7 @@ namespace DocumentReaderSample.Droid
 
                 //getting current processing scenario and loading available scenarios to ListView
                 var currentScenario = DocumentReader.Instance().ProcessParams().Scenario;
-                var scenarios = new List<String>();
+                var scenarios = new List<string>();
                 foreach (DocumentReaderScenario scenario in DocumentReader.Instance().AvailableScenarios)
                 {
                     scenarios.Add(scenario.Name);
@@ -287,20 +248,20 @@ namespace DocumentReaderSample.Droid
                 if (!isStartRfid && doRfid && results != null && results.ChipPage != 0)
                 {
                     //setting the chip's access key - mrz on car access number
-                    string accessKey = null;
-                    if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid)) != null && !String.IsNullOrEmpty(accessKey))
+                    string accessKey;
+                    if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid)) != null && !string.IsNullOrEmpty(accessKey))
                     {
                         accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStringsIcaoRfid).Replace("^", "").Replace("\n", "");
                         DocumentReader.Instance().RfidScenario().Mrz = accessKey;
                         DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
                     }
-                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !String.IsNullOrEmpty(accessKey))
+                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings)) != null && !string.IsNullOrEmpty(accessKey))
                     {
                         accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtMrzStrings).Replace("^", "").Replace("\n", "");
                         DocumentReader.Instance().RfidScenario().Mrz = accessKey;
                         DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptMrz;
                     }
-                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtCardAccessNumber)) != null && !String.IsNullOrEmpty(accessKey))
+                    else if ((accessKey = results.GetTextFieldValueByType(EVisualFieldType.FtCardAccessNumber)) != null && !string.IsNullOrEmpty(accessKey))
                     {
                         DocumentReader.Instance().RfidScenario().Password = accessKey;
                         DocumentReader.Instance().RfidScenario().PacePasswordType = ERFID_Password_Type.PptCan;
@@ -339,7 +300,7 @@ namespace DocumentReaderSample.Droid
                 updateDBDialog.Dismiss();
             }
 
-            initReader();
+            InitReader();
         }
 
         public void OnPrepareProgressChanged(int progress)
@@ -350,8 +311,7 @@ namespace DocumentReaderSample.Droid
         private Bitmap GetBitmap(Android.Net.Uri selectedImage, int targetWidth, int targetHeight)
         {
             var inputStream = ContentResolver.OpenInputStream(selectedImage);
-            var options = new BitmapFactory.Options();
-            options.InJustDecodeBounds = true;
+            var options = new BitmapFactory.Options { InJustDecodeBounds = true };
             BitmapFactory.DecodeStream(inputStream, null, options);
 
             //Re-reading the input stream to move it's pointer to start
@@ -391,7 +351,7 @@ namespace DocumentReaderSample.Droid
             return inSampleSize;
         }
 
-        class ScenarioAdapter : ArrayAdapter<String>
+        class ScenarioAdapter : ArrayAdapter<string>
         {
             public int SelectedPosition
             {
