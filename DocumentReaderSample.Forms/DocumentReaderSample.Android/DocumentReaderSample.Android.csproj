@@ -62,13 +62,10 @@
       <Version>2.0.4.5</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Android">
-      <Version>6.2.6659</Version>
+      <Version>6.3.6945</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Api.Android">
-      <Version>6.2.6717</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Common.Android">
-      <Version>6.2.974</Version>
+      <Version>6.3.6946</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
