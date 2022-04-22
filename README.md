@@ -17,13 +17,11 @@ We have provided a simple application that demonstrates the ***API*** calls you 
 1. Copy file `db.dat` to `DocumentReaderSample/Droid/Assets/Regula` or `DocumentReaderSample/iOS/Resources` folder. 
 1. Launch _Visual Studio_ and select _File -> Open_ then select _DocumentReaderSample/DocumentReaderSample.sln_ file in file browser.
 1. Download additional files proposed by _Visual Studio_ to build project (build tools, for example).
-1. Change application ID (at _Properties/AndroidManifest.xml_ file) for `Android` or Bundle Identifier (at _Info.plist_ file) for `iOS` to the one you have specified during the registration at [client.regulaforensics.com](https://client.regulaforensics.com).
 1. Select appropriate build variant and run application.
 
 ## <a name="troubleshooting_license_issues"></a> Troubleshooting license issues
 If you have issues with license verification when running the application, please verify that next is true:
 1. OS you are using is the same as in the license you received (Android).
-1. Application ID is the same that you specified for license.
 1. Date and time on the device you are trying to run the application is correct and inside the license validity period.
 1. You are using the latest release of the SDK.
 1. You placed the `license` into the correct folder as described here [How to build demo application](#how_to_build_demo_application) (`DocumentReaderSample/Droid/Assets` or `DocumentReaderSample/iOS/Resources` folder).
