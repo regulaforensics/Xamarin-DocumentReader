@@ -61,14 +61,11 @@
     <PackageReference Include="Xamarin.AndroidX.ConstraintLayout.Solver">
       <Version>2.0.4.5</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android">
-      <Version>6.3.6863</Version>
+    <PackageReference>
+      <Include>Xamarin.DocumentReader.Core.FullRfid.Beta.Android</Include><Version>6.3.7177</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android">
-      <Version>6.3.6946</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Common.Beta.Android">
-      <Version>6.3.1023.5</Version>
+    <PackageReference>
+      <Include>Xamarin.DocumentReader.Api.Beta.Android</Include><Version>6.4.7224</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -116,7 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DocumentReaderSample\DocumentReaderSample.csproj">
-      <Project>{3A3FB1AC-AE3D-47A2-8D27-0F2BC37DBDC4}</Project>
       <Name>DocumentReaderSample</Name>
     </ProjectReference>
   </ItemGroup>

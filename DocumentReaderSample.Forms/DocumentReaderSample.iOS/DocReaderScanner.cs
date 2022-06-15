@@ -99,6 +99,17 @@ namespace DocumentReaderSample.Droid
                         readerScannerEvent = GenerateDocReaderScannerEvent(result);
                 }
             }
+            else if (action == RGLDocReaderAction.ProcessTimeout)
+            {
+                if (result == null)
+                {
+                    readerScannerEvent = new DocReaderScannerEvent() { IsSuccess = false, Error = "Document Reader results is empty" };
+                }
+                else
+                {
+                    readerScannerEvent = GenerateDocReaderScannerEvent(result);
+                }
+            }
 
             if (readerScannerEvent != null)
             {
