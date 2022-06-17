@@ -128,11 +128,11 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
-    <PackageReference>
-      <Include>Xamarin.DocumentReader.Core.FullRfid.Beta.iOS</Include><Version>6.4.6412</Version>
+    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS">
+      <ScriptTag>Core</ScriptTag><Version>6.4.6412</Version>
     </PackageReference>
-    <PackageReference>
-      <Include>Xamarin.DocumentReader.Api.Beta.iOS</Include><Version>6.3.2549</Version>
+    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS">
+      <ScriptTag>Api</ScriptTag><Version>6.4.2552</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
