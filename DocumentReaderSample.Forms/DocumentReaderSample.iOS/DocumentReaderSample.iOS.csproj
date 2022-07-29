@@ -132,7 +132,7 @@
       <ScriptTag>Core</ScriptTag><Version>6.4.6412</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS">
-      <ScriptTag>Api</ScriptTag><Version>6.4.2558</Version>
+      <ScriptTag>Api</ScriptTag><Version>6.5.2628</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
