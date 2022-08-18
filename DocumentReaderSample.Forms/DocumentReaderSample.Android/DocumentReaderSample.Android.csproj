@@ -62,7 +62,7 @@
       <Version>2.0.4.5</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Android">
-      <ScriptTag>Core</ScriptTag><Version>6.5.7763</Version>
+      <ScriptTag>Core</ScriptTag><Version>6.5.7770</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Api.Android">
       <ScriptTag>Api</ScriptTag><Version>6.5.7465</Version>
