@@ -129,7 +129,7 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.iOS">
-      <ScriptTag>Core</ScriptTag><Version>6.5.6662</Version>
+      <ScriptTag>Core</ScriptTag><Version>6.5.6658</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Api.iOS">
       <ScriptTag>Api</ScriptTag><Version>6.5.2628</Version>
