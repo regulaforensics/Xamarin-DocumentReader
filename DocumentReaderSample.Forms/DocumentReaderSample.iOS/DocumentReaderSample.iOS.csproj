@@ -129,13 +129,12 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.iOS">
-      <Version>6.4.6412</Version>
+      <ScriptTag>Core</ScriptTag><Version>6.5.6661</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Api.iOS">
-      <Version>6.4.2552</Version>
+      <ScriptTag>Api</ScriptTag><Version>6.5.2628</Version>
     </PackageReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\DocumentReaderSample\DocumentReaderSample.csproj">
       <Project>{3A3FB1AC-AE3D-47A2-8D27-0F2BC37DBDC4}</Project>
@@ -148,4 +147,5 @@
     <BundleResource Include="Resources\regula.license" />
     <BundleResource Include="Resources\db.dat" />
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

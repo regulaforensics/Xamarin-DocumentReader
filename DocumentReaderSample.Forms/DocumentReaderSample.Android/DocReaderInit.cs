@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Com.Regula.Documentreader.Api;
+using Com.Regula.Documentreader.Api.Params;
 using Com.Regula.Documentreader.Api.Completions;
 using Com.Regula.Documentreader.Api.Errors;
 using Com.Regula.Documentreader.Api.Results;
@@ -46,7 +47,9 @@ namespace DocumentReaderSample.Droid
                 }
             }
 
-            DocumentReader.Instance().InitializeReader(Android.App.Application.Context, bytes, this);
+            DocReaderConfig config = new DocReaderConfig(bytes);
+            config.DelayedNNLoad = true;
+            DocumentReader.Instance().InitializeReader(Android.App.Application.Context, config, this);
         }
 
         //Document Reader Completions

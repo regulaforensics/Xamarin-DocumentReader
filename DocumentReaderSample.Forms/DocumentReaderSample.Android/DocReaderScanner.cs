@@ -57,7 +57,17 @@ namespace DocumentReaderSample.Droid
                     else
                         readerScannerEvent = GenerateDocReaderScannerEvent(results);
                 }
-                    
+            }
+            else if (action == DocReaderAction.Timeout)
+            {
+                if (results == null)
+                {
+                    readerScannerEvent = new DocReaderScannerEvent() { IsSuccess = false, Error = "Document Reader results is empty" };
+                }
+                else
+                {
+                    readerScannerEvent = GenerateDocReaderScannerEvent(results);
+                }
             }
             else if (action == DocReaderAction.Error)
             {
