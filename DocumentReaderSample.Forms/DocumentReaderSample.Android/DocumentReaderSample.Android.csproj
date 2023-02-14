@@ -65,7 +65,7 @@
       <ScriptTag>Core</ScriptTag><Version>6.6.8231</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android">
-      <ScriptTag>Api</ScriptTag><Version>6.6.8072</Version>
+      <ScriptTag>Api</ScriptTag><Version>6.7.8311</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
