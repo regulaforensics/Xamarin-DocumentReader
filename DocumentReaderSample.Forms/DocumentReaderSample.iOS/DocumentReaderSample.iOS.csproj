@@ -128,12 +128,6 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.iOS">
-      <ScriptTag>Core</ScriptTag><Version>6.7.7286</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Api.iOS">
-      <ScriptTag>Api</ScriptTag><Version>6.7.2848</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DocumentReaderSample\DocumentReaderSample.csproj">
@@ -146,6 +140,20 @@
     <BundleResource Include="Resources\portrait.png" />
     <BundleResource Include="Resources\regula.license" />
     <BundleResource Include="Resources\db.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Api\DocReaderApi.Obj.iOS\DocReaderApi.Obj.iOS.csproj">
+      <Project>{6802878D-F18A-4786-9A37-DBF7B3F9FE23}</Project>
+      <Name>DocReaderApi.Obj.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\Core.iOS\DocReaderCore.FullRfid.iOS\DocReaderCore.FullRfid.iOS.csproj">
+      <Project>{54F20B81-D5A2-440D-A6A5-78956F3F14D9}</Project>
+      <Name>DocReaderCore.FullRfid.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Api\RegulaCommon.iOS\RegulaCommon.iOS.csproj">
+      <Project>{BF045AE3-57CF-45F2-9EF8-88685E88E67F}</Project>
+      <Name>RegulaCommon.iOS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

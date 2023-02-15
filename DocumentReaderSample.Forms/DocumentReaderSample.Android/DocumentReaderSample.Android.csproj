@@ -61,12 +61,6 @@
     <PackageReference Include="Xamarin.AndroidX.ConstraintLayout.Solver">
       <Version>2.0.4.5</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Android">
-      <ScriptTag>Core</ScriptTag><Version>6.7.8564</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.DocumentReader.Api.Android">
-      <ScriptTag>Api</ScriptTag><Version>6.7.8311</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -119,6 +113,20 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\Regula\db.dat" />
     <AndroidAsset Include="Assets\regula.license" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Api\DocReaderApi.Droid\DocReaderApi.Droid.csproj">
+      <Project>{B2B08059-353C-4CB0-8D96-7FC0D952739F}</Project>
+      <Name>DocReaderApi.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Api\DocReaderCommon.Droid\DocReaderCommon.Droid.csproj">
+      <Project>{DD8043D6-E7D3-4E20-9014-2C6F04074C7A}</Project>
+      <Name>DocReaderCommon.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\Core.Droid\DocReaderCore.FullRfid.Droid\DocReaderCore.FullRfid.Droid.csproj">
+      <Project>{7963F873-768D-4A83-9839-12B9E05B64E4}</Project>
+      <Name>DocReaderCore.FullRfid.Droid</Name>
+    </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
