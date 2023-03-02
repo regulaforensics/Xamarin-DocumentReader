@@ -35,7 +35,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>DocumentReaderSample</string>
 	<key>CFBundleIdentifier</key>
-	<string>regula.DocumentReader</string>
+	<string>com.regula.dr.fullrfid</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
