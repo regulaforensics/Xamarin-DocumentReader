@@ -9,7 +9,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<ApplicationTitle>DocumentReaderSample</ApplicationTitle>
-		<ApplicationId>regula.DocumentReader</ApplicationId>
+		<ApplicationId>com.regula.dr.fullrfid</ApplicationId>
 		<ApplicationIdGuid>72aceaaf-d82c-423d-a9f0-133579e528a0</ApplicationIdGuid>
 
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
