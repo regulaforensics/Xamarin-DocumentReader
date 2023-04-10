@@ -1,5 +1,4 @@
-﻿using System;
-using Android.Content;
+﻿using Android.Content;
 
 namespace DocumentReaderSample.Platforms.Android
 {
@@ -12,7 +11,7 @@ namespace DocumentReaderSample.Platforms.Android
         public Task<Stream> GetImageStreamAsync()
         {
             // Define the Intent for getting images
-            Intent intent = new Intent();
+            Intent intent = new();
             intent.SetType("image/*");
             intent.SetAction(Intent.ActionGetContent);
 

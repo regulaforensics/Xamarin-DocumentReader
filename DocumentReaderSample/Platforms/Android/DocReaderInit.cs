@@ -1,5 +1,4 @@
-﻿using System;
-using Com.Regula.Documentreader.Api;
+﻿using Com.Regula.Documentreader.Api;
 using Com.Regula.Documentreader.Api.Completions;
 using Com.Regula.Documentreader.Api.Errors;
 using Com.Regula.Documentreader.Api.Params;
@@ -35,22 +34,22 @@ namespace DocumentReaderSample.Platforms.Android
             var bytes = default(byte[]);
             using (var streamReader = new StreamReader(Platform.AppContext.Assets.Open("regula.license")))
             {
-                using (var memstream = new MemoryStream())
-                {
-                    streamReader.BaseStream.CopyTo(memstream);
-                    bytes = memstream.ToArray();
-                }
+                using var memstream = new MemoryStream();
+                streamReader.BaseStream.CopyTo(memstream);
+                bytes = memstream.ToArray();
             }
 
-            DocReaderConfig config = new DocReaderConfig(bytes);
-            config.DelayedNNLoad = true;
+            DocReaderConfig config = new(bytes)
+            {
+                DelayedNNLoad = true
+            };
             DocumentReader.Instance().InitializeReader(Platform.AppContext, config, this);
         }
 
         //Document Reader Completions
         public void OnInitCompleted(bool success, DocumentReaderException error)
         {
-            DocReaderInitEvent readerInitEvent = new DocReaderInitEvent() { IsSuccess = success };
+            DocReaderInitEvent readerInitEvent = new() { IsSuccess = success };
             if (success)
             {
                 Console.WriteLine("Initialized sucessfully");

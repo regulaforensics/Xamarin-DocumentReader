@@ -1,11 +1,9 @@
-﻿using System;
-using Android.Graphics;
+﻿using Android.Graphics;
 using Com.Regula.Documentreader.Api;
 using Com.Regula.Documentreader.Api.Completions;
 using Com.Regula.Documentreader.Api.Enums;
 using Com.Regula.Documentreader.Api.Errors;
 using Com.Regula.Documentreader.Api.Results;
-using Microsoft.Maui.Controls.Compatibility;
 
 namespace DocumentReaderSample.Platforms.Android
 {
@@ -98,9 +96,9 @@ namespace DocumentReaderSample.Platforms.Android
 
         private static DocReaderScannerEvent GenerateDocReaderScannerEvent(DocumentReaderResults results)
         {
-            DocReaderScannerEvent readerScannerEvent = new DocReaderScannerEvent() { IsSuccess = true };
+            DocReaderScannerEvent readerScannerEvent = new() { IsSuccess = true };
             var name = results.GetTextFieldValueByType(EVisualFieldType.FtSurnameAndGivenNames);
-            if (!System.String.IsNullOrEmpty(name))
+            if (!string.IsNullOrEmpty(name))
             {
                 readerScannerEvent.SurnameAndGivenNames = name;
             }
