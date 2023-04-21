@@ -8,7 +8,8 @@
     <SingleProject>true</SingleProject>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationTitle>DocumentReaderSample</ApplicationTitle>
-    <ApplicationId>com.regula.dr.fullrfid</ApplicationId>
+    <ApplicationId  Condition="'$(TargetFramework)' == 'net7.0-ios'">regula.DocumentReader</ApplicationId>
+    <ApplicationId Condition="'$(TargetFramework)' == 'net7.0-android'">com.regula.dr.fullrfid</ApplicationId>
     <ApplicationIdGuid>72aceaaf-d82c-423d-a9f0-133579e528a0</ApplicationIdGuid>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     <ApplicationVersion>1</ApplicationVersion>
