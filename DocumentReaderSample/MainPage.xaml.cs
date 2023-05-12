@@ -11,6 +11,11 @@ public partial class MainPage : ContentPage
     public MainPage()
 	{
 		InitializeComponent();
+        Application.Current.UserAppTheme = AppTheme.Light;
+        Application.Current.RequestedThemeChanged += (s, a) =>
+        {
+            Application.Current.UserAppTheme = AppTheme.Light;
+        };
 
         IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
         docReaderInit.ScenariosObtained += (object sender, IDocReaderInitEvent e) =>
