@@ -6,7 +6,7 @@
     <RootNamespace>DocumentReaderSample</RootNamespace>
     <UseMaui>true</UseMaui>
     <SingleProject>true</SingleProject>
-    <!--fix of randomly disapearing images on android-->
+    <!--fix of randomly disappearing images on android-->
     <MauiVersion>7.0.58</MauiVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
