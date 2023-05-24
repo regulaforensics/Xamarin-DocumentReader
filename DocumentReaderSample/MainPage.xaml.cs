@@ -113,6 +113,6 @@ public partial class MainPage : ContentPage
     {
         NamesLabels.Text = "";
         PortraitImage.Source = "portrait.png";
-        DocumentImage.Source = "id.png";
+        DocumentImage.Source = "portrait.png";
     }
 }
