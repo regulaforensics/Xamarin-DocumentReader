@@ -11,6 +11,11 @@ public partial class MainPage : ContentPage
     public MainPage()
 	{
 		InitializeComponent();
+        Application.Current.UserAppTheme = AppTheme.Light;
+        Application.Current.RequestedThemeChanged += (s, a) =>
+        {
+            Application.Current.UserAppTheme = AppTheme.Light;
+        };
 
         IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
         docReaderInit.ScenariosObtained += (object sender, IDocReaderInitEvent e) =>
@@ -107,7 +112,7 @@ public partial class MainPage : ContentPage
     void ClearResults()
     {
         NamesLabels.Text = "";
-        PortraitImage.Source = "portrait.png";
-        DocumentImage.Source = "id.png";
+        PortraitImage.Source = "mainpage_portrait_icon.png";
+        DocumentImage.Source = "mainpage_id_icon.png";
     }
 }

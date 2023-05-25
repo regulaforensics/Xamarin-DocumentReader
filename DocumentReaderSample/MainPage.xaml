@@ -14,11 +14,11 @@
             <StackLayout Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="1">
                 <StackLayout Margin="0,0,10,0">
                     <Label Text="Portrait Image" HorizontalOptions="Center" Margin="0,0,0,10" />
-                    <Image x:Name="PortraitImage" Source="portrait.png" WidthRequest="100" HeightRequest="180"/>
+                    <Image x:Name="PortraitImage" Source="mainpage_portrait_icon.png" WidthRequest="100" HeightRequest="180"/>
                 </StackLayout>
                 <StackLayout Margin="10,0,0,0">
                     <Label Text="Document Image" HorizontalOptions="Center" Margin="0,0,0,10" />
-                    <Image x:Name="DocumentImage" Source="id.png" WidthRequest="200" HeightRequest="180" />
+                    <Image x:Name="DocumentImage" Source="mainpage_id_icon.png" WidthRequest="200" HeightRequest="180" />
                 </StackLayout>
             </StackLayout>
             <Label Text="Available Scenarios" HorizontalOptions="Center" Grid.Row="2" Margin="0,10,0,10"/>

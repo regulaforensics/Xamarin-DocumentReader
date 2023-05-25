@@ -80,10 +80,19 @@ namespace DocumentReaderSample.Platforms.Android
             DocumentReader.Instance().ProcessParams().Scenario = scenarioName;
         }
 
+        private static Bitmap CompressBitmap(Bitmap bitmap)
+        {
+            int sizeMultiplier = bitmap.ByteCount / 5000000;
+            if (bitmap.ByteCount > 5000000)
+                bitmap = Bitmap.CreateScaledBitmap(bitmap, bitmap.Width / (int)Math.Sqrt(sizeMultiplier), bitmap.Height / (int)Math.Sqrt(sizeMultiplier), false);
+            return bitmap;
+        }
+
         private static byte[] ConvertBitmap(Bitmap bitmap)
         {
             if (bitmap == null)
                 return null;
+            bitmap = CompressBitmap(bitmap);
 
             byte[] bitmapData = null;
             using (var stream = new MemoryStream())

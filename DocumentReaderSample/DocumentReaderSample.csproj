@@ -6,24 +6,24 @@
     <RootNamespace>DocumentReaderSample</RootNamespace>
     <UseMaui>true</UseMaui>
     <SingleProject>true</SingleProject>
+    <!--fix of randomly disappearing images on android-->
+    <MauiVersion>7.0.58</MauiVersion>
     <ImplicitUsings>enable</ImplicitUsings>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <ApplicationTitle>DocumentReaderSample</ApplicationTitle>
-    <ApplicationId  Condition="'$(TargetFramework)' == 'net7.0-ios'">regula.DocumentReader</ApplicationId>
+    <ApplicationId Condition="'$(TargetFramework)' == 'net7.0-ios'">regula.DocumentReader</ApplicationId>
     <ApplicationId Condition="'$(TargetFramework)' == 'net7.0-android'">com.regula.dr.fullrfid</ApplicationId>
     <ApplicationIdGuid>72aceaaf-d82c-423d-a9f0-133579e528a0</ApplicationIdGuid>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     <ApplicationVersion>1</ApplicationVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">23.0</SupportedOSPlatformVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
-    <CreatePackage>false</CreatePackage>
+    <CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
     <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4"/>
     <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128"/>
     <MauiImage Include="Resources\Images\*"/>
-    <MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208"/>
     <MauiFont Include="Resources\Fonts\*"/>
     <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)"/>
   </ItemGroup>

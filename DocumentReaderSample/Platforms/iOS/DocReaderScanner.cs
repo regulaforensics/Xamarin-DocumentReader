@@ -124,12 +124,13 @@ namespace DocumentReaderSample.Platforms.iOS
             }
 
             // through all available text fields
-            foreach (var textField in result.TextResult.Fields)
-            {
-                var value = result.GetTextFieldValueByType(textField.FieldType, textField.Lcid);
-                if (value != null)
-                    Console.WriteLine("Field type name: {0}, value: {1}", textField.FieldName, value);
-            }
+            if(result.TextResult != null)
+                foreach (var textField in result.TextResult.Fields)
+                {
+                    var value = result.GetTextFieldValueByType(textField.FieldType, textField.Lcid);
+                    if (value != null)
+                        Console.WriteLine("Field type name: {0}, value: {1}", textField.FieldName, value);
+                }
 
             using (var portraitImage = result.GetGraphicFieldImageByType(RGLGraphicFieldType.Portrait))
             {
