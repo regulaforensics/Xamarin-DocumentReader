@@ -78,8 +78,6 @@ namespace DocumentReaderSample.Platforms.Android
         public void SelectScenario(string scenarioName)
         {
             DocumentReader.Instance().ProcessParams().Scenario = scenarioName;
-
-            DocumentReader.Instance().Customization().Edit().SetUiCustomizationLayer(new Org.Json.JSONObject("{\n  \"objects\": [\n    {\n      \"button\": {\n        \"title\": \"Click\",\n        \"tag\": 101,\n        \"fontStyle\": \"normal\",\n        \"fontColor\": \"#FF000000\",\n        \"background\": \"#FF00FF00\",\n        \"fontSize\": 16,\n        \"fontName\": \"Arial\",\n        \"alignment\": \"center\",\n        \"borderRadius\": 20,\n        \"margin\": {\n          \"end\": 24\n        },\n        \"position\": {\n          \"v\": 0.5\n        },\n        \"image\": {\n          \"name\": \"id\",\n          \"placement\": \"bottom\",\n          \"padding\": 0\n        }\n      }\n    }\n  ]\n}")).Apply();
         }
 
         private static Bitmap CompressBitmap(Bitmap bitmap)
