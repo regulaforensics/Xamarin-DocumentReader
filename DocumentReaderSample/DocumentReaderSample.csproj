@@ -31,7 +31,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0"/>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
-    <PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="0.0.1"/>
+    <PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="6.8.2981"/>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.iOS" Version="6.8.7692"/>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
