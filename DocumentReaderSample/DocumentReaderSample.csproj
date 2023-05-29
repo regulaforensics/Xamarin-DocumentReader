@@ -36,7 +36,7 @@
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1"/>
-    <PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="0.0.1"/>
+    <PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="6.8.8742"/>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Android" Version="6.8.9145"/>
   </ItemGroup>
   <ItemGroup>
