@@ -1,4 +1,13 @@
 # Xamarin - Regula Document Reader
+
+
+MAUI: 
+   copy regula.license to DocumentReaderSample/Resources/Raw/regula.license
+   copy db.dat to DocumentReaderSample/Platforms/Android/Assets/Regula/db.dat
+   and to DocumentReaderSample/Resources/Raw/db.dat
+
+
+
 Regula Document Reader SDK allows you to read various kinds of identification documents, passports, driving licenses, ID cards, etc. All processing is performed completely ***offline*** on your device. No any data leaving your device.
 
 You can use native camera to scan the documents or image from gallery for extract all data from it.
