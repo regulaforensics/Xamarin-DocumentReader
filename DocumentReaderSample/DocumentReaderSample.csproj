@@ -32,7 +32,7 @@
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
     <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="6.8.2981"/>
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS" Version="6.8.7692"/>
+    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS" Version="6.9.7953"/>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1"/>
