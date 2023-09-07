@@ -35,11 +35,13 @@ namespace DocumentReaderSample.Platforms.iOS
                 return;
             }
 
-            RGLConfig config = new RGLConfig(licenseData);
-            config.DelayedNNLoadEnabled = true;
+            RGLConfig config = new(licenseData)
+            {
+                DelayedNNLoadEnabled = true
+            };
             RGLDocReader.Shared.InitializeReaderWithConfig(config, (bool success, NSError error) =>
             {
-                DocReaderInitEvent readerInitEvent = new DocReaderInitEvent() { IsSuccess = success };
+                DocReaderInitEvent readerInitEvent = new() { IsSuccess = success };
                 if (success)
                 {
                     Console.WriteLine("Initialized sucessfully");

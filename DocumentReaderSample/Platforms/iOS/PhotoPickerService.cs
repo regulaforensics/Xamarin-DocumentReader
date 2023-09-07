@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+#pragma warning disable CA1422
 
 namespace DocumentReaderSample.Platforms.iOS
 {

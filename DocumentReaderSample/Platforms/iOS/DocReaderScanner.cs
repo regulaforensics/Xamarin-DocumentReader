@@ -1,5 +1,4 @@
-﻿using System;
-using DocReaderApi.iOS;
+﻿using DocReaderApi.iOS;
 using Foundation;
 using UIKit;
 
@@ -24,11 +23,15 @@ namespace DocumentReaderSample.Platforms.iOS
 
         private bool IsReadRfid = false;
 
-        private UIViewController CurrentPresenter
+        private string selectedScenario = "Mrz";
+
+        private static UIViewController CurrentPresenter
         {
             get
             {
+                #pragma warning disable CA1422
                 var window = UIApplication.SharedApplication.KeyWindow;
+                #pragma warning restore CA1422
                 var vc = window.RootViewController;
                 while (vc.PresentedViewController != null)
                 {
@@ -41,26 +44,27 @@ namespace DocumentReaderSample.Platforms.iOS
         public void ShowScanner(bool IsReadRfid)
         {
             this.IsReadRfid = IsReadRfid;
-
-            RGLDocReader.Shared.ShowScanner(CurrentPresenter, OnResultsObtained);
+            RGLScannerConfig config = new()
+            {
+                Scenario = selectedScenario
+            };
+            RGLDocReader.Shared.ShowScannerFromPresenter(CurrentPresenter, config, OnResultsObtained);
         }
 
         public void SelectScenario(string scenarioName)
         {
-            RGLDocReader.Shared.ProcessParams.Scenario = scenarioName;
+            selectedScenario = scenarioName;
         }
 
-        protected byte[] ConvertImage(UIImage image)
+        protected static byte[] ConvertImage(UIImage image)
         {
             if (image == null)
                 return null;
 
-            using (NSData imageData = image.AsPNG())
-            {
-                Byte[] myByteArray = new Byte[imageData.Length];
-                System.Runtime.InteropServices.Marshal.Copy(imageData.Bytes, myByteArray, 0, Convert.ToInt32(imageData.Length));
-                return myByteArray;
-            }
+            using NSData imageData = image.AsPNG();
+            byte[] myByteArray = new byte[imageData.Length];
+            System.Runtime.InteropServices.Marshal.Copy(imageData.Bytes, myByteArray, 0, Convert.ToInt32(imageData.Length));
+            return myByteArray;
         }
 
         private void ReadRfid()
@@ -74,8 +78,11 @@ namespace DocumentReaderSample.Platforms.iOS
         {
             var imageData = NSData.FromStream(stream);
             var image = UIImage.LoadFromData(imageData);
-
-            RGLDocReader.Shared.RecognizeImage(image, OnResultsObtained);
+            RGLRecognizeConfig config = new(image)
+            {
+                Scenario = selectedScenario
+            };
+            RGLDocReader.Shared.RecognizeWithConfig(config, OnResultsObtained);
         }
 
         private void OnResultsObtained(RGLDocReaderAction action, RGLDocumentReaderResults result, NSError error)
@@ -113,12 +120,12 @@ namespace DocumentReaderSample.Platforms.iOS
             }
         }
 
-        private DocReaderScannerEvent GenerateDocReaderScannerEvent(RGLDocumentReaderResults result)
+        private static DocReaderScannerEvent GenerateDocReaderScannerEvent(RGLDocumentReaderResults result)
         {
-            DocReaderScannerEvent readerScannerEvent = new DocReaderScannerEvent() { IsSuccess = true };
+            DocReaderScannerEvent readerScannerEvent = new() { IsSuccess = true };
             var name = result.GetTextFieldValueByType(RGLFieldType.Surname_And_Given_Names);
 
-            if (!System.String.IsNullOrEmpty(name))
+            if (!string.IsNullOrEmpty(name))
             {
                 readerScannerEvent.SurnameAndGivenNames = name;
             }
