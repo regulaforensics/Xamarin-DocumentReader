@@ -1,0 +1,30 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FaceSample.MainPage">
+
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0" Margin="5">
+                <Frame><ImageButton x:Name="FirstImage" HeightRequest="100" Clicked="FirstImage_Clicked" Source="avatar_first.png"/></Frame>
+            </StackLayout>
+            <StackLayout Grid.Column="1" Margin="5">
+                <Frame><ImageButton x:Name="SecondImage" HeightRequest="100" Clicked="SecondImage_Clicked" Source="avatar_second.png"/></Frame>
+            </StackLayout>
+        </Grid>
+        <StackLayout
+            Orientation="Vertical"
+            Padding="20">
+            <Button x:Name="MatchButton" Text="Match" Clicked="MatchFaces_Clicked" Margin="5"/>
+            <Button x:Name="LivenessButton" Text="Liveness" Clicked="Liveness_Clicked" Margin="5"/>
+            <Button x:Name="ClearButton" Text="Clear" Clicked="Clear_Clicked" Margin="5"/>
+        </StackLayout>
+        <StackLayout Padding="20">
+            <Label x:Name="SimilarityLabel" Text="Similarity: null"/>
+            <Label x:Name="LivenessLabel" Text="Liveness: null"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
