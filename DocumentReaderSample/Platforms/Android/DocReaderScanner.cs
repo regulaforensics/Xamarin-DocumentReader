@@ -1,6 +1,8 @@
 ﻿using Android.Graphics;
 using Com.Regula.Documentreader.Api;
+using Com.Regula.Documentreader.Api.Config;
 using Com.Regula.Documentreader.Api.Completions;
+using Com.Regula.Documentreader.Api.Completions.Rfid;
 using Com.Regula.Documentreader.Api.Enums;
 using Com.Regula.Documentreader.Api.Errors;
 using Com.Regula.Documentreader.Api.Results;
@@ -26,9 +28,12 @@ namespace DocumentReaderSample.Platforms.Android
 
         private bool IsReadRfid = false;
 
+        private string selectedScenario = "Mrz";
+
         public void ShowScanner(bool IsReadRfid)
         {
-            DocumentReader.Instance().ShowScanner(Platform.AppContext, this);
+            ScannerConfig config = new ScannerConfig.Builder(selectedScenario).Build();
+            DocumentReader.Instance().ShowScanner(Platform.AppContext, config, this);
             this.IsReadRfid = IsReadRfid;
         }
 
@@ -77,7 +82,7 @@ namespace DocumentReaderSample.Platforms.Android
 
         public void SelectScenario(string scenarioName)
         {
-            DocumentReader.Instance().ProcessParams().Scenario = scenarioName;
+            selectedScenario = scenarioName;
         }
 
         private static Bitmap CompressBitmap(Bitmap bitmap)
@@ -135,13 +140,29 @@ namespace DocumentReaderSample.Platforms.Android
         {
             IsReadRfid = false;
             DocumentReader.Instance().RfidScenario().AutoSettings = true;
-            DocumentReader.Instance().StartRFIDReader(Platform.AppContext, this);
+            DocumentReader.Instance().StartRFIDReader(Platform.AppContext, new RfidCallback(this));
         }
 
         public void RecognizeImage(Stream stream)
         {
             Bitmap bitmap = BitmapFactory.DecodeStream(stream);
-            DocumentReader.Instance().RecognizeImage(bitmap, this);
+            RecognizeConfig config = new RecognizeConfig.Builder(selectedScenario).SetBitmap(bitmap).Build();
+            DocumentReader.Instance().Recognize(Platform.AppContext, config, this);
+        }
+    }
+
+    public class RfidCallback : IRfidReaderCompletion
+    {
+        public DocReaderScanner instance;
+
+        public RfidCallback(DocReaderScanner scanner)
+        {
+            instance = scanner;
+        }
+
+        public override void OnCompleted(int action, DocumentReaderResults results, DocumentReaderException error)
+        {
+            instance.OnCompleted(action, results, error);
         }
     }
 }
