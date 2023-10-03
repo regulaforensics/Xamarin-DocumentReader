@@ -40,11 +40,9 @@
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android" Version="6.9.9544"/>
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Platforms\Android\Assets\Regula\db.dat"/>
     <AndroidAsset Include="Resources\Raw\regula.license"/>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Raw\regula.license"/>
-    <BundleResource Include="Resources\Raw\db.dat"/>
   </ItemGroup>
 </Project>
