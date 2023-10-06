@@ -2,8 +2,10 @@
 
 public partial class MainPage : ContentPage
 {
-    readonly IDocReaderScanner docReaderScanner;
+    static readonly bool btDeviceSample = false;
 
+
+    readonly IDocReaderScanner docReaderScanner;
     bool dbPrepareFinished = false;
 
     public MainPage()
@@ -14,6 +16,10 @@ public partial class MainPage : ContentPage
         {
             Application.Current.UserAppTheme = AppTheme.Light;
         };
+
+        StartServiceButton.IsVisible = btDeviceSample;
+        RecognizeButton.IsVisible = !btDeviceSample;
+        BTDeviceName.IsVisible = btDeviceSample;
 
         IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
         docReaderInit.ScenariosObtained += (object sender, IDocReaderInitEvent e) =>
@@ -26,7 +32,10 @@ public partial class MainPage : ContentPage
                     dbPrepareFinished = true;
                     MainThread.BeginInvokeOnMainThread(() =>
                     {
-                        NamesLabels.Text = "Initializing...";
+                        if(!btDeviceSample)
+                            NamesLabels.Text = "Initializing...";
+                        else
+                            NamesLabels.Text = "Database prepared, now connect btDevice.";
                     });
                 } else
                 {
@@ -61,7 +70,7 @@ public partial class MainPage : ContentPage
 
         NamesLabels.Text = "Loading...";
 
-        docReaderInit.InitDocReader();
+        docReaderInit.InitDocReader(btDeviceSample);
 
         docReaderScanner = DependencyService.Get<IDocReaderScanner>();
 
@@ -79,14 +88,14 @@ public partial class MainPage : ContentPage
         };
     }
 
-    void ShowScanner_Clicked(System.Object sender, System.EventArgs evt)
+    void ShowScanner_Clicked(object sender, EventArgs evt)
     {
 
         if (IsScenarioSelected())
             docReaderScanner.ShowScanner(ReadRfidCb.IsChecked);
     }
 
-    async void RecognizeImage_Clicked(System.Object sender, System.EventArgs evt)
+    async void RecognizeImage_Clicked(object sender, EventArgs evt)
     {
         if (!IsScenarioSelected())
             return;
@@ -103,7 +112,7 @@ public partial class MainPage : ContentPage
         (sender as Button).IsEnabled = true;
     }
 
-    void ListView_ItemSelected(System.Object sender, SelectedItemChangedEventArgs e)
+    void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
         Scenario scenario = e.SelectedItem as Scenario;
         docReaderScanner.SelectScenario(scenario.Name);
@@ -142,5 +151,11 @@ public partial class MainPage : ContentPage
         NamesLabels.Text = "";
         PortraitImage.Source = "mainpage_portrait_icon.png";
         DocumentImage.Source = "mainpage_id_icon.png";
+    }
+
+    void StartService_Clicked(object sender, EventArgs evt)
+    {
+        IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
+        docReaderInit.CheckPermissionsAndConnect(BTDeviceName.Text);
     }
 }
