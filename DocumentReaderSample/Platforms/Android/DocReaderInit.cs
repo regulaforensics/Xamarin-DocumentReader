@@ -13,9 +13,13 @@ namespace DocumentReaderSample.Platforms.Android
         public bool IsSuccess { get; set; }
 
         public bool IsRfidAvailable { get; set; }
+
+        public bool dbPrepared { get; set; }
+
+        public int dbProgress { get; set; }
     }
 
-    public class DocReaderInit : Java.Lang.Object, IDocReaderInit, IDocumentReaderInitCompletion
+    public class DocReaderInit : Java.Lang.Object, IDocReaderInit, IDocumentReaderInitCompletion, IDocumentReaderPrepareCompletion
     {
         public DocReaderInit()
         {
@@ -25,8 +29,7 @@ namespace DocumentReaderSample.Platforms.Android
 
         public void InitDocReader()
         {
-            Console.WriteLine("Native Android");
-            InitReader();
+            DocumentReader.Instance().PrepareDatabase(Platform.AppContext, "Full", this);
         }
 
         protected void InitReader()
@@ -69,6 +72,23 @@ namespace DocumentReaderSample.Platforms.Android
                 Console.WriteLine("Initialization failed:" + error);
             }
 
+            ScenariosObtained(this, readerInitEvent);
+        }
+
+        void IDocumentReaderPrepareCompletion.OnPrepareCompleted(bool status, DocumentReaderException error)
+        {
+            DocReaderInitEvent readerInitEvent = new() { dbPrepared = status };
+            if (status)
+                InitReader();
+            else
+                readerInitEvent.dbProgress = -1;
+
+            ScenariosObtained(this, readerInitEvent);
+        }
+
+        void IDocumentReaderPrepareCompletion.OnPrepareProgressChanged(int progress)
+        {
+            DocReaderInitEvent readerInitEvent = new() { dbProgress = progress };
             ScenariosObtained(this, readerInitEvent);
         }
     }

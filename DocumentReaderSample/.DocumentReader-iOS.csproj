@@ -1,9 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
-	    <!--fix of randomly disapearing images on android-->
-    	<MauiVersion>7.0.58</MauiVersion>
-		<TargetFrameworks>net7.0-android;net7.0-ios;</TargetFrameworks>
+		<TargetFrameworks>net7.0-ios;</TargetFrameworks>
 		<OutputType>Exe</OutputType>
 		<RootNamespace>DocumentReaderSample</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -12,16 +9,13 @@
 		<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 
 		<ApplicationTitle>DocumentReaderSample</ApplicationTitle>
-		<ApplicationId  Condition="'$(TargetFramework)' == 'net7.0-ios'">regula.DocumentReader</ApplicationId>
-   		<ApplicationId Condition="'$(TargetFramework)' == 'net7.0-android'">com.regula.dr.fullrfid</ApplicationId>
+		<ApplicationId>regula.DocumentReader</ApplicationId>
 		<CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
-		<ApplicationIdGuid>72aceaaf-d82c-423d-a9f0-133579e528a0</ApplicationIdGuid>
 
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">23.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion>11.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -35,10 +29,11 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
-		<ProjectReference Include="..\..\Api\DocReaderApi.Obj.iOS\DocReaderApi.Obj.iOS.csproj" Name="DocReaderApi.Obj.iOS" />
-		<ProjectReference Include="..\..\Api\RegulaCommon.iOS\RegulaCommon.iOS.csproj" Name="RegulaCommon.iOS" />
-    	<ProjectReference Include="..\..\Core\Core.iOS\DocReaderCore.FullRfid.iOS\DocReaderCore.FullRfid.iOS.csproj" Name="DocReaderCore.FullRfid.iOS" />
+	<ItemGroup>
+		<ProjectReference Include="..\..\Api\DocReaderApi.Obj.iOS\DocReaderApi.Obj.iOS.csproj" />
+		<ProjectReference Include="..\..\Common\RegulaCommon.iOS\RegulaCommon.iOS.csproj" />
+    	<ProjectReference Include="..\..\Api\Core.iOS\DocReaderCore.FullRfid.iOS\DocReaderCore.FullRfid.iOS.csproj" />
+    	<ProjectReference Include="..\..\Api\BTDevice.iOS\BTDevice.iOS.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -48,6 +43,5 @@
 
 	<ItemGroup>
 		<BundleResource Include="Resources\Raw\regula.license" />
-		<BundleResource Include="Resources\Raw\db.dat" />
 	</ItemGroup>
 </Project>

@@ -1,12 +1,10 @@
-﻿using System;
-using System.ComponentModel;
-using System.IO;
-
-namespace DocumentReaderSample;
+﻿namespace DocumentReaderSample;
 
 public partial class MainPage : ContentPage
 {
-    IDocReaderScanner docReaderScanner;
+    readonly IDocReaderScanner docReaderScanner;
+
+    bool dbPrepareFinished = false;
 
     public MainPage()
 	{
@@ -20,20 +18,50 @@ public partial class MainPage : ContentPage
         IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
         docReaderInit.ScenariosObtained += (object sender, IDocReaderInitEvent e) =>
         {
-            if (e.IsSuccess)
+            // Preparing database
+            if (!dbPrepareFinished)
             {
-                BindingContext = new MainViewModel(e.Scenarios);
-                RfidLayout.IsVisible = e.IsRfidAvailable;
-                NamesLabels.Text = "";
-            }
-            else
+                if (e.dbPrepared)
+                {
+                    dbPrepareFinished = true;
+                    MainThread.BeginInvokeOnMainThread(() =>
+                    {
+                        NamesLabels.Text = "Initializing...";
+                    });
+                } else
+                {
+                    if(e.dbProgress >= 0)
+                    {
+                        NamesLabels.Text = "Downloading database: " + e.dbProgress + "%";
+                        if(e.dbProgress == 100)
+                        {
+                            NamesLabels.Text = "Preparing database...";
+                        }
+                    }
+                    else
+                    {
+                        NamesLabels.Text = "Database preparation failed";
+                    }
+                }
+            } else
+            // Initializing
             {
-                DisplayAlert("Error", "Initialization failed", "OK");
+                if (e.IsSuccess)
+                {
+                    BindingContext = new MainViewModel(e.Scenarios);
+                    RfidLayout.IsVisible = e.IsRfidAvailable;
+                    NamesLabels.Text = "Ready";
+                }
+                else
+                {
+                    NamesLabels.Text = "Init failed";
+                }
             }
         };
-        docReaderInit.InitDocReader();
 
-        NamesLabels.Text = "Initialization Document Reader...";
+        NamesLabels.Text = "Loading...";
+
+        docReaderInit.InitDocReader();
 
         docReaderScanner = DependencyService.Get<IDocReaderScanner>();
 

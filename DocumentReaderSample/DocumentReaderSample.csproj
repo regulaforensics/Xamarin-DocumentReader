@@ -39,7 +39,7 @@
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1"/>
     <PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android" Version="6.9.9346.2"/>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android" Version="6.9.9544"/>
-    <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.Android" Version="0.0.0"/>
+    <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.Android" Version="1.1.394"/>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Resources\Raw\regula.license"/>

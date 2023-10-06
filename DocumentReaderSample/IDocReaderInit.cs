@@ -13,6 +13,8 @@ namespace DocumentReaderSample
         bool IsSuccess { get; }
         IList<Scenario> Scenarios { get; }
         bool IsRfidAvailable { get; }
+        bool dbPrepared { get; }
+        int dbProgress { get; }
     }
 }
 
