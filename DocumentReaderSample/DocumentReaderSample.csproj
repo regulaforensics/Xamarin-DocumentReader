@@ -11,8 +11,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <ApplicationTitle>DocumentReaderSample</ApplicationTitle>
-    <ApplicationId Condition="'$(TargetFramework)' == 'net7.0-ios'">regula.DocumentReader</ApplicationId>
-    <ApplicationId Condition="'$(TargetFramework)' == 'net7.0-android'">com.regula.dr.fullrfid</ApplicationId>
+    <ApplicationId Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">regula.DocumentReader</ApplicationId>
+    <ApplicationId Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">com.regula.dr.fullrfid</ApplicationId>
     <ApplicationIdGuid>72aceaaf-d82c-423d-a9f0-133579e528a0</ApplicationIdGuid>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     <ApplicationVersion>1</ApplicationVersion>
@@ -30,14 +30,16 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0"/>
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
+  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
     <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="6.9.3102.2"/>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS" Version="6.9.7953"/>
+    <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.iOS" Version="0.0.0"/>
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1"/>
     <PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android" Version="6.9.9346.2"/>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android" Version="6.9.9544"/>
+    <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.Android" Version="0.0.0"/>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Resources\Raw\regula.license"/>
