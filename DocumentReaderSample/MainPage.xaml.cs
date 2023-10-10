@@ -2,7 +2,7 @@
 
 public partial class MainPage : ContentPage
 {
-    static readonly bool btDeviceSample = false;
+    static readonly bool btDeviceSample = true;
 
 
     readonly IDocReaderScanner docReaderScanner;
