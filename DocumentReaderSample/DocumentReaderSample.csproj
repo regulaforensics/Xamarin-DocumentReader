@@ -39,7 +39,7 @@
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1"/>
     <PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="6.9.9346"/>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Android" Version="6.9.9544"/>
-    <PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="0.0.0"/>
+    <PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="1.1.394"/>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Platforms\Android\Assets\Regula\db.dat"/>

@@ -1,12 +1,12 @@
-﻿using System;
-using System.ComponentModel;
-using System.IO;
-
-namespace DocumentReaderSample;
+﻿namespace DocumentReaderSample;
 
 public partial class MainPage : ContentPage
 {
-    IDocReaderScanner docReaderScanner;
+    static readonly bool btDeviceSample = false;
+
+
+    readonly IDocReaderScanner docReaderScanner;
+    bool dbPrepareFinished = false;
 
     public MainPage()
 	{
@@ -17,23 +17,60 @@ public partial class MainPage : ContentPage
             Application.Current.UserAppTheme = AppTheme.Light;
         };
 
+        StartServiceButton.IsVisible = btDeviceSample;
+        RecognizeButton.IsVisible = !btDeviceSample;
+        BTDeviceName.IsVisible = btDeviceSample;
+
         IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
         docReaderInit.ScenariosObtained += (object sender, IDocReaderInitEvent e) =>
         {
-            if (e.IsSuccess)
+            // Preparing database
+            if (!dbPrepareFinished)
             {
-                BindingContext = new MainViewModel(e.Scenarios);
-                RfidLayout.IsVisible = e.IsRfidAvailable;
-                NamesLabels.Text = "";
-            }
-            else
+                if (e.dbPrepared)
+                {
+                    dbPrepareFinished = true;
+                    MainThread.BeginInvokeOnMainThread(() =>
+                    {
+                        if(!btDeviceSample)
+                            NamesLabels.Text = "Initializing...";
+                        else
+                            NamesLabels.Text = "Database prepared, now connect btDevice.";
+                    });
+                } else
+                {
+                    if(e.dbProgress >= 0)
+                    {
+                        NamesLabels.Text = "Downloading database: " + e.dbProgress + "%";
+                        if(e.dbProgress == 100)
+                        {
+                            NamesLabels.Text = "Preparing database...";
+                        }
+                    }
+                    else
+                    {
+                        NamesLabels.Text = "Database preparation failed";
+                    }
+                }
+            } else
+            // Initializing
             {
-                DisplayAlert("Error", "Initialization failed", "OK");
+                if (e.IsSuccess)
+                {
+                    BindingContext = new MainViewModel(e.Scenarios);
+                    RfidLayout.IsVisible = e.IsRfidAvailable;
+                    NamesLabels.Text = "Ready";
+                }
+                else
+                {
+                    NamesLabels.Text = "Init failed";
+                }
             }
         };
-        docReaderInit.InitDocReader();
 
-        NamesLabels.Text = "Initialization Document Reader...";
+        NamesLabels.Text = "Loading...";
+
+        docReaderInit.InitDocReader(btDeviceSample);
 
         docReaderScanner = DependencyService.Get<IDocReaderScanner>();
 
@@ -51,14 +88,14 @@ public partial class MainPage : ContentPage
         };
     }
 
-    void ShowScanner_Clicked(System.Object sender, System.EventArgs evt)
+    void ShowScanner_Clicked(object sender, EventArgs evt)
     {
 
         if (IsScenarioSelected())
             docReaderScanner.ShowScanner(ReadRfidCb.IsChecked);
     }
 
-    async void RecognizeImage_Clicked(System.Object sender, System.EventArgs evt)
+    async void RecognizeImage_Clicked(object sender, EventArgs evt)
     {
         if (!IsScenarioSelected())
             return;
@@ -75,7 +112,7 @@ public partial class MainPage : ContentPage
         (sender as Button).IsEnabled = true;
     }
 
-    void ListView_ItemSelected(System.Object sender, SelectedItemChangedEventArgs e)
+    void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
         Scenario scenario = e.SelectedItem as Scenario;
         docReaderScanner.SelectScenario(scenario.Name);
@@ -114,5 +151,11 @@ public partial class MainPage : ContentPage
         NamesLabels.Text = "";
         PortraitImage.Source = "mainpage_portrait_icon.png";
         DocumentImage.Source = "mainpage_id_icon.png";
+    }
+
+    void StartService_Clicked(object sender, EventArgs evt)
+    {
+        IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
+        docReaderInit.CheckPermissionsAndConnect(BTDeviceName.Text);
     }
 }

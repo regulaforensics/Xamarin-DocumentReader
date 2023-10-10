@@ -1,5 +1,4 @@
-﻿using System;
-using DocReaderApi.iOS;
+﻿using DocReaderApi.iOS;
 using Foundation;
 
 namespace DocumentReaderSample.Platforms.iOS
@@ -11,6 +10,10 @@ namespace DocumentReaderSample.Platforms.iOS
         public bool IsSuccess { get; set; }
 
         public bool IsRfidAvailable { get; set; }
+
+        public bool dbPrepared { get; set; }
+
+        public int dbProgress { get; set; }
     }
 
     public class DocReaderInit : IDocReaderInit
@@ -23,8 +26,20 @@ namespace DocumentReaderSample.Platforms.iOS
 
         public void InitDocReader()
         {
-            Console.WriteLine("Native iOS");
-            InitReader();
+            RGLDocReader.Shared.PrepareDatabase("Full", delegate (NSProgress progress)
+            {
+                DocReaderInitEvent readerInitEvent = new() { dbProgress = (int)(progress.FractionCompleted * 100) };
+                ScenariosObtained(this, readerInitEvent);
+            }, delegate (bool status, NSError error)
+            {
+                DocReaderInitEvent readerInitEvent = new() { dbPrepared = status };
+                if (status)
+                    InitReader();
+                else
+                    readerInitEvent.dbProgress = -1;
+
+                ScenariosObtained(this, readerInitEvent);
+            });
         }
 
         protected void InitReader()
