@@ -13,6 +13,8 @@ public class AppDelegate : MauiUIApplicationDelegate
         //WARNING!!!!
         //Initialization of DocReaderCore is required
         new DocReaderCore.iOS.DocumentReader();
+        //Initialization of BTDevice is required
+        new BTDevice.iOS.RGLBTManager();
 
         DependencyService.Register<IDocReaderInit, DocReaderInit>();
         DependencyService.Register<IDocReaderScanner, DocReaderScanner>();

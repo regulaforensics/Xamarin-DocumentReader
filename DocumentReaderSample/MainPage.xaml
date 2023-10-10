@@ -8,34 +8,37 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition> 
 		</Grid.RowDefinitions>
-            <Label x:Name="NamesLabels" HorizontalOptions="Center" Grid.Row="0"/>
-            <StackLayout Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="1">
-                <StackLayout Margin="0,0,10,0">
-                    <Label Text="Portrait Image" HorizontalOptions="Center" Margin="0,0,0,10" />
-                    <Image x:Name="PortraitImage" Source="mainpage_portrait_icon.png" WidthRequest="100" HeightRequest="180"/>
-                </StackLayout>
-                <StackLayout Margin="10,0,0,0">
-                    <Label Text="Document Image" HorizontalOptions="Center" Margin="0,0,0,10" />
-                    <Image x:Name="DocumentImage" Source="mainpage_id_icon.png" WidthRequest="200" HeightRequest="180" />
-                </StackLayout>
+        <Label x:Name="NamesLabels" HorizontalOptions="Center" Grid.Row="0"/>
+        <StackLayout Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="1">
+            <StackLayout Margin="0,0,10,0">
+                <Label Text="Portrait Image" HorizontalOptions="Center" Margin="0,0,0,10" />
+                <Image x:Name="PortraitImage" Source="mainpage_portrait_icon.png" WidthRequest="100" HeightRequest="180"/>
             </StackLayout>
-            <Label Text="Available Scenarios" HorizontalOptions="Center" Grid.Row="2" Margin="0,10,0,10"/>
-            <ListView x:Name="ScenariosListView" ItemsSource="{Binding Scenarios}" ItemSelected="ListView_ItemSelected" SelectionMode="Single" Grid.Row="3">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Name}" TextColor="Black" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <StackLayout Orientation="Horizontal" Grid.Row="4">
-                <Button HorizontalOptions="FillAndExpand" Margin="5,15,5,0" Text="Show scanner" Clicked="ShowScanner_Clicked" />
-                <Button HorizontalOptions="FillAndExpand" Margin="5,15,5,0" Text="Recognize image" Clicked="RecognizeImage_Clicked" />
+            <StackLayout Margin="10,0,0,0">
+                <Label Text="Document Image" HorizontalOptions="Center" Margin="0,0,0,10" />
+                <Image x:Name="DocumentImage" Source="mainpage_id_icon.png" WidthRequest="200" HeightRequest="180" />
             </StackLayout>
-            <StackLayout x:Name="RfidLayout" Orientation="Horizontal" IsVisible="false" Grid.Row="5">
-                <CheckBox x:Name="ReadRfidCb" Color="Blue" />
-                <Label Text="Perform NFC chip reading" VerticalOptions="Center" />
-            </StackLayout>
+        </StackLayout>
+        <Label Text="Available Scenarios" HorizontalOptions="Center" Grid.Row="2" Margin="0,10,0,10"/>
+        <ListView x:Name="ScenariosListView" ItemsSource="{Binding Scenarios}" ItemSelected="ListView_ItemSelected" SelectionMode="Single" Grid.Row="3">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" TextColor="Black" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Editor x:Name="BTDeviceName" Placeholder="Regula 0000" Grid.Row="4"/>
+        <StackLayout Orientation="Horizontal" Grid.Row="5">
+            <Button HorizontalOptions="FillAndExpand" Margin="5,15,5,0" Text="Show scanner" Clicked="ShowScanner_Clicked" />
+            <Button x:Name="RecognizeButton" HorizontalOptions="FillAndExpand" Margin="5,15,5,0" Text="Recognize image" Clicked="RecognizeImage_Clicked" />
+            <Button x:Name="StartServiceButton" HorizontalOptions="FillAndExpand" Margin="5,15,5,0" Text="Start Service" Clicked="StartService_Clicked" />
+        </StackLayout>
+        <StackLayout x:Name="RfidLayout" Orientation="Horizontal" IsVisible="false" Grid.Row="6">
+            <CheckBox x:Name="ReadRfidCb" Color="Blue" />
+            <Label Text="Perform NFC chip reading" VerticalOptions="Center" />
+        </StackLayout>
     </Grid>
 </ContentPage>
