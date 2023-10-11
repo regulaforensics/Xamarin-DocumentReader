@@ -41,10 +41,4 @@
     <PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRfid.Android" Version="6.9.9556"/>
     <PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="1.1.394"/>
   </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\Raw\regula.license"/>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Raw\regula.license"/>
-  </ItemGroup>
 </Project>
