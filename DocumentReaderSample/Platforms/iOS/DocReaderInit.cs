@@ -24,7 +24,7 @@ namespace DocumentReaderSample.Platforms.iOS
 
         public event EventHandler<IDocReaderInitEvent> ScenariosObtained;
 
-        public void InitDocReader()
+        public void InitDocReader(bool btDevice = false)
         {
             RGLDocReader.Shared.PrepareDatabase("Full", delegate (NSProgress progress)
             {
@@ -80,5 +80,8 @@ namespace DocumentReaderSample.Platforms.iOS
             });
         }
 
+        void IDocReaderInit.CheckPermissionsAndConnect(string btDeviceName)
+        {
+        }
     }
 }
