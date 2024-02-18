@@ -31,7 +31,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0"/>
   </ItemGroup>
   <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
-    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="6.9.3102"/>
+    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="6.9.3363"/>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS" Version="6.9.8738"/>
     <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.iOS" Version="6.8.318"/>
   </ItemGroup>
