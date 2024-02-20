@@ -38,7 +38,7 @@
   <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1"/>
     <PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android" Version="6.10.9658"/>
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android" Version="6.10.10472"/>
+    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android" Version="7.1.10515"/>
     <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.Android" Version="1.1.394"/>
   </ItemGroup>
   <ItemGroup>
