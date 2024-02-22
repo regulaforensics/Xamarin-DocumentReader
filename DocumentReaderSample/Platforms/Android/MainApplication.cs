@@ -7,13 +7,11 @@ namespace DocumentReaderSample;
 [Application]
 public class MainApplication : MauiApplication
 {
-	public MainApplication(IntPtr handle, JniHandleOwnership ownership)
-		: base(handle, ownership)
-	{
+    public MainApplication(IntPtr handle, JniHandleOwnership ownership) : base(handle, ownership)
+    {
         DependencyService.Register<IDocReaderInit, DocReaderInit>();
         DependencyService.Register<IDocReaderScanner, DocReaderScanner>();
         DependencyService.Register<IPhotoPickerService, PhotoPickerService>();
     }
-
-	protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
+    protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
 }

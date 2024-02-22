@@ -3,8 +3,6 @@ using Foundation;
 
 namespace DocumentReaderSample;
 
-#pragma warning disable CA1806
-
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate
 {
@@ -12,9 +10,9 @@ public class AppDelegate : MauiUIApplicationDelegate
     {
         //WARNING!!!!
         //Initialization of DocReaderCore is required
-        new DocReaderCore.iOS.DocumentReader();
+        _ = new DocReaderCore.iOS.DocumentReader();
         //Initialization of BTDevice is required
-        new BTDevice.iOS.RGLBTManager();
+        _ = new BTDevice.iOS.RGLBTManager();
 
         DependencyService.Register<IDocReaderInit, DocReaderInit>();
         DependencyService.Register<IDocReaderScanner, DocReaderScanner>();
