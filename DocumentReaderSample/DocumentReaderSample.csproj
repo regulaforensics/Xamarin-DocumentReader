@@ -37,7 +37,7 @@
   <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
     <PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="1.1.394"/>
     <PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="6.9.9346"/>
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Android" Version="6.9.9544"/>
+    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Android" Version="7.1.10515"/>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Resources\Raw\regula.license"/>
