@@ -10,44 +10,31 @@ namespace DocumentReaderSample;
 public class MainActivity : MauiAppCompatActivity
 {
     internal static MainActivity Instance { get; private set; }
-
     public static readonly int PickImageId = 1000;
-
     public TaskCompletionSource<Stream> PickImageTaskCompletionSource { set; get; }
-
     protected override void OnCreate(Bundle savedInstanceState)
     {
         base.OnCreate(savedInstanceState);
-
         Platform.Init(this, savedInstanceState);
-
         Instance = this;
     }
-    public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+    public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
     {
         Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
         base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
     }
-
     protected override void OnActivityResult(int requestCode, Result resultCode, Intent intent)
     {
         base.OnActivityResult(requestCode, resultCode, intent);
-
-        if (requestCode == PickImageId)
+        if (requestCode != PickImageId) return;
+        if ((resultCode == Result.Ok) && (intent != null))
         {
-            if ((resultCode == Result.Ok) && (intent != null))
-            {
-                Android.Net.Uri uri = intent.Data;
-                Stream stream = ContentResolver.OpenInputStream(uri);
+            Android.Net.Uri uri = intent.Data;
+            Stream stream = ContentResolver.OpenInputStream(uri);
 
-                // Set the Stream as the completion of the Task
-                PickImageTaskCompletionSource.SetResult(stream);
-            }
-            else
-            {
-                PickImageTaskCompletionSource.SetResult(null);
-            }
+            // Set the Stream as the completion of the Task
+            PickImageTaskCompletionSource.SetResult(stream);
         }
+        else PickImageTaskCompletionSource.SetResult(null);
     }
 }

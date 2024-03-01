@@ -4,10 +4,6 @@ namespace DocumentReaderSample.Platforms.Android
 {
     public class PhotoPickerService : IPhotoPickerService
     {
-        public PhotoPickerService()
-        {
-        }
-
         public Task<Stream> GetImageStreamAsync()
         {
             // Define the Intent for getting images

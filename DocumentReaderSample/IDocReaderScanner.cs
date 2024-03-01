@@ -1,19 +1,14 @@
-﻿using System;
-namespace DocumentReaderSample
+﻿namespace DocumentReaderSample
 {
     public interface IDocReaderScanner
     {
         void ShowScanner(bool IsReadRfid);
-        void RecognizeImage(Stream stream);
+        void RecognizeImage(Stream stream, bool IsReadRfid);
         void SelectScenario(string scenarioName);
-        event EventHandler<IDocReaderScannerEvent>
-            ResultsObtained;
+        event EventHandler<IDocReaderScannerEvent> ResultsObtained;
     }
-
     public interface IDocReaderScannerEvent
     {
-        bool IsSuccess { get; set; }
-        string Error { get; set; }
         string SurnameAndGivenNames { get; set; }
         byte[] PortraitField { get; set; }
         byte[] DocumentField { get; set; }

@@ -1,5 +1,4 @@
-﻿using System;
-namespace DocumentReaderSample
+﻿namespace DocumentReaderSample
 {
     public class Scenario
     {
