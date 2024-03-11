@@ -33,7 +33,7 @@ namespace DocumentReaderSample.Platforms.iOS
         private void OnResultsObtained(RGLDocReaderAction action, RGLDocumentReaderResults result, NSError error)
         {
             if (action != RGLDocReaderAction.Complete && action != RGLDocReaderAction.ProcessTimeout) return;
-            if (IsReadRfid)
+            if (IsReadRfid && result != null && result.ChipPage != 0)
             {
                 RGLDocReader.Shared.StartRFIDReaderFromPresenter(UIApplication.SharedApplication.KeyWindow.RootViewController, OnResultsObtained);
                 IsReadRfid = false;
