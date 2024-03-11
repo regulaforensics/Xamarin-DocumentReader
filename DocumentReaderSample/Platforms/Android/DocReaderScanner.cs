@@ -29,7 +29,7 @@ namespace DocumentReaderSample.Platforms.Android
         public void OnCompleted(int action, DocumentReaderResults results, DocumentReaderException error)
         {
             if (action != DocReaderAction.Complete && action != DocReaderAction.Timeout) return;
-            if (IsReadRfid)
+            if (IsReadRfid && results != null && results.ChipPage != 0)
             {
                 DocumentReader.Instance().StartRFIDReader(Platform.AppContext, new RfidCallback(this));
                 IsReadRfid = false;
