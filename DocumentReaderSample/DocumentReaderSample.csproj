@@ -31,7 +31,7 @@
   </ItemGroup>
   <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
     <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.iOS" Version="6.8.318"/>
-    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="7.1.3549"/>
+    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="7.2.3545"/>
     <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS" Version="7.2.9111"/>
   </ItemGroup>
   <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
