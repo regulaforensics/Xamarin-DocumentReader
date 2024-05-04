@@ -13,9 +13,6 @@ using Android.App;
 using Android.Content.PM;
 using Android;
 using Android.Provider;
-using Com.Regula.Facesdk;
-using Com.Regula.Facesdk.Callback;
-using Com.Regula.Facesdk.Exception;
 
 namespace DocumentReaderSample.Platforms.Android
 {
@@ -25,7 +22,7 @@ namespace DocumentReaderSample.Platforms.Android
         public bool IsSuccess { get; set; }
         public bool IsRfidAvailable { get; set; }
     }
-    public class DocReaderInit : BleWrapperCallback, IDocReaderInit, IDocumentReaderInitCompletion, IServiceConnection, IFaceInitializationCompletion
+    public class DocReaderInit : BleWrapperCallback, IDocReaderInit, IDocumentReaderInitCompletion, IServiceConnection
     {
         public event EventHandler<IDocReaderInitEvent> ScenariosObtained;
         public void InitDocReader()
@@ -57,25 +54,7 @@ namespace DocumentReaderSample.Platforms.Android
             }
             readerInitEvent.Scenarios = data;
             readerInitEvent.IsRfidAvailable = DocumentReader.Instance().IsRFIDAvailableForUse;
-
-            FaceSDK.Instance().Initialize(Platform.AppContext, this);
-
-            // ScenariosObtained(this, readerInitEvent);
-            staticEvent = readerInitEvent;
-        }
-        static DocReaderInitEvent staticEvent;
-        public void OnInitCompleted(bool success, InitException error)
-        {
-            if (success)
-            {
-                Console.WriteLine("Face Init complete");
-                ScenariosObtained(this, staticEvent);
-            }
-            else
-            {
-                Console.WriteLine("Init failed:");
-                Console.WriteLine(error.Message);
-            }
+            ScenariosObtained(this, readerInitEvent);
         }
 
         // BTDeviceSample
