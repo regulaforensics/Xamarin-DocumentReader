@@ -1,4 +1,5 @@
 ﻿using DocReaderApi.iOS;
+using FaceApi.iOS;
 using Foundation;
 using UIKit;
 #pragma warning disable CA1422
@@ -22,13 +23,29 @@ namespace DocumentReaderSample.Platforms.iOS
             RGLScannerConfig config = new(selectedScenario);
             RGLDocReader.Shared.ShowScannerFromPresenter(UIApplication.SharedApplication.KeyWindow.RootViewController, config, OnResultsObtained);
         }
-        public void RecognizeImage(Stream stream, bool IsReadRfid)
+        private static UIViewController CurrentPresenter
         {
-            this.IsReadRfid = IsReadRfid;
-            var imageData = NSData.FromStream(stream);
-            var image = UIImage.LoadFromData(imageData);
-            RGLRecognizeConfig config = new(image) { Scenario = selectedScenario };
-            RGLDocReader.Shared.RecognizeWithConfig(config, OnResultsObtained);
+            get
+            {
+                var window = UIApplication.SharedApplication.KeyWindow;
+                var vc = window.RootViewController;
+                while (vc.PresentedViewController != null)
+                {
+                    vc = vc.PresentedViewController;
+                }
+                return vc;
+            }
+        }
+        public void RecognizeImage()
+        {
+            // this.IsReadRfid = IsReadRfid;
+            // var imageData = NSData.FromStream(stream);
+            // var image = UIImage.LoadFromData(imageData);
+            // RGLRecognizeConfig config = new(image) { Scenario = selectedScenario };
+            // RGLDocReader.Shared.RecognizeWithConfig(config, OnResultsObtained);
+            RFSFaceSDK.Service.StartLivenessFrom(CurrentPresenter, true, (RFSLivenessResponse response) =>
+            {
+            }, () => { });
         }
         private void OnResultsObtained(RGLDocReaderAction action, RGLDocumentReaderResults result, NSError error)
         {
