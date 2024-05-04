@@ -1,48 +1,53 @@
-<?xml version="1.0"?>
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>net8.0-android;net8.0-ios;</TargetFrameworks>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DocumentReaderSample</RootNamespace>
-    <UseMaui>true</UseMaui>
-    <SingleProject>true</SingleProject>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-    <NoWarn>MT4189;MT4178;NETSDK1201</NoWarn>
-    <ApplicationTitle>DocumentReaderSample</ApplicationTitle>
-    <ApplicationId Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">regula.DocumentReader</ApplicationId>
-    <ApplicationId Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">com.regula.dr.fullrfid</ApplicationId>
-    <CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
-    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
-    <ApplicationVersion>1</ApplicationVersion>
-    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
-    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">23.0</SupportedOSPlatformVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4"/>
-    <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128"/>
-    <MauiImage Include="Resources\Images\*"/>
-    <MauiFont Include="Resources\Fonts\*"/>
-    <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)"/>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0"/>
-    <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.6"/>
-  </ItemGroup>
-  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
-    <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.iOS" Version="6.8.318"/>
-    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="7.2.3545"/>
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS" Version="7.2.9111.2"/>
-  </ItemGroup>
-  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-    <PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.Android" Version="1.1.394"/>
-    <PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android" Version="7.2.9835.1"/>
-    <PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android" Version="7.1.10515.2"/>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\Raw\regula.license"/>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Raw\regula.license"/>
-  </ItemGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net8.0-ios;</TargetFrameworks>
+		<OutputType>Exe</OutputType>
+		<RootNamespace>DocumentReaderSample</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+		<NoWarn>MT4189;MT4178;NETSDK1201;XC0022</NoWarn>
+
+		<ApplicationTitle>DocumentReaderSample</ApplicationTitle>
+		<ApplicationId Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">regula.DocumentReader</ApplicationId>
+		<ApplicationId Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">com.regula.dr.fullrfid</ApplicationId>
+		<CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
+
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">23.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiImage Include="Resources\Images\*" />
+		<MauiFont Include="Resources\Fonts\*" />
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.7" />
+	</ItemGroup>
+
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.iOS" Version="6.8.318"/>
+		<PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="7.2.3545"/>
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS" Version="7.2.9111.2"/>
+	</ItemGroup>
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.Android" Version="1.1.394"/>
+		<PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android" Version="7.2.9835.2"/>
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android" Version="7.1.10515.2"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<AndroidAsset Include="Resources\Raw\regula.license" />
+	</ItemGroup>
+	<ItemGroup>
+		<BundleResource Include="Resources\Raw\regula.license" />
+	</ItemGroup>
 </Project>
