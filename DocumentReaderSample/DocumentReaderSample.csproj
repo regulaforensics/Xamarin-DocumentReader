@@ -37,11 +37,18 @@
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.iOS" Version="6.8.318"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Beta.iOS" Version="7.2.3545.3"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.iOS" Version="7.2.9111.2"/>
+
+		<PackageReference Include="Xamarin.Regula.FaceApi.Beta.iOS" Version="6.1.1825.3"/>
+		<PackageReference Include="Xamarin.FaceCore.Basic.Beta.iOS" Version="0.0.659"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Beta.Android" Version="1.1.394"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Beta.Android" Version="7.2.9835.3"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullRfid.Beta.Android" Version="7.1.10515.2"/>
+
+		<PackageReference Include="Xamarin.AndroidX.DataBinding.ViewBinding" Version="8.0.2" />
+		<PackageReference Include="Xamarin.Regula.FaceApi.Beta.Android" Version="6.1.3088"/>
+		<PackageReference Include="Xamarin.FaceCore.Basic.Beta.Droid" Version="6.1.430"/>
 	</ItemGroup>
 
 	<ItemGroup>

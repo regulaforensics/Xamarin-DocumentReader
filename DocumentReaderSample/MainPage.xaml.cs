@@ -51,15 +51,16 @@ public partial class MainPage : ContentPage
     }
     async void RecognizeImage_Clicked(object sender, EventArgs evt)
     {
-        ClearResults();
-        (sender as Button).IsEnabled = false;
-        Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
-        if (stream != null)
-        {
-            NamesLabels.Text = "Recognize image...";
-            docReaderScanner.RecognizeImage(stream, ReadRfidCb.IsChecked);
-        }
-        (sender as Button).IsEnabled = true;
+        DependencyService.Get<IDocReaderScanner>().RecognizeImage();
+        // ClearResults();
+        // (sender as Button).IsEnabled = false;
+        // Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
+        // if (stream != null)
+        // {
+        //     NamesLabels.Text = "Recognize image...";
+        //     docReaderScanner.RecognizeImage(stream, ReadRfidCb.IsChecked);
+        // }
+        // (sender as Button).IsEnabled = true;
     }
     void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {

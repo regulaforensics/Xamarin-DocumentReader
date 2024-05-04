@@ -3,7 +3,7 @@
     public interface IDocReaderScanner
     {
         void ShowScanner(bool IsReadRfid);
-        void RecognizeImage(Stream stream, bool IsReadRfid);
+        void RecognizeImage();
         void SelectScenario(string scenarioName);
         event EventHandler<IDocReaderScannerEvent> ResultsObtained;
     }
