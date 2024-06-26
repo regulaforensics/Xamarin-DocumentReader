@@ -35,12 +35,12 @@
 
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="6.8.318-beta"/>
-		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="7.3.149-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="7.3.158-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRfid.iOS" Version="7.2.9114-beta"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="1.1.394-beta"/>
-		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="7.3.149-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="7.3.158-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRfid.Android" Version="7.2.10879-beta"/>
 	</ItemGroup>
 
