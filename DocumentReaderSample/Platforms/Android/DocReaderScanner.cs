@@ -6,9 +6,6 @@ using Com.Regula.Documentreader.Api.Completions.Rfid;
 using Com.Regula.Documentreader.Api.Enums;
 using Com.Regula.Documentreader.Api.Errors;
 using Com.Regula.Documentreader.Api.Results;
-using Com.Regula.Facesdk;
-using Com.Regula.Facesdk.Callback;
-using Com.Regula.Facesdk.Model.Results;
 
 namespace DocumentReaderSample.Platforms.Android
 {
@@ -18,7 +15,7 @@ namespace DocumentReaderSample.Platforms.Android
         public byte[] PortraitField { get; set; }
         public byte[] DocumentField { get; set; }
     }
-    public class DocReaderScanner : Java.Lang.Object, IDocReaderScanner, IDocumentReaderCompletion, ILivenessCallback
+    public class DocReaderScanner : Java.Lang.Object, IDocReaderScanner, IDocumentReaderCompletion
     {
         public event EventHandler<IDocReaderScannerEvent> ResultsObtained;
         private bool IsReadRfid = false;
@@ -66,11 +63,10 @@ namespace DocumentReaderSample.Platforms.Android
         }
         public void RecognizeImage(Stream stream, bool IsReadRfid)
         {
-            FaceSDK.Instance().StartLiveness(Platform.AppContext, this);
-        }
-        public void OnLivenessCompete(LivenessResponse response)
-        {
-            // Do something
+            Bitmap bitmap = BitmapFactory.DecodeStream(stream);
+            RecognizeConfig config = new RecognizeConfig.Builder(selectedScenario).SetBitmap(bitmap).Build();
+            DocumentReader.Instance().Recognize(Platform.AppContext, config, this);
+            this.IsReadRfid = IsReadRfid;
         }
     }
     public class RfidCallback(DocReaderScanner scanner) : IRfidReaderCompletion

@@ -1,5 +1,4 @@
 ﻿using DocReaderApi.iOS;
-using FaceApi.iOS;
 using Foundation;
 
 namespace DocumentReaderSample.Platforms.iOS
@@ -26,21 +25,12 @@ namespace DocumentReaderSample.Platforms.iOS
                     ScenariosObtained(this, readerInitEvent);
                     return;
                 }
-                RFSFaceSDK.Service.InitializeWithCompletion((bool success, NSError error) =>
-                {
-                    if (!success)
-                    {
-                        Console.WriteLine("Init failed:" + error);
-                        ScenariosObtained(this, readerInitEvent);
-                        return;
-                    }
-                    IList<Scenario> data = [];
-                    foreach (RGLScenario scenario in RGLDocReader.Shared.AvailableScenarios)
-                        data.Add(new Scenario() { Name = scenario.Identifier, Description = scenario.Description });
-                    readerInitEvent.Scenarios = data;
-                    readerInitEvent.IsRfidAvailable = RGLDocReader.Shared.RfidAvailable;
-                    ScenariosObtained(this, readerInitEvent);
-                });
+                IList<Scenario> data = [];
+                foreach (RGLScenario scenario in RGLDocReader.Shared.AvailableScenarios)
+                    data.Add(new Scenario() { Name = scenario.Identifier, Description = scenario.Description });
+                readerInitEvent.Scenarios = data;
+                readerInitEvent.IsRfidAvailable = RGLDocReader.Shared.RfidAvailable;
+                ScenariosObtained(this, readerInitEvent);
             });
         }
         void IDocReaderInit.CheckPermissionsAndConnect(string btDeviceName) { }

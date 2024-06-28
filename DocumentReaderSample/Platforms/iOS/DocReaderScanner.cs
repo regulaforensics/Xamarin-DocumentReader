@@ -1,5 +1,4 @@
 ﻿using DocReaderApi.iOS;
-using FaceApi.iOS;
 using Foundation;
 using UIKit;
 #pragma warning disable CA1422
@@ -25,10 +24,11 @@ namespace DocumentReaderSample.Platforms.iOS
         }
         public void RecognizeImage(Stream stream, bool IsReadRfid)
         {
-            RFSFaceSDK.Service.StartLivenessFrom(UIApplication.SharedApplication.KeyWindow.RootViewController, true, (RFSLivenessResponse response) =>
-            {
-                // Do something
-            }, () => { });
+            this.IsReadRfid = IsReadRfid;
+            var imageData = NSData.FromStream(stream);
+            var image = UIImage.LoadFromData(imageData);
+            RGLRecognizeConfig config = new(image) { Scenario = selectedScenario };
+            RGLDocReader.Shared.RecognizeWithConfig(config, OnResultsObtained);
         }
         private void OnResultsObtained(RGLDocReaderAction action, RGLDocumentReaderResults result, NSError error)
         {
