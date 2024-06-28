@@ -56,16 +56,9 @@ public partial class MainPage : ContentPage
         ClearResults();
         docReaderScanner.ShowScanner(ReadRfidCb.IsChecked);
     }
-    async void RecognizeImage_Clicked(object sender, EventArgs evt)
+    void RecognizeImage_Clicked(object sender, EventArgs evt)
     {
-        ClearResults();
-        Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
-        if (stream != null)
-        {
-            NamesLabels.Text = "Recognize image...";
-            docReaderScanner.RecognizeImage(stream, ReadRfidCb.IsChecked);
-        }
-        (sender as Button).IsEnabled = true;
+        docReaderScanner.RecognizeImage(null, ReadRfidCb.IsChecked);
     }
     void ClearResults()
     {

@@ -35,13 +35,20 @@
 
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="1.1.29-beta"/>
-		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="7.3.164-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="7.3.165-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="7.3.206-beta"/>
+
+		<PackageReference Include="Xamarin.Regula.FaceApi.iOS" Version="6.3.168-beta"/>
+		<PackageReference Include="Xamarin.FaceCore.Basic.iOS" Version="6.3.115-beta"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="1.1.29-beta"/>
-		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="7.3.164-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="7.3.165-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="7.3.206-beta"/>
+
+		<PackageReference Include="Xamarin.AndroidX.DataBinding.ViewBinding" Version="8.0.2" />
+		<PackageReference Include="Xamarin.Regula.FaceApi.Android" Version="6.3.168-beta"/>
+		<PackageReference Include="Xamarin.FaceCore.Basic.Droid" Version="6.3.115-beta"/>
 	</ItemGroup>
 
 	<ItemGroup>
