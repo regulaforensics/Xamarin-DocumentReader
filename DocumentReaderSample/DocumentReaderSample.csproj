@@ -39,10 +39,9 @@
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="7.3.206-beta"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-		<!-- <PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="1.1.29-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="1.1.29-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="7.3.166-beta"/>
-		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="7.3.206-beta"/> -->
-		<PackageReference Include="Xamarin.Google.MLKit.BarcodeScanning" Version="117.2.0.6" />
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="7.3.206-beta"/>
 	</ItemGroup>
 
 	<ItemGroup>
