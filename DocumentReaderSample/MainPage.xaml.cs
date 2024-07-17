@@ -4,6 +4,7 @@ public partial class MainPage : ContentPage
 {
     static readonly bool btDeviceSample = false;
     readonly IDocReaderScanner docReaderScanner;
+    static List<string> Scenarios = [];
     public MainPage()
     {
         InitializeComponent();
@@ -34,8 +35,14 @@ public partial class MainPage : ContentPage
         {
             if (e.IsSuccess)
             {
-                BindingContext = new MainViewModel(e.Scenarios);
-                ScenariosListView.SelectedItem = e.Scenarios[0];
+                foreach (Scenario scenario in e.Scenarios) { Scenarios.Add(scenario.Name); }
+                ScenariosListView.ItemsSource = Scenarios;
+                ScenariosListView.SelectedItem = Scenarios[0];
+                ScenariosListView.SelectionChanged += (object sender, SelectionChangedEventArgs e) =>
+                {
+                    string scenario = e.CurrentSelection.FirstOrDefault() as string;
+                    docReaderScanner.SelectScenario(scenario);
+                };
                 RfidLayout.IsVisible = e.IsRfidAvailable;
                 NamesLabels.Text = "Ready";
             }
@@ -52,7 +59,6 @@ public partial class MainPage : ContentPage
     async void RecognizeImage_Clicked(object sender, EventArgs evt)
     {
         ClearResults();
-        (sender as Button).IsEnabled = false;
         Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
         if (stream != null)
         {
@@ -60,11 +66,6 @@ public partial class MainPage : ContentPage
             docReaderScanner.RecognizeImage(stream, ReadRfidCb.IsChecked);
         }
         (sender as Button).IsEnabled = true;
-    }
-    void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-    {
-        Scenario scenario = e.SelectedItem as Scenario;
-        docReaderScanner.SelectScenario(scenario.Name);
     }
     void ClearResults()
     {
