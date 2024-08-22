@@ -35,10 +35,14 @@ namespace DocumentReaderSample.Platforms.Android
                 IsReadRfid = false;
                 return;
             }
+
+            var portrait = results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait);
+            var rfidPortrait = results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait, ERPRM_ResultType.RfidResultTypeRfidImageData);
+            if (rfidPortrait != null) portrait = rfidPortrait;
             ResultsObtained(this, new DocReaderScannerEvent
             {
                 SurnameAndGivenNames = results.GetTextFieldValueByType(EVisualFieldType.FtSurnameAndGivenNames),
-                PortraitField = ConvertBitmap(results.GetGraphicFieldImageByType(EGraphicFieldType.GfPortrait)),
+                PortraitField = ConvertBitmap(portrait),
                 DocumentField = ConvertBitmap(results.GetGraphicFieldImageByType(EGraphicFieldType.GfDocumentImage))
             });
         }
