@@ -11,6 +11,13 @@ public partial class MainPage : ContentPage
         Application.Current.UserAppTheme = AppTheme.Light;
         Application.Current.RequestedThemeChanged += (s, a) => { Application.Current.UserAppTheme = AppTheme.Light; };
 
+        // Fix disappearing selection in iOS
+        Loaded += (object sender, EventArgs e) =>
+        {
+            if (Scenarios.Count > 0)
+                ScenariosListView.UpdateSelectedItems([ScenariosListView.SelectedItem]);
+        };
+
         docReaderScanner = DependencyService.Get<IDocReaderScanner>();
         docReaderScanner.ResultsObtained += (object s, IDocReaderScannerEvent e) =>
         {

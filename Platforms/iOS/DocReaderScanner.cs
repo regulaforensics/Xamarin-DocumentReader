@@ -39,10 +39,14 @@ namespace DocumentReaderSample.Platforms.iOS
                 IsReadRfid = false;
                 return;
             }
+
+            var portrait = result.GetGraphicFieldImageByType(RGLGraphicFieldType.Portrait);
+            var rfidPortrait = result.GetGraphicFieldImageByType(RGLGraphicFieldType.Portrait, RGLResultType.RfidImageData);
+            if(rfidPortrait != null) portrait = rfidPortrait;
             ResultsObtained(this, new DocReaderScannerEvent
             {
                 SurnameAndGivenNames = result.GetTextFieldValueByType(RGLFieldType.Surname_And_Given_Names),
-                PortraitField = ConvertImage(result.GetGraphicFieldImageByType(RGLGraphicFieldType.Portrait)),
+                PortraitField = ConvertImage(portrait),
                 DocumentField = ConvertImage(result.GetGraphicFieldImageByType(RGLGraphicFieldType.DocumentImage))
             });
         }

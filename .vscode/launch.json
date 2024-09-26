@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C#: DocumentReaderSample",
+            "name": "Run",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/DocumentReaderSample/DocumentReaderSample.csproj",
+            "projectPath": "${workspaceFolder}/DocumentReaderSample.csproj",
             "launchConfigurationId": "vscode-maui"
         }
     ]
