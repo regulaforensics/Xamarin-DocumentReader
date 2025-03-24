@@ -3,7 +3,7 @@ using Android.Content;
 using Android.OS;
 using AndroidX.Core.App;
 using Com.Regula.Documentreader.Api;
-using Com.Regula.Documentreader.Api.Ble;
+using Com.Regula.Common.Ble;
 using Com.Regula.Documentreader.Api.Completions;
 using Com.Regula.Documentreader.Api.Errors;
 using Com.Regula.Documentreader.Api.Internal.Permission;
