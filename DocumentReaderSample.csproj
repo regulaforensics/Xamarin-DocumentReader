@@ -28,19 +28,19 @@
 		<MauiFont Include="Resources\Fonts\*" />
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.7" />
-	</ItemGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.50" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.3" />
+	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="7.6.14-beta"/>
-		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="7.6.35-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="7.6.36-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="7.6.22-beta"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="7.6.14-beta"/>
-		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="7.6.35-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="7.6.36-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="7.6.22-beta"/>
 	</ItemGroup>
 
