@@ -2,11 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run",
-            "type": "dotnet",
+            "name": ".NET MAUI",
+            "type": "maui",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/DocumentReaderSample.csproj",
-            "launchConfigurationId": "vscode-maui"
+            "preLaunchTask": "maui: Build"
         }
     ]
 }
