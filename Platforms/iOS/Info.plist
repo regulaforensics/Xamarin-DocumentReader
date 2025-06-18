@@ -21,6 +21,12 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>CFBundleDisplayName</key>
+	<string>DocumentReader</string>
+	<key>CFBundleName</key>
+	<string>DocumentReader</string>
+	<key>CFBundleIdentifier</key>
+	<string>regula.DocumentReader</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
 	<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>

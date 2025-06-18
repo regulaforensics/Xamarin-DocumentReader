@@ -20,7 +20,7 @@ namespace DocumentReaderSample.Platforms.iOS
         {
             this.IsReadRfid = IsReadRfid;
             RGLScannerConfig config = new(selectedScenario);
-            RGLDocReader.Shared.ShowScannerFromPresenter(UIApplication.SharedApplication.KeyWindow.RootViewController, config, OnResultsObtained);
+            RGLDocReader.Shared.StartScannerFromPresenter(UIApplication.SharedApplication.KeyWindow.RootViewController, config, OnResultsObtained);
         }
         public void RecognizeImage(Stream stream, bool IsReadRfid)
         {

@@ -23,7 +23,7 @@ namespace DocumentReaderSample.Platforms.Android
         public void ShowScanner(bool IsReadRfid)
         {
             ScannerConfig config = new ScannerConfig.Builder(selectedScenario).Build();
-            DocumentReader.Instance().ShowScanner(Platform.AppContext, config, this);
+            DocumentReader.Instance().StartScanner(Platform.AppContext, config, this);
             this.IsReadRfid = IsReadRfid;
         }
         public void OnCompleted(int action, DocumentReaderResults results, DocumentReaderException error)
