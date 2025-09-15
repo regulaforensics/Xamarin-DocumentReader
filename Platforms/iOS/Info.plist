@@ -22,7 +22,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>CFBundleDisplayName</key>
-	<string>DocReader</string>
+	<string>Document</string>
 	<key>CFBundleName</key>
 	<string>DocumentReader</string>
 	<key>CFBundleIdentifier</key>
