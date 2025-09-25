@@ -1,0 +1,4 @@
+<resources>
+    <style name="Maui.MainTheme" parent="Theme.MaterialComponents.DayNight">
+    </style>
+</resources>

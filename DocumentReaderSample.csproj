@@ -9,13 +9,11 @@
 		<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 		<NoWarn>MT4189;MT4178;NETSDK1201;XC0022</NoWarn>
 
-		<ApplicationTitle>DocumentReader</ApplicationTitle>
 		<CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
-
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">13.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">23.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">24.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -33,12 +31,12 @@
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="7.6.15"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="8.2.216"/>
-		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="8.2.676"/>
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="8.3.884"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="7.6.15"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="8.2.216"/>
-		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="8.2.676"/>
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="8.3.884"/>
 	</ItemGroup>
 
 	<ItemGroup>
