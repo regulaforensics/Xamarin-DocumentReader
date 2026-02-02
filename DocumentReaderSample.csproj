@@ -29,12 +29,12 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.3" />
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
-		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="9.1.26"/>
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="9.2.27"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="9.1.414"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="9.1.1600"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="9.1.26"/>
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="9.2.27"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="9.1.414"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="9.1.1600"/>
 	</ItemGroup>
