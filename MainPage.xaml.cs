@@ -4,7 +4,7 @@ public partial class MainPage : ContentPage
 {
     static readonly bool btDeviceSample = false;
     readonly IDocReaderScanner docReaderScanner;
-    static readonly List<string> Scenarios = [];
+    static List<string> Scenarios = [];
     public MainPage()
     {
         InitializeComponent();
@@ -12,39 +12,20 @@ public partial class MainPage : ContentPage
         Application.Current.RequestedThemeChanged += (s, a) => { Application.Current.UserAppTheme = AppTheme.Light; };
 
         // Fix disappearing selection in iOS
-        Loaded += (sender, e) =>
+        Loaded += (object sender, EventArgs e) =>
         {
             if (Scenarios.Count > 0)
                 ScenariosListView.UpdateSelectedItems([ScenariosListView.SelectedItem]);
         };
 
         docReaderScanner = DependencyService.Get<IDocReaderScanner>();
-        docReaderScanner.ResultsObtained += (_, result) =>
+        docReaderScanner.ResultsObtained += (object s, IDocReaderScannerEvent e) =>
         {
-            NamesLabels.Text = result.SurnameAndGivenNames;
-            if (result.PortraitField != null)
-                PortraitImage.Source = ImageSource.FromStream(() => { return new MemoryStream(result.PortraitField); });
-            if (result.DocumentField != null)
-                DocumentImage.Source = ImageSource.FromStream(() => { return new MemoryStream(result.DocumentField); });
-        };
-
-        IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
-        docReaderInit.ScenariosObtained += (sender, e) =>
-        {
-            if (e.IsSuccess)
-            {
-                foreach (Scenario scenario in e.Scenarios) { Scenarios.Add(scenario.Name); }
-                ScenariosListView.ItemsSource = Scenarios;
-                ScenariosListView.SelectedItem = Scenarios[0];
-                ScenariosListView.SelectionChanged += (sender, e) =>
-                {
-                    string scenario = e.CurrentSelection.FirstOrDefault() as string;
-                    docReaderScanner.SelectScenario(scenario);
-                };
-                RfidLayout.IsVisible = e.IsRfidAvailable;
-                NamesLabels.Text = "Ready";
-            }
-            else NamesLabels.Text = "Init failed";
+            NamesLabels.Text = e.SurnameAndGivenNames;
+            if (e.PortraitField != null)
+                PortraitImage.Source = ImageSource.FromStream(() => { return new MemoryStream(e.PortraitField); });
+            if (e.DocumentField != null)
+                DocumentImage.Source = ImageSource.FromStream(() => { return new MemoryStream(e.DocumentField); });
         };
 
         if (btDeviceSample)
@@ -56,6 +37,24 @@ public partial class MainPage : ContentPage
             return;
         }
 
+        IDocReaderInit docReaderInit = DependencyService.Get<IDocReaderInit>();
+        docReaderInit.ScenariosObtained += (object sender, IDocReaderInitEvent e) =>
+        {
+            if (e.IsSuccess)
+            {
+                foreach (Scenario scenario in e.Scenarios) { Scenarios.Add(scenario.Name); }
+                ScenariosListView.ItemsSource = Scenarios;
+                ScenariosListView.SelectedItem = Scenarios[0];
+                ScenariosListView.SelectionChanged += (object sender, SelectionChangedEventArgs e) =>
+                {
+                    string scenario = e.CurrentSelection.FirstOrDefault() as string;
+                    docReaderScanner.SelectScenario(scenario);
+                };
+                RfidLayout.IsVisible = e.IsRfidAvailable;
+                NamesLabels.Text = "Ready";
+            }
+            else NamesLabels.Text = "Init failed";
+        };
         NamesLabels.Text = "Initializing...";
         docReaderInit.InitDocReader();
     }

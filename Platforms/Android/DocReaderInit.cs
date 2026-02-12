@@ -62,7 +62,7 @@ namespace DocumentReaderSample.Platforms.Android
         static readonly int REQUEST_ENABLE_BT = 197;
         static bool isBleServiceConnected = false;
         static BLEWrapper bleManager = null;
-        public void CheckPermissionsAndConnect(string deviceName)
+        public void CheckPermissionsAndConnect(string btDeviceName)
         {
             if (!IsBlePermissionGranted())
             {
@@ -71,8 +71,11 @@ namespace DocumentReaderSample.Platforms.Android
             }
             if (isBleServiceConnected) return;
             Console.WriteLine("Loading...");
-            DocumentReader.Instance().Functionality().Edit().SetUseAuthenticator(true).Apply();
-            StartBluetoothService(Platform.CurrentActivity, deviceName);
+            DocumentReader.Instance().Functionality().Edit()
+                .SetUseAuthenticator(true)
+                .SetBtDeviceName(btDeviceName)
+                .Apply();
+            StartBluetoothService(Platform.CurrentActivity);
         }
         public static bool IsBlePermissionGranted()
         {
@@ -123,12 +126,11 @@ namespace DocumentReaderSample.Platforms.Android
             Intent myIntent = new(Settings.ActionLocationSourceSettings);
             activity.StartActivityForResult(myIntent, REQUEST_ENABLE_LOCATION);
         }
-        public void StartBluetoothService(Activity activity, string deviceName)
+        public void StartBluetoothService(Activity activity)
         {
             Intent bleIntent = new(activity, Java.Lang.Class.FromType(typeof(RegulaBleService)));
-            bleIntent.PutExtra(RegulaBleService.DeviceName, deviceName);
             activity.StartService(bleIntent);
-            activity.BindService(bleIntent, this, Bind.AutoCreate);
+            activity.BindService(bleIntent, this, 0);
         }
         void IServiceConnection.OnServiceConnected(ComponentName name, IBinder service)
         {
