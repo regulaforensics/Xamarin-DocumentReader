@@ -20,7 +20,7 @@ namespace DocumentReaderSample.Platforms.iOS
         {
             this.IsReadRfid = IsReadRfid;
             RGLScannerConfig config = new(selectedScenario);
-            RGLDocReader.Shared.StartScannerFromPresenter(UIApplication.SharedApplication.KeyWindow.RootViewController, config, OnResultsObtained);
+            RGLDocReader.Shared.StartScannerFromPresenter(Platform.GetCurrentUIViewController(), config, OnResultsObtained);
         }
         public void RecognizeImage(Stream stream, bool IsReadRfid)
         {
@@ -35,7 +35,7 @@ namespace DocumentReaderSample.Platforms.iOS
             if (action != RGLDocReaderAction.Complete && action != RGLDocReaderAction.ProcessTimeout) return;
             if (IsReadRfid && result != null && result.ChipPage != 0)
             {
-                RGLDocReader.Shared.StartRFIDReaderFromPresenter(UIApplication.SharedApplication.KeyWindow.RootViewController, OnResultsObtained);
+                RGLDocReader.Shared.StartRFIDReaderFromPresenter(Platform.GetCurrentUIViewController(), OnResultsObtained);
                 IsReadRfid = false;
                 return;
             }
