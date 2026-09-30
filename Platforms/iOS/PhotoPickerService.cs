@@ -17,7 +17,7 @@ namespace DocumentReaderSample.Platforms.iOS
             imagePicker.FinishedPickingMedia += OnImagePickerFinishedPickingMedia;
             imagePicker.Canceled += OnImagePickerCancelled;
 
-            UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(imagePicker, true, null);
+            Platform.GetCurrentUIViewController().PresentViewController(imagePicker, true, null);
             taskCompletionSource = new TaskCompletionSource<Stream>();
             return taskCompletionSource.Task;
         }
