@@ -30,12 +30,12 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.3" />
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
-		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="9.10.128-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="9.10.142-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="9.10.898-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="9.10.3695-beta"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="9.10.128-beta"/>
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="9.10.142-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="9.10.898-beta"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="9.10.3695-beta"/>
 	</ItemGroup>
@@ -46,4 +46,5 @@
 	<ItemGroup>
 		<BundleResource Include="Resources\Raw\regula.license" />
 	</ItemGroup>
+	<Import Project="../../targets/ProjectReferences.targets" Condition="Exists('../../targets/ProjectReferences.targets')" />
 </Project>
