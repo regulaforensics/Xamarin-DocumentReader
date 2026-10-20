@@ -23,6 +23,8 @@
 		<MauiImage Include="Resources\Images\*" />
 		<MauiFont Include="Resources\Fonts\*" />
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<AndroidAsset Include="Resources\Raw\regula.license" />
+		<BundleResource Include="Resources\Raw\regula.license" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -32,18 +34,11 @@
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="9.10.151-nightly"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="9.10.904-nightly"/>
-		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="9.9.3562-nightly"/>
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="9.10.3763-nightly"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="9.10.151-nightly"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="9.10.904-nightly"/>
-		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="9.9.3562-nightly"/>
-	</ItemGroup>
-
-	<ItemGroup>
-		<AndroidAsset Include="Resources\Raw\regula.license" />
-	</ItemGroup>
-	<ItemGroup>
-		<BundleResource Include="Resources\Raw\regula.license" />
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="9.10.3763-nightly"/>
 	</ItemGroup>
 </Project>
