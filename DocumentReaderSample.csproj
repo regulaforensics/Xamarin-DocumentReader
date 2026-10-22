@@ -34,11 +34,11 @@
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="9.10.153-nightly"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="9.10.914-nightly"/>
-		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="9.10.3764-nightly"/>
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="9.10.3765-nightly"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
 		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="9.10.153-nightly"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="9.10.914-nightly"/>
-		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="9.10.3764-nightly"/>
+		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="9.10.3765-nightly"/>
 	</ItemGroup>
 </Project>
