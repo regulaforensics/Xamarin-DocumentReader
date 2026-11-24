@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net10.0-android;net10.0-ios;</TargetFrameworks>
+		<TargetFrameworks>net11.0-android;net11.0-ios;</TargetFrameworks>
 		<OutputType>Exe</OutputType>
 		<RootNamespace>DocumentReaderSample</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -28,16 +28,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.110" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.3" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="11.0.10" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="11.0.0" />
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
-		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="9.11.200-rc"/>
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.iOS" Version="9.11.202-rc"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.iOS" Version="9.10.1004-rc"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.iOS" Version="9.11.3999-rc"/>
 	</ItemGroup>
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="9.11.200-rc"/>
+		<PackageReference Include="Xamarin.DocumentReader.BTDevice.Android" Version="9.11.202-rc"/>
 		<PackageReference Include="Xamarin.DocumentReader.Api.Android" Version="9.10.1004-rc"/>
 		<PackageReference Include="Xamarin.DocumentReader.Core.FullAuthRFID.Android" Version="9.11.3999-rc"/>
 	</ItemGroup>
